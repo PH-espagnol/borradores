@@ -10,7 +10,7 @@ reviewers:
 translator:
 - Víctor Gayol
 layout: default
-next: normalizing-data
+next: normalizar-datos
 previous: de-html-a-lista-de-palabras-1
 ---
 
