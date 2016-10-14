@@ -133,7 +133,7 @@ myText = "This is my <h1>HTML</h1> message"
 theResult = obo.stripTags(myText)
 ```
 
-Al utilizar `return`, hemos sido capaces de guerdar la salida de datos de la función *stripTags* directamente en una variable que hemos denominado 'theResult', cuyo proceso podemos reanudar según sea necesario mediante código adicional.
+Al utilizar `return`, hemos sido capaces de guardar la salida de datos de la función *stripTags* directamente en una variable que hemos denominado 'theResult', cuyo proceso podemos reanudar según sea necesario mediante código adicional.
 
 Toma en cuenta que en el ejemplo *stripTags* desde el inicio de esta subsección, el valor qu equeremos recuperar no es *contenidoPagina* sino el contenido qu eha sido despojado de las etiquetas HTML.
 
