@@ -196,7 +196,7 @@ print(wordlist[0:120])
 
 Debes obtener algo como lo siguiente:
 
-`` python
+``` python
 ['324.', '\xc2\xa0', 'BENJAMIN', 'BOWSEY', '(a', 'blackmoor', ')', 'was', 
 'indicted', 'for', 'that', 'he', 'together', 'with', 'five', 'hundred', 
 'other', 'persons', 'and', 'more,', 'did,', 'unlawfully,', 'riotously,', 
