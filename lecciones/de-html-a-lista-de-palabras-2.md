@@ -18,10 +18,10 @@ previous: de-html-a-lista-de-palabras-1
 
 En esa lección aprenderás los comandos de Python que son necesarios para implementar la segunda parte del algoritmo que comenzamos en [De HTML a lista de palabras (parte 1)][]. La primera parte del algoritmo obtiene el contenido de una página HTML y guarda solamente el contenido que se encuentra entre la primera etiqueta `<p>` y la última etiqueta `<br/>`. La segunda mitad del algoritmo hace lo siguiente:
 
-- Revisar cada caracter de la cadena de texto *contenidoPagina*, uno por uno.
-- Si el caracter es un corchete angular izquierdo (\<) entonces estamos dentro de una etiqueta así que ignora cada uno de los caracteres siguientes.
--  Si el caracter es un corchete angular derecho (\>) entonces estamos saliendo de una etiqueta; ignora el caracter actual, pero mira cada uno de los caracteres siguientes.
-- Si no estamos dentro de una etiqueta, añade añade el caracter actual a una nueva variable: *texto*.
+- Revisar cada carácter de la cadena de texto *contenidoPagina*, uno por uno.
+- Si el carácter es un corchete angular izquierdo (\<) entonces estamos dentro de una etiqueta así que ignora cada uno de los caracteres siguientes.
+-  Si el carácter es un corchete angular derecho (\>) entonces estamos saliendo de una etiqueta; ignora el carácter actual, pero mira cada uno de los caracteres siguientes.
+- Si no estamos dentro de una etiqueta, añade añade el carácter actual a una nueva variable: *texto*.
 - Secciona la cadena de caracteres *texto* en una lista de palabras individuales que puedan ser manipuladas después.
 
 ### Archivos requeridos para esta lección
@@ -33,11 +33,11 @@ Si no tienes estos archivos puedes descargar el archivo comprimido python-lesson
 
 ## Repetir y probar en Python
 
-El siguiente escalón es implementar el algoritmo que busca cada uno de los caracteres en la cadema *contenidoPagina*, uno a la vez, y decide si el caracter pertenece a una marca de HTML o al contenido de la transcripción del juicio. Antes de que puedas hacer esto tienes que aprender algunas cuantas técnicas para la repetición de tareas y condiciones de prueba.
+El siguiente escalón es implementar el algoritmo que busca cada uno de los caracteres en la cadema *contenidoPagina*, uno a la vez, y decide si el carácter pertenece a una marca de HTML o al contenido de la transcripción del juicio. Antes de que puedas hacer esto tienes que aprender algunas cuantas técnicas para la repetición de tareas y condiciones de prueba.
 
 ### Bucles (*Looping*)
 
-Como muchos lenguajes de programación Python incluye un número de mecanismos de bucle . El que necesitarás usar en este caso es un *bucle for*. La versión debajo le dice al intérprete que haga algo en cada caracter de una cadena llamada *contenidoPagina*. La variable *caract* contendrá cada caracter de *contenidoPagina* en sucesión. le dimos el nombre *caract* porque no tiene porque no tiene un significado especial y podríamos haberlo llamado *tintineo* o *k* si nos hubiéramos sentido tentados. Puedes utilizar la codificación a colores en Komodo Edit como una guía para decidir si una palabra es una variable con un nombre dado por el usuario (como *caract*) o se trata de un nombre definido para Python que sirve para un propósito específico (como '`for`'). Generalmente es buena idea darle a las variables nombres que provean información acerca de lo que contienen. Esto hará mucho más fácil entender un programa que no has revisado desde hace tiempo. Con esto en mente, *tintineo* no es seguramente una buena elección para el nombre de la variable en este caso.
+Como muchos lenguajes de programación Python incluye un número de mecanismos de bucle . El que necesitarás usar en este caso es un *bucle for*. La versión debajo le dice al intérprete que haga algo en cada carácter de una cadena llamada *contenidoPagina*. La variable *caract* contendrá cada carácter de *contenidoPagina* en sucesión. le dimos el nombre *caract* porque no tiene porque no tiene un significado especial y podríamos haberlo llamado *tintineo* o *k* si nos hubiéramos sentido tentados. Puedes utilizar la codificación a colores en Komodo Edit como una guía para decidir si una palabra es una variable con un nombre dado por el usuario (como *caract*) o se trata de un nombre definido para Python que sirve para un propósito específico (como '`for`'). Generalmente es buena idea darle a las variables nombres que provean información acerca de lo que contienen. Esto hará mucho más fácil entender un programa que no has revisado desde hace tiempo. Con esto en mente, *tintineo* no es seguramente una buena elección para el nombre de la variable en este caso.
 
 ``` python
 for caract in contenidoPagina:
