@@ -133,7 +133,7 @@ date: 2016-10-01
 | manipulating-strings-in-python | manipulacion-de-cadenas-de-texto-en-python | ok | vgayolrs |
 | from-html-to-list-of-words-1 | de-html-a-lista-de-palabras-1 | ok | vgayolrs |
 | from-html-to-list-of-words-2 | de-html-a-lista-de-palabras-2 | ok | vgayolrs |
-| normalizing-data | normalizar-datos | in process | vgayolrs |
+| normalizing-data | normalizar-datos | ok | vgayolrs |
 | counting-frequencies | contar-frecuencias | in process | vgayolrs |
 | creating-and-viewing-html-files-with-python | crear-y-ver-archivos-html-con-python | in process | vgayolrs |
 | output-data-as-html-file | salida-de-data-como-archivo-html | in process | vgayolrs |
