@@ -55,7 +55,7 @@ Por sí misma, esta habilidad de separar el documento en palabras no nos ayuda m
 Queda claro que nuestra lista va a necesitar cierta limpieza antes e que la podamos utilizar para contar frecuencias. Conservando la práctica establecida en [De HTML a lista de palabras (parte 1)][], tratemos de describir nuestro algoritmo primero en lenguaje llano. Queremos saber la frecuencia con la que aparece, en la transcripción del juicio, cada palabra con significado. De tal manera, los pasos a seguir deben verse de la siguiente manera:
 
 -   Convierte todas las palabras a minúsculas para que "BENJAMIN" y "benjamin" sean contadas como una misma palabra
--   Retira cualquier caracter extraño o inusual
+-   Retira cualquier carácter extraño o inusual
 -   Cuenta en número de vees que aparece cada palabra
 -   Retira palabras demasiado comunes como "eso", "el", "y", etc.
 
@@ -85,7 +85,7 @@ Como hemos dicho antes, Python hace muy fácil hacer mucho con muy poco código.
 
 En este punto podríamos mirar con atención otras entradas del "Old Bailey" en línea así como una amplia gama de otras fuentes potenciales para asegurarnos de que no hay otros caracteres especiales que podrían causar problemas más adelante. También podríamos tratar de anticipar situaciones en las que no queremos deshacernos de cierta puntuación (por ejemplo, los distintivos de cantidades monetarios como "$1629" o “£1295”, de fechas, o el reconocer que "1629-40" tiene un significado distinto que "1629 40"). Esto es lo que a lo programadores profesionales se les paga por ahcer: trata de pensar en todo lo que podría ir mal y tratalo de antemano.
 
-Veámoslo desde otra perspectiva. Nuestro objetivo principal es desarrollar técnicas que un historiador puede utilizar durante el proceso de investigación. Esto significa que casi siempre preferimos soluciones aproximadamente correctas que puedan desarrollarse rápidamente. Así que, en lugar de invertir tiempo en hacer nuestro programa sólido de cara a excepciones, simplemente queremos deshacernos de todo aquello que no sea un caracter con o sin acentos o un número arábigo. La programación generalmente es un proceso de "reefinamiento paso a paso". Empiezas con un problema y partes de una solución, y luego sigues refinando tu slución hasta que tienes algo que funciona mejor.
+Veámoslo desde otra perspectiva. Nuestro objetivo principal es desarrollar técnicas que un historiador puede utilizar durante el proceso de investigación. Esto significa que casi siempre preferimos soluciones aproximadamente correctas que puedan desarrollarse rápidamente. Así que, en lugar de invertir tiempo en hacer nuestro programa sólido de cara a excepciones, simplemente queremos deshacernos de todo aquello que no sea un carácter con o sin acentos o un número arábigo. La programación generalmente es un proceso de "reefinamiento paso a paso". Empiezas con un problema y partes de una solución, y luego sigues refinando tu slución hasta que tienes algo que funciona mejor.
 
 ## Expresiones regulares en Python
 
@@ -102,7 +102,7 @@ text = text.replace(',', '')
 
 Pero esto no es verdaderamente eficiente. Ateniéndonos a nuestro objetivo de crear programas breves y poderosos, vamos a utitizar un mecanismo llamado "expresiones regulares". Las expresiones regulares son provistas por varios lenguajes de programación en un intervalo de formas distintas.
 
-Las expresiones regulares te permiten buscar patrones bien definidos y pueden acortar drásticamente la longitud de tu código. Por ejemplo, si deseas saber si una subcadena coincidió con una letra del alfabeto, en lugar de utilizar la sentencia if / else para comprobar la coincidencia con la letra "a", luego la "b" y luego la "c", y así sucesivamente, se podría utilizar una expresión regular para ver si coincide con la subcadena cualquer letra entre la "a" y la "z". o bien, puedes comprobar la presencia de un dígito o una letra mayúscula, o de cualquier caracter alfanumérico, un retorno de carro ocualquier combinación de los anteriores y mucho más.
+Las expresiones regulares te permiten buscar patrones bien definidos y pueden acortar drásticamente la longitud de tu código. Por ejemplo, si deseas saber si una subcadena coincidió con una letra del alfabeto, en lugar de utilizar la sentencia if / else para comprobar la coincidencia con la letra "a", luego la "b" y luego la "c", y así sucesivamente, se podría utilizar una expresión regular para ver si coincide con la subcadena cualquer letra entre la "a" y la "z". o bien, puedes comprobar la presencia de un dígito o una letra mayúscula, o de cualquier carácter alfanumérico, un retorno de carro ocualquier combinación de los anteriores y mucho más.
 
 En Python, las expresiones regulares están disponibles como un módulo de Python. Para acelerar el procesamiento éste no se carga automáticamente porque no todos los programas lo requieren. Por lo tanto, tendrás que importar (`import`) el módulo (llamado *re*) de la misma manera en la que has importado tu propio módulo *obo.py*.
 
@@ -117,7 +117,7 @@ def stripNonAlphaNum(text):
     return re.compile(r'\W+', re.UNICODE).split(text)
 ``` 
 
-La expresión regular en el código anterior es el material dentro de la cadena, en otras palabras `W+`. La `W` es la abreviatura de la clase de *caracteres no-alfanuméricos*. En una expresión regular de Python, el signo de adición (+) coincide con una o más copias de un caracter dado. La expresión `re.UNICODE` le dice al intérprete que queremos que incluya los caracteres de todas las lenguas del mundo en nuestra definición de "alfanumérico", así como de la A a la Z, de a-z y de 0-9 en inglés. Las expresiones regulares deben ser compiladas antes de poder ser utilizadas, que es lo que hace el resto de la declaración. No te preocupes en entender ahora mismo la parte de la compilación.
+La expresión regular en el código anterior es el material dentro de la cadena, en otras palabras `W+`. La `W` es la abreviatura de la clase de *caracteres no-alfanuméricos*. En una expresión regular de Python, el signo de adición (+) coincide con una o más copias de un carácter dado. La expresión `re.UNICODE` le dice al intérprete que queremos que incluya los caracteres de todas las lenguas del mundo en nuestra definición de "alfanumérico", así como de la A a la Z, de a-z y de 0-9 en inglés. Las expresiones regulares deben ser compiladas antes de poder ser utilizadas, que es lo que hace el resto de la declaración. No te preocupes en entender ahora mismo la parte de la compilación.
 
 Cuando redefinamos nuestro programa *html-to-list1.py*, entonces se verá como esto:
 
