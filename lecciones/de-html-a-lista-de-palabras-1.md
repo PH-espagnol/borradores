@@ -56,10 +56,10 @@ Para aislar el contenido:
 
 En este puento tenemos la trascripción del texto del juicio más el marcado de HTML. Después:
 
-- Mira con atención cada caracter en la cadena de texto *contenido-de-pagina*, caracter por caracter
-- Si el caracter es un corchete angular izquierdo (\<) nos encontramos dentro de una etiqueta así que ignora cada uno de los caracteres siguientes
-- Si el caracter es un corchete angular derecho (\>) estamos saliendo de una etiqueta; ignora el caracter actual, pero mira cada uno de los caracteres siguientes
-- Si no estamos dentro de una etiqueta, adjunta el caracter actual a una nueva variable: *texto*
+- Mira con atención cada carácter en la cadena de texto *contenido-de-pagina*, carácter por carácter
+- Si el carácter es un corchete angular izquierdo (\<) nos encontramos dentro de una etiqueta así que ignora cada uno de los caracteres siguientes
+- Si el carácter es un corchete angular derecho (\>) estamos saliendo de una etiqueta; ignora el carácter actual, pero mira cada uno de los caracteres siguientes
+- Si no estamos dentro de una etiqueta, adjunta el carácter actual a una nueva variable: *texto*
 
 Finalmente:
 
