@@ -343,7 +343,7 @@ Para seguir a lo largo de las lecciones futuras es importante que tengas los arc
 -   programming-historian-5 ([zip sync][])
 
   [lista por comprensión]: http://docs.python.org/tutorial/datastructures.html#list-comprehensions
-  [computer scientists at Glasgow]: http://ir.dcs.gla.ac.uk/resources/linguistic_utils/stop_words
+  [informáticos de Glasgow]: http://ir.dcs.gla.ac.uk/resources/linguistic_utils/stop_words
   [Regular Expressions]: http://www.diveintopython.net/regular_expressions/index.html
   [zip]: ../assets/python-lessons4.zip
   [zip sync]: ../assets/python-lessons5.zip
