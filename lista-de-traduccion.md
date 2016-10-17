@@ -130,7 +130,7 @@ date: 2016-10-01
 | working-with-text-files | trabajar-con-archivos-de-texto | ok | vgayolrs | 
 | code-reuse-and-modularity | reutilizacion-de-codigo-y-modularidad| ok | vgayolrs | in process | vgayolrs |
 | working-with-web-pages | trabajar-con-paginas-web | ok | vgayolrs |
-| manipulating-strings-in-python | manipulacion-de-cadenas-de-texto-en-python | ok | vgayolrs |
+| manipulating-strings-in-python | manipular-cadenas-de-caracteres-en-python | ok | vgayolrs |
 | from-html-to-list-of-words-1 | de-html-a-lista-de-palabras-1 | ok | vgayolrs |
 | from-html-to-list-of-words-2 | de-html-a-lista-de-palabras-2 | ok | vgayolrs |
 | normalizing-data | normalizar-datos | ok | vgayolrs |
