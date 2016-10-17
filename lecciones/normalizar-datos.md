@@ -139,7 +139,7 @@ Cuando ejecutes el programa y veas a través de su salida en el panel de "comand
 
 ## Lecturas sugeridas
 
-Para una práctica extra en epresiones regulares, encontrarás que el Capítulo 7 del libro de Mark Pilgrim [Dive into Python][] es un tutorial muy útil.
+Para una práctica extra en expresiones regulares, encontrarás que el Capítulo 7 del libro de Mark Pilgrim [Dive into Python][] es un tutorial muy útil.
 
 ### Sicronización de código
 
