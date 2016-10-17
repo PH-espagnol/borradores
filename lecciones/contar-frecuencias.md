@@ -92,7 +92,7 @@ print("Frequencies\n" + str(wordfreq) + "\n")
 print("Pairs\n" + str(zip(wordlist, wordfreq)))
 ```
 
-Si estudias esta lista por comprensión cuidadosamente descrubrirás que hace exactamente lo mismo que el bucle `for` en el ejemplo previo, pero de una manera condensada. Cualquiera de los dos métodos trabajará bien, así que utiliza la versión con la que te sientas más a gusto.
+Si estudias esta lista por comprensión cuidadosamente descubrirás que hace exactamente lo mismo que el bucle `for` en el ejemplo previo, pero de una manera condensada. Cualquiera de los dos métodos trabajará bien, así que utiliza la versión con la que te sientas más a gusto.
 
 Por regla general es más acertado que utilices un código que entiendas en vez de un código que se ejecute más rapidamente.
 
