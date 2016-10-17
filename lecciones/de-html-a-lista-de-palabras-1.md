@@ -118,7 +118,7 @@ Lecturas sugeridas
     -   Ch. 8: Lists and Dictionaries
     -   Ch. 10: Introducing Python Statements
     -   Ch. 15: Function Basics
-
+ 
 ## Sincronización de código
 
 Para seguir a lo largo de las lecciones futuras es importante que tengas los archivos correctos y programas en el directorio "programming-historian" de tu disco duro. Al final de cada lección puedes descargar el archivo zip "programming-historian" para asegurarte que tienes el código correcto.
