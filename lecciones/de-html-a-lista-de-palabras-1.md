@@ -113,7 +113,7 @@ Tomemos un momento para estar seguros de que entendemos de qué manera *contenid
 Lecturas sugeridas
 -----------------
 
---   Lutz, *Learning Python*
+-   Lutz, *Learning Python*
     -   Ch. 7: Strings
     -   Ch. 8: Lists and Dictionaries
     -   Ch. 10: Introducing Python Statements
