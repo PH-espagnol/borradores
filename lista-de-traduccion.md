@@ -137,5 +137,5 @@ date: 2016-10-01
 | counting-frequencies | contar-frecuencias | ok | vgayolrs |
 | creating-and-viewing-html-files-with-python | crear-y-ver-archivos-html-con-python | ok | vgayolrs |
 | output-data-as-html-file | salida-de-datos-como-archivo-html | ok | vgayolrs |
-| keywords-in-context-using-n-grams | palabras-clave-en-contexto-n-grams | in process | vgayolrs |
-| output-keywords-in-context-in-html-file | salida-palabras-clave-contexto-ngrams | in process | vgayolrs |
+| keywords-in-context-using-n-grams | palabras-clave-en-contexto-n-grams | ok | vgayolrs |
+| output-keywords-in-context-in-html-file | salida-palabras-clave-contexto-ngrams | ok | vgayolrs |
