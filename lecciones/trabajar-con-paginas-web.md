@@ -42,7 +42,7 @@ El URL también pude incluir un *número de puerto* opcional. Sin entrar en deta
 http://oldbaileyonline.org:80
 ``` 
 
-Como sabes, generalmente hay muchas páginas en un determinado sitio web. Éstas están almacenadas en directorios del servidor y tú puedes especificar el camino (*path*) a una página en particular. La página “Acerca de” del *The Old Bailey Online* tiene el siguiente URL:
+Como sabes, generalmente hay muchas páginas en un determinado sitio web. Éstas están almacenadas en directorios del servidor y tú puedes especificar la ruta (*path*) a una página en particular. La página “Acerca de” del *The Old Bailey Online* tiene el siguiente URL:
 
 ```xml
 http://oldbaileyonline.org/static/Project.jsp
