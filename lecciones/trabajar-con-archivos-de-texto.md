@@ -134,7 +134,7 @@ Escribe el siguiente programa en el editor de texto y guárdalo con el nombre de
 
 ``` python
 # archivo-apendice.py
-f =('holamundo.txt','a')
+f = open('holamundo.txt','a')
 f.write('\n' + 'Hola Mundo')
 f.close()
 ``` 
