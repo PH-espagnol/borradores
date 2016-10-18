@@ -57,13 +57,13 @@ mensaje3 = 'I can't eat pickles'
 Cuenta el número de comillas sencillas en el mensaje3.  Para que esto trabaje correctamente tendremos que *salvar* el apóstrofe.
 
 ``` python 
-mensaje3 = ‘I can\’t eat pickles’
+mensaje3 = 'I can\'t eat pickles'
 ```
 
 O reescribir la frase como:
 
 ``` python 
-mensaje3 = “I can’t eat pickles”
+mensaje3 = "I can't eat pickles"
 ```
 `print` es un comando que imprime objetos en forma textual. Al combinar el comando `print` con una cadena de texto producimos una *declaración*.
 
@@ -71,7 +71,7 @@ Utilizarás el comando `print` de esta forma en los casos en los que se quiera g
 
 ```python 
 #archivo-salida.py
-f = open (‘holamundo.txt’,’w’)
+f = open ('holamundo.txt','w')
 f.write('hola mundo')
 f.close()
 ```
@@ -117,8 +117,8 @@ Python también tiene métodos que nos permiten obtener información de los arch
 ``` python
 # archivo-entrada.py
 f = open ('holamundo.txt','r')
-message = f.read()
-print(message)
+mensaje = f.read()
+print(mensaje)
 f.close()
 ``` 
 
@@ -134,7 +134,7 @@ Escribe el siguiente programa en el editor de texto y guárdalo con el nombre de
 
 ``` python
 # archivo-apendice.py
-f =('holamundo.txt','a'
+f =('holamundo.txt','a')
 f.write('\n' + 'Hola Mundo')
 f.close()
 ``` 
@@ -152,14 +152,6 @@ Lecturas recomendadas
 
 Sobre los autores: William J. Turkel es profesor de historia en la University of Western Ontario. Adam Crymble es conferencista (lecturer) en Historia Digital en la University of Hertfordshire.
 
----
-
-Forma sugerida para citar este texto:
-
-Para citar el texto original: William J. Turkel and Adam Crymble, “Working with Text Files in Python”, *Programming Historian* (17 July 2012)
-http://programminghistorian.org/lessons/working-with-text-files
-
-Para citar la versión en español: William J. Turkel and Adam Crymble, “Trabajar con archivos de texto en Python”, traducción de Víctor Gayol, *Programming Historian en español* (18 de abril de 2016), http://es.programminghistorian.org/lecciones/trabajar-con-arcivos-de-texto
 
 [Mac]: http://es.programminghistorian.org/lecciones/instalacion-mac
 [Windows]: http://es.programminghistorian.org/lecciones/instalacion-windows
@@ -167,3 +159,5 @@ Para citar la versión en español: William J. Turkel and Adam Crymble, “Traba
 [print]: https://docs.python.org/2/reference/simple_stmts.html#the-print-statement
 [palabra reservada]: https://docs.python.org/release/2.5.4/ref/keywords.html
 [file objects]: https://docs.python.org/2/library/stdtypes.html#bltin-file-objects
+[Non-Programmer’s Tutorial for Python 2.6/Hello, World]: http://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_2.6/Hello,_World
+
