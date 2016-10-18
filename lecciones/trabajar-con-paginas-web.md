@@ -85,23 +85,23 @@ import urllib2
 
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-response = urllib2.urlopen(url)
-webContent = response.read()
+respuesta = urllib2.urlopen(url)
+contenidoWeb = respuesta.read()
 
-print(webContent[0:300])
+print(contenidoWeb[0:300])
 ```
 
 Estas cinco líneas de código logran mucho rápidamente. Vamos a detenernos un momento para asegurarnos de que todo está claro y que puedes reconocer los bloques que permiten que este programa haga lo que queremos que haga.
 
-*url*, *response* y *webContent* son variables que nosotros mismos hemos llamado así.
+*url*, *respuesta* y *contenidoWeb* son variables que nosotros mismos hemos llamado así.
 
 *url* contiene el URL de la página web que queremos descargar. En este caso, el juicio contra Benjamien Bowsey.
 
-En la línea siguiente invocamos a la función `urlopen` que está almacenada en un módulo de Python llamado `urllib2.py` y le hemos pedido a esa función que abra el sitio web en el URL que le especificamos. Entonces, guardamos el resultado de ese proceso en una variable denominada *response*. Esta variable contiene una versión abierta del sitio web solicitado.
+En la línea siguiente invocamos a la función `urlopen` que está almacenada en un módulo de Python llamado `urllib2.py` y le hemos pedido a esa función que abra el sitio web en el URL que le especificamos. Entonces, guardamos el resultado de ese proceso en una variable denominada *respuesta*. Esta variable contiene una versión abierta del sitio web solicitado.
 
-Utilizamos entonces el método `read`, que ya usamos anteriormente, para copiar el contenido de esa página web abierta en una nueva variable llamada *webContent*.
+Utilizamos entonces el método `read`, que ya usamos anteriormente, para copiar el contenido de esa página web abierta en una nueva variable llamada *contenidoWeb*.
 
-Asegúrate de qu epuedes reconocer las variables (hay 3), los módulos (1), los métodos (2) y los parámetros (1) antes de seguir adelante.
+Asegúrate de que puedes reconocer las variables (hay 3), los módulos (1), los métodos (2) y los parámetros (1) antes de seguir adelante.
 
 Al ejecutar el programa, te darás cuenta que en el panel de salida se muestra algo etiquetado en HTML:
 
@@ -117,7 +117,7 @@ El contenido del proceso judicial está mucho más adelante en la página. Lo qu
 
 ## Guardar una copia local de una página web
 
-Dado que ya sabes lo suficiente acerca de escribir en archivos, resulta bastante sencillo modificar el programa antoerior para que escriba el contenido de la cadena de texto *webContent" en un archivo local de nuestra computadora en vez de en el panel de salida. Copia el siguiente programa en Komodo Edit, guárdalo como `guardar-paginaweb.py` y ejecútalo. Abre en tu navegador el archivo creado en tu disco duro (`obo-t17800628-33.html`) para confirmar que la copia que guardaste es igual a la que está en línea.
+Dado que ya sabes lo suficiente acerca de escribir en archivos, resulta bastante sencillo modificar el programa antoerior para que escriba el contenido de la cadena de texto *contenidoWeb* en un archivo local de nuestra computadora en vez de en el panel de salida. Copia el siguiente programa en Komodo Edit, guárdalo como `guardar-paginaweb.py` y ejecútalo. Abre en tu navegador el archivo creado en tu disco duro (`obo-t17800628-33.html`) para confirmar que la copia que guardaste es igual a la que está en línea.
 
 ``` python
 # guardar-paginaweb.py
@@ -126,11 +126,11 @@ import urllib2
 
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-response = urllib2.urlopen(url)
-webContent = response.read()
+respuesta = urllib2.urlopen(url)
+contenidoWeb = respuesta.read()
 
 f = open('obo-t17800628-33.html', 'w')
-f.write(webContent)
+f.write(contenidoWeb)
 f.close
 ```
 
