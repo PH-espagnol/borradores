@@ -10,8 +10,8 @@ reviewers:
 translator:
 - Víctor Gayol
 layout: default
-next: code-reuse-and-modularity
-previous: viewing-html-files
+next: reutilizacion-de-codigo-y-modularidad
+previous: ver-archivos-html
 ---
 
 
