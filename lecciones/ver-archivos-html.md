@@ -84,7 +84,7 @@ e
 ¡Hola Mundo!
 ```
 
-Salva el archivo en tu carpeta `programming-historian` con el nombre `hola-mundo.html`. Ahora, ve al navegador de Firefox y selecciona `Archivo -> Nueva pestaña`y luego `Archivo -> Abrir archivo`. Selecciona `hola-mundo.html`. Dependiendo de tu editor de texto puedes tener la opción `view page in brownser` u `open in brownser`. Una vez que has abierto el archivo tu mensaje deberá aparecer en el navegador. Nota la diferencia entre abrir un archivo HTML con un navegador como Firefox (que lo interpreta) y abrir el mismo archivo con tu editor de texto (que no lo interpreta).
+Salva el archivo en tu carpeta `programming-historian` con el nombre `hola-mundo.html`. Ahora, ve al navegador de Firefox y selecciona `Archivo -> Nueva pestaña`y luego `Archivo -> Abrir archivo`. Selecciona `hola-mundo.html`. Dependiendo de tu editor de texto puedes tener la opción `view page in browser` u `open in browser`. Una vez que has abierto el archivo tu mensaje deberá aparecer en el navegador. Nota la diferencia entre abrir un archivo HTML con un navegador como Firefox (que lo interpreta) y abrir el mismo archivo con tu editor de texto (que no lo interpreta).
 
 Sugerencia de lecturas para aprender HTML
 
