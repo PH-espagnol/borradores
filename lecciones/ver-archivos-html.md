@@ -55,7 +55,7 @@ Intenta ahora crear algo de código HTML. Abre tu editor de texto y crea un nuev
 ``` xml
 <!doctype html>
 <html dir="ltr" lang="es-ES">
-	<meta http-equiv="Content-Type" content="text/htmal; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <head>
     <title><!-- Inserta aquí el título --></title>
