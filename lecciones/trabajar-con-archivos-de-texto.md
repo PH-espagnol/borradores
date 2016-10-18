@@ -148,10 +148,6 @@ Lecturas recomendadas
 
 -   [Non-Programmer’s Tutorial for Python 2.6/Hello, World][]
 
----
-
-Sobre los autores: William J. Turkel es profesor de historia en la University of Western Ontario. Adam Crymble es conferencista (lecturer) en Historia Digital en la University of Hertfordshire.
-
 
 [Mac]: http://es.programminghistorian.org/lecciones/instalacion-mac
 [Windows]: http://es.programminghistorian.org/lecciones/instalacion-windows
