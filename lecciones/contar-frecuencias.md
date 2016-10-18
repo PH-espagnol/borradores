@@ -263,7 +263,7 @@ stopwords += ['within', 'without', 'would', 'yet', 'you', 'your']
 stopwords += ['yours', 'yourself', 'yourselves']
 ```
 
-Ahora, deshacerse de las palabras fucionales de una lista es tan fácil como utilizar otra lista por comprensión. Añade también esta función al módulo `obo.py`.
+Ahora, deshacerse de las palabras funcionales de una lista es tan fácil como utilizar otra lista por comprensión. Añade también esta función al módulo `obo.py`.
 
 ``` python
 # Dada una lista de palabras, retira cualquiera que esté
