@@ -21,7 +21,7 @@ La lista que creamos en [De HTML a lista de palabras (parte 2)][] necesita ciert
 
 ## Archivos necesarios para esta lección
 
-- *html-to-list1.py*
+- *html-a-lista-1.py*
 - *obo.py*
 
 Si no tienes estos archivos de la lección previa, puedes escargar un [zip][]
@@ -30,7 +30,7 @@ Si no tienes estos archivos de la lección previa, puedes escargar un [zip][]
 
 En [De HTML a lista de palabras (parte 2)][], escribimos un programa en Python llamado *html-to-list1.py* que descargó una [página Web][], retiró el formato HTML y los metadatos y nos devolvió una lista de "palabras" como la que se muestra más abajo. Técnicamente, estas entidades son llamadas "*tokens*" (o "*componente léxico*") en vez de "palabras". Estos incluyen cosas que nos son palabras estrictamente hablando (como la abreviatura &c. de "etcétera"). También incluyen algunas cosas que se podrían considerar componentes de más de una palabra.  El posesivo "Akerman's" en idioma inglés, por ejemplo, algunas veces es analizado por los lingüístas como dos palabras: "Akerman" más un marcador posesivo. En inglés también, ¿"o'clock" es una o dos palabras? Y así.
 
-Regresa a tu programa *html-to-list1.py* y asegúrate de que tus resultados se vean como algo por el estilo de esto:
+Regresa a tu programa *html-a-lista-1.py* y asegúrate de que tus resultados se vean como algo por el estilo de esto:
 
 ``` python
 ['324.', '\xc2\xa0', 'BENJAMIN', 'BOWSEY', '(a', 'blackmoor', ')', 'was', 
