@@ -86,99 +86,99 @@ Ahora sabes lo suficiente para implementar la segunda parte del algoritmo: retir
 
 Para hacer esto, usarás un bucle para buscar cada caracter sucesivo en la cadena. Usarás entonces una sentencia condicional if / elif para determinar si el caracter es parte de una marca de HTML o parte del contenido, después anexar los caracteres de contenido a la cadena *texto*. ¿Cómo haremos el seguimiento de si nos encontramos dentro o fuera de una etiqueta? Podemos utilizar una variable entera que podrá ser 1 (verdadero) si el caracter correspondiente está dentro de una etiqueta y 0 (falso) si  no lo está (en el siguiente ejemplo hemos llamado a la variable "adentro").
 
-### La rutina de *stripTags*
+### La rutina de *quitarEtiquetas*
 
-Poniendo todo junto, la versión final de la rutina se muestra a continuación. Toma en cuenta que hemos expandido la función *stripTags* que creamos anteriormente. Asegúrate de mantener la sangría o indentación como se muestra cuando remplaces la anterior rutina *stripTags* de *obo.py* con esta nueva.
+Poniendo todo junto, la versión final de la rutina se muestra a continuación. Toma en cuenta que hemos expandido la función *quitarEtiquetas* que creamos anteriormente. Asegúrate de mantener la sangría o indentación como se muestra cuando remplaces la anterior rutina *quitarEtiquetas* de *obo.py* con esta nueva.
 
-Yu rutina debe versa ligeramente diferente y, mientras que funcione, todo está bien. Si estás inclinado a experimentar, probablemente es mejor que pruebes nuestra versión para asegurarte que tu programa hace lo que hace el nuestro.
+Tu rutina debe verse ligeramente diferente y, mientras que funcione, todo está bien. Si estás inclinado a experimentar, probablemente es mejor que pruebes nuestra versión para asegurarte que tu programa hace lo que hace el nuestro.
 
 ``` python
 # obo.py
-def stripTags(contenidoPagina):
-    startLoc = contenidoPagina.find("<p>")
-    endLoc = contenidoPagina.rfind("<br/>")
+def quitarEtiquetas(contenidoPagina):
+    lugarInicio = contenidoPagina.find("<p>")
+    lugarFin = contenidoPagina.rfind("<br/>")
 
-    contenidoPagina = contenidoPagina[startLoc:endLoc]
+    contenidoPagina = contenidoPagina[lugarInicio:lugarFin]
 
-    inside = 0
-    text = ''
+    adentro = 0
+    texto = ''
 
     for caract in contenidoPagina:
         if caract == '<':
-            inside = 1
-        elif (inside == 1 and caract == '>'):
-            inside = 0
-        elif inside == 1:
+            adentro = 1
+        elif (adentro == 1 and caract == '>'):
+            adentro = 0
+        elif adentro == 1:
             continue
         else:
-            text += caract
+            texto += caract
 
-    return text
+    return texto
 ```
 
 Hay dos nuevos conceptos de Python en este nuevo código: *continue* y *return*.
 
 La declaración de Python *continue* le ordena al intérprete regresar al principio del bucle. Así que si estamos procesando caracteres dentro de un par de corchetes angulares, queremos ir al siguiente caracter en la cadena de texto *contenidoPagina* sin añadir nada a nuestra variable *texto*.
 
-En los ejemplos anteriores hemos utilizado `print` extensamente. Éste da salida al resultado de nuestro programa en la pantalla para que lo lea el usuario. Sin embargo, a menudo queremos que una parte del programa envíe información a otra parte. Cuando termina de ejecutarse una función, puede regresar un valor al código que la ha invocado.  Si vamos a llamar a *stripTags* utilizando otro programa, deberemos hacerlo de esta manera:
+En los ejemplos anteriores hemos utilizado `print` extensamente. Éste da salida al resultado de nuestro programa en la pantalla para que lo lea el usuario. Sin embargo, a menudo queremos que una parte del programa envíe información a otra parte. Cuando termina de ejecutarse una función, puede regresar un valor al código que la ha invocado.  Si vamos a llamar a *quitarEtiquetas* utilizando otro programa, deberemos hacerlo de esta manera:
 
 
 ``` python
-#understanding the Return statement
+#entender la declaración Return
 
 import obo
 
-myText = "This is my <h1>HTML</h1> message"
+miTexto = "Éste es mi <h1>HTML</h1> mensaje"
 
-theResult = obo.stripTags(myText)
+elResultado = obo.quitarEtiquetas(miTexto)
 ```
 
-Al utilizar `return`, hemos sido capaces de guardar la salida de datos de la función *stripTags* directamente en una variable que hemos denominado 'theResult', cuyo proceso podemos reanudar según sea necesario mediante código adicional.
+Al utilizar `return`, hemos sido capaces de guardar la salida de datos de la función *quitarEtiquetas* directamente en una variable que hemos denominado 'elResultado', cuyo proceso podemos reanudar según sea necesario mediante código adicional.
 
-Toma en cuenta que en el ejemplo *stripTags* desde el inicio de esta subsección, el valor qu equeremos recuperar no es *contenidoPagina* sino el contenido qu eha sido despojado de las etiquetas HTML.
+Toma en cuenta que en el ejemplo *quitarEtiquetas* desde el inicio de esta subsección, el valor que queremos recuperar no es *contenidoPagina* sino el contenido que ha sido despojado de las etiquetas HTML.
 
-Para comprobar nuestra nueva rutina de *stripTags* puedes ejecutar el programa *contenido-juicio.py* de nuevo. Dado que hemos redefinido *stripTags*, el programa *contenido-juicio.py* ahora hace algo diferente (y más cercano a lo que nosotros queremos). Antes de que continúes, asegúrate de comprender por qué cambia el comportamiento de *contenido-juicio.py* si solamente hemos editado *obo.py*.
+Para comprobar nuestra nueva rutina de *quitarEtiquetas* puedes ejecutar el programa *contenido-juicio.py* de nuevo. Dado que hemos redefinido *quitarEtiquetas*, el programa *contenido-juicio.py* ahora hace algo diferente (y más cercano a lo que nosotros queremos). Antes de que continúes, asegúrate de comprender por qué cambia el comportamiento de *contenido-juicio.py* si solamente hemos editado *obo.py*.
 
 ## Listas en Python
 
-Ahora que tienes la habilidad para estraer texto en crudo de páginas Web, querrás tener ese texto en una forma que sea fácil de procesar. HAsta ahora, cuando has necesitado guardar información en tus programas de Python lo has hecho utilizando cadenas de texto. Sin embargo, hay un par de excepciones. En la rutina de *stripTags* también hiciste uso de un [entero][] llamado *inside* para guardar un 1 cuando estabas procesando una etiqueta y un 0 cuando no. Puedes hacer operaciones matemáticas con los enteros pero no puedes guardar fracciones o números decimales en una variable de entero.
+Ahora que tienes la habilidad para extraer texto en crudo de páginas Web, querrás tener ese texto en una forma que sea fácil de procesar. Hasta ahora, cuando has necesitado guardar información en tus programas de Python lo has hecho utilizando cadenas de texto. Sin embargo, hay un par de excepciones. En la rutina de *quitarEtiquetas* también hiciste uso de un [entero][] llamado *adentro* para guardar un 1 cuando estabas procesando una etiqueta y un 0 cuando no. Puedes hacer operaciones matemáticas con los enteros pero no puedes guardar fracciones o números decimales en una variable de entero.
 
 ``` python
-inside = 1
+adentro = 1
 ```
 
 Y cada vez que has necesitado leer o escribir a un archivo, has utilizado un controlador de archivo especial como *f* en el ejemplo siguiente:
 
 ``` python
-f = open('helloworld.txt','w')
-f.write('hello world')
+f = open('holamundo.txt','w')
+f.write('hola mundo')
 f.close()
 ```
 
-Sin embargo, uno de los [tipos][] de objetos que provee Python es *list* (o *listas*), una colección ordenada de otros objetos (incluyendo, potencialmente, otras listas). Convertir una cadena de texto a una lista de caracteres o palabras es muy sencillo. Escribe o copia el siguiente programa en tu editor de texto para ver dos maneras de lograrlo. Guarda el archivo como *string-to-list.py* y ejecútalo. Compara las dos listas que se imprimen en el panel de comandos de salida y ve si puedes imaginarte cómo funciona este código.
+Sin embargo, uno de los [tipos][] de objetos que provee Python es *list* (o *lista*), una colección ordenada de otros objetos (incluyendo, potencialmente, otras listas). Convertir una cadena de texto a una lista de caracteres o palabras es muy sencillo. Escribe o copia el siguiente programa en tu editor de texto para ver dos maneras de lograrlo. Guarda el archivo como *cadena-a-lista.py* y ejecútalo. Compara las dos listas que se imprimen en el panel de comandos de salida y ve si puedes imaginarte cómo funciona este código.
 
 
 ``` python
-# string-to-list.py
+# cadena-a-lista.py
 
-# some strings
-s1 = 'hello world'
-s2 = 'howdy world'
+# algunas cadenas
+s1 = 'hola mundo'
+s2 = 'que tal mundo'
 
-# list of characters
-charlist = []
-for char in s1:
-    charlist.append(char)
-print(charlist)
+# lista d caracteres
+caracList = []
+for caract in s1:
+    caracList.append(caract)
+print(caracList)
 
-# list of 'words'
-wordlist = s2.split()
-print(wordlist)
+# lista de 'palabras'
+listPalabras = s2.split()
+print(listPalabras)
 ```
 
-La primera rutina utiliza un bucle "for" para pasar por cada caracter en la cadena de texto *s1*, y añade el caracter al final de *charlist*. La segunda rutina utiliza la operación dividir para romper la cadena *s2* en fragmentos cada vez que encuentre espacios en blanco (espacios, tabulaciones, retornos de caroo y caracteres similares). En realidad, es simplificar un poco las cosasreferirse a los objetos de la segunda lista como palabras. Prueba a cambiar el contenido de *s2* del programa anterior por "howdy wordld!"  y ejecútalo de nuevo. ¿Qué sucedió con el signo de exclamación? Ten en cuenta que deberás alvar los cambios antes de utilizar Ejecutar Python de nuevo.
+La primera rutina utiliza un bucle "for" para pasar por cada caracter en la cadena de texto *s1*, y añade el caracter al final de *caracList*. La segunda rutina utiliza la operación dividir para romper la cadena *s2* en fragmentos cada vez que encuentre espacios en blanco (espacios, tabulaciones, retornos de caroo y caracteres similares). En realidad, es simplificar un poco las cosasreferirse a los objetos de la segunda lista como palabras. Prueba a cambiar el contenido de *s2* del programa anterior por "que tal mundo!"  y ejecútalo de nuevo. ¿Qué sucedió con el signo de exclamación? Ten en cuenta que deberás guardar los cambios antes de utilizar Ejecutar Python de nuevo.
 
-Tomando en cuenta lo que has aprendido hasta ahora, ya puedes abrir un URL, descargar la página Web en una cadena de texto, despojarla de las etiquetas HTML y luego cortar el texto en una lsita de palabras. Intenta ejecutar el siguiente programa:
+Tomando en cuenta lo que has aprendido hasta ahora, ya puedes abrir un URL, descargar la página Web en una cadena de texto, despojarla de las etiquetas HTML y luego cortar el texto en una lista de palabras. Intenta ejecutar el siguiente programa:
 
 ``` python
 #html-to-list1.py
