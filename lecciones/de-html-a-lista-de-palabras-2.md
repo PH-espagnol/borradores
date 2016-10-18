@@ -181,17 +181,17 @@ La primera rutina utiliza un bucle "for" para pasar por cada caracter en la cade
 Tomando en cuenta lo que has aprendido hasta ahora, ya puedes abrir un URL, descargar la página Web en una cadena de texto, despojarla de las etiquetas HTML y luego cortar el texto en una lista de palabras. Intenta ejecutar el siguiente programa:
 
 ``` python
-#html-to-list1.py
+# html-a-lista-1.py
 import urllib2, obo
 
-url = 'http://www.oldbaileyonline.org/print.jsp?div=t17800628-33'
+url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-response = urllib2.urlopen(url)
-html = response.read()
-text = obo.stripTags(html)
-wordlist = text.split()
+respuesta = urllib2.urlopen(url)
+html = respuesta.read()
+texto = obo.quitarEtiquetas(html)
+listaPalabras = texto.split()
 
-print(wordlist[0:120])
+print(listaPalabras[0:120])
 ```
 
 Debes obtener algo como lo siguiente:
@@ -217,8 +217,6 @@ Debes obtener algo como lo siguiente:
 Tener simplemente una lista de palabras no es realmente significativo. Como seres humanos tenemos la habilidad de leer; sin embargo, te estás acercando a tener una idea de lo que tus programas pueden procesar.
 
 ## Lecturas sugeridas
-
-## Suggested Reading
 
 -   Lutz, *Learning Python*
     -   Ch. 7: Strings
