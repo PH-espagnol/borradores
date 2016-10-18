@@ -73,7 +73,7 @@ Cambia las líneas:
 <!-- Inserta aquí el título -->
 ```
 
-y
+e
 
 ```xml
 <!-- Inserta aquí el contenido -->
