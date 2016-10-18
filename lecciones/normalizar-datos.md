@@ -64,17 +64,17 @@ Queda claro que nuestra lista va a necesitar cierta limpieza antes e que la poda
 Típicamente los componentes léxicos (*tokens*) son compactados como minúsculas cuando se cuentan frecuencias, así que lo haremos utilizando el método de cadena "lower" que aprendimos en [Manipular cadenas de caracteres en Python][]. Ya que este es un método para cadenas tendremos que aplicarlo en la cadena *texto* en el programa *html-a-lista-1.py*. Enmienda *html-a-lista-1.py* añadiendo la etiqueta de cadena `lower()` al final de la cadena *texto*.
 
 ``` python
-#html-to-list1.py
+# html-a-lista-1.py
 import urllib2, obo
 
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-response = urllib2.urlopen(url)
-html = response.read()
-text = obo.stripTags(html).lower() #add the string method here.
-wordlist = text.split()
+respuesta = urllib2.urlopen(url)
+html = respuesta.read()
+texto = obo.quitarEtiquetas(html).lower() #incluye el metodo de cadena aqui
+listaPalabras = texto.split()
 
-print(wordlist)
+print(listaPalabras[0:120])
 ```
 
 Ahora debes ver la misma lista de palabras que antes pero con todos los caracteres en minúsculas.
