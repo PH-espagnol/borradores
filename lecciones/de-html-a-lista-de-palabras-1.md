@@ -78,16 +78,16 @@ Para lograr esto, utilizarás en método de cadena de caracteres "find" y el mé
 
 A medida que trabajas, vas a construir archivos separados para contener tu código. Uno de estos archivos se llamará *obo.py* (a partir de "Old Bailey Online"). Este archivo va a contener todo el código que tú quieres reutilizar; en otras palabras, *obo.py* es un módulo. Discutimos la idea de módulos en la lección [Reutilizacion de código y modularidad][] cuando guardamos nuestras funciones en *saludo.py*.
 
-Ctrea un nuevo archivo llamado *obo.py* y guárdalo en tu carpeta *programming-historian*. Vamos a utilizar este archivo para mantener copias de las funciones necesarias para procesar The Old Bailey Online. Teclea o copia el siguiente código en tu archivo.
+Crea un nuevo archivo llamado *obo.py* y guárdalo en tu carpeta *programming-historian*. Vamos a utilizar este archivo para mantener copias de las funciones necesarias para procesar The Old Bailey Online. Teclea o copia el siguiente código en tu archivo.
 
 ``` python
 # obo.py
 
-def stripTags(contenidoPagina):
-    startLoc = contenidoPagina.find("<p>")
-    endLoc = contenidoPagina.rfind("<br/>")
+def quitarEtiquetas(contenidoPagina):
+    lugarInicio = contenidoPagina.find("<p>")
+    lugarFin = contenidoPagina.rfind("<br/>")
 
-    contenidoPagina = contenidoPagina[startLoc:endLoc]
+    contenidoPagina = contenidoPagina[lugarInicio:lugarFin]
     return contenidoPagina
 ```
 
@@ -100,15 +100,15 @@ import urllib2, obo
 
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-response = urllib2.urlopen(url)
-HTML = response.read()
+respuesta = urllib2.urlopen(url)
+HTML = respuesta.read()
 
-print(obo.stripTags(HTML))
+print(obo.quitarEtiquetas(HTML))
 ```
 
-Cuando ejecutes *contenido-juicio.py* éste obtendrá la página Web de la transcripción del juicio de Bowsey, entones mira en el módulo *obo.py* la función *stripTags*. El programa utilizará esa función para extrar todo lo que esté después de la primera etiqueta `<p>` y antes de la últimoa `<br/>`. Con algo de suerte esto debe ser el contenido textual de la transcripción de Bowsey acompañada con algo de marcado en HTML. No te preocupes si tu pantalla de salida de comandos termina en una linea gruesa negra. La pantalla de salida de Komodo Edit tiene un número máximo de caracteres a desplegar, después de lo cual los caracteres empiezan a escribirse unos sobre otros en la pantalla, literalmente, dando la apriencia de una mancha negra. No te preocupes: el texto está ahí aún cuando tú no puedas leerlo; así que puedes copiar y pegarlo en un archivo de texto para confirmarlo.
+Cuando ejecutes *contenido-juicio.py* éste obtendrá la página Web de la transcripción del juicio de Bowsey, entones mira en el módulo *obo.py* la función *quitarEtiquetas*. El programa utilizará esa función para extrar todo lo que esté después de la primera etiqueta `<p>` y antes de la última `<br/>`. Con algo de suerte esto debe ser el contenido textual de la transcripción de Bowsey acompañada con algo de marcado en HTML. No te preocupes si tu pantalla de salida de comandos termina en una linea gruesa negra. La pantalla de salida de Komodo Edit tiene un número máximo de caracteres a desplegar, después de lo cual los caracteres empiezan a escribirse unos sobre otros en la pantalla, literalmente, dando la apriencia de una mancha negra. No te preocupes: el texto está ahí aún cuando tú no puedas leerlo; así que puedes copiar y pegarlo en un archivo de texto para confirmarlo.
 
-Tomemos un momento para estar seguros de que entendemos de qué manera *contenido-juico.py* es capaz de utilizar las funciones almacenadas en *obo.py*. La función *stripTag* que guardamos en *obo.py* requiere un argumento. En otras palabras, para ejecutarse con propiedad requiere que se le suministre una unidad de información. Recordemos el ejemplo del perro entrenado de lecciones previas. Para que ladre, el pero necesita dos cosas: aire y una deliciosa recompensa. La función *stripTag* en *obo.py* requiere una cosa: una cadena de texto llamada *contenidoPagina*. Pero te darás cuenta que cuando llamamos a *stripTag* en el último programa (*contenido-juicio.py*), no hay ninguna mención a "*contenidoPagina*". En cambio, se le ha dado a la función HTML como argumento. Esto puede ser confuso para las personas que están empezando a programar. Una vez que una función ha sido declarada, no necesitamos utilizar l mismo nombre de la variable cuando llamamos a la función. Mientras que proporcionemos el tipo de argumento adecuado, todo debe funcionar correctamente sin importar cómo lo llamamos. En este caso, queremos que *contenidoPagina* utilice el contenido de nuestra variable HTML. Podría pasar por cualquier cadena de texto, incluida alguna que se ingrese directamente en el paréntesis. Intenta colver a ejecutar *contenido-juicio.py* cambiando el argumento *stripTags* a "Soy aficionado a los perros", y mira lo que sucede. Toma en cuenta que dependiendo de cómo definas tu función (y lo que hace), tu argumento necesitará posiblemente ser algo distinto que una cadena: un *entero* por ejemplo.
+Tomemos un momento para estar seguros de que entendemos de qué manera *contenido-juico.py* es capaz de utilizar las funciones almacenadas en *obo.py*. La función *quitarEtiquetas* que guardamos en *obo.py* requiere un argumento. En otras palabras, para ejecutarse con propiedad requiere que se le suministre una unidad de información. Recordemos el ejemplo del perro entrenado de lecciones previas. Para que ladre, el pero necesita dos cosas: aire y una deliciosa recompensa. La función *quitarEtiquetas* en *obo.py* requiere una cosa: una cadena de texto llamada *contenidoPagina*. Pero te darás cuenta que cuando llamamos a *quitarEtiquetas* en el último programa (*contenido-juicio.py*), no hay ninguna mención a "*contenidoPagina*". En cambio, se le ha dado a la función HTML como argumento. Esto puede ser confuso para las personas que están empezando a programar. Una vez que una función ha sido declarada, no necesitamos utilizar el mismo nombre de la variable cuando llamamos a la función. Mientras que proporcionemos el tipo de argumento adecuado, todo debe funcionar correctamente sin importar cómo lo llamamos. En este caso, queremos que *contenidoPagina* utilice el contenido de nuestra variable HTML. Podría pasar por cualquier cadena de texto, incluida alguna que se ingrese directamente en el paréntesis. Intenta volver a ejecutar *contenido-juicio.py* cambiando el argumento *quitarEtiquetas* a "Soy aficionado a los perros", y mira lo que sucede. Toma en cuenta que dependiendo de cómo definas tu función (y lo que hace), tu argumento necesitará posiblemente ser algo distinto que una cadena: un *entero* por ejemplo.
 
 Lecturas sugeridas
 -----------------
