@@ -89,21 +89,7 @@ Salva el archivo en tu carpeta `programming-historian` con el nombre `hola-mundo
 Sugerencia de lecturas para aprender HTML
 
 -	[W3Schools HTML Tutorial]
--	[W3Schools HTML5 Tutorial
-
----
-
-Sobre los autores: William J. Turkel es profesor de historia en la University of Western Ontario. Adam Crymble es conferencista (lecturer) en Historia Digital en la University of Hertfordshire.
-
----
-
-Forma sugerida para citar este texto:
-
-Para citar el texto original: William J. Turkel and Adam Crymble, “Understanding Web Pages and HTML”, *Programming Historian* (17 July 2012)
-http://programminghistorian.org/lessons/viewing-html-files
-
-Para citar la versión en español: William J. Turkel and Adam Crymble, “Para entender páginas web y HTML”, traducción de Víctor Gayol, *Programming Historian en español* (16 de abril de 2016)
-http://es.programminghistorian.org/lecciones/ver-archivos-html
+-	[W3Schools HTML5 Tutorial]
 
 [la anterior de la serie]: http://es.programminghistorian.org/lecciones/introduccion-e-instalacion/">
 [tutorial de HTML ofrecido por W3Schools]: http://www.w3schools.com/html/default.asp
