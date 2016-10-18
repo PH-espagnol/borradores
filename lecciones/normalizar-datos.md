@@ -28,7 +28,7 @@ Si no tienes estos archivos de la lección previa, puedes escargar un [zip][]
 
 ## Limpiar la lista
 
-En [De HTML a lista de palabras (parte 2)][], escribimos un programa en Python llamado *html-to-list1.py* que descargó una [página Web][], retiró el formato HTML y los metadatos y nos devolvió una lista de "palabras" como la que se muestra más abajo. Técnicamente, estas entidades son llamadas "*tokens*" (o "*componente léxico*") en vez de "palabras". Estos incluyen cosas que nos son palabras estrictamente hablando (como la abreviatura &c. de "etcétera"). También incluyen algunas cosas que se podrían considerar componentes de más de una palabra.  El posesivo "Akerman's" en idioma inglés, por ejemplo, algunas veces es analizado por los lingüístas como dos palabras: "Akerman" más un marcador posesivo. En inglés también, ¿"o'clock" es una o dos palabras? Y así.
+En [De HTML a lista de palabras (parte 2)][], escribimos un programa en Python llamado *html-a-lista-1.py* que descargó una [página Web][], retiró el formato HTML y los metadatos y nos devolvió una lista de "palabras" como la que se muestra más abajo. Técnicamente, estas entidades son llamadas "*tokens*" (o "*componente léxico*") en vez de "palabras". Estos incluyen cosas que nos son palabras estrictamente hablando (como la abreviatura &c. de "etcétera"). También incluyen algunas cosas que se podrían considerar componentes de más de una palabra.  El posesivo "Akerman's" en idioma inglés, por ejemplo, algunas veces es analizado por los lingüístas como dos palabras: "Akerman" más un marcador posesivo. En inglés también, ¿"o'clock" es una o dos palabras? Y así.
 
 Regresa a tu programa *html-a-lista-1.py* y asegúrate de que tus resultados se vean como algo por el estilo de esto:
 
@@ -61,7 +61,7 @@ Queda claro que nuestra lista va a necesitar cierta limpieza antes e que la poda
 
 ## Convertir a minúsculas
 
-Típicamente los componentes léxicos (*tokens*) son compactados como minúsculas cuando se cuentan frecuencias, así que lo haremos utilizando el método de cadena "lower" que aprendimos en [Manipular cadenas de caracteres en Python][]. Ya que este es un método para cadenas tendremos que aplicarlo en la cadena *text* en el programa *html-to-list1.py*. Enmienda *html-to-list1.py* añadiendo la etiqueta de cadena `lower()` al final de la cadena *text*.
+Típicamente los componentes léxicos (*tokens*) son compactados como minúsculas cuando se cuentan frecuencias, así que lo haremos utilizando el método de cadena "lower" que aprendimos en [Manipular cadenas de caracteres en Python][]. Ya que este es un método para cadenas tendremos que aplicarlo en la cadena *texto* en el programa *html-a-lista-1.py*. Enmienda *html-a-lista-1.py* añadiendo la etiqueta de cadena `lower()` al final de la cadena *texto*.
 
 ``` python
 #html-to-list1.py
