@@ -94,9 +94,9 @@ Hemos eliminado las mayúsculas. Ahora nos toca deshacernos de los signos de pun
 Es posible utilizar el método de cadena "replace" para retirar cada tipo de puntuación:
 
 ``` python
-text = text.replace('[', '')
-text = text.replace(']', '')
-text = text.replace(',', '')
+texto = texto.replace('[', '')
+texto = texto.replace(']', '')
+texto = texto.replace(',', '')
 #etc...
 ```
 
@@ -112,30 +112,30 @@ Dado que nos interesan solamente los caracteres alfanuméricos, vamos a crear un
 # Dada una cadena de caracteres, retira todo los caracteres 
 # no-alfanuméricos (utilizando la definición Unicode de alfanumérico).
 
-def stripNonAlphaNum(text):
+def quitaNoAlfaNum(texto):
     import re
-    return re.compile(r'\W+', re.UNICODE).split(text)
+    return re.compile(r'\'W+', re.UNICODE).split(texto)
 ``` 
 
 La expresión regular en el código anterior es el material dentro de la cadena, en otras palabras `W+`. La `W` es la abreviatura de la clase de *caracteres no-alfanuméricos*. En una expresión regular de Python, el signo de adición (+) coincide con una o más copias de un carácter dado. La expresión `re.UNICODE` le dice al intérprete que queremos que incluya los caracteres de todas las lenguas del mundo en nuestra definición de "alfanumérico", así como de la A a la Z, de a-z y de 0-9 en inglés. Las expresiones regulares deben ser compiladas antes de poder ser utilizadas, que es lo que hace el resto de la declaración. No te preocupes en entender ahora mismo la parte de la compilación.
 
-Cuando redefinamos nuestro programa *html-to-list1.py*, entonces se verá como esto:
+Cuando redefinamos nuestro programa *html-a-lista-1.py*, entonces se verá como esto:
 
 ``` python
-#html-to-list1.py
+# html-a-lista-1.py
 import urllib2, obo
 
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-response = urllib2.urlopen(url)
-html = response.read()
-text = obo.stripTags(html).lower()
-wordlist = obo.stripNonAlphaNum(text)
+respuesta = urllib2.urlopen(url)
+html = respuesta.read()
+texto = obo.quitarEtiquetas(html).lower()
+listaPalabras = obo.quitaNoAlfaNum(texto)
 
-print(wordlist)
+print(listaPalabras)
 ```
 
-Cuando ejecutes el programa y veas a través de su salida en el panel de "comando de salida", verás que ha hecho un maravilloso trabajo. Este código separará expresiones con guiones como "coach-wells" en dos palabras y convertirá la partículo posesiva "s" o "o'colck" en palabras separadas perdiéndo el apóstrofe. pero es una aproximación lo suficientemente buena a lo que queremos, asi que podemos proceder a contar frecuencias antes de intentar mejorarlo. (Si trabajas con fuentes documentales en más de una lengua, necesitaras aprender más acerca del estándar [Unicode][] y acerca del [soporte de Python][] para el mismo).
+Cuando ejecutes el programa y veas a través de su salida en el panel de "comando de salida", verás que ha hecho un maravilloso trabajo. Este código separará expresiones con guiones como "coach-wells" en dos palabras y convertirá la partícula posesiva "s" o "o'colck" en palabras separadas perdiéndo el apóstrofe. Pero es una aproximación lo suficientemente buena a lo que queremos, asi que podemos proceder a contar frecuencias antes de intentar mejorarlo. (Si trabajas con fuentes documentales en más de una lengua, necesitaras aprender más acerca del estándar [Unicode][] y acerca del [soporte de Python][] para el mismo).
 
 ## Lecturas sugeridas
 
