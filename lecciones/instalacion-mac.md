@@ -114,16 +114,6 @@ exit()
 
 Ahora que tú y tu computadora están en marcha y funcionando, podemos movernos hacia unas tareas algo más interesantes. Si estás trabajando de manera ordenada las lecciones de Python, te sugerimos que pases ahora a la lección [Para entender páginas web y HTML].
 
----
-
-Sobre los autores: William J. Turkel es profesor de historia en la University of Western Ontario. Adam Crymble es conferencista (lecturer) en Historia Digital en la University of Hertfordshire.
-
----
-
-Forma sugerida para citar este texto:
-Para referirse al texto original: William J. Turkel and Adam Crymble, “Setting Up an Integrated Development Environment for Python (Mac)”, *Programming Historian* (17 July 2012), http://programminghistorian.org/lessons/mac-installation
-
-Para referirse a la versión en español: William J. Turkel and Adam Crymble, “Preparación de un ambiente de desarrollo integrado para Python (Mac)”, traducción de Víctor Gayol, *Programming Historian en español* (16 de abril de 2016), http://es.programminghistorian.org/lecciones/instalacion-mac
 
 [Time Machine]: https://support.apple.com/es-mx/HT201250
 [sitio web de Python]: https://www.python.org
