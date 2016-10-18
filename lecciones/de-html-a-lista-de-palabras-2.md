@@ -165,7 +165,7 @@ Sin embargo, uno de los [tipos][] de objetos que provee Python es *list* (o *lis
 s1 = 'hola mundo'
 s2 = 'que tal mundo'
 
-# lista d caracteres
+# lista de caracteres
 caracList = []
 for caract in s1:
     caracList.append(caract)
