@@ -128,7 +128,7 @@ date: 2016-10-01
 | windows-installation | instalacion-windows| ok | vgayolrs | |
 | viewing-html-files | ver-archivos-html| ok | vgayolrs | jairomelo |
 | working-with-text-files | trabajar-con-archivos-de-texto | ok | vgayolrs | jairomelo |
-| code-reuse-and-modularity | reutilizacion-de-codigo-y-modularidad| ok | vgayolrs | in process | vgayolrs | |
+| code-reuse-and-modularity | reutilizacion-de-codigo-y-modularidad| ok | vgayolrs |  |
 | working-with-web-pages | trabajar-con-paginas-web | ok | vgayolrs | jairomelo |
 | manipulating-strings-in-python | manipular-cadenas-de-caracteres-en-python | ok | vgayolrs | |
 | from-html-to-list-of-words-1 | de-html-a-lista-de-palabras-1 | ok | vgayolrs | |
