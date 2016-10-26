@@ -126,15 +126,15 @@ date: 2016-10-01
 | mac-installation | instalacion-mac | ok | vgayolrs | |
 | linux-installation | instalacion-linux | ok | vgayolrs | |
 | windows-installation | instalacion-windows| ok | vgayolrs | |
-| viewing-html-files | ver-archivos-html| ok | vgayolrs | |
-| working-with-text-files | trabajar-con-archivos-de-texto | ok | vgayolrs |  |
+| viewing-html-files | ver-archivos-html| ok | vgayolrs | jairomelo |
+| working-with-text-files | trabajar-con-archivos-de-texto | ok | vgayolrs | jairomelo |
 | code-reuse-and-modularity | reutilizacion-de-codigo-y-modularidad| ok | vgayolrs | in process | vgayolrs | |
-| working-with-web-pages | trabajar-con-paginas-web | ok | vgayolrs | |
+| working-with-web-pages | trabajar-con-paginas-web | ok | vgayolrs | jairomelo |
 | manipulating-strings-in-python | manipular-cadenas-de-caracteres-en-python | ok | vgayolrs | |
 | from-html-to-list-of-words-1 | de-html-a-lista-de-palabras-1 | ok | vgayolrs | |
 | from-html-to-list-of-words-2 | de-html-a-lista-de-palabras-2 | ok | vgayolrs | |
 | normalizing-data | normalizar-datos | ok | vgayolrs | |
-| counting-frequencies | contar-frecuencias | ok | vgayolrs | |
+| counting-frequencies | contar-frecuencias | ok | vgayolrs | jairomelo |
 | creating-and-viewing-html-files-with-python | crear-y-ver-archivos-html-con-python | ok | vgayolrs | |
 | output-data-as-html-file | salida-de-datos-como-archivo-html | ok | vgayolrs | |
 | keywords-in-context-using-n-grams | palabras-clave-en-contexto-n-grams | ok | vgayolrs | |
