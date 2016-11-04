@@ -29,21 +29,21 @@ Si no tienes este archivo puedes descargar un archivo [zip][] que contiene el c�
 Ahora queremos contar la frecuencia de cada palabra en nuestra lista. Ya has visto que es fácil procesar una lista utilizando un bucle `for`. Intenta guardar y ejecutar el ejemplo siguiente. Recuerda que `+=` le indica al programa que añada algo al final de una variable existente.
 
 ``` python
-# count-list-items-1.py
+# cuenta-elementos-de-lista-1.py
 
-wordstring = 'it was the best of times it was the worst of times '
-wordstring += 'it was the age of wisdom it was the age of foolishness'
+cadenaPalabras = 'it was the best of times it was the worst of times '
+cadenaPalabras += 'it was the age of wisdom it was the age of foolishness'
 
-wordlist = wordstring.split()
+listaPalab = cadenaPalabras.split()
 
-wordfreq = []
-for w in wordlist:
-    wordfreq.append(wordlist.count(w))
+frecuenciaPalab = []
+for w in listaPalab:
+    frecuenciaPalab.append(listaPalab.count(w))
 
-print("String\n" + wordstring +"\n")
-print("List\n" + str(wordlist) + "\n")
-print("Frequencies\n" + str(wordfreq) + "\n")
-print("Pairs\n" + str(zip(wordlist, wordfreq)))
+print("Cadena\n" + cadenaPalabras +"\n")
+print("Lista\n" + str(listaPalab) + "\n")
+print("Frecuencias\n" + str(frecuenciaPalab) + "\n")
+print("Pares\n" + str(zip(listaPalab, frecuenciaPalab)))
 ```
 
 Aquí, comenzamos con una cadena de texto y la dividimos en una lista tal como hicimos antes. Entonces, creamos una lista (inicialmente vacía) llamada *wordfreq*, fuimos por cada una de las palabras en *wordlist* y contamos el número de veces que cada palabra aparece en toda la lista. Añadimos entonces el conteo de palabras a nuestra lista *wordfreq*. Utilizando la operación `zip`, somos capaces de hacer coincidir la primera palabra de nuestra lista de palabras con el primer número en la lista de frecuencias, la segunda palabra con la segunda frecuencia, y así el resto. Terminamos con una lista de palabras y frecuencias pareadas. La función `str` convierte cualquier objeto en una cadena así que puede ser impresa.
@@ -51,20 +51,20 @@ Aquí, comenzamos con una cadena de texto y la dividimos en una lista tal como h
 Debes obtener algo como esto:
 
 ``` python
-String
+Cadena
 it was the best of times it was the worst of times it was the age of wisdom it was the age of foolishness
 
-List
+Lista
 ['it', 'was', 'the', 'best', 'of', 'times', 'it', 'was',
 'the', 'worst', 'of', 'times', 'it', 'was', 'the', 'age',
 'of', 'wisdom', 'it', 'was', 'the', 'age', 'of',
 'foolishness']
 
-Frequencies
+Frequencias
 [4, 4, 4, 1, 4, 2, 4, 4, 4, 1, 4, 2, 4, 4, 4, 2, 4, 1, 4,
 4, 4, 2, 4, 1]
 
-Pairs
+Pares
 [('it', 4), ('was', 4), ('the', 4), ('best', 1), ('of', 4),
 ('times', 2), ('it', 4), ('was', 4), ('the', 4),
 ('worst', 1), ('of', 4), ('times', 2), ('it', 4),
@@ -78,18 +78,18 @@ Te retribuirá estudiar el código anterior hasta entenderlo antes de seguir ade
 Python incluye también una herramienta muy conveniente llamada [lista por comprensión][] (*list comprehension*), que puede ser utilizada para hacer lo mismo que hace el bucle `for`, pero de manera más económica.
 
 ``` python
-# count-list-items-1.py
+# cuenta-elementos-de-lista-1.py
 
-wordstring = 'it was the best of times it was the worst of times '
-wordstring += 'it was the age of wisdom it was the age of foolishness'
-wordlist = wordstring.split()
+cadenaPalabras = 'it was the best of times it was the worst of times '
+cadenaPalabras += 'it was the age of wisdom it was the age of foolishness'
+listaPalab = cadenaPalabras.split()
 
-wordfreq = [wordlist.count(w) for w in wordlist] # a list comprehension
+frecuenciaPalab = [listaPalab.count(w) for w in listaPalab] # a list comprehension
 
-print("String\n" + wordstring +"\n")
-print("List\n" + str(wordlist) + "\n")
-print("Frequencies\n" + str(wordfreq) + "\n")
-print("Pairs\n" + str(zip(wordlist, wordfreq)))
+print("Cadena\n" + cadenaPalabras +"\n")
+print("Lista\n" + str(listaPalab) + "\n")
+print("Frecuencias\n" + str(frecuenciaPalab) + "\n")
+print("Pares\n" + str(zip(listaPalab, frecuenciaPalab)))
 ```
 
 Si estudias esta lista por comprensión cuidadosamente descubrirás que hace exactamente lo mismo que el bucle `for` en el ejemplo previo, pero de una manera condensada. Cualquiera de los dos métodos trabajará bien, así que utiliza la versión con la que te sientas más a gusto.
@@ -103,39 +103,39 @@ En este punto tenemos una lista de pares en la que cada par contiene una palabra
 Las cadenas y las listas están ordenadas secuencialmente, lo cual significa que puedes acceder a sus contenidos utilizando un índice, un número que comienza en 0. Si tienes una lista que contiene cadenas, puedes utilizar un par de índices para acceder primero a una cadena particular de la lista y luego a un carácter particular de esa cadena. Estudia los ejemplos siguientes.
 
 ``` python
-s = 'hello world'
+s = 'hola mundo'
 print(s[0])
 -> h
 
 print(s[1])
--> e
+-> o
 
-m = ['hello', 'world']
+m = ['hola', 'mundo']
 print(m[0])
--> hello
+-> hola
 
 print(m[1])
--> world
+-> mundo
 
 print(m[0][1])
--> e
+-> o
 
 print(m[1][0])
--> w
+-> m
 ```
 
 Para seguirle el rastro a las frecuencias, vamos a utilizar otro tipo de objeto de Python, un diccionario. El diccionario es una colección *no-ordenanda* de objetos. Esto significa que no puedes usar un índice para recobrar elementos de ella. Sin embargo, puedes buscarlos mediante la utilización de una clave (de ahi el nombre de *diccionario*). Estudia el ejemplo siguiente:
 
 ``` python
-d = {'world': 1, 'hello': 0}
-print(d['hello'])
+d = {'mundo': 1, 'hola': 0}
+print(d['hola'])
 -> 0
 
-print(d['world'])
+print(d['mundo'])
 -> 1
 
 print(d.keys())
--> ['world', 'hello']
+-> ['mundo', 'hola']
 ```
 
 Los diccionarios pueden resultar algo confusos para un programador novato. Trata de pensarlos como un diccionario de palabras de cualquier lengua. Si no sabes (o recuerdas) exactamente en qué difiere "biyectiva" de "inyectiva" puedes buscar los dos términos en el *Diccionario de la Lengua Española*. El mismo principio se aplica cuando imprimes `print(d['hello']);` excepto que, en vez de imprimir una definición literaria imprime el valor asociado con la palabra clave 'hello' tal como lo definiste cuando creaste el diccionatio llamado *d*. En este caso, el valor es "0".
