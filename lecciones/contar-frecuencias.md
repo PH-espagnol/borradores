@@ -138,7 +138,7 @@ print(d.keys())
 -> ['mundo', 'hola']
 ```
 
-Los diccionarios pueden resultar algo confusos para un programador novato. Trata de pensarlos como un diccionario de palabras de cualquier lengua. Si no sabes (o recuerdas) exactamente en qué difiere "biyectiva" de "inyectiva" puedes buscar los dos términos en el *Diccionario de la Lengua Española*. El mismo principio se aplica cuando imprimes `print(d['hello']);` excepto que, en vez de imprimir una definición literaria imprime el valor asociado con la palabra clave 'hello' tal como lo definiste cuando creaste el diccionatio llamado *d*. En este caso, el valor es "0".
+Los diccionarios pueden resultar algo confusos para un programador novato. Trata de pensarlos como un diccionario de palabras de cualquier lengua. Si no sabes (o recuerdas) exactamente en qué difiere "biyectiva" de "inyectiva" puedes buscar los dos términos en el *Diccionario de la Lengua Española*. El mismo principio se aplica cuando imprimes `print(d['hola']);` excepto que, en vez de imprimir una definición literaria imprime el valor asociado con la palabra clave 'hola' tal como lo definiste cuando creaste el diccionatio llamado *d*. En este caso, el valor es "0".
 
 Toma en cuenta que utilizas paréntesis para definir el diccionario y corchetes para acceder a las cosas dentro de él. La operación `keys` devuelve una lista de claves (*keys*) que se definen en el diccionario.
 
