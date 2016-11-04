@@ -135,7 +135,7 @@ listaPalabras = obo.quitaNoAlfaNum(texto)
 print(listaPalabras)
 ```
 
-Cuando ejecutes el programa y veas a través de su salida en el panel de "comando de salida", verás que ha hecho un maravilloso trabajo. Este código separará expresiones con guiones como "coach-wells" en dos palabras y convertirá la partícula posesiva "s" o "o'colck" en palabras separadas perdiéndo el apóstrofe. Pero es una aproximación lo suficientemente buena a lo que queremos, asi que podemos proceder a contar frecuencias antes de intentar mejorarlo. (Si trabajas con fuentes documentales en más de una lengua, necesitaras aprender más acerca del estándar [Unicode][] y acerca del [soporte de Python][] para el mismo).
+Cuando ejecutes el programa y veas a través de su salida en el panel de "comando de salida", verás que ha hecho un maravilloso trabajo. Este código separará expresiones con guiones como "coach-wells" en dos palabras y convertirá la partícula posesiva "s" o "o'clock" en palabras separadas perdiéndo el apóstrofe. Pero es una aproximación lo suficientemente buena a lo que queremos, asi que podemos proceder a contar frecuencias antes de intentar mejorarlo. (Si trabajas con fuentes documentales en más de una lengua, necesitaras aprender más acerca del estándar [Unicode][] y acerca del [soporte de Python][] para el mismo).
 
 ## Lecturas sugeridas
 
