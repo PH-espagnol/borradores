@@ -323,6 +323,94 @@ Si todo va bien, tus datos de salida se verán como esto:
 ...
 ```
 
+## Notas sobre las palabras en español
+
+Hasta ahora hemos trabajado con un documento en inglés: la transcripción del juicio contra Bejamin Bowsey. Una vez que domines estas técnicas, seguramente querrás emplearlas en tu invetigación y con documentos en español. Para ello, deberás hacer algunas modificaciones.
+
+La primera es que, a diferencia del inglés, el idioma español contiene una serie de signos ortográficos (tildes) que modifican los caracteres. Los acentos (á, é, í, ó, ú), la diéresis (ü) y la virgulilla de la eñe (ñ). Para poder trabajar con estos signos es necesario indicarle al programa que se va a encontrar con ellos y que los debe considerar como caracteres. Para ello, basta con declarar que trabajaremos con una codificación de caracteres UTF-8. Por lo tanto, deberás incluir esta indicación en tus programas de la siguiente manera:
+
+``` python
+# cuenta-elementos-de-lista-1.py
+# -*- coding: utf-8 -*-
+
+cadenaPalabras = 'Desocupado lector: sin juramento me podrás creer que quisiera este libro '
+cadenaPalabras += 'como hijo del entendimiento fuera el más hermoso, el más gallardo y más discreto que pudiera imaginarse'
+listaPalabras = cadenaPalabras.split()
+
+frecuenciaPalab = [listaPalabras.count(w) for w in listaPalabras]
+
+print("Cadena\n" + cadenaPalabras +"\n")
+print("Lista\n" + str(listaPalabras) + "\n")
+print("Frequencias\n" + str(frecuenciaPalab) + "\n")
+print("Pares\n" + str(zip(listaPalabras, frecuenciaPalab)))
+```
+
+Como te habrás dado cuenta, en la segunda línea del programa se hace la declaración de la codificación de caracteres.
+
+La segunda modificación es en las palabras funcionales, o *palabras vacías* en español. A continuación te ofrecemos una lista de ellas preparada por Jairo Antonio Melo:
+
+```python
+palabrasvac = ['él', 'ésta', 'éstas', 'éste', 'éstos']
+palabrasvac += ['última', 'últimas', 'último', 'últimos']
+palabrasvac += ['a', 'añadió', 'aún', 'actualmente', 'adelante']
+palabrasvac += ['además', 'afirmó', 'agregó', 'ahí', 'ahora', 'al']
+palabrasvac += ['algún', 'algo', 'alguna', 'algunas', 'alguno', 'algunos']
+palabrasvac += ['alrededor', 'ambos', 'ante', 'anterior', 'antes',]
+palabrasvac += ['apenas', 'aproximadamente', 'aquí', 'así']
+palabrasvac += ['aseguró', 'aunque', 'ayer', 'bajo', 'bien', 'buen']
+palabrasvac += ['buena', 'buenas', 'bueno', 'buenos', 'cómo', 'cada']
+palabrasvac += ['casi', 'cerca', 'cierto', 'cinco', 'comentó', 'como']
+palabrasvac += ['con', 'conocer', 'consideró', 'considera', 'contra']
+palabrasvac += ['cosas', 'creo', 'cual', 'cuales', 'cualquier', 'cuando']
+palabrasvac += ['cuanto', 'cuatro', 'cuenta', 'da', 'dado', 'dan', 'dar']
+palabrasvac += ['de', 'debe', 'deben', 'debido', 'decir', 'dejó', 'del']
+palabrasvac += ['demás', 'dentro', 'desde', 'después', 'dice', 'dicen']
+palabrasvac += ['dicho', 'dieron', 'diferente', 'diferentes', 'dijeron']
+palabrasvac += ['dijo', 'dio', 'donde', 'dos', 'durante', 'e', 'ejemplo']
+palabrasvac += ['el', 'ella', 'ellas', 'ello', 'ellos', 'embargo', 'en']
+palabrasvac += ['encuentra', 'entonces', 'entre', 'era', 'eran', 'es']
+palabrasvac += ['esa', 'esas', 'ese', 'eso', 'esos', 'está', 'están', 'esta']
+palabrasvac += ['estaba', 'estaban', 'estamos', 'estar', 'estará', 'estas']
+palabrasvac += ['este', 'esto', 'estos', 'estoy', 'estuvo', 'ex', 'existe']
+palabrasvac += ['existen', 'explicó', 'expresó', 'fin', 'fue', 'fuera']
+palabrasvac += ['fueron', 'gran', 'grandes', 'ha', 'había', 'habían']
+palabrasvac += ['haber', 'habrá', 'hace', 'hacen', 'hacer', 'hacerlo']
+palabrasvac += ['hacia', 'haciendo', 'han', 'hasta', 'hay', 'haya']
+palabrasvac += ['he', 'hecho', 'hemos', 'hicieron', 'hizo', 'hoy']
+palabrasvac += ['hubo', 'igual', 'incluso', 'indicó', 'informó']
+palabrasvac += ['junto', 'la', 'lado', 'las', 'le', 'les', 'llegó']
+palabrasvac += ['lleva', 'llevar', 'lo', 'los', 'luego', 'lugar']
+palabrasvac += ['más', 'manera', 'manifestó', 'mayor', 'me', 'mediante']
+palabrasvac += ['mejor', 'mencionó', 'menos', 'mi', 'mientras', 'misma']
+palabrasvac += ['mismas', 'mismo', 'mismos', 'momento', 'mucha', 'muchas']
+palabrasvac += ['mucho', 'muchos', 'muy', 'nada', 'nadie', 'ni', 'ningún']
+palabrasvac += ['ninguna', 'ningunas', 'ninguno', 'ningunos', 'no', 'nos']
+palabrasvac += ['nosotras', 'nosotros', 'nuestra', 'nuestras', 'nuestro']
+palabrasvac += ['nuestros', 'nueva', 'nuevas', 'nuevo', 'nuevos', 'nunca']
+palabrasvac += ['o', 'ocho', 'otra', 'otras', 'otro', 'otros', 'para']
+palabrasvac += ['parece', 'parte', 'partir', 'pasada', 'pasado', 'pero']
+palabrasvac += ['pesar', 'poca', 'pocas', 'poco', 'pocos', 'podemos']
+palabrasvac += ['podrá', 'podrán', 'podría', 'podrían', 'poner', 'por']
+palabrasvac += ['porque', 'posible', 'próximo', 'próximos', 'primer']
+palabrasvac += ['primera', 'primero', 'primeros', 'principalmente', 'propia']
+palabrasvac += ['propias', 'propio', 'propios', 'pudo', 'pueda']
+palabrasvac += ['puede', 'pueden', 'pues', 'qué', 'que', 'quedó']
+palabrasvac += ['queremos', 'quién', 'quien', 'quienes', 'quiere']
+palabrasvac += ['realizó', 'realizado', 'realizar', 'respecto', 'sí']
+palabrasvac += ['sólo', 'se', 'señaló', 'sea', 'sean', 'según', 'segunda']
+palabrasvac += ['segundo', 'seis', 'ser', 'será', 'serán', 'sería', 'si']
+palabrasvac += ['sido', 'siempre', 'siendo', 'siete', 'sigue', 'siguiente']
+palabrasvac += ['sin', 'sino', 'sobre', 'sola', 'solamente', 'solas', 'solo']
+palabrasvac += ['solos', 'son', 'su', 'sus', 'tal', 'también', 'tampoco']
+palabrasvac += ['tan', 'tanto', 'tenía', 'tendrá', 'tendrán', 'tenemos']
+palabrasvac += ['tener', 'tenga', 'tengo', 'tenido', 'tercera', 'tiene']
+palabrasvac += ['tienen', 'toda', 'todas', 'todavía', 'todo', 'todos']
+palabrasvac += ['total', 'tras', 'trata', 'través', 'tres', 'tuvo']
+palabrasvac += ['un', 'una', 'unas', 'uno', 'unos', 'usted', 'va']
+palabrasvac += ['vamos', 'van', 'varias', 'varios', 'veces', 'ver']
+palabrasvac += ['vez', 'y', 'ya', 'yo']
+```
+
 ## Lecturas sugeridas
 
 Lutz, Learning Python
