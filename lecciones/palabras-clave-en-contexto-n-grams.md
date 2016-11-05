@@ -131,17 +131,17 @@ Observa que los argumentos introducidos no tienen que tener el mismo nombre que 
 También puedes utilizar un terminal de Python para jugar con el código y tener una mejor comprensión de cómo funciona. Pega la declaración de función para *obtenNGramas* (cualquiera de las dos funciones anteriores) en el intérprete de Python.
 
 ``` python
-test1 = 'here are four words'
-test2 = 'this test sentence has eight words in it'
+prueba1 = 'aqui hay cuatro palabras'
+prueba2 = 'en la frase de prueba hay ocho palabras'
 
-getNGrams(test1.split(), 5)
+getNGrams(prueba1.split(), 5)
 -> []
 
 getNGrams(test2.split(), 5)
--> [['this', 'test', 'sentence', 'has', 'eight'],
-['test', 'sentence', 'has', 'eight', 'words'],
-['sentence', 'has', 'eight', 'words', 'in'],
-['has', 'eight', 'words', 'in', 'it']]
+-> [['en', 'la', 'frase', 'de', 'prueba'],
+['la', 'frase', 'de', 'prueba', 'hay'],
+['frase', 'de', 'prueba', 'hay', 'ocho'],
+['de', 'prueba', 'hay', 'ocho', 'palabras']]
 ```
 
 En este ejemplo vemos dos cosas que debes tener en cuenta. En primer lugar, como nuestra función espera una lista de palabras en lugar de una cadena, tenemos que convertir las cadenas en listas antes de que nuestro programa pueda manejarlas. Podríamos haberlo hecho mediante la adición de otra línea de código por encima de la llamada a la función, pero en su lugar utilizamos el método `split` directamente en el argumento de la función como una especie de atajo.
