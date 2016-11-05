@@ -134,10 +134,10 @@ También puedes utilizar un terminal de Python para jugar con el código y tener
 prueba1 = 'aqui hay cuatro palabras'
 prueba2 = 'en la frase de prueba hay ocho palabras'
 
-getNGrams(prueba1.split(), 5)
+obtenNGramas(prueba1.split(), 5)
 -> []
 
-getNGrams(test2.split(), 5)
+obtenNGramas(prueba2.split(), 5)
 -> [['en', 'la', 'frase', 'de', 'prueba'],
 ['la', 'frase', 'de', 'prueba', 'hay'],
 ['frase', 'de', 'prueba', 'hay', 'ocho'],
