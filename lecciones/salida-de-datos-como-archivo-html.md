@@ -160,7 +160,7 @@ Estos metadatos de fecha junto con el nombre del programa que llamó a la funci�
 
 ## Ensamblar todo
 
-Ahora podemos crear otra versión de nuestro programa para computar frecuencias. En vez de enviar su salida de datos a un archivo de texto o a una ventana de salida, envía la salida de datos a un archivo HTML que será abierto en una nueva pestaña de Firefox. De ahí, la salida de datos del programa puede agregarse fácilmente como una entrada bibliográfica a Zotero. Escribe o copia el código siguiente en tu editor de texto, guárdalo como `html-to-freq-3.py` y ejecútalo para confirmar que trabaja como se espera.
+Ahora podemos crear otra versión de nuestro programa para computar frecuencias. En vez de enviar su salida de datos a un archivo de texto o a una ventana de salida, envía la salida de datos a un archivo HTML que será abierto en una nueva pestaña de Firefox. De ahí, la salida de datos del programa puede agregarse fácilmente como una entrada bibliográfica a Zotero. Escribe o copia el código siguiente en tu editor de texto, guárdalo como `html-a-frec-3.py` y ejecútalo para confirmar que trabaja como se espera.
 
 Utiliza lo más apropiado para tu sistema: `obo.envuelveCadenaenHTMLMac()` u `obo.envuelveCadenaenHTMLWindows()`.
 
@@ -181,7 +181,7 @@ salidaCadena = ""
 for s in diccOrdenado:
     salidaCadena += str(s)
     salidaCadena += "<br />"
-obo.envuelveCadenaenHTMLMac("html-a-freq-3", url, salidaCadena)
+obo.envuelveCadenaenHTMLMac("html-a-frec-3", url, salidaCadena)
 ```
 
 Toma en cuenta que intercalamos nuestros pares de frecuencia de palabras con la etiqueta de salto `<br\>` de HTML, la cual actúa como una *nueva línea*. Si todo va bien, deberías ver las mismas frecuencias de palabras que computamos en la útlima sección pero esta vez en la ventana de tu navegador.
