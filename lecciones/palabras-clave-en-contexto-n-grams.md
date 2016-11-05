@@ -47,35 +47,35 @@ Lo que vamos a hacer ahora es desarrollar la habilidad de visualizar KWIC para c
 Dado que queremos trabajar con palabras en lugar de caracteres o fonemas, será mucho más fácil crear n-gramas utilizando una lista de palabras en vez de cadenas. Como ya sabes, Python puede convertir fácilmente una cadena en una lista utilizando la operación dividir (`split`). Una vez dividida resulta sencillo recuperar una subsecuencia de palabras adyacentes en la lista utilizando un *fragmento* representado por dos índices separados por dos puntos. Aprendimos esto cuando trabajamos con cadenas en [Manipular cadenas de caracteres en Python][]
 
 ``` python
-message9 = "Hello World"
-message9a = message9[1:8]
-print(message9a)
--> ello Wo
+mensaje9 = "Hola Mundo"
+mensaje9a = mensaje9[1:8]
+print(mensaje9a)
+-> ola Mun
 ```
 
 Sin embargo, también podemos utilizar esta técnica para tomar un número predeterminado de palabras vecinas de la lista con poco esfuerzo. Estudia los siguientes ejemplos que puedes probar en un intérprete de Python.
 
 ``` python
-wordstring = 'it was the best of times it was the worst of times '
-wordstring += 'it was the age of wisdom it was the age of foolishness'
-wordlist = wordstring.split()
+cadenaPalabras = 'it was the best of times it was the worst of times '
+cadenaPalabras += 'it was the age of wisdom it was the age of foolishness'
+listaPalabras = cadenaPalabras.split()
 
-print(wordlist[0:4])
+print(listaPalabras[0:4])
 -> ['it', 'was', 'the', 'best']
 
-print(wordlist[0:6])
+print(listaPalabras[0:6])
 -> ['it', 'was', 'the', 'best', 'of', 'times']
 
-print(wordlist[6:10])
+print(listaPalabras[6:10])
 -> ['it', 'was', 'the', 'worst']
 
-print(wordlist[0:12])
+print(listaPalabras[0:12])
 -> ['it', 'was', 'the', 'best', 'of', 'times', 'it', 'was', 'the', 'worst', 'of', 'times']
 
-print(wordlist[:12])
+print(listaPalabras[:12])
 -> ['it', 'was', 'the', 'best', 'of', 'times', 'it', 'was', 'the', 'worst', 'of', 'times']
 
-print(wordlist[12:])
+print(listaPalabras[12:])
 -> ['it', 'was', 'the', 'age', 'of', 'wisdom', 'it', 'was', 'the', 'age', 'of', 'foolishness']
 ``` 
 
@@ -85,8 +85,8 @@ También puedes utilizar variables para representar las posiciones del índice. 
 
 ``` python
 i = 0
-for items in wordlist:
-    print(wordlist[i: i+5])
+for items in listaPalabras:
+    print(listaPalabras[i: i+5])
     i += 1
 ```
 
@@ -96,39 +96,39 @@ Siguiendo con nuestro enfoque modular, vamos a crear una función y a guardarla 
 # Dada una lista de palabras y un número n, recupera una lista
 # de n-gramas.
 
-def getNGrams(wordlist, n):
-    return [wordlist[i:i+n] for i in range(len(wordlist)-(n-1))]
+def obtenNGramas(listaPalabras, n):
+    return [listaPalabras[i:i+n] for i in range(len(listaPalabras)-(n-1))]
 ```
 
 Esta función puede parecer un poco confusa ya que hace muchas cosas sin mucho código. Utiliza una lista por comprensión para mantener el código compacto. El siguiente ejemplo hace exactamente lo mismo:
 
 ``` python
-def getNGrams(wordlist, n):
-    ngrams = []
-    for i in range(len(wordlist)-(n-1)):
-        ngrams.append(wordlist[i:i+n])
-    return ngrams
+def obtenNGramas(listaPalabras, n):
+    ngramas = []
+    for i in range(len(listaPalabras)-(n-1)):
+        ngramas.append(listaPalabras[i:i+n])
+    return ngramas
 ```
 
 Utiliza el que tenga más sentido para ti.
 
-Un concepto que todavía te puede resultar confuso es el par de argumentos de la función. Ten en cuenta que nuestra función tiene dos nombres de variables en el paréntesis después de su nombre cuando la declaramos: *wordlist*, *n*. Estas dos variables son los argumentos de la función. Cuando llamas (ejecutas) esta función, estas variables serán utilizadas por la función para su solución. Sin estos argumentos no hay suficiente información para hacer los cálculos. En este caso, las dos piezas de información son la lista de palabras que quieres covertir en n-gramas (wordlist), y el número de palabras que quieres en cada n-grama (n). Para que la función trabaje necesita ambas, así que la llamas como en este ejemplo (guarda el siguiente programa como `useGetNGrams.py`y ejecútalo):
+Un concepto que todavía te puede resultar confuso es el par de argumentos de la función. Ten en cuenta que nuestra función tiene dos nombres de variables en el paréntesis después de su nombre cuando la declaramos: *listaPalabras*, *n*. Estas dos variables son los argumentos de la función. Cuando llamas (ejecutas) esta función, estas variables serán utilizadas por la función para su solución. Sin estos argumentos no hay suficiente información para hacer los cálculos. En este caso, las dos piezas de información son la lista de palabras que quieres covertir en n-gramas (wordlist), y el número de palabras que quieres en cada n-grama (n). Para que la función trabaje necesita ambas, así que la llamas como en este ejemplo (guarda el siguiente programa como `usaobtenNGramas.py`y ejecútalo):
 
 ``` python
-#useGetNGrams.py
+#usaobtenNGramas.py
 
 import obo
 
-wordstring = 'it was the best of times it was the worst of times '
-wordstring += 'it was the age of wisdom it was the age of foolishness'
-allMyWords = wordstring.split()
+cadenaPalabras = 'it was the best of times it was the worst of times '
+cadenaPalabras += 'it was the age of wisdom it was the age of foolishness'
+todasMisPalabras = cadenaPalabras.split()
 
-print(obo.getNGrams(allMyWords, 5))
+print(obo.obtenNGramas(todasMisPalabras, 5))
 ```
 
-Observa que los argumentos introducidos no tienen que tener el mismo nombre que los argumentos mencionados en la declaración de la función. Python sabe utilizar *allMyWords* en cualquier lugar de la función en la que aparezca *wordlist*, ya que esto se dio desde el primer argumento. Del mismo modo, todas las apariciones de *n* serán remplazadas por el entero 5 en este caso. Intenta cambiar el 5 a una cadena, como "elefantes" y observa lo que sucede cuando ejecutas tu programa. Ten en cuenta que debido a que *n* se utiliza como un entero, debes asegurarte que el argumento enviado es también un entero. Lo mismo es válido para cadenas de caracteres, puntos flotantes o cualquier otro tipo de variable enviada como argumento.
+Observa que los argumentos introducidos no tienen que tener el mismo nombre que los argumentos mencionados en la declaración de la función. Python sabe utilizar *todasMisPalabras* en cualquier lugar de la función en la que aparezca *listaPalabras*, ya que esto se dio desde el primer argumento. Del mismo modo, todas las apariciones de *n* serán remplazadas por el entero 5 en este caso. Intenta cambiar el 5 a una cadena, como "elefantes" y observa lo que sucede cuando ejecutas tu programa. Ten en cuenta que debido a que *n* se utiliza como un entero, debes asegurarte que el argumento enviado es también un entero. Lo mismo es válido para cadenas de caracteres, puntos flotantes o cualquier otro tipo de variable enviada como argumento.
 
-También puedes utilizar un terminal de Python para jugar con el código y tener una mejor comprensión de cómo funciona. Pega la declaración de función para *getNGrams* (cualquiera de las dos funciones anteriores) en el intérprete de Python.
+También puedes utilizar un terminal de Python para jugar con el código y tener una mejor comprensión de cómo funciona. Pega la declaración de función para *obtenNGramas* (cualquiera de las dos funciones anteriores) en el intérprete de Python.
 
 ``` python
 test1 = 'here are four words'
