@@ -41,25 +41,25 @@ Cuando trabajas con datos digitales es buena idea incorporar metadatos en tus pr
 Python incluye un operador especial para formato que te permite insertar una cadena dentro de otra. Está representado por un signo de porcentaje seguido por una "s". Abre el shell de Python e intenta los ejemplos siguientes:
 
 ``` python
-frame = 'Esta fruta es una %s'
-print(frame)
+formula = 'Esta fruta es una %s'
+print(formula)
 -> Esta fruta es una %s
 
-print(frame % 'banana')
+print(formula % 'banana')
 -> Esta fruta es una banana
 
-print(frame % 'pera')
+print(formula % 'pera')
 -> Esta fruta es una pera
 ```
 
 También hay una manera que te permite interpolar una lista de cadenas dentro de otra.
 
 ``` python
-frame2 = 'Éstas son %s, aquellas son %s'
-print(frame2)
+formula2 = 'Éstas son %s, aquellas son %s'
+print(formula2)
 -> Éstas son %s, aquellas son %s
 
-print(frame2 % ('bananas', 'peras'))
+print(formula2 % ('bananas', 'peras'))
 -> Éstas son bananas, aquellas son peras
 ```
 
@@ -72,31 +72,31 @@ Vamos a convertir en funciones algo del código que ya hemos escrito. Uno de ell
 ``` python
 # Dado un URL, regresa una cadena de texto en mínusculas de una página.
 
-def webPageToText(url):
+def paginaWebATexto(url):
     import urllib2
-    response = urllib2.urlopen(url)
-    html = response.read()
-    text = stripTags(html).lower()
-    return text
+    respuesta = urllib2.urlopen(url)
+    html = respuesta.read()
+    texto = quitarEtiquetas(html).lower()
+    return texto
 ```
 
-También queremos una función que tome una cadena de texo en cualquier orden y la haga el cuerpo de un archivo HTML que se abra automáticamente en Firefox. Esta fución debe incluir algunos metadatos básicos, como la hora y la fecha en la que se creó y el nombre del programa que lo creo. Estudia el siguiente código con atención y luego cópialo en el módulo `ono.py`.
+También queremos una función que tome una cadena de texo en cualquier orden y la haga el cuerpo de un archivo HTML que se abra automáticamente en Firefox. Esta fución debe incluir algunos metadatos básicos, como la hora y la fecha en la que se creó y el nombre del programa que lo creo. Estudia el siguiente código con atención y luego cópialo en el módulo `obo.py`.
 
 ### Instrucciones para Mac
 
 Si estás usado una Mac asegúrate de incluir la variable de la ruta de nombre de archivo adecuada en la seguna línea del último párrafo del código para reflejar en dónde estás guardando tus archivos.
 
 ``` python
-# Given name of calling program, a url and a string to wrap,
-# output string in html body with basic metadata and open in Firefox tab.
+# Dado el nombre de un programa de llamada, un url y una cadena a envolver,
+# crea una cadena en body de html con metadatos basicos y abrela en Firefox.
 
-def wrapStringInHTMLMac(program, url, body):
+def envuelveCadenaenHTMLMac(programa, url, body):
     import datetime
     from webbrowser import open_new_tab
 
-    now = datetime.datetime.today().strftime("%Y%m%d-%H%M%S")
-    filename = program + '.html'
-    f = open(filename,'w')
+    ahora = datetime.datetime.today().strftime("%Y%m%d-%H%M%S")
+    nombreArchivo = programa + '.html'
+    f = open(nombreArchivo,'w')
 
     wrapper = """<html>
     <head>
@@ -105,31 +105,30 @@ def wrapStringInHTMLMac(program, url, body):
     <body><p>URL: <a href=\"%s\">%s</a></p><p>%s</p></body>
     </html>"""
 
-    whole = wrapper % (program, now, url, url, body)
-    f.write(whole)
+    todo = wrapper % (programa, ahora, url, url, body)
+    f.write(todo)
     f.close()
 
-    #Change the filepath variable below to match the location of your directory
-    filename = 'file:///Users/username/Desktop/programming-historian/' + filename
+    #Cambia la ruta de la variable siguiente para que coincida la localizacion en tu directorio
+    nombreArchivo = 'file:///Users/username/Desktop/programming-historian/' + nombreArchivo
 
-    open_new_tab(filename)
+    open_new_tab(nombreArchivo)
 ```
 
 ### Instrucciones para Windows
 
 ``` python
-# Given name of calling program, a url and a string to wrap,
-# output string in html body with basic metadata
-# and open in Firefox tab.
+# Dado el nombre de un programa de llamada, un url y una cadena a envolver,
+# crea una cadena en body de html con metadatos basicos y abrela en Firefox.
 
-def wrapStringInHTMLWindows(program, url, body):
+def envuelveCadenaenHTMLWindows(programa, url, body):
     import datetime
     from webbrowser import open_new_tab
 
-    now = datetime.datetime.today().strftime("%Y%m%d-%H%M%S")
+    ahora = datetime.datetime.today().strftime("%Y%m%d-%H%M%S")
 
-    filename = program + '.html'
-    f = open(filename,'w')
+    nombreArchivo = programa + '.html'
+    f = open(nombreArchivo,'w')
 
     wrapper = """<html>
     <head>
@@ -138,11 +137,11 @@ def wrapStringInHTMLWindows(program, url, body):
     <body><p>URL: <a href=\"%s\">%s</a></p><p>%s</p></body>
     </html>"""
 
-    whole = wrapper % (program, now, url, url, body)
-    f.write(whole)
+    todo = wrapper % (programa, ahora, url, url, body)
+    f.write(todo)
     f.close()
 
-    open_new_tab(filename)
+    open_new_tab(nombreArchivo)
 ```
 
 \*\*\*
@@ -163,10 +162,10 @@ Estos metadatos de fecha junto con el nombre del programa que llamó a la funci�
 
 Ahora podemos crear otra versión de nuestro programa para computar frecuencias. En vez de enviar su salida de datos a un archivo de texto o a una ventana de salida, envía la salida de datos a un archivo HTML que será abierto en una nueva pestaña de Firefox. De ahí, la salida de datos del programa puede agregarse fácilmente como una entrada bibliográfica a Zotero. Escribe o copia el código siguiente en tu editor de texto, guárdalo como `html-to-freq-3.py` y ejecútalo para confirmar que trabaja como se espera.
 
-Utiliza lo más apropiado para tu sistema: `obo.wrapStringInHTMLMac()` u `obo.wrapStringInHTMLWindows()`.
+Utiliza lo más apropiado para tu sistema: `obo.envuelveCadenaenHTMLMac()` u `obo.envuelveCadenaenHTMLWindows()`.
 
 ``` python
-# html-to-freq-3.py
+# html-a-frec-3.py
 import obo
 
 # create sorted dictionary of word-frequency pairs
