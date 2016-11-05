@@ -43,47 +43,47 @@ Construyamos una función que pueda identificar la posición de índice de la pa
 ``` python
 # Dada una lista de n-gramas identifica el índice de la palabra clave.
 
-def nGramsToKWICDict(ngrams):
-    keyindex = len(ngrams[0]) // 2
+def nGramasAdicKWIC(ngramas):
+    indicePClave = len(ngramas[0]) // 2
 
-    return keyindex
+    return indicePClave
 ```
 
-Para determinar el índice de la palabra clave hemos utilizado la propiedad `len` para decirnos cuántos elementos hay en el primer n-grama, a continuación hacemos una división de piso para aislar la posición de índice media. Puedes ver si esto funciona mediante la creación de un nuevo programa `get-keyword.py` y ejecutarlo. Si todo va bien y ya que estamos tratando con un 5-grama, debes obtener 2 como la posición de índice de la palabra clave tal y como se determinó anteriormente.
+Para determinar el índice de la palabra clave hemos utilizado la propiedad `len` para decirnos cuántos elementos hay en el primer n-grama, a continuación hacemos una división de piso para aislar la posición de índice media. Puedes ver si esto funciona mediante la creación de un nuevo programa `obten-palabraClave.py` y ejecutarlo. Si todo va bien y ya que estamos tratando con un 5-grama, debes obtener 2 como la posición de índice de la palabra clave tal y como se determinó anteriormente.
 
 ``` python
-#get-keyword.py
+#obten-palabraClave.py
 
 import obo
 
-test = 'this test sentence has eight words in it'
-ngrams = obo.getNGrams(test.split(), 5)
+prueba = 'en la frase de prueba hay ocho palabras'
+ngramas = obo.obtenNGramas(prueba.split(), 5)
 
-print(obo.nGramsToKWICDict(ngrams))
+print(obo.nGramasAdicKWIC(ngramas))
 ```
 
-Ahora que sabemos la ubicación de las palabras clave, vamos a añadir todo en un diccionario que pueda utilizarse para generar la salida de todos los n-gramas KWIC para una palabra clave determinada. Estudia este código y luego remplaza tu `nGramsToKWICDict` con lo que sigue en tu módulo `obo.py`.
+Ahora que sabemos la ubicación de las palabras clave, vamos a añadir todo en un diccionario que pueda utilizarse para generar la salida de todos los n-gramas KWIC para una palabra clave determinada. Estudia este código y luego remplaza tu `nGramasAdicKWIC` con lo que sigue en tu módulo `obo.py`.
 
 ``` python
 # Dada una lista de n-gramas, regresa un diccionario de KWICs,
 # indexado por palabras clave.
 
-def nGramsToKWICDict(ngrams):
-    keyindex = len(ngrams[0]) // 2
+def nGramasAdicKWIC(ngramas):
+    indicePClave = len(ngramas[0]) // 2
 
-    kwicdict = {}
+    kwicdicc = {}
 
-    for k in ngrams:
-        if k[keyindex] not in kwicdict:
-            kwicdict[k[keyindex]] = [k]
+    for k in ngramas:
+        if k[indicePClave] not in kwicdicc:
+            kwicdicc[k[indicePClave]] = [k]
         else:
-            kwicdict[k[keyindex]].append(k)
-    return kwicdict
+            kwicdicc[k[indicePClave]].append(k)
+    return kwicdicc
 ``` 
 
-Un bucle `for`y una declaración `if` comprueban cada n-grama para ver si su palabra clave está ya almacenada en el diccionario. Si no es así, se añade una nueva entrada. Si lo es, añade a una entrada anterior. Ahora tenemos un diccionario llamado *kwicdict* que contiene todos los n-gramas, clasificables por palabra clave y podemos regresar a la tarea de dar salida a la información en un formato más útil como lo hicimos en [Salida de datos como archivo HTML][].
+Un bucle `for`y una declaración `if` comprueban cada n-grama para ver si su palabra clave está ya almacenada en el diccionario. Si no es así, se añade una nueva entrada. Si lo es, añade a una entrada anterior. Ahora tenemos un diccionario llamado *kwicdicc* que contiene todos los n-gramas, clasificables por palabra clave y podemos regresar a la tarea de dar salida a la información en un formato más útil como lo hicimos en [Salida de datos como archivo HTML][].
 
-Prueba volver a ejecutar el programa `get-keyword.py` y ahora podrás ver qué es lo que hay en tu diccionario KWIC.
+Prueba volver a ejecutar el programa `obten-palabraClave.py` y ahora podrás ver qué es lo que hay en tu diccionario KWIC.
 
 ## Salida de datos a HTML
 
@@ -105,19 +105,19 @@ Esta técnica no es la mejor manera de formatear texto desde la perspectiva de u
 Para conseguir este efecto, vamos a tener que hacer un número de manipulaciones de listas y cadenas. Empecemos por averiguar cómo se ve nuestro diccionario de salida en su estado actual. Entonces podremos trabajar en perfeccionarlo para lo que queremos.
 
 ``` python
-# html-to-pretty-print.py
+# html-a-pretty-print.py
 import obo
 
 # crea un diccionario de n-gramas
 n = 7
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-text = obo.webPageToText(url)
-fullwordlist = obo.stripNonAlphaNum(text)
-ngrams = obo.getNGrams(fullwordlist, n)
-worddict = obo.nGramsToKWICDict(ngrams)
+texto = obo.paginaWebATexto(url)
+listaPalabrasCompleta = obo.quitaNoAlfaNum(texto)
+ngramas = obo.obtenNGramas(listaPalabrasCompleta, n)
+diccionarioPalabras = obo.nGramasAdicKWIC(ngramas)
 
-print(worddict["black"])
+print(diccionarioPalabras["black"])
 ```
 
 Como puedes observar al ejecutar el programa anterior, la salida de datos aún no es muy legible. Lo que tenemos que hacer es dividir el n-grama en tres partes: antes de la palabra clave, la palabra clave y después de la palabra clave. Podemos utilizar las técnicas aprendidas en los capítulos anteriores para encerrar todo en HTML para que sea fácil de leer.
