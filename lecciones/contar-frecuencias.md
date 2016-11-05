@@ -34,16 +34,16 @@ Ahora queremos contar la frecuencia de cada palabra en nuestra lista. Ya has vis
 cadenaPalabras = 'it was the best of times it was the worst of times '
 cadenaPalabras += 'it was the age of wisdom it was the age of foolishness'
 
-listaPalab = cadenaPalabras.split()
+listaPalabras = cadenaPalabras.split()
 
 frecuenciaPalab = []
-for w in listaPalab:
-    frecuenciaPalab.append(listaPalab.count(w))
+for w in listaPalabras:
+    frecuenciaPalab.append(listaPalabras.count(w))
 
 print("Cadena\n" + cadenaPalabras +"\n")
-print("Lista\n" + str(listaPalab) + "\n")
+print("Lista\n" + str(listaPalabras) + "\n")
 print("Frecuencias\n" + str(frecuenciaPalab) + "\n")
-print("Pares\n" + str(zip(listaPalab, frecuenciaPalab)))
+print("Pares\n" + str(zip(listaPalabras, frecuenciaPalab)))
 ```
 
 Aquí, comenzamos con una cadena de texto y la dividimos en una lista tal como hicimos antes. Entonces, creamos una lista (inicialmente vacía) llamada *wordfreq*, fuimos por cada una de las palabras en *wordlist* y contamos el número de veces que cada palabra aparece en toda la lista. Añadimos entonces el conteo de palabras a nuestra lista *wordfreq*. Utilizando la operación `zip`, somos capaces de hacer coincidir la primera palabra de nuestra lista de palabras con el primer número en la lista de frecuencias, la segunda palabra con la segunda frecuencia, y así el resto. Terminamos con una lista de palabras y frecuencias pareadas. La función `str` convierte cualquier objeto en una cadena así que puede ser impresa.
@@ -82,14 +82,14 @@ Python incluye también una herramienta muy conveniente llamada [lista por compr
 
 cadenaPalabras = 'it was the best of times it was the worst of times '
 cadenaPalabras += 'it was the age of wisdom it was the age of foolishness'
-listaPalab = cadenaPalabras.split()
+listaPalabras = cadenaPalabras.split()
 
-frecuenciaPalab = [listaPalab.count(w) for w in listaPalab] # a list comprehension
+frecuenciaPalab = [listaPalabras.count(w) for w in listaPalabras] # a list comprehension
 
 print("Cadena\n" + cadenaPalabras +"\n")
-print("Lista\n" + str(listaPalab) + "\n")
+print("Lista\n" + str(listaPalabras) + "\n")
 print("Frecuencias\n" + str(frecuenciaPalab) + "\n")
-print("Pares\n" + str(zip(listaPalab, frecuenciaPalab)))
+print("Pares\n" + str(zip(listaPalabras, frecuenciaPalab)))
 ```
 
 Si estudias esta lista por comprensión cuidadosamente descubrirás que hace exactamente lo mismo que el bucle `for` en el ejemplo previo, pero de una manera condensada. Cualquiera de los dos métodos trabajará bien, así que utiliza la versión con la que te sientas más a gusto.
@@ -150,9 +150,9 @@ Sobre la base de lo que tenemos hasta ahora queremos una función que pueda conv
 # Dada una lista de palabras, devuelve un diccionario de
 # pares de palabra-frecuencia.
 
-def wordListToFreqDict(wordlist):
-    wordfreq = [wordlist.count(p) for p in wordlist]
-    return dict(zip(wordlist,wordfreq))
+def listaPalabrasDicFrec(listaPalabras):
+    frecuenciaPalab = [listaPalabras.count(p) for p in listaPalabras]
+    return dict(zip(listaPalabras,frecuenciaPalab))
 ```
 
 También querremos una función que pueda ordenar un diccionario de pares de palabra-frecuencia, en orden de frecuencia descendente. Copia esto y añádelo también al módulo `obo.py`.
@@ -161,35 +161,35 @@ También querremos una función que pueda ordenar un diccionario de pares de pal
 # Ordena un diccionario de pares palabra-frecuencia en
 # orden de frecuencia descendente.
 
-def sortFreqDict(freqdict):
-    aux = [(freqdict[key], key) for key in freqdict]
+def ordenaDicFrec(dicfrec):
+    aux = [(dicfrec[key], key) for key in dicfrec]
     aux.sort()
     aux.reverse()
     return aux
 ```
 
-Ahora podemos escribir un programa que importe un URL y nos devuelva pares de palabra-frecuencia de la página Web puestos en orden descendente de frecuencia. Copia el siguiente programa en el Komodo Edit, guárdalo como `html-to-freq.py` y ejecútalo. Estudia el programa y los datos de salida con atención antes de continuar.
+Ahora podemos escribir un programa que importe un URL y nos devuelva pares de palabra-frecuencia de la página Web puestos en orden descendente de frecuencia. Copia el siguiente programa en el Komodo Edit, guárdalo como `html-a-frec.py` y ejecútalo. Estudia el programa y los datos de salida con atención antes de continuar.
 
 ``` python
-#html-to-freq.py
+#html-a-frec.py
 
 import urllib2, obo
 
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-response = urllib2.urlopen(url)
-html = response.read()
-text = obo.stripTags(html).lower()
-wordlist = obo.stripNonAlphaNum(text)
-dictionary = obo.wordListToFreqDict(wordlist)
-sorteddict = obo.sortFreqDict(dictionary)
+respuesta = urllib2.urlopen(url)
+html = respuesta.read()
+texto = obo.quitarEtiquetas(html).lower()
+listaPalabras = obo.quitaNoAlfaNum(texto)
+diccionario = obo.listaPalabrasDicFrec(listaPalabras)
+diccOrdenado = obo.ordenaDicFrec(diccionario)
 
-for s in sorteddict: print(str(s))
+for s in diccOrdenado: print(str(s))
 ```
 
 ## Retirar palabras vacías
 
-Cuando observamos los datos de salida del programa `html-to-freq.py`, vemos que las palabras más frecuentes en el texto son palabras funcionales como "the", "of", "to" y "and".
+Cuando observamos los datos de salida del programa `html-a-frec.py`, vemos que las palabras más frecuentes en el texto son palabras funcionales como "the", "of", "to" y "and".
 
 ``` python
 (192, 'the')
@@ -207,60 +207,60 @@ Cuando observamos los datos de salida del programa `html-to-freq.py`, vemos que 
 (36, 'it')
 ```
 
-Por lo general, estas palabras son las más comunes en cualquier texto en idioma inglés, por lo que no nos dicen mucho acerca de lo que es distintivo en el juicio de Bowsey. En general, estamos más interesados en encontrar las palabras que nos ayuden a diferenciar este texto de textos acerca de diferentes temas. Así que vamos a filtrar las palabras funcionales comunes. Las palabras que son ignoradas como éstas se conocen como *palabras vacías*. Vamos a utilizar la siguiente lista adaptada de una que fue publicada en línea por los [informáticos de Glasgow][]. Cópiala y ponla al principio de la biblioteca `obo.py` que estás construyendo.
+Por lo general, estas palabras son las más comunes en cualquier texto en idioma inglés, por lo que no nos dicen mucho acerca de lo que es distintivo en el juicio de Bowsey. En general, estamos más interesados en encontrar las palabras que nos ayuden a diferenciar este texto de textos acerca de diferentes temas. Así que vamos a filtrar las palabras funcionales comunes. Las palabras que son ignoradas como éstas se conocen como *palabras vacías* = *palabrasvac*. Vamos a utilizar la siguiente lista depalabras en inglés adaptada de una que fue publicada en línea por los [informáticos de Glasgow][]. Cópiala y ponla al principio de la biblioteca `obo.py` que estás construyendo.
 
 ``` python
-stopwords = ['a', 'about', 'above', 'across', 'after', 'afterwards']
-stopwords += ['again', 'against', 'all', 'almost', 'alone', 'along']
-stopwords += ['already', 'also', 'although', 'always', 'am', 'among']
-stopwords += ['amongst', 'amoungst', 'amount', 'an', 'and', 'another']
-stopwords += ['any', 'anyhow', 'anyone', 'anything', 'anyway', 'anywhere']
-stopwords += ['are', 'around', 'as', 'at', 'back', 'be', 'became']
-stopwords += ['because', 'become', 'becomes', 'becoming', 'been']
-stopwords += ['before', 'beforehand', 'behind', 'being', 'below']
-stopwords += ['beside', 'besides', 'between', 'beyond', 'bill', 'both']
-stopwords += ['bottom', 'but', 'by', 'call', 'can', 'cannot', 'cant']
-stopwords += ['co', 'computer', 'con', 'could', 'couldnt', 'cry', 'de']
-stopwords += ['describe', 'detail', 'did', 'do', 'done', 'down', 'due']
-stopwords += ['during', 'each', 'eg', 'eight', 'either', 'eleven', 'else']
-stopwords += ['elsewhere', 'empty', 'enough', 'etc', 'even', 'ever']
-stopwords += ['every', 'everyone', 'everything', 'everywhere', 'except']
-stopwords += ['few', 'fifteen', 'fifty', 'fill', 'find', 'fire', 'first']
-stopwords += ['five', 'for', 'former', 'formerly', 'forty', 'found']
-stopwords += ['four', 'from', 'front', 'full', 'further', 'get', 'give']
-stopwords += ['go', 'had', 'has', 'hasnt', 'have', 'he', 'hence', 'her']
-stopwords += ['here', 'hereafter', 'hereby', 'herein', 'hereupon', 'hers']
-stopwords += ['herself', 'him', 'himself', 'his', 'how', 'however']
-stopwords += ['hundred', 'i', 'ie', 'if', 'in', 'inc', 'indeed']
-stopwords += ['interest', 'into', 'is', 'it', 'its', 'itself', 'keep']
-stopwords += ['last', 'latter', 'latterly', 'least', 'less', 'ltd', 'made']
-stopwords += ['many', 'may', 'me', 'meanwhile', 'might', 'mill', 'mine']
-stopwords += ['more', 'moreover', 'most', 'mostly', 'move', 'much']
-stopwords += ['must', 'my', 'myself', 'name', 'namely', 'neither', 'never']
-stopwords += ['nevertheless', 'next', 'nine', 'no', 'nobody', 'none']
-stopwords += ['noone', 'nor', 'not', 'nothing', 'now', 'nowhere', 'of']
-stopwords += ['off', 'often', 'on','once', 'one', 'only', 'onto', 'or']
-stopwords += ['other', 'others', 'otherwise', 'our', 'ours', 'ourselves']
-stopwords += ['out', 'over', 'own', 'part', 'per', 'perhaps', 'please']
-stopwords += ['put', 'rather', 're', 's', 'same', 'see', 'seem', 'seemed']
-stopwords += ['seeming', 'seems', 'serious', 'several', 'she', 'should']
-stopwords += ['show', 'side', 'since', 'sincere', 'six', 'sixty', 'so']
-stopwords += ['some', 'somehow', 'someone', 'something', 'sometime']
-stopwords += ['sometimes', 'somewhere', 'still', 'such', 'system', 'take']
-stopwords += ['ten', 'than', 'that', 'the', 'their', 'them', 'themselves']
-stopwords += ['then', 'thence', 'there', 'thereafter', 'thereby']
-stopwords += ['therefore', 'therein', 'thereupon', 'these', 'they']
-stopwords += ['thick', 'thin', 'third', 'this', 'those', 'though', 'three']
-stopwords += ['three', 'through', 'throughout', 'thru', 'thus', 'to']
-stopwords += ['together', 'too', 'top', 'toward', 'towards', 'twelve']
-stopwords += ['twenty', 'two', 'un', 'under', 'until', 'up', 'upon']
-stopwords += ['us', 'very', 'via', 'was', 'we', 'well', 'were', 'what']
-stopwords += ['whatever', 'when', 'whence', 'whenever', 'where']
-stopwords += ['whereafter', 'whereas', 'whereby', 'wherein', 'whereupon']
-stopwords += ['wherever', 'whether', 'which', 'while', 'whither', 'who']
-stopwords += ['whoever', 'whole', 'whom', 'whose', 'why', 'will', 'with']
-stopwords += ['within', 'without', 'would', 'yet', 'you', 'your']
-stopwords += ['yours', 'yourself', 'yourselves']
+palabrasvac = ['a', 'about', 'above', 'across', 'after', 'afterwards']
+palabrasvac += ['again', 'against', 'all', 'almost', 'alone', 'along']
+palabrasvac += ['already', 'also', 'although', 'always', 'am', 'among']
+palabrasvac += ['amongst', 'amoungst', 'amount', 'an', 'and', 'another']
+palabrasvac += ['any', 'anyhow', 'anyone', 'anything', 'anyway', 'anywhere']
+palabrasvac += ['are', 'around', 'as', 'at', 'back', 'be', 'became']
+palabrasvac += ['because', 'become', 'becomes', 'becoming', 'been']
+palabrasvac += ['before', 'beforehand', 'behind', 'being', 'below']
+palabrasvac += ['beside', 'besides', 'between', 'beyond', 'bill', 'both']
+palabrasvac += ['bottom', 'but', 'by', 'call', 'can', 'cannot', 'cant']
+palabrasvac += ['co', 'computer', 'con', 'could', 'couldnt', 'cry', 'de']
+palabrasvac += ['describe', 'detail', 'did', 'do', 'done', 'down', 'due']
+palabrasvac += ['during', 'each', 'eg', 'eight', 'either', 'eleven', 'else']
+palabrasvac += ['elsewhere', 'empty', 'enough', 'etc', 'even', 'ever']
+palabrasvac += ['every', 'everyone', 'everything', 'everywhere', 'except']
+palabrasvac += ['few', 'fifteen', 'fifty', 'fill', 'find', 'fire', 'first']
+palabrasvac += ['five', 'for', 'former', 'formerly', 'forty', 'found']
+palabrasvac += ['four', 'from', 'front', 'full', 'further', 'get', 'give']
+palabrasvac += ['go', 'had', 'has', 'hasnt', 'have', 'he', 'hence', 'her']
+palabrasvac += ['here', 'hereafter', 'hereby', 'herein', 'hereupon', 'hers']
+palabrasvac += ['herself', 'him', 'himself', 'his', 'how', 'however']
+palabrasvac += ['hundred', 'i', 'ie', 'if', 'in', 'inc', 'indeed']
+palabrasvac += ['interest', 'into', 'is', 'it', 'its', 'itself', 'keep']
+palabrasvac += ['last', 'latter', 'latterly', 'least', 'less', 'ltd', 'made']
+palabrasvac += ['many', 'may', 'me', 'meanwhile', 'might', 'mill', 'mine']
+palabrasvac += ['more', 'moreover', 'most', 'mostly', 'move', 'much']
+palabrasvac += ['must', 'my', 'myself', 'name', 'namely', 'neither', 'never']
+palabrasvac += ['nevertheless', 'next', 'nine', 'no', 'nobody', 'none']
+palabrasvac += ['noone', 'nor', 'not', 'nothing', 'now', 'nowhere', 'of']
+palabrasvac += ['off', 'often', 'on','once', 'one', 'only', 'onto', 'or']
+palabrasvac += ['other', 'others', 'otherwise', 'our', 'ours', 'ourselves']
+palabrasvac += ['out', 'over', 'own', 'part', 'per', 'perhaps', 'please']
+palabrasvac += ['put', 'rather', 're', 's', 'same', 'see', 'seem', 'seemed']
+palabrasvac += ['seeming', 'seems', 'serious', 'several', 'she', 'should']
+palabrasvac += ['show', 'side', 'since', 'sincere', 'six', 'sixty', 'so']
+palabrasvac += ['some', 'somehow', 'someone', 'something', 'sometime']
+palabrasvac += ['sometimes', 'somewhere', 'still', 'such', 'system', 'take']
+palabrasvac += ['ten', 'than', 'that', 'the', 'their', 'them', 'themselves']
+palabrasvac += ['then', 'thence', 'there', 'thereafter', 'thereby']
+palabrasvac += ['therefore', 'therein', 'thereupon', 'these', 'they']
+palabrasvac += ['thick', 'thin', 'third', 'this', 'those', 'though', 'three']
+palabrasvac += ['three', 'through', 'throughout', 'thru', 'thus', 'to']
+palabrasvac += ['together', 'too', 'top', 'toward', 'towards', 'twelve']
+palabrasvac += ['twenty', 'two', 'un', 'under', 'until', 'up', 'upon']
+palabrasvac += ['us', 'very', 'via', 'was', 'we', 'well', 'were', 'what']
+palabrasvac += ['whatever', 'when', 'whence', 'whenever', 'where']
+palabrasvac += ['whereafter', 'whereas', 'whereby', 'wherein', 'whereupon']
+palabrasvac += ['wherever', 'whether', 'which', 'while', 'whither', 'who']
+palabrasvac += ['whoever', 'whole', 'whom', 'whose', 'why', 'will', 'with']
+palabrasvac += ['within', 'without', 'would', 'yet', 'you', 'your']
+palabrasvac += ['yours', 'yourself', 'yourselves']
 ```
 
 Ahora, deshacerse de las palabras funcionales de una lista es tan fácil como utilizar otra lista por comprensión. Añade también esta función al módulo `obo.py`.
@@ -269,8 +269,8 @@ Ahora, deshacerse de las palabras funcionales de una lista es tan fácil como ut
 # Dada una lista de palabras, retira cualquiera que esté
 # en la lista de palabras funcionales.
 
-def removeStopwords(wordlist, stopwords):
-    return [w for w in wordlist if w not in stopwords]
+def quitarPalabrasvac(listaPalabras, palabrasvac):
+    return [w for w in listaPalabras if w not in palabrasvac]
 ``` 
 
 Ensamblar todo
@@ -279,22 +279,22 @@ Ensamblar todo
 Ahora tenemos todo lo que necesitamos para determinar frecuencias de palabras en páginas Web. Copia lo siguiente en Komodo Edit, guárdalo como `html-to-freq-2.py` y ejecútalo.
 
 ``` python
-# html-to-freq-2.py
+# html-a-frec-2.py
 
 import urllib2
 import obo
 
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-response = urllib2.urlopen(url)
-html = response.read()
-text = obo.stripTags(html).lower()
-fullwordlist = obo.stripNonAlphaNum(text)
-wordlist = obo.removeStopwords(fullwordlist, obo.stopwords)
-dictionary = obo.wordListToFreqDict(wordlist)
-sorteddict = obo.sortFreqDict(dictionary)
+respuesta = urllib2.urlopen(url)
+html = respuesta.read()
+texto = obo.quitarEtiquetas(html).lower()
+listaPalabrasCompleta = obo.quitaNoAlfaNum(texto)
+listaPalabras = obo.quitarPalabrasvac(listaPalabrasCompleta, obo.palabrasvac)
+diccionario = obo.listaPalabrasDicFrec(listaPalabras)
+diccOrdenado = obo.ordenaDicFrec(diccionario)
 
-for s in sorteddict: print(str(s))
+for s in diccOrdenado: print(str(s))
 ```
 
 Si todo va bien, tus datos de salida se verán como esto:
