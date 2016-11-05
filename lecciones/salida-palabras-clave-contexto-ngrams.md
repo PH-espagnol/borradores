@@ -132,20 +132,20 @@ print(n)
 -> 7
 
 # calcula la posición de índice de la palabra clave
-keyindex = n // 2
-print(keyindex)
+indicePClave = n // 2
+print(indicePClave)
 -> 3
 
 # muestra los elementos antes de la palabra clave
-print(kwic[:keyindex])
+print(kwic[:indicePClave])
 -> ['amongst', 'them', 'a']
 
 # muestra solo la palabra clave
-print(kwic[keyindex])
+print(kwic[indicePClave])
 -> black
 
 # muestra los elementos después de la palabra clave
-print(kwic[(keyindex+1):])
+print(kwic[(indicePClave+1):])
 -> ['there', 'was', 'one']
 ```
 
@@ -154,14 +154,14 @@ Ahora que sabemos cómo encontrar cada uno de los tres segmentos, necesitamos da
 El contexto de la derecha consistirá simplemente en una cadena de términos separados por espacios en blanco. Utilizaremos el método `join` para convertir las entradas de la lista en una cadena.
 
 ``` python
-print(' '.join(kwic[(keyindex+1):]))
+print(' '.join(kwic[(indicePClave+1):]))
 -> there was one
 ```
 
 Queremos que las palabras clave tengan un poco de espacio blanco de relleno a su alrededor. Podemos lograr esto mediante el uso de un método de cadena llamado `center` que servirá para adaptar el texto a la mitad de la pantalla. Podemos agregar relleno al hacer la longitud de la cadena más larga que la palabra clave. La expresión que sige añade tres espacios en blanco (6/2) a cada lado de la palabra clave. Hemos añadido marcas de almohadilla al principio y al final de la expresión para que puedas ver los espacios en blanco inciales y finales.
 
 ``` python
-print('#' + str(kwic[keyindex]).center(len(kwic[keyindex])+6) + '#')
+print('#' + str(kwic[indicePClave]).center(len(kwic[indicePClave])+6) + '#')
 -> #   black   #
 ```
 
@@ -169,7 +169,7 @@ Por último, queremos que el contexto de la izquiera esté alineado a la derecha
 
 ``` python
 width = 10
-print('#' + ' '.join(kwic[:keyindex]).rjust(width*keyindex) + '#')
+print('#' + ' '.join(kwic[:indicePClave]).rjust(width*indicePClave) + '#')
 -> #                 amongst them a#
 ```
 
@@ -181,22 +181,22 @@ Ahora podemos combinar esto en una función que tome una KWIC y nos regrese una 
 
 def prettyPrintKWIC(kwic):
     n = len(kwic)
-    keyindex = n // 2
+    indicePClave = n // 2
     width = 10
 
-    outstring = ' '.join(kwic[:keyindex]).rjust(width*keyindex)
-    outstring += str(kwic[keyindex]).center(len(kwic[keyindex])+6)
-    outstring += ' '.join(kwic[(keyindex+1):])
+    salidaCadena = ' '.join(kwic[:indicePClave]).rjust(width*indicePClave)
+    salidaCadena += str(kwic[indicePClave]).center(len(kwic[indicePClave])+6)
+    salidaCadena += ' '.join(kwic[(indicePClave+1):])
 
-    return outstring
+    return salidaCadena
 ```
 
 ## Ensamblando todo
 
-Ahora podemos crear un programa que, dado un URL y una palabra clave, envuelve en HTML la visualización de una KWIC y genera su salida en Firefox. Este programa empieza y termina de una manera similar como el programa que calcula la frecuencia de palabras. Escribe o copia el código en tu editor de texto, guárdalo como `html-to-kwic.py` y ejecútalo. Deberás elegir entre obo.wrapStringInHTMLMac() u obo.wrapStringInHTMLWindows() según corresponda a tu sistema, como hicimos antes.
+Ahora podemos crear un programa que, dado un URL y una palabra clave, envuelve en HTML la visualización de una KWIC y genera su salida en Firefox. Este programa empieza y termina de una manera similar como el programa que calcula la frecuencia de palabras. Escribe o copia el código en tu editor de texto, guárdalo como `html-a-kwic.py` y ejecútalo. Deberás elegir entre obo.envuelveCadenaenHTMLMac() u obo.envuelveCadenaenHTMLWindows() según corresponda a tu sistema, como hicimos antes.
 
 ``` python
-# html-to-kwic.py
+# html-a-kwic.py
 
 import obo
 
@@ -204,30 +204,30 @@ import obo
 n = 7
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
 
-text = obo.webPageToText(url)
-fullwordlist = ('# ' * (n//2)).split()
-fullwordlist += obo.stripNonAlphaNum(text)
-fullwordlist += ('# ' * (n//2)).split()
-ngrams = obo.getNGrams(fullwordlist, n)
-worddict = obo.nGramsToKWICDict(ngrams)
+texto = obo.paginaWebATexto(url)
+listaPalabrasCompleta = ('# ' * (n//2)).split()
+listaPalabrasCompleta = obo.quitaNoAlfaNum(texto)
+listaPalabrasCompleta += ('# ' * (n//2)).split()
+ngramas = obo.obtenNGramas(listaPalabrasCompleta, n)
+diccionarioPalabras = obo.nGramasAdicKWIC(ngramas)
 
 # genera salida de KWIC y envuelve con html
-target = 'black'
+objetivo = 'black'
 outstr = '<pre>'
-if worddict.has_key(target):
-    for k in worddict[target]:
+if diccionarioPalabras.has_key(objetivo):
+    for k in diccionarioPalabras[objetivo]:
         outstr += obo.prettyPrintKWIC(k)
         outstr += '<br />'
 else:
     outstr += 'Keyword not found in source'
 
 outstr += '</pre>'
-obo.wrapStringInHTML('html-to-kwic', url, outstr)
+obo.envuelveCadenaenHTML('html-a-kwic', url, outstr)
 ```
 
 La primera parte del programa es igual que en el caso anterior. En la segunda parte del programa hemos encerrado todo en una etiqueta HTML *pre* (pre-formateada), lo cual le indica al navegador que no se confunda con los espacios que hemos agregado.
 
-Además, toma en cuenta que hemos utilizado el método `has_key` en el diccionario para asegurarnos que la palabra clave realmente se encuentra en nuestro texto. Si no es así, podemos imprimir un mensaje para el usuario antes de enviar la salida a Firefox. Prueba a cambiar la variable de objetivo (*target*) a algunas otras palabras clave. Intenta con alguna que tú sepas que no se encuentra en el texto para asegurarte que tu programa no genere salida de datos cuando no deba.
+Además, toma en cuenta que hemos utilizado el método `has_key` en el diccionario para asegurarnos que la palabra clave realmente se encuentra en nuestro texto. Si no es así, podemos imprimir un mensaje para el usuario antes de enviar la salida a Firefox. Prueba a cambiar la variable *objetivo* a algunas otras palabras clave. Intenta con alguna que tú sepas que no se encuentra en el texto para asegurarte que tu programa no genere salida de datos cuando no deba.
 
 Ahora hemos creado un programa que busca una palabra clave en un diccionario creado a partir de una página HTML de la Web, y luego produce una salida de datos con n-gramas de esa palabra clave en otro archivo HTML para visualizar en la Web. Todas las lecciones hasta este punto han incluido partes del vocabulario de Python y métodos necesarios para crear este programa final. Al referirte a esas lecciones, ahora puedes experimentar con Python para crear programas que realicen tareas específicas que te ayudarán en tu proceso de investigación.
 
