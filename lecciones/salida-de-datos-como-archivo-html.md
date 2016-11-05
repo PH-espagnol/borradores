@@ -168,20 +168,20 @@ Utiliza lo más apropiado para tu sistema: `obo.envuelveCadenaenHTMLMac()` u `ob
 # html-a-frec-3.py
 import obo
 
-# create sorted dictionary of word-frequency pairs
+# crea un diccionario ordenado de pares de frecuencia de palabras
 url = 'http://www.oldbaileyonline.org/browse.jsp?id=t17800628-33&div=t17800628-33'
-text = obo.webPageToText(url)
-fullwordlist = obo.stripNonAlphaNum(text)
-wordlist = obo.removeStopwords(fullwordlist, obo.stopwords)
-dictionary = obo.wordListToFreqDict(wordlist)
-sorteddict = obo.sortFreqDict(dictionary)
+texto = obo.paginaWebATexto(url)
+listaPalabrasCompleta = obo.quitaNoAlfaNum(texto)
+listaPalabras = obo.quitarPalabrasvac(listaPalabrasCompleta, obo.palabrasvac)
+diccionario = obo.listaPalabrasDicFrec(listaPalabras)
+diccOrdenado = obo.ordenaDicFrec(diccionario)
 
-# compile dictionary into string and wrap with HTML
-outstring = ""
-for s in sorteddict:
-    outstring += str(s)
-    outstring += "<br />"
-obo.wrapStringInHTMLMac("html-to-freq-3", url, outstring)
+# compila el diccionario en una cadena y envuelve con HTML
+salidaCadena = ""
+for s in diccOrdenado:
+    salidaCadena += str(s)
+    salidaCadena += "<br />"
+obo.envuelveCadenaenHTMLMac("html-a-freq-3", url, salidaCadena)
 ```
 
 Toma en cuenta que intercalamos nuestros pares de frecuencia de palabras con la etiqueta de salto `<br\>` de HTML, la cual actúa como una *nueva línea*. Si todo va bien, deberías ver las mismas frecuencias de palabras que computamos en la útlima sección pero esta vez en la ventana de tu navegador.
