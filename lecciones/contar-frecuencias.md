@@ -276,7 +276,7 @@ def quitarPalabrasvac(listaPalabras, palabrasvac):
 Ensamblar todo
 --------------
 
-Ahora tenemos todo lo que necesitamos para determinar frecuencias de palabras en páginas Web. Copia lo siguiente en Komodo Edit, guárdalo como `html-to-freq-2.py` y ejecútalo.
+Ahora tenemos todo lo que necesitamos para determinar frecuencias de palabras en páginas Web. Copia lo siguiente en Komodo Edit, guárdalo como `html-a-frec-2.py` y ejecútalo.
 
 ``` python
 # html-a-frec-2.py
