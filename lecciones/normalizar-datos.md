@@ -24,7 +24,7 @@ La lista que creamos en [De HTML a lista de palabras (parte 2)][] necesita ciert
 - *html-a-lista-1.py*
 - *obo.py*
 
-Si no tienes estos archivos de la lección previa, puedes escargar un [zip][]
+Si no tienes estos archivos de la lección previa, puedes descargar un [zip][]
 
 ## Limpiar la lista
 
@@ -52,16 +52,16 @@ Regresa a tu programa *html-a-lista-1.py* y asegúrate de que tus resultados se 
 
 Por sí misma, esta habilidad de separar el documento en palabras no nos ayuda mucho porque nosotros ya sabemos cómo leerlo. Sin embargo, podemos usar el texto para hacer cosas que normalmente no son posibles sin un programa especial. Vamos a comenzar por computar la frecuencia de los tokens y otras unidades lingüísticas, una medida clásica de un texto.
 
-Queda claro que nuestra lista va a necesitar cierta limpieza antes e que la podamos utilizar para contar frecuencias. Conservando la práctica establecida en [De HTML a lista de palabras (parte 1)][], tratemos de describir nuestro algoritmo primero en lenguaje llano. Queremos saber la frecuencia con la que aparece, en la transcripción del juicio, cada palabra con significado. De tal manera, los pasos a seguir deben verse de la siguiente manera:
+Queda claro que nuestra lista va a necesitar cierta limpieza antes de que la podamos utilizar para contar frecuencias. Conservando la práctica establecida en [De HTML a lista de palabras (parte 1)][], tratemos de describir nuestro algoritmo primero en lenguaje llano. Queremos saber la frecuencia con la que aparece, en la transcripción del juicio, cada palabra con significado. De tal manera, los pasos a seguir deben verse de la siguiente manera:
 
 -   Convierte todas las palabras a minúsculas para que "BENJAMIN" y "benjamin" sean contadas como una misma palabra
 -   Retira cualquier carácter extraño o inusual
--   Cuenta en número de vees que aparece cada palabra
+-   Cuenta el número de veces que aparece cada palabra
 -   Retira palabras demasiado comunes como "eso", "el", "y", etc.
 
 ## Convertir a minúsculas
 
-Típicamente los componentes léxicos (*tokens*) son compactados como minúsculas cuando se cuentan frecuencias, así que lo haremos utilizando el método de cadena "lower" que aprendimos en [Manipular cadenas de caracteres en Python][]. Ya que este es un método para cadenas tendremos que aplicarlo en la cadena *texto* en el programa *html-a-lista-1.py*. Enmienda *html-a-lista-1.py* añadiendo la etiqueta de cadena `lower()` al final de la cadena *texto*.
+Típicamente los componentes léxicos (*tokens*) son compactados como minúsculas cuando se cuentan frecuencias, así que lo haremos utilizando el método de cadena "lower" que aprendimos en [Manipular cadenas de caracteres en Python][]. Ya que este es un método para cadenas, tendremos que aplicarlo en la cadena *texto* en el programa *html-a-lista-1.py*. Enmienda *html-a-lista-1.py* añadiendo la etiqueta de cadena `lower()` al final de la cadena *texto*.
 
 ``` python
 # html-a-lista-1.py
@@ -106,7 +106,7 @@ Las expresiones regulares te permiten buscar patrones bien definidos y pueden ac
 
 En Python, las expresiones regulares están disponibles como un módulo de Python. Para acelerar el procesamiento éste no se carga automáticamente porque no todos los programas lo requieren. Por lo tanto, tendrás que importar (`import`) el módulo (llamado *re*) de la misma manera en la que has importado tu propio módulo *obo.py*.
 
-Dado que nos interesan solamente los caracteres alfanuméricos, vamos a crear una expresión regular que aislará sólo estos y eliminará el resto. Copia la siguiente función y pégala al final del módulo *obo.py*. Puedes dejar las otras funciones en el módulo solo ya que seguiremos utilizándolas.
+Dado que nos interesan solamente los caracteres alfanuméricos, vamos a crear una expresión regular que aislará sólo estos y eliminará el resto. Copia la siguiente función y pégala al final del módulo *obo.py*. Puedes dejar las otras funciones en el módulo solo, ya que seguiremos utilizándolas.
 
 ``` python
 # Dada una cadena de caracteres, retira todo los caracteres 
