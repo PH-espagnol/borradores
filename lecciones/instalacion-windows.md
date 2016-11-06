@@ -16,7 +16,7 @@ layout: default
 
 ## Respalda toda tu computadora.
 
-Siempre es importante asegurarse que tienes copias de seguridad hechas de modo regular y, sobre todo, recientes. Este es un buen consejo de por vida y no se limita a los momentos en los que estés dedicado a programar.
+Siempre es importante asegurarse de tener copias de seguridad hechas de modo regular y, sobre todo, recientes. Este es un buen consejo de por vida y no se limita a los momentos en los que estés dedicado a programar.
 
 ## Instalar Python v.2
 
@@ -36,13 +36,13 @@ Se deberá ver algo parecido a la siguiente ventana:
 
 ![Komodo Edit on Windows][]
 
-Si no está visible el panel de Caja de Herramientas (Toolbox) de la derecha, es necesario activarlo en el menú correspondiente. Selecciona `View -> Tabs -> Toolbox`. No importa si el panel del proyecto está abierto o no. Tómate un tiempo para  familiarizarte con el diseño del Komodo Editor. El archivo de ayuda es bastante bueno.
+Si no está visible el panel de Caja de Herramientas (Toolbox) de la derecha, es necesario activarlo en el menú correspondiente. Selecciona `View -> Tabs -> Toolbox`. No importa si el panel del proyecto está abierto o no. Tómate un tiempo para familiarizarte con el diseño del Komodo Editor. El archivo de ayuda es bastante bueno.
 
 ### Configuración de Komodo Edit
 
 Ahora es necesario configurarlo para que puedas correr los programas de Python.
 
-1 .  Selecciona `Edit -> Preferences` . Esto abrirá una nueva ventana de diálogo. En "*Category*" selecciona Python y establece "*Default Python Interpreter*" , (debe ser `C:\Python27\Python.exe`
+1 .  Selecciona `Edit -> Preferences`. Esto abrirá una nueva ventana de diálogo. En "*Category*" selecciona Python y establece "*Default Python Interpreter*" , (debe ser `C:\Python27\Python.exe`
 Si se ve más o menos así, oprime OK:
 
 ![Komodo Default Python Interpreter Settings][]
@@ -53,7 +53,7 @@ Seleccionar Python como intérprete por defecto.
 ![utf-set][]
 Configurar lenguaje a UFT-8.
 
-Enseguida selecciona `Toolbox -> Add -> New Command` . Esto abrirá una nueva ventana de diálogo en la que deberás renombrar tu comando como `Run Python` . Debajo de `Command` teclea:
+Enseguida selecciona `Toolbox -> Add -> New Command` . Esto abrirá una nueva ventana de diálogo en la que deberás renombrar tu comando como `Run Python`. Debajo de `Command` teclea:
 
 ``` python 
 %(python) %f
@@ -78,18 +78,18 @@ Paso 2 – “Hola Mundo” en Python
 
 Es tradicional que para comenzar a programar en un nuevo lenguaje tratemos de crear un programa que despliegue la frase “Hola Mundo” y termine. Vamos a mostrar cómo hacer esto en Python y en HTML.
 
-Python es un buen lenguaje de programación para principiantes gracias a que es un lenguaje de programación de muy alto nivel. Es posible, en otras palabras escribir programas cortos que realizan una gran cantidad de procesos. Entre más corto es el programa, lo más probable es que todo quepa en una pantalla y que sea más fácil hacer un seguimiento de todo en tu mente.
+Python es un buen lenguaje de programación para principiantes gracias a que es un lenguaje de programación de muy alto nivel. Es posible, en otras palabras, escribir programas cortos que realizan una gran cantidad de procesos. Entre más corto es el programa, lo más probable es que todo quepa en una pantalla y que sea más fácil hacer un seguimiento de todo en tu mente.
 
 Python es un lenguaje de programación "interpretado". Esto significa que hay un programa de cómputo especial (conocido como intérprete) que sabe cómo seguir las instrucciones escritas en este lenguaje. Una manera de usar el intérprete es guardar todas tus instrucciones en un archivo y luego ejecutar el intérprete sobre ese archivo. El archivo que contiene instrucciones de lenguaje de programación es conocido como programa.  El intérprete ejecutará cada una de las instrucciones que le hayas dado en tu programa y luego se detendrá. Vamos a intentar esto.
 
-En tu editor de texto crea un nuevo archivo y escribe el siguiente programa de dos líneas y guárdalo en tu carpeta `programming-historian`  con el nombre `hola-mundo.py`.
+En tu editor de texto crea un nuevo archivo y escribe el siguiente programa de dos líneas y guárdalo en tu carpeta `programming-historian` con el nombre `hola-mundo.py`.
 
 ```python
 # hola-mundo.py
 print ('hola mundo')
 ``` 
 
-El editor de texto que seleccionaste utilizar debe tener un botón `Run`  que te permitirá ejecutar tu programa. Si todo funciona bien, deberás ver algo como sigue (El ejemplo es como se ve en Komodo Edit. Da un Click en la imagen para ver una copia en tamaño completo):
+El editor de texto que seleccionaste debe tener un botón `Run`  que te permitirá ejecutar tu programa. Si todo funciona bien, deberás ver algo como sigue (El ejemplo es como se ve en Komodo Edit. Da un Click en la imagen para ver una copia en tamaño completo):
 
 ![hello world in Komodo Edit][]
 
@@ -97,7 +97,7 @@ El editor de texto que seleccionaste utilizar debe tener un botón `Run`  que te
 
 Otra manera de interactuar con un intérprete es usando lo que se conoce como *shell* o intérprete de comandos. Se puede escribir en una declaración y oprimir la tecla Enter, y el shell responderá a tus comandos. Utilizar un shell es una excelente forma de comprobar que la construcción de tus declaraciones es adecuada al asegurarte que hace lo que tu piensas que debería hacer. Esto se puede hacer de maneras un tanto distintas en las diversas plataformas (Mac, Windows o Linux).
 
-Puedes ejecutar un shell de Python haciendo doble clic en el archivo ejecutable `python.exe` . Si instalaste la más reciente versión de Python 2.7 (la más reciente para agosto de 2016), probablemente el archivo .exe  esté localizado en el directorio `C:\Python27\python.exe`. En la ventana del intérprete de comandos ("Símbolo de Sistema"), escribe:
+Puedes ejecutar un shell de Python haciendo doble clic en el archivo ejecutable `python.exe`. Si instalaste la más reciente versión de Python 2.7 (la más reciente para agosto de 2016), probablemente el archivo .exe  esté localizado en el directorio `C:\Python27\python.exe`. En la ventana del intérprete de comandos ("Símbolo de Sistema"), escribe:
 
 ```python 
 print ('Hola Mundo')
