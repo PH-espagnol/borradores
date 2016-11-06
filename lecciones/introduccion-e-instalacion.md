@@ -34,7 +34,7 @@ Antes de descargar o instalar cualquier nuevo software en tu computadora, es muy
 Paso 1.- Instalar el software.
 ---------------------------------------
 
-Con el fin de trabajar con las diversas técnicas que se ofrecen en Programming Historian, debes descargar e instalar algunos programas de software libre disponibles. Se ofrecen las instrucciones para hacerlo en Mac, Windows y Linux. Una vez que los hayas instalado de acuerdo al sistema operativo de tu equipo, sigue a la siguiente lección: Para entender páginas Web y HTML. Si tienes algún problema con las instrucciones o encuentras algo que no funciona en tu plataforma, contacta con nosotros.
+Con el fin de trabajar con las diversas técnicas que se ofrecen en Programming Historian, debes descargar e instalar algunos programas de software libre disponibles. Se ofrecen las instrucciones para hacerlo en Mac, Windows y Linux. Una vez que los hayas instalado de acuerdo al sistema operativo de tu equipo, sigue a la siguiente lección: Para entender páginas Web y HTML. Si tienes algún problema con las instrucciones o encuentras algo que no funciona en tu plataforma, ponte en contacto con nosotros.
 
 -	[Instalación de Python en Mac]
 -	[Instalación de Python en Windows]
