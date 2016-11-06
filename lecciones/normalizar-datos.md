@@ -89,7 +89,7 @@ Veámoslo desde otra perspectiva. Nuestro objetivo principal es desarrollar téc
 
 ## Expresiones regulares en Python
 
-Hemos eliminado las mayúsculas. Ahora nos toca deshacernos de los signos de puntuación. La untuación echa a perder nuestras cuentas de frecuencia si la dejamos. ¿Queremos que "evening?" sea contada como "evening" y "1780." como "1780"? ¡Por supuesto!
+Hemos eliminado las mayúsculas. Ahora nos toca deshacernos de los signos de puntuación. La puntuación echa a perder nuestras cuentas de frecuencia si la dejamos. ¿Queremos que "evening?" sea contada como "evening" y "1780." como "1780"? ¡Por supuesto!
 
 Es posible utilizar el método de cadena "replace" para retirar cada tipo de puntuación:
 
@@ -100,7 +100,7 @@ texto = texto.replace(',', '')
 #etc...
 ```
 
-Pero esto no es verdaderamente eficiente. Ateniéndonos a nuestro objetivo de crear programas breves y poderosos, vamos a utitizar un mecanismo llamado "expresiones regulares". Las expresiones regulares son provistas por varios lenguajes de programación en un intervalo de formas distintas.
+Pero esto no es verdaderamente eficiente. Ateniéndonos a nuestro objetivo de crear programas breves y poderosos, vamos a utilizar un mecanismo llamado "expresiones regulares". Las expresiones regulares son provistas por varios lenguajes de programación en un intervalo de formas distintas.
 
 Las expresiones regulares te permiten buscar patrones bien definidos y pueden acortar drásticamente la longitud de tu código. Por ejemplo, si deseas saber si una subcadena coincidió con una letra del alfabeto, en lugar de utilizar la sentencia if / else para comprobar la coincidencia con la letra "a", luego la "b" y luego la "c", y así sucesivamente, se podría utilizar una expresión regular para ver si coincide con la subcadena cualquer letra entre la "a" y la "z". o bien, puedes comprobar la presencia de un dígito o una letra mayúscula, o de cualquier carácter alfanumérico, un retorno de carro ocualquier combinación de los anteriores y mucho más.
 
@@ -109,7 +109,7 @@ En Python, las expresiones regulares están disponibles como un módulo de Pytho
 Dado que nos interesan solamente los caracteres alfanuméricos, vamos a crear una expresión regular que aislará sólo estos y eliminará el resto. Copia la siguiente función y pégala al final del módulo *obo.py*. Puedes dejar las otras funciones en el módulo solo, ya que seguiremos utilizándolas.
 
 ``` python
-# Dada una cadena de caracteres, retira todo los caracteres 
+# Dada una cadena de caracteres, retira todos los caracteres 
 # no-alfanuméricos (utilizando la definición Unicode de alfanumérico).
 
 def quitaNoAlfaNum(texto):
