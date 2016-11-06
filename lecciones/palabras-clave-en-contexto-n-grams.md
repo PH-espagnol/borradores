@@ -20,7 +20,7 @@ Al igual que en [Salida de datos como archivo HTML][], esta lección retoma los 
 
 Una vez que se han creado las KWCIs, se envuelven en HTML y se envían al navegador en donde se pueden ver. Esto refuerza lo aprendido en [Salida de datos como archivo HTML][1] optando por una salida ligeramente distinta.
 
-Al final de la lección seras capaz de extraer todos los n-gramas posibles del texto. En la siguiente lección, aprenderás cómo crear salida de todos los n-gramas de una palabra clave dada en un documento descargado de Internet, y visualizarla claramente en la ventana de tu navegador.
+Al final de la lección serás capaz de extraer todos los n-gramas posibles del texto. En la siguiente lección, aprenderás cómo crear salida de todos los n-gramas de una palabra clave dada en un documento descargado de Internet, y visualizarla claramente en la ventana de tu navegador.
 
 ## Archivos necesarios para esta lección
 
@@ -38,7 +38,7 @@ Probablemente has visto con anterioridad n-gramas muchas veces. Se utilizan gene
 the age of wisdom it was the
 ```
 
-Un n-grama puede contener cualquier tipo de unidad lingüñistica que quieras. Los historiadores tienen más probabilidades de utilizar caracteres como en el bigrama "qu" o palabras como en el trigrama "el perro ladró"; sin embargo, puedes utilizar también fonemas, sílabas o cualquier número de otras unidades en función de tu pregunta de investigación.
+Un n-grama puede contener cualquier tipo de unidad lingüística que quieras. Los historiadores tienen más probabilidades de utilizar caracteres como en el bigrama "qu" o palabras como en el trigrama "el perro ladró"; sin embargo, puedes utilizar también fonemas, sílabas o cualquier número de otras unidades en función de tu pregunta de investigación.
 
 Lo que vamos a hacer ahora es desarrollar la habilidad de visualizar KWIC para cualquier palabra clave en un cuerpo de texto y mostrarla en el contexto de un número fijo de palabras en cada lado. Como antes, vamos a "encerrar" (en HTML) la salida de datos para que se pueda ver en Firefox y añadir fácilmente a Zotero.
 
