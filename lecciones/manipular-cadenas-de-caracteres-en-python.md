@@ -26,7 +26,7 @@ Si has estado expuesto antes a otro lenguaje de programación, sabrás que neces
 mensaje = “Hola Mundo”
 ```
 
-## Operadores de cadenas de caracteres: Adción y multiplicación.
+## Operadores de cadenas de caracteres: Adición y multiplicación.
 
 Una cadena de caracteres en un objeto que consiste precisamente en una serie de signos o caracteres. Python sabe como como tratar una un número de representaciones poderosas y de propósito general, incluidas las cadenas de caracteres. Una forma de manipuar cadenas de caracteres en utilizar *operadores de cadenas de caracteres*. Dichos operadores se representan con símbolos que asociamos a las matemáticas, como +, -, \*, / y =. Estos signos realizan acciones similares a sus contrapartes matemáticas cuando se usan con las cadenas de carateres, aunque no iguales.
 
@@ -126,7 +126,7 @@ print(mensaje8a)
 
 ### Cortar
 
-Si quieres `cortar` partes que no quieras del principio o del final de la cadena de caracteres lo puedes hacer creando una sub-cadena. El mismo tipo de técnica te permite separar una cadena muy larga en componentes más manejables.
+Si quieres `cortar` partes que no quieras del principio o del final de la cadena de caracteres, lo puedes hacer creando una sub-cadena. El mismo tipo de técnica te permite separar una cadena muy larga en componentes más manejables.
 
 ``` python
 mensaje9 = "Hola Mundo"
@@ -154,13 +154,13 @@ print(mensaje9[:5].find("d"))
 -> -1
 ``` 
 
-Hay muchos más, pero los métodos para cadenas de caracteres anteriores son un buen comienzo. Toma en cuenta que en el ejemplo anterior utilizamos corchetes en vez de paréntesis. Esta diferencia en los símbolos de la *sintaxis* es muy imortante. Los paréntesis en Python son utilizados generalmente para *llevar un argumento* a una función. De tal manera que cuando vemos algo como:
+Hay muchos más, pero los métodos para cadenas de caracteres anteriores son un buen comienzo. Toma en cuenta que en el ejemplo anterior utilizamos corchetes en vez de paréntesis. Esta diferencia en los símbolos de la *sintaxis* es muy importante. Los paréntesis en Python son utilizados generalmente para *llevar un argumento* a una función. De tal manera que cuando vemos algo como:
 
 ``` python
 print(len(mensaje7))
 ``` 
 
-quiere decir que se lleva la cadena de caracteres "mensaje7" a la función `len` y entonces enviar el valor resultante de esa función a la declaración `print` para ser impresa. Una función puede ser llamada sin un argumento, pero de todas formas tienes que incluir un par de paréntesis vacíos despuès del nombre de la función. Vimos un ejemplo de ello también.
+quiere decir que se lleva la cadena de caracteres "mensaje7" a la función `len` y entonces enviar el valor resultante de esa función a la declaración `print` para ser impresa. Una función puede ser llamada sin un argumento, pero de todas formas tienes que incluir un par de paréntesis vacíos después del nombre de la función. Vimos un ejemplo de ello también.
 
 ```python
 mensaje7 = "Hola Mundo"
