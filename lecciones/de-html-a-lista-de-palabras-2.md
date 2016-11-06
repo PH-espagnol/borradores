@@ -55,7 +55,7 @@ if caract == '<':
     # haz algo
 ```
 
-Una forma más general de la sentencia condicional if te permite especificar qué hacer ante un evento en el la condición de prueba es falsa.
+Una forma más general de la sentencia condicional if te permite especificar qué hacer ante un evento en el que la condición de prueba es falsa.
 
 ```python
 if caract == '<':
@@ -77,7 +77,7 @@ else:
 
 ## Utiliza el algoritmo para retirar el marcado en HTML
 
-Ahora sabes lo suficiente para implementar la segunda parte del algoritmo: retirar todas las etiquetas HTML. En esta parte el algoritmo queremos:
+Ahora sabes lo suficiente para implementar la segunda parte del algoritmo: retirar todas las etiquetas HTML. En esta parte del algoritmo queremos:
 
 - Buscar en cada caracter de la cadena *contenidoPagina*, un caracter a la vez
 - Si el caracter es un corchete angular izquierdo (\<) estamos dentro de una etiqueta así que ignora el caracter
