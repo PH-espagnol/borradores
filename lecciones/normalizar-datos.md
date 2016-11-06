@@ -114,7 +114,7 @@ Dado que nos interesan solamente los caracteres alfanuméricos, vamos a crear un
 
 def quitaNoAlfaNum(texto):
     import re
-    return re.compile(r'\'W+', re.UNICODE).split(texto)
+    return re.compile(r'\W+', re.UNICODE).split(texto)
 ``` 
 
 La expresión regular en el código anterior es el material dentro de la cadena, en otras palabras `W+`. La `W` es la abreviatura de la clase de *caracteres no-alfanuméricos*. En una expresión regular de Python, el signo de adición (+) coincide con una o más copias de un carácter dado. La expresión `re.UNICODE` le dice al intérprete que queremos que incluya los caracteres de todas las lenguas del mundo en nuestra definición de "alfanumérico", así como de la A a la Z, de a-z y de 0-9 en inglés. Las expresiones regulares deben ser compiladas antes de poder ser utilizadas, que es lo que hace el resto de la declaración. No te preocupes en entender ahora mismo la parte de la compilación.
