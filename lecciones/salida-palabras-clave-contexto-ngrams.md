@@ -122,7 +122,7 @@ print(diccionarioPalabras["black"])
 
 Como puedes observar al ejecutar el programa anterior, la salida de datos aún no es muy legible. Lo que tenemos que hacer es dividir el n-grama en tres partes: antes de la palabra clave, la palabra clave y después de la palabra clave. Podemos utilizar las técnicas aprendidas en los capítulos anteriores para encerrar todo en HTML para que sea fácil de leer.
 
-Utilizando el mismo método anterior de `slice`, vamos a crear nuestras tres partes. Abre un intérprete de Python para ensayar los siguiente ejemplos. Pon especial atención en lo que aparece antes y después de los dos puntos en cada caso. Saber cómo manipular el método de `slice` es una poderosa habilidad para un nuevo historiador programador.
+Utilizando el mismo método anterior de `slice`, vamos a crear nuestras tres partes. Abre un intérprete de Python para ensayar los siguiente ejemplos. Pon especial atención a lo que aparece antes y después de los dos puntos en cada caso. Saber cómo manipular el método de `slice` es una poderosa habilidad para un nuevo historiador programador.
 
 ``` python
 # calcula la longitud del n-grama
@@ -227,7 +227,7 @@ obo.envuelveCadenaenHTML('html-a-kwic', url, outstr)
 
 La primera parte del programa es igual que en el caso anterior. En la segunda parte del programa hemos encerrado todo en una etiqueta HTML *pre* (pre-formateada), lo cual le indica al navegador que no se confunda con los espacios que hemos agregado.
 
-Además, toma en cuenta que hemos utilizado el método `has_key` en el diccionario para asegurarnos que la palabra clave realmente se encuentra en nuestro texto. Si no es así, podemos imprimir un mensaje para el usuario antes de enviar la salida a Firefox. Prueba a cambiar la variable *objetivo* a algunas otras palabras clave. Intenta con alguna que tú sepas que no se encuentra en el texto para asegurarte que tu programa no genere salida de datos cuando no deba.
+Además, toma en cuenta que hemos utilizado el método `has_key` en el diccionario para asegurarnos que la palabra clave realmente se encuentra en nuestro texto. Si no es así, podemos imprimir un mensaje para el usuario antes de enviar la salida a Firefox. Prueba cambiar la variable *objetivo* a algunas otras palabras clave. Intenta con alguna que tú sepas que no se encuentra en el texto para asegurarte que tu programa no genere salida de datos cuando no deba.
 
 Ahora hemos creado un programa que busca una palabra clave en un diccionario creado a partir de una página HTML de la Web, y luego produce una salida de datos con n-gramas de esa palabra clave en otro archivo HTML para visualizar en la Web. Todas las lecciones hasta este punto han incluido partes del vocabulario de Python y métodos necesarios para crear este programa final. Al referirte a esas lecciones, ahora puedes experimentar con Python para crear programas que realicen tareas específicas que te ayudarán en tu proceso de investigación.
 
