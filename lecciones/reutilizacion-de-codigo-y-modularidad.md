@@ -36,7 +36,7 @@ saludoEntidad("Programming Historian")
 
 La línea que comienza con `def` es la declaración de función. Vamos a definir ("def") una función que en este caso hemos llamado "saludoEntidad". La `(x)` es el parámetro de la función. En un momento entenderás cómo trabaja. La segunda línea contiene el código de la función.  Éste puede contener las líneas que necesitemos, pero en este caso es una sola línea.
 
-Ten en cuenta que la *sangría* es muy importante en Python. El espacio en blanco antes de la declaración `print` le dice al intérprete que es parte de la función que ha sido definida. Aprenderás más acerca de esto a medida que avanzamos; por ahora, asegúrate de mantener la sangría de la manera en que te demostramos.  Ejecuta el programa y debes ver algo como esto:
+Ten en cuenta que la *sangría* es muy importante en Python. El espacio en blanco antes de la declaración `print` le dice al intérprete que es parte de la función que ha sido definida. Aprenderás más acerca de esto a medida que avanzamos; por ahora, asegúrate de mantener la sangría de la manera en que te demostramos. Ejecuta el programa y debes ver algo como esto:
 
 ```
 Hola Todos
@@ -60,9 +60,9 @@ Cuando los programas son pequeños, como en el ejemplo anterior, generalmente se
 
 Supongamos qu eestamos construyendo un automóvil. Podrías empezar a juntar piezas de cualquier modo, pero tendría más sentido comenzar a construir y probar cada modulo -quizá el motor- antes de pasar a otros. El motor, a su vez, podría idearse a partir de un número de otros pequeños módulos, como el sistema de carburación y de encendido, los cuales se componen de módulos básicos aún más pequeños. Lo mismo aplica cuando escribes código. Trata de separar un problema en partes más pequeñas y resuélvelas primero.
 
-Acabas de crear un módulo cuando escribiste el programa `saludo.py`. Ahora vas a escribir un segundo programa, `usar-saludo.py` que importará el código de tu módulo y hará uso de él. Python tiene una declaración especial de importación (`import`) qu epermite a un porgrama tener acceso al contenido de otro archivo de programa. Esto es lo que estarás utilizando.
+Acabas de crear un módulo cuando escribiste el programa `saludo.py`. Ahora vas a escribir un segundo programa, `usar-saludo.py` que importará el código de tu módulo y hará uso de él. Python tiene una declaración especial de importación (`import`) que permite a un programa tener acceso al contenido de otro archivo de programa. Esto es lo que estarás utilizando.
 
-Copia este código en el Komodo Edit y sálvalo como `usar-saludo.py` . Este archivo es tu programa y `saludo.py` es tu módulo.
+Copia este código en el Komodo Edit y guárdalo como `usar-saludo.py` . Este archivo es tu programa y `saludo.py` es tu módulo.
 
 ``` python
 # usar-saludo.py
@@ -74,7 +74,7 @@ saludo.saludoEntidad("programming historian")
 
 Hemos hecho algunas cosas aquí.  Primero, le dijimos a Python que cargara (`import` ) el módulo `saludo.py` que creamos previamente.
 
-También te darás cuenta que si antes hemos podido ejecutar la función llamándola sollo por su nombre   *saludoEntidad("todos")*, ahora tenemos que incluir el nombre del módulo seguido por un punto (.) antes del nombre de la función. En lenguaje llano esto significa: ejecuta la función *saludoEntidad* que deberás encontrar en el módulo *saludo.py*.
+También te darás cuenta que si antes hemos podido ejecutar la función llamándola solo por su nombre   *saludoEntidad("todos")*, ahora tenemos que incluir el nombre del módulo seguido por un punto (.) antes del nombre de la función. En lenguaje llano esto significa: ejecuta la función *saludoEntidad* que deberás encontrar en el módulo *saludo.py*.
 
 Puedes ejecutar tu programa `usar-saludo.py` con el comando "Ejecutar Python" que creaste en Komodo Edit. Ten en cuenta que no necesitas ejecutar tu módulo... solamente el programa que lo llama. Si todo se hizo bien, deberás ver lo siguiente en el panel de salida de Komodo Edit:
 
