@@ -23,7 +23,7 @@ Desde el mes de mayo de 2012, Mac OS X tiene preinstalado Python v.2. Puedes cor
 
 ### Creación de un directorio
 
-Para mantener organizados los datos en tu equipo, lo mejor es crear un directorio o carpeta en tu computadora dedicado exclusivamente a almacenar todos tus programas que escribas con Python (por ejemplo: **programming-historian** y mantenlo en el lugar de tu disco duro que mejor te acomode.
+Para mantener organizados los datos en tu equipo, lo mejor es crear un directorio o carpeta en tu computadora dedicado exclusivamente a almacenar todos tus programas que escribas con Python (por ejemplo: **programming-historian** y mantenlo en el lugar de tu disco duro que mejor te acomode).
 
 ### Beautiful Soup
 
@@ -56,7 +56,7 @@ Y en el campo activo "`Start in`" debes escribir:
 ```python
 %D
 ```
-Una vez configurado hacer clic en OK, con lo cual habrá un nuevo botón para ejecutar Python en el panel de la caja de herramientas (Toolbox).
+Una vez configurado haz clic en OK, con lo cual habrá un nuevo botón para ejecutar Python en el panel de la caja de herramientas (Toolbox).
 
 Paso 2 – “Hola Mundo” en Python
 -----------------------------------------------
@@ -73,7 +73,7 @@ En tu editor de texto crea un nuevo archivo y escribe el siguiente programa de d
 # hola-mundo.py
 print (hola mundo)
 ```
-El editor de texto que seleccionaste utilizar debe tener un botón "`run`" que te permitirá ejecutar tu programa. Por ejemplo, si estás utilizando TextWrangler, haz clic en el botón "`#!`" para ejecutarlo. Si todo funciona bien (es posible que no, con lo cual habrá que revisar las diversas instalaciones y configuraciones), deberás ver algo como sigue:
+El editor de texto que seleccionaste debe tener un botón "`run`" que te permitirá ejecutar tu programa. Por ejemplo, si estás utilizando TextWrangler, haz clic en el botón "`#!`" para ejecutarlo. Si todo funciona bien (es posible que no, con lo cual habrá que revisar las diversas instalaciones y configuraciones), deberás ver algo como sigue:
 
 ![TextWrangler-hello-world](https://raw.githubusercontent.com/programminghistorian/jekyll/bc4c0f1398f54adb1add6bb156756212c28e8f78/images/TextWrangler-hello-world.png) 
 'Hello Wold' en Python en una Mac, 
