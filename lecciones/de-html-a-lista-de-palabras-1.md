@@ -39,7 +39,7 @@ Al examinar el código fuente de *obo-t17800628-33.html* notarás que la transcr
 
 Solamente nos interesa la transcripción del juicio, no los metadatos extra contenidos en las etiquetas. No obstante, te darás cuenta que el final de los metadatos coincide con el principio de la transcripción. Esto hace que la ubicación de los metadatos sea un marcador potencialmente útil para aislar texto transcrito.
 
-A primera vista, podemos ver que la transcripción del juicio inicia con una etiqueta HTML: `<p>` que significa "párrafo". Ésta es la primera etiqueta de párrafo en el documento. Debemos ser capaces de usar esto para encontrar el punto de incio de nuestro documento transcrito. Tenemos suerte en este caso porque resulta que esta etiqueta es una manera confiable para determinar el principio de la transcripción del texto del juicio (si quieres, échale un vistazo a otros juicios para comprobarlo).
+A primera vista, podemos ver que la transcripción del juicio inicia con una etiqueta HTML: `<p>` que significa "párrafo". Ésta es la primera etiqueta de párrafo en el documento. Debemos ser capaces de usar esto para encontrar el punto de inicio de nuestro documento transcrito. Tenemos suerte en este caso porque resulta que esta etiqueta es una manera confiable para determinar el principio de la transcripción del texto del juicio (si quieres, échale un vistazo a otros juicios para comprobarlo).
 
 El texto del juicio termina en la línea 82 con otra etiqueta HTML: `<br/>`, que significa un salto de línea. Resulta que es el último salto de línea del documento. Estas dos etiquetas (la del primer párrafo y la del último salto de línea) nos proveen el recurso para aislar el texto transcrito. Los sitios web bien estructurados siempre tienen una única manera de señalar el final del contenido. Solmamente necesitas observar con atención.
 
@@ -74,7 +74,7 @@ El siguiente paso utiliza los comandos de Python aprendidos en la lección [Mani
 - Busca el HTML y guarda la localización de la útlima etiqueta `<p>`
 - Guarda todo lo que aparezca después de la primera etiqueta `<p>` y antes de la etiqueta `<br/>` a una cadena de texto: *contenidoPagina*
 
-Para lograr esto, utilizarás en método de cadena de caracteres "find" y el método .rfind() (que permite encontrar la última coincidencia de algo) y crearás una nueva subcadena conteniendo solamente el contenido deseado entre esas posiciones indexadas.
+Para lograr esto, utilizarás el método de cadena de caracteres "find" y el método .rfind() (que permite encontrar la última coincidencia de algo) y crearás una nueva subcadena conteniendo solamente el contenido deseado entre esas posiciones indexadas.
 
 A medida que trabajas, vas a construir archivos separados para contener tu código. Uno de estos archivos se llamará *obo.py* (a partir de "Old Bailey Online"). Este archivo va a contener todo el código que tú quieres reutilizar; en otras palabras, *obo.py* es un módulo. Discutimos la idea de módulos en la lección [Reutilizacion de código y modularidad][] cuando guardamos nuestras funciones en *saludo.py*.
 
