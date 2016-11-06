@@ -63,7 +63,7 @@ print(formula2 % ('bananas', 'peras'))
 -> Éstas son bananas, aquellas son peras
 ```
 
-En estos ejemplos, un `%s` en una cadena indica que otra cadena será incrustada en ese punto. Hay una serie de otros códigos de fomato de cadenas, la mayoría de los cuales permiten introducir números en las cadenas con varios formatos como `%i` para enteros (i.e. 1, 2, 3), `%f` para punto decimal flotante (i.e. 3.023, 4.59, 1.0) y demás. Al utilizar este método podemos introducir información que es única para ese archivo.
+En estos ejemplos, un `%s` en una cadena indica que otra cadena será incrustada en ese punto. Hay una serie de otros códigos de formato de cadenas, la mayoría de los cuales permiten introducir números en las cadenas con varios formatos como `%i` para enteros (i.e. 1, 2, 3), `%f` para punto decimal flotante (i.e. 3.023, 4.59, 1.0) y demás. Al utilizar este método podemos introducir información que es única para ese archivo.
 
 ## Archivo de datos auto-documentado
 
@@ -80,7 +80,7 @@ def paginaWebATexto(url):
     return texto
 ```
 
-También queremos una función que tome una cadena de texo en cualquier orden y la haga el cuerpo de un archivo HTML que se abra automáticamente en Firefox. Esta fución debe incluir algunos metadatos básicos, como la hora y la fecha en la que se creó y el nombre del programa que lo creo. Estudia el siguiente código con atención y luego cópialo en el módulo `obo.py`.
+También queremos una función que tome una cadena de texto en cualquier orden y la haga el cuerpo de un archivo HTML que se abra automáticamente en Firefox. Esta fución debe incluir algunos metadatos básicos, como la hora y la fecha en la que se creó y el nombre del programa que lo creó. Estudia el siguiente código con atención y luego cópialo en el módulo `obo.py`.
 
 ### Instrucciones para Mac
 
