@@ -148,31 +148,32 @@ Lista de compras
   * Leche
   * Queso
 
-Las listas ordenadas se escriben numerando cada línea. Una vez más, el objetivo de Markdown es producir documentos que sean legibles como texto plano y a la vez ser trasladados a otros formatos.
+Las listas ordenadas se escriben numerando cada línea. Una vez más, el objetivo de Markdown es producir documentos que sean legibles como texto plano y a la vez ser traducidos a otros formatos.
 
 ```
 Lista de pendientes
 ------------------
 1. Terminar el tutorial de Markdown
-2. Ir a la tieda de abarrotes
+2. Ir a la tienda de abarrotes
 3. Preparar el almuerzo
 ```
 
-Lo cual se despliega:
+Lo cual se visualiza de la siguiente manera:
 
 Lista de pendientes
 ------------------
 1. Terminar el tutorial de Markdown
-2. Ir a la tieda de abarrotes
+2. Ir a la tienda de abarrotes
 3. Preparar el almuerzo
 
 #### Fragmentos de código
 
-Representar fragmentos de código en forma distinta al resto del documento es una buena práctica que lo hace más legible. La escritura de código se representa generalmente a espacio sencillo. Dado que Markdown no distingue las tipografías involucradas, representamos los fragmentos de código encerrados entre dos signos de acento grave `````. Por ejemplo: ```<br/ >```. Cuando queremos representar un bloque completo de código lo debemos encerrar entre dos líneas de tres acentos graves. En la ventana de vista previa de StackEdit esto se representará como una caja de texto sombreada y escrita a espacio seguido.
+Representar fragmentos de código fr forma distinta al resto del documento es una buena práctica que lo hace más legible. La escritura de código se representa generalmente a espacio sencillo. Dado que Markdown no distingue las tipografías involucradas, representamos los fragmentos de código encerrados entre dos signos de acento grave `` ` ``. Por ejemplo: ``<br/>``. Cuando queremos representar un bloque completo de código lo debemos encerrar entre dos líneas de tres acentos graves. En la ventana de vista previa de StackEdit esto se representará como una caja de texto sombreada y escrita a espacio seguido.
 
 Escribe lo siguiente en la caja de texto:
 
-   ```html
+```
+<html>
    <html>
        <head>
 	    <title>Título del sitio web</title>
@@ -180,7 +181,7 @@ Escribe lo siguiente en la caja de texto:
        <body>
        </body>
    </html>
-  ```
+```
 
 **Y se representará así:**
 
@@ -201,7 +202,7 @@ Observa cómo el bloque de código se representa a renglón seguido.
 Escribe el siguiente texto en la caja de texto:
 
 ```
-> Hola. Éste es un párrafo de texto incluido en un bloque de cita. Toma en cuenta que tengo una sangría con respecto al margen izquierdo. 
+> Hola. Éste es un párrafo de texto incluido en un bloque de cita. Ten en cuenta que tengo una sangría con respecto al margen izquierdo. 
 ```
 Lo cual se representará:
 
@@ -211,7 +212,7 @@ Lo cual se representará:
 
 Los enlaces de Internet (*links*) se pueden escribir de dos maneras.
 
-El título del enlace se encierra primer entre corchetes y despues se incluye la dirección completa del URL entre paréntesis.
+El título del enlace se encierra primero entre corchetes y después se incluye la dirección completa del URL entre paréntesis.
 
 `Para más tutoriales visita la página [Programming Historian en español] (es.programinghistorian.org "Programming Historian main page").`
 
@@ -219,19 +220,19 @@ El título del enlace se encierra primer entre corchetes y despues se incluye la
 
 Para más tutoriales visita la página [Programming Historian en español] (es.programinghistorian.org/"Programming Historian main page").
 
-Los enlaces tipo referencia son muy útiles para notas a pie de página y ayudan a mantener más ordenado tu documento en texto plano. Éstas se escriben con un par adicional de corchetes con el número de referencia para establecer el vínculo que identifique la etiqueta.
+Los enlaces también se utilizan para crear notas a pie de página y son útiles porque, además, ayudan a mantener más ordenado tu documento en texto plano. Las notas a pie se escriben con un par adicional de corchetes con el número de referencia para establecer el vínculo que identifique la etiqueta.
 
-`Un ejemplo es el sitio de [Programming Historian] [1]`
+`Un ejemplo es el sitio de [Programming Historian en español] [1]`
 
 Entonces puedes incluir el URL en otra parte del documento:
 
-`[1]: http://programminghistorian.org/ "The Programming Historian"`
+`[1]: http://programminghistorian.org/ "The Programming Historian en español"`
 
 Lo cual se despliega de la siguiente manera:
 
 Un ejemplo es el sitio de [Programming Historian] [1]
 
-[1]: http://programminghistorian.org/ "The Programming Historian"
+[1]: http://programminghistorian.org/ "The Programming Historian en español"
 
 
 #### Imágenes
@@ -254,7 +255,7 @@ ___
 - - - - - -
 ```
 
-Lo cual genera:
+Es decir:
 
 ___
 ***
@@ -262,7 +263,7 @@ ___
 
 #### Tablas
 
-El núcleo de Markdown no incluye tablas; sin embargo, algunos sitios web y aplicaciones usan variantes de Markdown que pueden incluuir tablas y otras características especiales. [GitHub Flavored Markdown] es una de estas variantes y es utilizado para visualizar archivos `.md` en el navegador del sitio de GitHub.
+El núcleo de Markdown no incluye tablas; sin embargo, algunos sitios web y aplicaciones usan variantes de Markdown que pueden incluir tablas y otras características especiales. [GitHub Flavored Markdown] (Falta enlace) es una de estas variantes y es utilizado para visualizar archivos `.md` en el navegador del sitio de GitHub.
 
 Para crear una tabla en GitHub, usa barras verticales `|`para separar columnas y guiones entre los encabezados y el resto del contenido de la tabla. Dado que las barras verticales son sólo estrictamente necesarias entre columnas, puedes usarlas en los extremos de la tabla para darle una vista más acabada. Las celdas pueden tener contenido de cualquier extensión, y no es necesario que las barras verticales estén alineadas verticalmente entre sí.
 
@@ -274,7 +275,7 @@ Para crear una tabla en GitHub, usa barras verticales `|`para separar columnas y
 | renglón 3, columna 1 | renglón 3, columna 2 | renglón 3, columna 3|
 ```
 
-**Esto se despliega así:**
+**Esto se visualiza así:**
 
 | Encabezado 1 | Encabezado 2 | Encabezado 3 |
 | --------- | --------- | --------- |
@@ -282,27 +283,27 @@ Para crear una tabla en GitHub, usa barras verticales `|`para separar columnas y
 | renglón 2, columna 1 | renglón 2, columna 2 | renglón 2, columna 3|
 | renglón 3, columna 1 | renglón 3, columna 2 | renglón 3, columna 3|
 
-Para especiicar la alineación del contenido de cada columna se pueden agregar dos puntos `:`al renglón de los encabezados como sigue: 
+Para especificar la alineación del contenido de cada columna se pueden agregar dos puntos `:`al renglón de los encabezados como sigue: 
 
 ```
-| Alineado-izquierda | Centered | Alineado-derecha |
+| Alineado-izquierda | Centrado | Alineado-derecha |
 | :-------- | :-------: | --------: |
 | Manzanas | rojo | 5000 |
 | Plátanos | amarillo | 75 |
 ```
 
-Lo cual se despliega:
+Lo cual se representa de este modo:
 
-| Alineado-izquierda | Centered | Alineado-derecha |
+| Alineado-izquierda | Centrado | Alineado-derecha |
 | :-------- | :-------: | --------: |
 | Manzanas | rojo | 5000 |
 | Plátanos | amarillo | 75 |
 
-Aunque Markdown se está haciendo cada vez más popular, particularmente para los documentos con formato que se pueden ver en la web, muchas persones y editores siguen solicitando archivos tradicionales en Word, PDF y otros formatos. Esto puede arreglarse de alguna manera utilizando herramientas de conversión en línea como [Pandoc]. No obstante, algunas características de los procesadores de texto, como la de control de cambios, no tienen soporte aún. Por favor, visita la lección de Programming Historian en español sobre [Autoría sustentable en texto plano usando Pandoc y Markdown] para mayor información sobre Pandoc.
+Aunque Markdown se está haciendo cada vez más popular, particularmente para los documentos con formato que se pueden ver en la web, muchas persones y editores siguen solicitando archivos tradicionales en Word, PDF y otros formatos. Esto puede arreglarse de alguna manera utilizando herramientas de conversión en línea como [Pandoc] (Falta enlace). No obstante, algunas características de los procesadores de texto, como la de control de cambios, no tienen soporte aún. Por favor, visita la lección de Programming Historian en español sobre [Autoría sustentable en texto plano usando Pandoc y Markdown] para mayor información sobre Pandoc.
 
 ### Conclusiones
 
-Markdown es un término medio muy útil entre los archivos de texto plano sin estilo y los documentos de procesadores de texto heredados. Su sintaxis simple se aprende rápidamente y es altamente legible en el mismo documento y cuando se despliega en HTML u otro tipo de documentos. En conclusión, escribir tus documentos en Markdown significa que serán capaces de ser utilizados y leídos a largo plazo.
+Markdown es un término medio muy útil entre los archivos de texto plano sin estilo y los documentos de procesadores de texto heredados. Su sintaxis simple se aprende rápidamente y es altamente legible en el mismo documento y cuando se transforma en HTML u otro tipo de documentos. En conclusión, escribir tus documentos en Markdown significa que serán capaces de ser utilizados y leídos a largo plazo.
 
 
 [John Gruber]: http://daringfireball.net/projects/markdown/
@@ -312,5 +313,5 @@ Markdown es un término medio muy útil entre los archivos de texto plano sin es
 [GitHub Flavored Markdown]: https://help.github.com/articles/github-flavored-markdown/
 [GitHub Flavored Markdown]: https://help.github.com/articles/github-flavored-markdown/
 [Pandoc]: http://johnmacfarlane.net/pandoc/
-[Autoría sustentable en texto plano usando Pandoc y Markdown]: http://es.programminghistorian.org/lecciones/autoria-sustentable-usando-pandoc-y-markdown
+[Autoría sostenible en texto plano usando Pandoc y Markdown]: http://programminghistorian.org/lecciones/autoria-sustentable-usando-pandoc-y-markdown *Esta URL no está bien*
 
