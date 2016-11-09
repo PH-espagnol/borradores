@@ -187,13 +187,13 @@ Estos tres comandos de terminal: `pwd`, `ls` y `cd` es todo lo que necesitas en 
 
 ## Usar Pandoc para convertir Markdown a un documento de MS Word
 
-¡Ahora estamos listos para la composición tipográfica! Abre la ventana de tu terminal, utiliza `$ pwd`y `$ cd` para navegar hasta la carpeta exacta de tu proyecto. Una vez que estés ahí escribe `$ ls` en la terminal para enlistar los archivos. Si ves tu archivo .md y tus imágenes es que te encuentras en el lugar correcto. Para convertir .md a .docx escribe:
+¡Ya estamos listos para la composición tipográfica! Abre la ventana de tu terminal, utiliza `$ pwd`y `$ cd` para navegar hasta la carpeta exacta de tu proyecto. Una vez que estés ahí escribe `$ ls` en la terminal para listar los archivos. Si ves tu archivo .md y tus imágenes es que te encuentras en el lugar correcto. Para convertir .md a .docx escribe:
 
 ```
 $ pandoc -o principal.docx principal.md
 ```
 
-Abre el arhivo con MS Word para contejar tus resultados. Alternativamente, si utilizas Open o Libre Office puedes ejecutar:
+Abre el arhivo con MS Word para contejar tus resultados. Si utilizas Open o Libre Office puedes ejecutar:
 
 ```
 $ pandoc -o principal.odt principal.md
