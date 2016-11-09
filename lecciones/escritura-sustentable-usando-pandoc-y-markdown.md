@@ -76,9 +76,9 @@ Recomendamos que instales los dos siguientes programas de aplicación, aunque no
 
 ## Bases de Markdown
 
-Markdown es una convención para estructurar tus documentos en texto plano de una manera semántica. La idea es identificar estructuras lógicas en tu documento (un título, una sección, subsecciones, notas al pie, etc.), marcarlas con algunos caracteres discretos y luego "compilar" el texto resultante con un intérprete de composición tipográfica que dará forma al documento en consonancia con el estilo especificado.
+Markdown es una convención para estructurar tus documentos en texto plano de una manera semántica. La idea es identificar estructuras lógicas en tu documento (un título, una sección, subsecciones, notas al pie, etc.), marcarlas con algunos caracteres distintivos y luego "compilar" el texto resultante con un intérprete de composición tipográfica que dará forma al documento en consonancia con el estilo especificado.
 
-Las convenciones para Markdown están disponibles en varios tipos o "*flavors*", diseñados para su uso en contextos particulares como blogs, wikis o repositorios de código. El *flavor* de Markdown utilizado por Pandoc está orientado para un uso académico. Sus convenciones están descritas en la página de [Pandoc's Markdown](http://pandoc.org/README.html#pandocs-markdown). Estas convenciones incluyen el ["YAML" block](http://johnmacfarlane.net/pandoc/README.html#yaml-metadata-block), que contiene una serie de metadatos muy útiles.
+Las convenciones para Markdown están disponibles en varios tipos o "*flavors*", diseñados para su uso en contextos particulares como blogs, *wikis* o repositorios de código. El *flavor* de Markdown utilizado por Pandoc está orientado para un uso académico. Sus convenciones están descritas en la página de [Pandoc's Markdown](http://pandoc.org/README.html#pandocs-markdown). Estas convenciones incluyen el ["YAML" block](http://johnmacfarlane.net/pandoc/README.html#yaml-metadata-block), que contiene una serie de metadatos muy útiles.
 
 Vamos a crear ahora un documento simple en Markdown. Abre tu editor de texto plano seleccionado y escribe algo que debe tener un aspecto como el siguiente:
 
@@ -90,7 +90,7 @@ date: 20 de enero de 2014
 ---
 ```
 
-El Markdown "Pandoc-flavored" almacena cada uno de los valores anteriores y los "imprime" en la ubicación apropiada de tu documento de salida una vez que está listo para la composición tipográfica. Más adelante aprenderemos a incluir campos más potentes en YAML. Por ahora, vamos a suponer que estamos escribiendo un documento compuesto por tres secciones, cada una subbdividida en dos. Hay que dejar una línea en blanco después de los tres últimos guiones del bloque YAML para que puedas pegar lo que sigue:
+El Markdown "Pandoc-flavored" almacena cada uno de los valores anteriores y los "imprime" en la ubicación apropiada de tu documento de salida una vez que está listo para la composición tipográfica. Más adelante aprenderemos a incluir campos más potentes en YAML. Por ahora, vamos a suponer que estamos escribiendo un documento compuesto por tres secciones, cada una subdividida en dos. Hay que dejar una línea en blanco después de los tres últimos guiones del bloque YAML para que puedas pegar lo que sigue:
 
 ```
 # Sección 1  
@@ -102,15 +102,15 @@ El Markdown "Pandoc-flavored" almacena cada uno de los valores anteriores y los 
 
     ## Subsección 1.2
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-    # Sección 2
+    
+# Sección 2
 
     ## Subsección 2.1
 ```
 
 Sigue adelante e introduce cualquier texto de relleno. Los espacios vacíos tienen significado en Markdown por lo que no debes poner sangría en los párrafos pero sí es importante que separes los párrafos con una línea en blanco. Las líneas en blanco también deben preceder a los encabezados de sección.
 
-Puedes añadir asteriscos para añadir énfasis a las palabras con negritas o cursivas de esta manera: `*cursivas*`y `**negritas**`. También hay que añadir a nuestro texto un enlace y una nota a pie de página para cubrir los requisitos de un texto promedio. Escribe:
+Puedes añadir asteriscos para dar énfasis a las palabras con negritas o cursivas de esta manera: `*cursivas*`y `**negritas**`. También hay que añadir a nuestro texto un enlace y una nota a pie de página para cubrir los requisitos de un texto promedio. Escribe:
 
 ```
 Una oración que requiere una cita.[^1]
@@ -120,7 +120,7 @@ Una oración que requiere una cita.[^1]
 
 Cuando el texto del enlace y la dirección del mismo son iguales es más rápido escribir: `<https://www.eff.org/>, en vez de [https://www.eff.org/](https://www.eff.org/)`.
 
-Vamos a guardar nuestro archivo antes de ir más lejos. Haz una carpeta para albergar este proyecto. Es probable que tengas un sistema de organización de tus documentos, proyectos, ilustraciones y bibliografías, pero a menudo tu documento, tus proyectos, tus ilustraciones y bibliografías se encuentran en diferentes carpetas, lo que los hace difíciles de encontrar. Nuestro objetivo es crear una carpeta única para cada proyecto con todos los materiales relevantes incluídos en ella. La regla general es "un proyecto, un texto, una carpeta". Denomina a tu archivo algo así como "principal.md", donde "md" significa que es un archivo Markdown.
+Vamos a guardar nuestro archivo antes de ir más lejos. Haz una carpeta para albergar este proyecto. Es probable que tengas un sistema de organización de tus documentos, proyectos, ilustraciones y bibliografías, pero a menudo tu documento, tus proyectos, tus ilustraciones y bibliografías se encuentran en diferentes carpetas, lo que los hace difíciles de encontrar. Nuestro objetivo es crear una carpeta única para cada proyecto con todos los materiales relevantes incluidos en ella. La regla general es "un proyecto, un texto, una carpeta". Denomina a tu archivo algo así como "principal.md", donde "md" significa que es un archivo Markdown.
 
 Una vez que has guardado el archivo, vamos a añadir una imagen. Copia una imagen pequeña a la carpeta y añade lo siguiente en alguna parte del cuerpo de texto: `![una imagen](tu_imagen.jpg)`.
 
@@ -142,8 +142,8 @@ date: 20 de enero de 2014
 
     ## Subsección 1.2
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque  ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-    # Sección 2
+    
+# Sección 2
 
     ## Subsección 2.1
 	![una imagen](tu_imagen.jpg)
@@ -159,15 +159,15 @@ Y como veremos en breve, este archivo de texto plano se puede representar como u
 
 % include figure.html filename="Screen-Shot-2014-11-06.png" caption="Screen shot of PDF rendered by Pandoc" %}
 
-Si quieres tener una idea de cómo serán interpretado en un fomato HTML este tipo de markup, prueba este [sitio de prueba en línea](http://daringfireball.net/projects/markdown/dingus) y juega con varios tipos de sintaxis. Recuerda que ciertos elementos del *Pandoc*-flavored markdown (como el bloque de título o las notas al pie) no funcionan en esta versión web ya que solamente acepta lo básico.
+Si quieres tener una idea de cómo serán interpretado en un fomato HTML este tipo de marcado, prueba este [sitio de prueba en línea](http://daringfireball.net/projects/markdown/dingus) y juega con varios tipos de sintaxis. Recuerda que ciertos elementos del *Pandoc-flavored markdown* (como el bloque de título o las notas al pie) no funcionan en esta versión web ya que solamente acepta lo básico.
 
-En este punto, deberás ocupar algún tiempo explorando algunas de las características de Markdown como las citas de texto (referidas con el símbolo `>`), listados que empiezan con `*` o `-`, saltos de línea literales que empiezan con `|` (útiles para poesía), tablas y algunas otras funciones enlistadas en la página sobre Markdown de Pandoc.
+En este punto, deberás ocupar algún tiempo explorando algunas de las características de Markdown como las citas de texto (referidas con el símbolo `>`), los listados que empiezan con `*` o `-`, los saltos de línea literales que empiezan con `|` (útiles para poesía), las tablas y algunas otras funciones señaladas en la página sobre Markdown de Pandoc.
 
-Pon particular atención a los espacios en blanco y al flujo de los párrafos. La documentación lo explica sucintamente cuando define un párrafo como "una o más líneas de texto seguidas por una o más líneas en blanco." Toma en cuenta que "las nuevas líneas son tratadas como espacios" y que "si necesitas un salto de línea elocuente, utiliza dos o más espacios en blanco al final de la línea." La mejor manera de entender lo que significa es experimentar libremente. Utiliza el modo de vista previa de tu editor o solamente ejecuta Pandoc para ver los resultados de tus experimentos.
+Pon particular atención a los espacios en blanco y al flujo de los párrafos. La documentación lo explica sucintamente cuando define un párrafo como "una o más líneas de texto seguidas por una o más líneas en blanco." Ten en cuenta que "las nuevas líneas son tratadas como espacios" y que "si necesitas un salto de línea elocuente, utiliza dos o más espacios en blanco al final de la línea." La mejor manera de entender lo que significa es experimentar libremente. Utiliza el modo de vista previa de tu editor o solamente ejecuta Pandoc para ver los resultados de tus experimentos.
 
 Pero sobre todo, evita la necesidad de formatear. Recuerda que estás identificando unidades semánticas: secciones, subsecciones, énfasis, notas al pie y figuras. Incluso `*cursivas*`y `**negritas**` en Markdown no son en realidad marcas de formato, sino que indican un nivel diferente de énfasis. La aplicación del formato sucederá después, una vez que conozcas el momento del proceso en el que hay que hacerlo y los requerimientos de la publicación.
 
-Existen programas que te permiten obtener una vista previa en vivo de la salida de markdown al tiempo que editas tu archivo de texto plano y que detallaremos más adelante en la sección de Recursos útiles. Algunos de ellos soportan notas a pie, figuras, incluso bibliografías. Sin embargo, para sacar provecho al máximo de Pandoc, te recomendamos que te quedes con lo más sencillo: archivos de texto plano almacenados localmente en tu computadora.
+Existen programas que te permiten obtener una vista previa en vivo de la salida de markdown al tiempo que editas tu archivo de texto plano y que detallaremos más adelante en la sección de [Recursos útiles] (falta enlace). Algunos de ellos soportan notas a pie, figuras, incluso bibliografías. Sin embargo, para sacar provecho al máximo de Pandoc, te recomendamos que te quedes con lo más sencillo: archivos de texto plano almacenados localmente en tu computadora.
 
 ## Estar en contacto con la terminal de la máquina
 
