@@ -8,7 +8,7 @@ reviewers:
 - Sharon Howard
 - William J. Turkel
 - Adam Crymble
-tralator:
+translator:
 - Víctor gayol
 layout: default
 difficulty: 1
