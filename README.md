@@ -1,5 +1,4 @@
 # Borradores / Drafts
-<<<<<<< HEAD
 
 Borradores de traducciones PH-es para editar / PH translation drafts before submit to programminghistorian/ph-submissions
 
@@ -18,6 +17,3 @@ Copia tal cual el Bloque YAML de la lección original al inicio de tu traducció
 Si las lecciones contienen código de programación, es preferible copiarlo a tu traducción tal cual está en el original. Si tienes algunas aptitudes en programación y quieres modificar los nombres de las variables para hacer más legible la lectura del código a los lectores en español, por favor, verifica primero que el código hace lo que tiene que hacer según los autores de la lección. De ninguna manera modifiques el código en una traducción sin antes señalar a los autores que tu propuesta puede funcionar mejor. Por ejemplo: “Todo el código escrito en Python está basado en la versión 2.x (2.7.12 es la versión más actualizada al 7 de octubre de 2016)”.
 
 
-=======
-Borradores de traducciones PH-es para editar / PH translation drafts before submit to programminghistorian/ph-submissions
->>>>>>> origin/master
