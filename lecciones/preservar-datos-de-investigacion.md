@@ -16,28 +16,23 @@ difficulty: 1
 
 #### La cuestión de fondo
 
-En su ensayo de 2003, "Escasez o abundancia", Roy Rosenzweig trató de alertar a los historiadores de lo que llamó "la fragilidad de la evidencia en la era digital" (Rosenzweig, 736). Y aunque sus preocupaciones se han centrado en los recursos disponibles en la web abierta, fácilmente se pueden extenderse a los materiales de origen digital -o datos- que los historiadores crean a lo largo de su investigación.
+En su ensayo de 2003, "Escasez o abundancia", Roy Rosenzweig trató de alertar a los historiadores de lo que llamó "la fragilidad de las pruebas en la era digital" (Rosenzweig, 736). Y aunque sus preocupaciones se han centrado en los recursos disponibles en la web abierta, fácilmente se pueden extenderse a los materiales de origen digital -o datos- que los historiadores crean a lo largo de su investigación.
 
-Esta guía se va a enfocar en estos datos de investigación, Pero, ¿por qué?
+Esta guía se va a centrar en la preservación de los datos de investigación. Pero, ¿por qué resulta necesario?
 
-Bueno, los historiadores se están moviendo hacia el uso de las computadoras como medios predeterminados para almacenar todos sus datos de investigación, sus cosas. Sus manuscritos son objetos digitales de un tiempo para acá y su investigación se está desplazando en consecuencia -ya sea como notas, fotografías de archivos o tablas de datos. Además, tener los datos de investigación en forma digital tiene una clara ventaja sobre sus antecedentes físicos: pueden ser navegables y buscables, alojados de manera que puedan ser accesibles en muchos lugares y fusionados o consultados con otros datos de investigación.
+Los historiadores se están moviendo hacia el uso de las computadoras como medios predeterminados para almacenar todos sus datos de investigación. Sus manuscritos son objetos digitales de un tiempo para acá y la investigación se está desplazando en consecuencia -ya sea como notas, fotografías de archivos o tablas de datos-. Además, tener los datos de investigación en formato digital tiene una clara ventaja sobre sus antecedentes físicos: pueden ser navegables y buscables, alojados de manera que puedan ser accesibles en muchos lugares y fusionados o consultados con otros datos de investigación.
 
-Pero el hecho de poner todos los datos de investigación en forma digital no garantiza que sobrevivirán. Y cuando digo *sobrevivir* no me refiero a su permanencia en un sentido literal o en el sentido de ser capaz de sobrevivir legible en la próxima versión de Microsoft Word; sino más bien en el sentido de que pueda ser utilizado por la gente. Los apectos prácticos de cómo conservar los datos de investigación para el futuro es un problema cuya solución ya sido abordada en detalle con y sin los historiadores en mente. Así también expertos en gestión de datos, servicios y similares han hablado al igual acerca de las mejores prácticas académicas en lo que respecta a la documentación, estructuración y organización de los datos de investigación. A pesar de todo esto, los datos de investiagión generados por un historiador individual están en riesgo de perderse si ese historiador no es capaz de generar y preservarlos en una forma en que pueda entender y encontrarlos significativos años o décadas después del hecho, por no hablar de cualquier otra persona vadeando a través de las idiosincrasias de su proceso de investigación. En breve, hay un riesgo de pérdida de los datos cuando se separan de su contexto de creación, a partir del conocimiento tácito de que fueron útiles para la preparación de la conferencia X o el manuscrito Y. Como dijo Willian Stafford Noble:
+Pero el hecho de poner todos los datos de investigación en formato digital no garantiza su supervivencia. Y cuando digo *sobrevivir* no me refiero a su permanencia en un sentido literal o en el sentido de ser capaz de permanecer legible en la próxima versión de Microsoft Word; sino más bien en el sentido de que un archivo pueda ser utilizado por la gente. Los apectos prácticos de cómo conservar los datos de investigación para el futuro es un problema cuya solución ha sido abordada en detalle con y sin los historiadores en mente. Asimismo, los expertos en gestión de datos, servicios y similares han hablado al igual acerca de las mejores prácticas académicas en lo que respecta a la documentación, estructuración y organización de los datos de investigación. A pesar de todo esto, los datos de investiagión generados por un historiador individual están en riesgo de perderse si ese historiador no es capaz de generarlos y preservarlos en una forma en que pueda entender y encontrarlos significativos años o décadas más tarde, por no hablar de cualquier otra persona vadeando a través de las idiosincrasias de su proceso de investigación. En resumen, hay un riesgo de pérdida de los datos cuando se separan de su contexto de creación y del conocimiento tácito de que fueron útiles para la preparación de la conferencia X o el manuscrito Y. Como dijo William Stafford Noble:
 
-> El principio guía básico es simple: Alguien no familiarizado con tu
+> El principio guía básico es simple: alguien no familiarizado con tu
 > proyecto debe ser capaz de ver los archivos de tu computadora y entender
-> en detalle qué es lo que hiciste y porqué [...] Más comúnmente resulta, sin embargo, que
-> ese "alguien" seas tú. En unos meses a partir de ahora, podrás no recordar
-> lo que estabas haciendo cuando creaste un conjunto de archivos en particular, o podrás
-> olvidar qué conclusiones esbozaste. Tendrás entonces que pasar tiempo    
-> reconstruyendo tus experimentos anteriores o perder las
-> percepciones adquiridas a partir de esos experimentos.
->
+> en detalle qué es lo que hiciste y por qué [...]. Pero por lo común resulta que ese "alguien" eres tú. En unos meses a partir de ahora, podrás no recordar lo que estabas haciendo cuando creaste un conjunto de archivos en particular, o podrás olvidar qué conclusiones esbozaste. Tendrás entonces que pasar tiempo reconstruyendo tus experimentos anteriores percepciones adquiridas a partir de esos experimentos.
+> 
 > William Stafford Noble (2009) A Quick Guide to Organizing
 > Computational Biology Projects. PLoSComputBiol 5(7): e1000424.
 > doi:10.1371/journal.pcbi.1000424
 
-Con base en las lecciones y la experiencia de los expertos en datos de investigación, esta guía te sugerirá formas en las que los historiadores pueden documentar y estructurar sus datos de investigación con el fin de asegurar que permanecerán útiles en el futuro. La guía no pretende ser prescriptiva sino que sus supuestos lectores repitan, cambien y adapten las ideas que se presentan a lo que mejor se adapte a sus investigaciones.
+Teniendo en cuenta las lecciones y la experiencia de los expertos en datos de investigación, esta guía te sugerirá formas en las que los historiadores pueden documentar y estructurar sus datos de investigación con el fin de asegurar que permanecerán útiles en el futuro. La guía no pretende ser prescriptiva pues se espera que los lectores repitan, cambien y adapten las ideas que se presentan de acuerdo con sus investigaciones.
 
 * * * * * * *
 
@@ -51,30 +46,30 @@ Con base en las lecciones y la experiencia de los expertos en datos de investiga
 
 El propósito de documentar es capturar el proceso de creación de datos, los cambios hechos a los datos y el conocimiento tácito asociado con los datos. Las metodologías de gestión de proyectos, como [PRINCE2], pone un gran énfasis en una documentación precisa, estructurada y detallada. Mientras que este enfoque beneficia especialmente a proyectos grandes y complejos, con múltiples asociados, el historiador promedio probablemente pueda beneficiarse de un enfoque más flexible y que se nutra, pero no se ate, a los principios de la gestión de proyectos. En el caso de la investigación histórica, el tipo de documentación que podría producirse para preservar la utilidad de los datos de investigación incluye:
 
-- Documentación que describa las notas tomadas durante el examen de un documento de archivo, como la referencia del archivo para el documento original, la representatividad de las notas (por ejemplo, transcipciones completas, transcripciones parciales o resúmenes), cuánto del documento fue examinado o las eciciones tomadas para expluir secciones del documento del proceso de investigación.
-- Documentación que describa los datos tabulares, como la forma en que fueron generados (por ejemplo, a mano de forma automatizada), referencias de archivo para las fuentes originales de donde provienen los datos, qué atributos de las fuentes originales fueren conservados y el porqué.
+- Documentación que describa las notas tomadas durante el examen de un documento de archivo, como la referencia del archivo para el documento original, la representatividad de las notas (por ejemplo, transcipciones completas, transcripciones parciales o resúmenes), cuánto del documento fue examinado o las decisiones tomadas para excluir secciones del documento del proceso de investigación.
+- Documentación que describa los datos tabulares, como la forma en que fueron generados (por ejemplo, a mano o de forma automatizada), referencias de archivo para las fuentes originales de donde provienen los datos, qué atributos de las fuentes originales fueron conservados y el porqué.
 - Documentación que describa un directorio de imágenes digitales, cómo se creó cada imagen, de dónde fueron descargadas esas imágenes o notas de investigación que se refieran a ellas.
 
 Como sugiere el último ejemplo, uno de los propósitos principales de la documentación es describir los vínculos significativos que existen entre los datos de la investigación, vínculos que pueden dejar de ser evidentes con el tiempo.
 
-En qué momento documentar depende en gran medida de la persona y del ritmo de la investigación. La regla general es adquirir un hñabito de escritura y actualizar la documentación a intervalos regulares, idealmente cada vez que se termina un lote de trabajo por la mañana, la tarde o día. Al mismo tiempo es importante no procuparse por la perfección sino aspirar a escribir documentación consistente y eficiente que será útil para ti y es de esperarse que también para otras personas que puedan utilizar tus datos de investigación años después de realizados.
+En qué momento documentar depende en gran medida de la persona y del ritmo de la investigación. La regla general es adquirir un hábito de escritura y actualizar la documentación a intervalos regulares, idealmente cada vez que se termina un lote de trabajo por la mañana, la tarde o día. Al mismo tiempo es importante no procuparse por la perfección sino aspirar a escribir documentación consistente y eficiente que será útil para ti y es de esperarse que también para otras personas que puedan utilizar tus datos de investigación años después de realizados.
 
 * * * * *
 
 #### Formatos de archivo
 
-Los datos de investigación y la documentación idelamente debe ser guardada en archivos [independientes de plataforma] como .txt para notas y .csv (valores separados por comas) o .tsv (valores separados por tabuladores) para los datos en tablas. Estos formatos de texto plano son preferibles a los formatos propietarios utilizados por defecto por Microsoft Office o iWork porque pueden abrirse con muchas paqueterías de programas y tienen una fuerte posibilidad de permanecer visibles o editables en el futuro. Muchas *suites* de oficina estándar incluyen la opción de guardar archivos en formatos .txt, .csv y .tsv, lo que significa qu epuede continuar trabajando con programas familiares y aún así tomar las acciones apropiadas para hacer accesible tu trabajo. Comparados con .doc o .xls, estos formatos tienen el beneficio adicional, desde una perspectiva de preservación, de contener solamente elementos legibles por la máquina. Mientras que es una práctica común el uso de negritas, itálicas o colores para indicar encabezados o para establecer una conexión visual entre elementos de los datos, estas anotaciones orientadas a la visualización no son legibles por la máquina y por lo tanto no puede ser consultada ni buscada, ni es adecuada para grandes cantidades de información. Son prefereibles los esquemas simples de notación como el uso de un doble asterisco o tres signos de almohadilla para representar una característica de los datos; en mis propias notas, por ejemplo, tres signos de interrogación indica algo a lo que necesito dar seguimiento, y lo elegí porque "???" se puede encontrar fácilmente con una búsqueda mediante CTRL + F.
+Idealmente, los datos de investigación y la documentación deben ser guardados en archivos [independientes de plataforma] como .txt para notas y .csv (valores separados por comas) o .tsv (valores separados por tabuladores) para los datos en tablas. Estos formatos de texto plano son preferibles a los formatos propietarios utilizados por defecto por Microsoft Office o iWork porque pueden abrirse con muchos paquetes de programas y tienen una fuerte posibilidad de permanecer visibles o editables en el futuro. Muchos paquetes de ofimática incluyen la opción de guardar archivos en formatos .txt, .csv y .tsv, lo que significa que se puede continuar trabajando con programas familiares y aún así tomar las acciones apropiadas para hacer accesible tu trabajo. Comparados con .doc o .xls, estos formatos tienen el beneficio adicional, desde una perspectiva de preservación, de contener solamente elementos legibles por la computadora. Mientras que es una práctica común el uso de negritas, itálicas o colores para indicar encabezados o para establecer una conexión visual entre elementos de los datos, estas anotaciones orientadas a la visualización no son legibles por la computadora y, por lo tanto, no puede ser consultada ni buscada, ni es adecuada para grandes cantidades de información. Son preferibles los esquemas simples de anotación como el uso de un doble asterisco o tres signos de almohadilla para representar una característica de los datos; en mis propias notas, por ejemplo, tres signos de interrogación indica algo a lo que necesito dar seguimiento, y lo elegí porque "???" se puede encontrar fácilmente con una búsqueda mediante CTRL + F.
 
-Es probable que  en muchas ocasiones estos esquemas de anotación se desprendan de la práctica individual (y en consecuencia deberan ser documentados), aunque hay esquemas disponibles como [Markdown] (los archivos Markdown se guardan como .md). Unos excelentes apuntes están disponibles en GitHub  <https://github.com/adam-p/markdown-here>, para quien quiera seguir -o adaptar- este esquema. Notepad++ <http://notepad-plus-plus.org/> está recoendado para usuarios de Windows, aunque de ninguna manera es esencial, para trabajar con archivos .md. Los usuarios de Mac o Unix pueden encontrar útil [Komodo Edit] o [Text Wrangler].
+Es probable que en muchas ocasiones estos esquemas de anotación se desprendan de la práctica individual (y en consecuencia deban ser documentados), aunque hay sintaxis disponibles como [Markdown] (los archivos Markdown se guardan como .md). En GitHub  <https://github.com/adam-p/markdown-here> se pueden encontrar estos excelentes apuntes para quien quiera seguir -o adaptar- esta sintaix. Se recomienda el uso de Notepad++ <http://notepad-plus-plus.org/> a los usuarios de Windows, aunque de ninguna manera es esencial para trabajar con archivos .md. Los usuarios de Mac o Unix pueden encontrar útil [Komodo Edit] o [Text Wrangler].
 
 #### Resumen 1
 
-Para resumir, los puntos clave acerca de documentación y formatos de archivo son:
+Para resumir, los puntos clave acerca de la documentación y los formatos de archivo son:
 
-- Trata que la documentación capture de una manera precisa y consistente el conocimiento tácito que rodea al proceso de investigación, ya sea en relación a las notas tomadas, la generación de datos en tablas o la acumulación de la evidencia visual.
-- Mantén una documentación sencilla utilizando formatos y prácticas de notación independientes de plataforma y legibles por la máquina.
+- Intenta que la documentación capture de una manera precisa y consistente el conocimiento tácito que rodea al proceso de investigación, ya sea en relación con las notas tomadas, la generación de datos en tablas o la acumulación de pruebas visuales.
+- Mantén una documentación sencilla utilizando formatos y prácticas de anotación independientes de la plataforma y legibles por la computadora.
 - Haz espacio para actualizar y crear documentación en tu flujo de trabajo sin permitir que el proceso de documentación se convierta en una carga.
-- Invierte en dejar un rastro en papel ahora para ahorrar tiempo intentando reconstruirlo en el futuro.
+- *Nota del revisor: no entiendo esta frase* Invierte en dejar un rastro en papel ahora para ahorrar tiempo intentando reconstruirlo en el futuro.
 
 * * * * *
 
@@ -82,24 +77,23 @@ Para resumir, los puntos clave acerca de documentación y formatos de archivo so
 
 Documentar tu investigación se torna más fácil estructurando los datos de investigación de una manera consistente y predecible.
 
-¿Por que?
+¿Por qué?
 
-Bien, cada vez que usamos una biblioteca o un catálogo de archivo, dependemos de información estructurada para ayudarnos a navegar por los datos (tanto físicos como digitales) que contiene la biblioteca o el archivo. Sin esta información estructurada, nuestra investigación sería mucho más pobre.
+La respuesta es que cada vez que usamos una biblioteca o un catálogo de archivo dependemos de la información estructurada para ayudarnos a navegar por los datos (tanto físicos como digitales) que contiene el repositorio. Sin esta información estructurada, nuestra investigación sería mucho más pobre.
 
-Examinar los RLS es una buena forma de pensar el porqué estructurar los datos de investigación de una manera consistente y predecible puede ser útil para tu investigación. Los URL malos no son reproducibles y, por tanto, en un contexto académico no son citables. Por el contrario, los buenos URL representan con claridad el contenido de la página que identifican, ya sea porque contienen elementos semánticos o porque utilizan un elemento único encontrado en un conjunto o en la mayoría de las páginas.
+Examinar los RLS (*Nota del revisor: yo aquí expandiría la abreviatura y luego pondría la abreviatura entre paréntesis*) es una buena forma de pensar por qué estructurar los datos de investigación de una manera consistente y predecible puede ser útil para tu investigación. Las URL malas no son reproducibles y, por tanto, en un contexto académico no son citables. Por el contrario, las buenas URL representan con claridad el contenido de la página que identifican, ya sea porque contienen elementos semánticos o porque utilizan un elemento único encontrado en un conjunto o en la mayoría de las páginas.
 
 Un buen ejemplo de los primeros son los URLs utilizados por los sitios web de noticias o los servicios de *blogging*. Los URLs de WordPress utilizan el siguiente formato:
 
--   *Nombre del sitio web*/*año (4 dígitos)*/mes (2 dígitos)*/*día (2 dígitos)*/*palabras-del-titulo-separadas-por-guiones*
+-   *Nombre del sitio web*/*año (4 dígitos)*/*mes (2 dígitos)*/*día (2 dígitos)*/*palabras-del-titulo-separadas-por-guiones*
 -   <http://cradledincaricature.com/2014/02/06/comic-art-beyond-the-print-shop/>
 
-Un estilo similar es utilizado por las agencias de noticias como el periódico The Guardian:
+Un estilo similar es utilizado por las agencias de noticias como el periódico *The Guardian*:
 
 -   *Nombre del sitio web*/*subdivisión de seccción*/*año (4 dígitos)*/*mes (3 caracteres)*/*día (2 dígitos)*/*palabras-que-describen-contenido-separadas-por-guiones*
 -   <http://www.theguardian.com/uk-news/2014/feb/20/rebekah-brooks-rupert-murdoch-phone-hacking-trial>
-    .
 
-En los catálogos de archivo, se suelen utilizar URLs estructurados por un elemento de datos. The British Cartoon Archive estructura su archivo en lína utilizando el formato:
+En los catálogos de archivo, se suelen utilizar URLs estructurados por un elemento de datos. The British Cartoon Archive estructura su archivo en línea utilizando el formato:
 
 -   *nombre del sitio web*/*registro*/*número de referencia*
 -   <http://www.cartoons.ac.uk/record/SBD0931>
@@ -109,9 +103,9 @@ Y el sitio Old Bailey Online usa este formato:
 -   *nombre del sitio web*/*/browse.jsp?ref=*reference number*
 -   <http://www.oldbaileyonline.org/browse.jsp?ref=OA16780417>
 
-Lo que aprendemos de estos ejemplos es que la combinación de descripciones semánticas con elementos de datos hacen consistente y predecible la lectura de los datos estructurados tanto por máquinas como por seres humanos. Transferir esto a los datos digitales acumulados durante el curso de la investigación histórica hace que los datos de investigación sean más fácilmente navegables, así como buscar y consultar utilizando las herramientas estándar provistas por nuestros sistemas operativos (y, como veremos en próxomas lecciones, por herramientas más avanzadas).
+Lo que aprendemos de estos ejemplos es que la combinación de descripciones semánticas con elementos de datos hacen consistente y predecible la lectura de los datos estructurados tanto por máquinas como por seres humanos. Transferir esto a los datos digitales acumulados durante el curso de la investigación histórica hace que los datos de investigación sean más fácilmente navegables, así como buscar y consultar utilizando las herramientas estándar provistas por nuestros sistemas operativos (y, como veremos en próximas lecciones, por herramientas más avanzadas).
 
-En la práctica, la estructura de un buen archivo de datos de investigación puede verse como sigue (para los usuarios de OS X y Linux, reemplaza las barras invesrtidas por diagonales).
+En la práctica, la estructura de un buen archivo de datos de investigación puede verse como sigue (para los usuarios de OS X y Linux, reemplaza las barras invertidas por diagonales).
 
 Un directorio raíz o base quizá llamado 'trabajo'.
 
@@ -132,7 +126,7 @@ Dentro de estos directorios habrá una serie de subdirectorios para cada evento,
 
 ```
 \trabajo\investigacion\2014-01_articulos_revistas
-              \2014-02_Infraestructura
+              		  \2014-02_Infraestructura
 ```
 
 Por último, se pueden utilizar más subdirectorios para separar la información a la vez que crece el proyecto.
@@ -143,21 +137,21 @@ Por último, se pueden utilizar más subdirectorios para separar la información
                                              \notas
 ```
 
-Por supuesto que no toda la información encajará perfectamente en una estructura predeterminada y, a medida de que surjan nuevos proyectos, tendrán que revisarse las taxonomías. De cualquier manera, la es correcta la idiosincrasia siempre y cuendo la estructura gobal del directorio sea consistente y predecible, y siempre y cuando lo qeu no sea así se encuentre claramente documento. Por ejemplo, el subdirectorio 'escritos' de la estructura anterior podría incluir un archivo .txt que indique lo que contiene (borradores, la versión final del trabajo) y lo que no contiene (investigación relativa a lo escrito).
+Por supuesto, no toda la información encajará perfectamente en una estructura predeterminada y, a medida de que surjan nuevos proyectos, tendrán que revisarse las taxonomías. De cualquier manera, el sistema resulta correcto siempre y cuando la estructura gobal del directorio sea consistente y predecible. No será así cuando el historiador no encuentre claramente el documento. Por ejemplo, el subdirectorio 'escritos' de la estructura anterior podría incluir un archivo .txt que indique lo que contiene (borradores, la versión final del trabajo) y lo que no contiene (investigación relativa a lo escrito).
 
-Debe tenerse presente que el nombre de este archivo de texto, así como los de toda la documentación y datos de investigación, garantice su identificación y la de su contenido. "Notas sobre esta carpeta.docx" no es un nombre que cumpla con este propósito, mientras que "2014-01-31\escritura\leeme.txt" reproduce el título del directorio e introduce alguna información de fecha. Un archivo 'leeme' que hice para un proyecto reciente, <https://www.dropbox.com/s/i12cv5rdnfbdoz3/network_analysis_of_Isaac_Cruikshank_and_his_publishers_readme.txt>, contiene el tipo de información que tú y otros usuarios de tus datos pueden encontrar útil.
+Debe tenerse presente que el nombre de este archivo de texto, así como los de toda la documentación y datos de investigación, debería servir para identificar el mismo archivo y su contenido. "Notas sobre esta carpeta.docx" no es un nombre que cumpla con este propósito, mientras que "2014-01-31\escritura\leeme.txt" reproduce el título del directorio e introduce alguna información de fecha. Un archivo 'leeme' que hice para un proyecto reciente, <https://www.dropbox.com/s/i12cv5rdnfbdoz3/network_analysis_of_Isaac_Cruikshank_and_his_publishers_readme.txt>, contiene el tipo de información que tú y otros usuarios de tus datos pueden encontrar útil.
 
-Un cuento con moraleja puede ser suficiente para confirmar el valor de este enfoque. Durante el curso de un proyecto de investigación anterior, recogí unas 2,000 imágenes digitales de grabados satíricos sobre Georgia de una serie de recursos en línea, reteniendo los nombres de los archivos en el momento de la descarga. Si en un primer momento yo hubiese establecido una convención para nombrar estos archivos (por ejemplo, 'AÑO DE PUBLICACIÓN\NOMBRE DEL ARTISTA\TÍTULO DEL TRABAJO\FORMATO') hoy yo sería capaz de buscar y consultar estas imágenes. De hecho, comenzar cada nombre de archivo con alguna versión para indicar la fecha (YYYYMMDD) podría tener significancia para organizarlas de manera cronológica en Window, OS X o Linux. Y al asegurar que todos los espacios o signos de puntuación (salvo guiones, puntos, o guiones bajos) se retiraran de los nombres de los archivos podría haberlos hecho consistentes y predecibles, lo cual habría hecho posible el trabajo y gestión en lína de comandos de esos archvivos. Pero no lo hice, y tal como están yo tendría que ocupar una gran cantidad de tiempo para modificar cada nombre de archivo de manera individual a fin de que los datos puedan utilizarse en esta forma.
+Para confirmar el valor de este enfoque quizá valga la pena explicar una breve experiencia personal. Durante el curso de un proyecto de investigación anterior, recogí unas 2.000 imágenes digitales de grabados satíricos sobre Georgia de una serie de recursos en línea, reteniendo los nombres de los archivos en el momento de la descarga. Si en un primer momento yo hubiese establecido una convención para nombrar estos archivos (por ejemplo, 'AÑO DE PUBLICACIÓN\NOMBRE DEL ARTISTA\TÍTULO DEL TRABAJO\FORMATO') hoy yo sería capaz de buscar y consultar estas imágenes. De hecho, comenzar cada nombre de archivo con alguna versión para indicar la fecha (YYYYMMDD) podría tener significancia para organizarlas de manera cronológica en Window, OS X o Linux. Y al asegurar que todos los espacios o signos de puntuación (salvo guiones, puntos, o guiones bajos) se retiraran de los nombres de los archivos podría haberlos hecho consistentes y predecibles. Esta medida sencilla habría hecho posible la gestión en línea de comandos de esos archvivos. Pero no lo hice, y tal como están yo tendría que ocupar una gran cantidad de tiempo para modificar cada nombre de archivo de manera individual a fin de que los datos puedan utilizarse de esta forma.
 
-La aplicación de estas convenciones de nombres a todos los datos de investigación de manera consistente y predecible ayuda a la legibilidad y comprensión de la estructura de datos.Por ejemplo, para un proyecto sobre artículos de revistas pueden elegir el directorio:
+La aplicación de estas convenciones de nombres a todos los datos de investigación de manera consistente y predecible ayuda a la legibilidad y comprensión de la estructura de datos. Por ejemplo, para un proyecto sobre artículos de revistas pueden elegir el directorio:
 
 ```
 \trabajo\investigación\2014-01_articulos_revistas\
 ```
 
-En el que los elementos de fecha 'año-mes' indican cúando se inició el proyecto.
+En el ejemplo mostrado, los elementos de fecha 'año-mes' indican cúando se inició el proyecto.
 
-Dentro de este directorio se incluye un directorio de \\datos\\ donde se guarda la data original utilizada en el proyecto.
+Dentro de este directorio se puede incluir un directorio de \\datos\\ donde guardar los datos originales utilizados en el proyecto.
 
 ```
 2014-01-31_articulos_revistas.tsv
@@ -176,9 +170,13 @@ Subiendo un nivel de directorio a \\2014-01\_articulos\_revistas\\ creamos un di
 2014-02-15_articulos_revistas_analisis.txt
 ```
 
-Ten en cuenta aquí los diferente atributos de fechas. Estos reflejan el momento en que se hizo el análisis de datos que se describirá brevemente de manera convencional en: 2014-02-02\_articulos\_revistas\_analisis\_leeme.txt.
+Ten en cuenta aquí los diferente atributos de fechas. Estos reflejan el momento en que se hizo el análisis de datos que se describirá brevemente de manera convencional en: 
 
-Finalmente, podemos crear un directorio que contenga los datos derivados de 2014-01-31\_articulos\_revistas.tsv, que llamaremos \\data\\ called \\derived\_data\\. En este caso, cada archivo .tsv derivado contiene líneas que incluyen palabras clave como 'africa', 'america', 'arte' etcétera, y se nombran de acuerdo a ello.
+```
+2014-02-02\_articulos\_revistas\_analisis\_leeme.txt.
+```
+
+Finalmente, podemos crear un directorio que contenga los datos derivados de 2014-01-31\_articulos\_revistas.tsv, que llamaremos \\data\\ called \\derived\_data\\. En este caso, cada archivo .tsv derivado contiene líneas que incluyen palabras clave como 'africa', 'america', 'arte', etcétera, y se nombran de acuerdo a ello.
 
 ```
 2014-01-31_articulos_revista_KW_africa.tsv
@@ -194,18 +192,18 @@ Finalmente, podemos crear un directorio que contenga los datos derivados de 2014
 
 #### Resumen 2
 
-Para resumir los puntos clave acerca de crear una estructura de datos de investigación son:
+Para resumir, los puntos clave sobre la creación de una estructura de datos de investigación son:
 
--   La estructura de datos debe ser consistente y predictible.
+-   La estructura de datos debe ser consistente y predecible.
 -   Considera la utilización de elementos semánticos o identificacores de datos para estructurar los directorios de investigación.
--   Ajusta y adapta la estructura de datos de investigación a tu investigación.
--   Establece convenciones de nomenclatura a los directorios y archivos para identificarlos, crear asociaciones entre elementos de datos, y para ayudar a una lectura y comprensión a largo plazo de tu estructura de datos.
+-   Ajusta y adapta la estructura de datos de investigación a tus necesidades.
+-   Establece convenciones de nomenclatura en los directorios y archivos para identificarlos, crear asociaciones entre elementos de datos, y para ayudar a una lectura y comprensión a largo plazo de tu estructura de datos.
 
 * * * * * 
 
-Esta lección ha sugerido maneras para documentar y estructurar datos de investigación, y tiene como objetivo asegurar que tus datos se conserven mediante la captura de el conocimiento tácito adquirido en tu proceso de investigación, haciendo por lo tanto haciendo asequible y fácil de utilizar esa infomración en el futuro. Se ha recomendado el uso de formatos independientes de plataforma y legibles por máquina para los datos de investigación y documentación. Se ha sugerido que los URLs ofrecen un ejmplo de buenas (y malas) prácticas a la hora de estructurar datos y que se pueden replicar a efecto de organizar los datos de investigación de un historiador.
+Esta lección ha sugerido maneras para documentar y estructurar datos de investigación. El objetivo ha sido asegurar que tus datos se conserven mediante la captura del conocimiento tácito adquirido en tu proceso de investigación; y, por lo tanto, haciendo asequible y fácil de utilizar esa información en el futuro. Se ha recomendado el uso de formatos independientes de plataforma y legibles por computadoras. También se han analizado las URLs como un ejemplo de buenas (y malas) prácticas a la hora de estructurar datos. Es forma de identificar archivos se puede replicar para organizar los datos de investigación de un historiador.
 
-Estas sugerencias son solamente guías pues se espera que los inviestigadores las afdapten para satisfacer sus propias necesidades. A hacerlo, se recomienda que cada investigador mantenga sus estrategias de conservación digital y tenga en mente las mejores prácticas de gestión de proyectos, mientras qe garantiza que el tiempo que pasó en documentar y estructurar sus datos de investigación no significó un lastre. Después de todo, el propósito de esta guía es hace eficiente la inviestigación histórica que genera datos. Es decir: tu investigación.
+Estas sugerencias son solamente guías pues se espera que los investigadores las adapten para satisfacer sus propias necesidades. Al hacerlo, se recomienda que cada investigador mantenga sus estrategias de conservación digital pero que tenga en mente las mejores prácticas de gestión de proyectos. De esta manera, nos aseguramos que el tiempo que pasamos en documentar y estructurar los datos de investigación no sea un lastre. Después de todo, el propósito de esta guía es hacer eficiente la inviestigación histórica que genera datos. Es decir: tu investigación.
 
 * * * * *
 
