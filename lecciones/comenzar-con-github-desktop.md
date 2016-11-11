@@ -12,57 +12,56 @@ layout: default
 difficulty: 1
 ---
 
-## Lesson Goals
+## Objetivos de la lección
 
-In this lesson you will be introduced to the basics of version control, understand why it is useful and implement basic version control for a plain text document using [GitHub Desktop](https://desktop.github.com/). By the end of this lesson you should understand:
+Con esta lección aprenderás el funcionamiento básico de los sistemas de control de versiones, entenderás por qué son útiles y te familiarizarás con [GitHub Desktop] (https://desktop.github.com/), un control de versiones de documentos en formato de texto plano. Al finalizar la lección, serás capaz de entender:
 
-* what version control is and why it can be useful 
-* the differences between Git and GitHub
-* how to implement version control using 'GitHub Desktop,' a Graphical User Interface for GitHub
-* be aware of other resources that will help you implement version control in your academic writing
+* qué es un control de versiones y por qué puede ser útil
+* las diferencias entre Git y GitHub
+* cómo utilizar un control de versiones con la interfaz gráfica 'GitHub Desktop'
+* qué otros recursos pueden ayudarte a implementar un control de versiones para investigar.
 
-## Software Requirements
+## *Software* necesario
 
 GitHub Desktop is currently only available for Windows and Mac. If you use Linux you will probably already be familiar with the command line and will be able to use the Command Line version of Git. 
 
 
-## What is Version Control and Why Use It?
+## ¿Qué es un control de versiones y por qué debería utilizarlo? 
 
-It is helpful to understand what version control is and why it might be useful for the work you are doing prior to getting stuck into the practicalities. At a basic level version control involves taking 'snapshots' of files at different stages. Many people will have introduced some sort of version control systems for files. Often this is done by saving different versions of the files. Something like this:
+Antes de ponerse manos a la obra, conviene comprender qué es un control de versiones y por qué puede ser útil para tu investigación. En términos generales, un control de versiones consiste en tomar instantáneas de tus archivos a lo largo del proceso de creación. La mayoría de personas, de hecho, trabajan con algún sistema de control de versiones para gestionar sus archivos. A menudo, el control tiene lugar guardando distintas versiones de un mismo archivo. Por ejemplo, no es raro encontrarnos antes un directorio que contiene los siguientes archivos:
 
 ```
-mydocument.txt
-mydocumentversion2.txt
-mydocumentwithrevision.txt
-mydocumentfinal.txt
+midocumento.txt
+midocumentoversion2.txt
+midocumentoconrevisiones.txt
+midocumentofinal.txt
 ```
+Esta forma de nombrar los archivos puede ser más o menos sistemática. Si añadimos fechas, puede ser un poco más fácil seguir los cambios:
 
-The system used for naming files may be more or less systematic. Adding dates makes it slightly easier to follow when changes were made:
-
-``` 
-mydocument2016-01-06.txt
-mydocument2016-01-08.txt
 ```
+midocumento2016-01-06.txt
+midocumento2016-01-08.txt
+```
+Aunque este método sea un poco más fácil de entender, sigue habiendo problemas. En primer lugar, este método no registra o describe qué cambios se han producido entre uno y otro archivo guardado. Pueden ser pequeñas correcciones de erratas, o bien tratarse de la reescritura de pasajes enteros o incluso de una modificación mayor, por ejemplo, de la estructura del documento. Además si quieres revertir alguno de estos cambios, tendrás que averiguar cuándo se hizo el cambio y deshacerlo.
 
-Though this system might be slightly easier to follow, there are still problems with it. Primarily this system doesn't record or describe the changes that took place between these two saves. It is possible that some of these changes were small typo fixes but the changes could also have been a major re-write or re-structuring of a document. If you have a change of heart about some of these changes you also need to work out which date the changes were made in order to go back to a previous version. 
+Con un control de versiones se persigue solucionar este tipo de problemas mediante la puesta en marcha de un registro sistemático de cambios en los archivos. A grandes rasgos, puede afirmarse que el contro de versiones realiza instantáneas de los archivos a lo largo del tiempo. Estas instantáneas documentan el momento en que fueron tomadas pero también qué cambios tuvieron lugar entre cada una de ellas, lo cual permite recuperar una version más antigua de tu archivo. A partir de aquí se abren un sinfín de posibilidades gracias al control de versiones.
 
-Version control tries to address problems like these by implementing a systematic approach to recording and managing changes in files. At its simplest, version control involves taking 'snapshots' of your file at different stages. This snapshot records information about when the snapshot was made but also about what changes occurred between different snapshots. This allows you to 'rewind' your file to an older version. From this basic aim of version control a range of other possibilities are made available. 
 
-### Why Version Control Text Documents?
+### ¿Por qué un control de versiones para documentos?
 
-As research increasingly makes use of digital tools and storage it becomes important to consider how to best manage our research data. This becomes especially important when we want to collaborate with other people. Though version control was originally designed for dealing with code there are many benefits to using it to with text documents too. Though not all of these benefits will be covered in this lesson, version controlling your document allows you to:
+A medida que para investigar utilizamos herramientas digitales y almacenamiento en formato digital, se vuelve relevantes reflexionar sobre cómo optimizar la gestión de nuestros datos. Más aún, el control de versiones puede ser indispensable si tenemos intención de colaborar con otros investigadores. Aunque el control de versiones fue diseñado en sus orígenes para tratar archivos de código, creemos que la gestión de documentos también se beneficiaría. La lección que proponemos no cubre todas las ventajas del control de versiones pero al finalizarla podrás llevar a cabo las siguientes tareas:
 
-* Track developments and changes in your documents 
-* Record the changes you made to your document in a way that you will be able to understand later
-* Experiment with different versions of a document while maintaining the original version
-* 'Merge' two versions of a document and manage conflicts between versions
-* Revert changes, moving 'backwards' through your history to previous versions of your document 
+* rastrear el desarrollo y los cambios de tus documentos
+* registrar los cambios que has hecho de una manera que puedas entender posteriormente
+* experimentar con versiones distintas de un documento al mismo tiempo que conservas la más antigua
+* fusionar dos versiones de un documento y administrar los conflictos existentes entre distintas versiones
+* revertir cambios y volver atrás gracias al historial de versiones anteriores de tu documento
+
+En concreto, el control de versiones es útil para facilitar la colaboración. De hecho, una de las razones que explican el origen del control de cambios es que permitera a varias personas trabajar al mismo tiempo en un proyecto de considerables dimensiones y utilizar Git para administrar las fuentes del núcleo Linux. Utilizar un control de versiones favorece la colaboración debido a su flexibilidad. Por ejemplo, dos personas pueden trabajar en un mismo documento al mismo tiempo y fusionar los cambios. Si existe un 'conflicto' entre las dos versiones, el sistema de control permitiría al usuario ver el conflicto y decidir cómo 'fusionar' las dos versiones dando lugar a una 'tercera' version. De esta manera, conservarías la 'historia' del documento, es decir, las versiones anteriores y, en consecuencia, podrías revertir el proceso eligiendo una versión más antigua.
  
-Version control is particularly useful for facilitating collaboration. One of the original motivations behind version control systems was to allow different people to work on large projects together, in the case of Git to manage the Linux kernel source code. Using version control to collaborate allows for a greater deal of flexibility and control then many other solutions. As an example it would be possible for two people to work on a document at the same time and then merge these documents. If there were 'conflicts' between the two versions version control systems would allow you to see these conflicts and make an active decision about how to 'merge' these different versions into a new 'third' document. With this approach you would also retain a 'history' of the previous version should you wish to revert back to one of these later on. 
+No es necesario, sin embargo, poner en marcha un control de versiones para todos tus documentos. En algunas ocasiones resulta muy útil; por ejemplo, para escribir artículos, libros o tesis doctorales.
 
-Version control will not be necessary for all of the documents you write. However there are times when version control will be very useful. For substantial work such as articles, books, or dissertations, version control makes a lot of sense.
-
-The implementation of version control we are going to use in this lesson will be publicly available, but it is possible to use version control and keep your documents hidden permanently or until you decide to make them available. 
+La implementación del control de versiones que proponemos en esta lección está pensada para que los documentos sean públicos. No obostante, puedes utilizar un control de versión y mantener tus documentos ocultos de manera permanente o bien hasta que decidas publicarlos en línea. 
 
 ## What are Git and GitHub? 
 
