@@ -7,7 +7,7 @@ reviewers:
 - Ethan Miller
 - Lisa Spiro
 translator:
-Antonio Rojas Castro
+- Antonio Rojas Castro
 layout: default
 difficulty: 1
 ---
