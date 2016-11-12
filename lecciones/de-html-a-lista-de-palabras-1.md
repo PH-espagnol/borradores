@@ -54,7 +54,7 @@ Para aislar el contenido:
 - Busca el HTML y guarda la localización de la útlima etiqueta `<p>`
 - Guarda todo lo que aparezca después de la primera etiqueta `<p>` y antes de la etiqueta `<br/>` a una cadena de texto: *contenidoPagina*
 
-En este puento tenemos la trascripción del texto del juicio más el marcado de HTML. Después:
+En este punto tenemos la trascripción del texto del juicio más el marcado de HTML. Después:
 
 - Mira con atención cada carácter en la cadena de texto *contenido-de-pagina*, carácter por carácter
 - Si el carácter es un corchete angular izquierdo (\<) nos encontramos dentro de una etiqueta así que ignora cada uno de los caracteres siguientes
