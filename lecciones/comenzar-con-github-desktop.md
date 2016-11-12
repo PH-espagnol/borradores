@@ -7,7 +7,7 @@ reviewers:
 - Ethan Miller
 - Lisa Spiro
 translator:
-- Antonio Rojas Castro
+Antonio Rojas Castro
 layout: default
 difficulty: 1
 ---
@@ -107,31 +107,31 @@ Una vez te hayas registrado, el proceso de instalación variará dependiendo de 
 
 ## Version Controlling a Plain Text Document
 
-Version control systems like Git work best with plain text files. Plain text files are files with minimal encoding, whereas word and other word processors produce a lot of code that is not human readable. The same text saved in a '.txt' file opens equally well in Word, LibreOffice or Notepad. This 'portability' of plain text files is a major benefit: they will open and display the text properly on almost any computer. 
+Los sistemas de control de versiones como Git funcionan mejor con archivos de texto plano. Este tipo de archivos contienen un marcado muy sencillo; por el contrario, los archivos Word (u otros generados con procesadores similares) producen código que no es legible para los humanos. Además, cualquier archivo guardado como '.txt' puede abrirse sin problemas con Word, LibreOffice o Notepad. La 'portabilidad' es la principal ventaja del texto plano pues estos archivos pueden abrirse y ejecutarse en la mayoría de ordenadores.
 
-Although there are many benefits to writing our documents in plain text files we quickly come across some limitations. We may want to emphasise parts of text with *italics* or with **bold** words. We may want to include headings or include quotations. This is where 'markdown' comes in. 
+Pese a las ventajas evidentes de escribir nuestros documentos en texto plano, también debemos señalar algunas limitaciones. Los archivos de texto plano en sí no permiten marcar algunas palabras en *cursiva* o bien con **negrita**; tampoco es posible incluir encabezado o citaciones. Para realizar esto necesitaremos una sintaxis adicional: 'markdown'. 
 
-Markdown is a way of including formatting into a plain text document. You may have come across HTML or LaTeX in the past. These markup languages also express information about the formatting and structure of plain text. Markdown, however, tries to minimize the syntax. This makes it easier to focus on the content of writing without the markup getting in the way---hence the name 'markdown.' 
+Con Markdown podremos, pues, dar formato aj nuestro texto plano. Seguramente hayas utilizado HTML o LaTex en el pasado. Estos lenguajes de marcado también expresan información sobre el estilo y la estrcutura del documento. No obstante, el propósito de Markdown es minimizar el marcado, lo cual significa que es más fácil centrarse en el contenido, en la escritura, sin preocuparse en cómo marcar el texto -de ahí el nombre de 'markdown'-. 
 
-The Markdown syntax won't be covered in this lesson in order to keep the length short. However, it makes sense to explore Markdown once you have gone through this lesson and are comfortable with the basics of version control. GitHub integrates its own version of Markdown syntax. If you add Markdown syntax to documents you version control with GitHub Desktop these will be rendered on the GitHub website. Arguably the best way to learn Markdown is to begin using it. The [Getting Started with Markdown](http://programminghistorian.org/lessons/getting-started-with-markdown) lesson by Sarah Simpkin provides an overview of Markdown while the lesson [Sustainable Authorship in Plain Text using Pandoc and Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) by Dennis Tenen and Grant Wythoff explains how to utilise Markdown in combination with Pandoc to use plain text for your academic writing. 
+Esta lección no cubre la sintaxis Markdown por razones de espacio pero es útil explorar su funcionamiento una vez te sientas cómodo con el control de versiones. Conviene señalar, por otra parte, que GitHub integra una versión propia de la sintaxis Markdown. Si añades la sintaxis Markdown a tus docuemntos, tu control de versiones gestionado con GitHub Desktop visualizará de manera correcta tu documento en la web. La mejor manera de aprender Markdown es con un poco de práctica. Puedes empezar con nuestra [Introducción a Markdown](http://programminghistorian.org/lessons/getting-started-with-markdown) escrita por Sarah Simpkin, o bien con la lección  [Escritura sostenible con Pandoc y Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) escrita por Dennis Tenen y Grant Wythoff. 
 
-### Text Editors
+### Editores de texto
 
-To write in plain text we want to use a text editor. There are a huge number of free and paid text editors available. Some of these are very straightforward and simple to use while others have a learning curve and potential uses beyond simple text editing. In the long run using a more advanced and extendable text editor like Vim or Emacs may save you time but for now we can start with a simpler editor. [Atom](https://atom.io/) is a good option for getting started. Atom is a text editor built by GitHub and includes syntax highlighting for Markdown alongside integration with GitHub. It is free and open source, a full 'flight manual', including installation instructions, is available [here](http://flight-manual.atom.io/). 
+Para escribir un documento de texto plano necesitamos un editor. Hay muchos editores disponibles, algunos gratuitos, otros de pago. Algunos son fáciles de usar mientras que otros tienen una curva de aprendizaje y un potencial que sobrepasa las funciones de un editor de texto. A largo plazo, un editor avanzado como Vim o Emacs puede ahorrarte tiempo pero de momento puedes empezar con un editor más simple. Por ejemplo, [Atom](https://atom.io/) es un buen editor desarrollado por GitHub que destaca la sintaxis Markdown y, además, se integra con la plataforma GitHub. Es gratuito y su código es abierto; además, incluye un [manual] (http://flight-manual.atom.io/) de instrucciones muy exhaustivo.
 
-If you don't want to install any new software then you can use your system's included text editor: TextEdit for Mac and Notepad for windows. If you decide to use Markdown beyond this tutorial then you will benefit from a text editor which includes syntax highlighting for Markdown alongside other features useful for writing.  
+Si no quieres instalar un programa nuevo, puedes utilizar uno de los editores que incluidos en tu ordenador como TextEdit para Mac o bien Notepad para Windows. Si decides continuar aprendiendo Markdown en el futuro, te recomendamos utilizar un editor de texto que destaque la sintaxis Markdown, entre otras funcionalidades.
 
-### Creating a Document 
+### Crear un documento
 
-We can begin with a very simple document. 
+Podemos empezar creando un documento muy sencillo.
 
 ```
-Hello world!
+¡Hola mundo!
 ```
 
-Include the above text or something similar in a new plain text document. Once you have done this save the file with a file extension '.md'. This is the most popular file extension used for markdown files though others are sometimes used. Make sure that it is saved in plain text format in a new folder. Sometimes your text editor will default to Rich Text Format. You should be able to change this in the preferences or options of your chosen text editor. Make sure to name the file and folder with something meaningful. This may seem slightly confusing. The '.md' file extension lets GitHub (and other software) know that we are using markdown syntax. However, we still want to ensure that the encoding of the file is in 'plain text'. Once you are setup with a text editor you like then the encoding of documents will not usually be an issue.  
+Añade este texto (o algo parecido) en documento de texto plano nuevo. ¿Listo? A continuación, guarda el archivo con la extensión '.md'. Esta extensión es la más popular para los archivos markdown aunque a veces es posible utilizar otras. A veces el editor de texto guarda los archivos como Rich Text Format (RTF) por defecto, así que asegúrate de que el archivo se guarda en formato de texto plano un directorio nuevo. Si ocurre esto, puedes cambiarlo en la pestaña preferencias u opciones de tu editor. En cualquier caso, identifica tu archivo y tu directorio con un nombre semánticamente claro. Aunque la extensión utilizada sea'.md', hay que asegurarse de que el archivo es de 'texto plano'. Por lo general, la codificación del documento no será ningún problema una vez te acostumbres a usar el editor de texto.
 
-To most effectively use Git to version control it is important to organize projects in folders. Git tracks the contents of a folder by creating a **repository** in the folder. The repository is made up of all the files in the folder that are 'watched' for changes by Git. It is best to create one repository for each major project you are working on, i.e., one repository for an article, one for a book, and one for some code you are developing. These folders are like the normal folders you would have on your computer for different projects, though the files in the folders have to be deliberately added to the repository in order to be version controlled.  
+Para utilizar de manera efectiva el control de versiones de Git, es importante organizar tu proyecto en directorios. Git rastrea el contenido de cada directorio creando un *repositorio* a partir de cada uno de ellos. Un repositorio se compone de todos los archivos que están siendo *controlados* por Git. Lo mejor es crear un directorio para cada proyecto en el que trabajas; por ejemplo, un repositorio para un artículo que estés escribiendo, otro para la composición de tu libro, uno más para el código en desarrollo, etc. Estos directorios son como las carpetas normales y corrientes que tienes en tu ordenador; la única particularidad es que los archivos deben ser añadidos de manera expresa al repositorio para que sean controlados mediante Git. 
 
 ### Adding a Document
 
