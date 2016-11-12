@@ -22,4 +22,4 @@ def quitarEtiquetas(contenidoPagina):
 
 def quitaNoAlfaNum(texto):
     import re
-    return re.compile(r'\'W+', re.UNICODE).split(texto)
+    return re.compile(r'\W+', re.UNICODE).split(texto)
