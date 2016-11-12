@@ -17,7 +17,7 @@ previous: manipulacion-de-cadenas-de-texto-en-python
 ## Objetivos de la lección
 
 
-En esta lección en dos partes partiremos de lo que has aprendido en [Descargar páginas web con Python], para aprender cómo remover las *etiquetas HTML* de la página web de la [transcripción del juicio criminal contra Benjamin Bowsey de 1780]. Lograremos esto utilizando una variedad de *operadores de cadenas*, *métodos de cadenas* y habilidades de lectura cercana. Vamos a presentar *bucles* (*looping*) y *condicionales* (*branching*), de manera que los programas puedan repetir tareas y pruebas para ciertas condiciones, haciendo posible separar el contenido de las etiquetas HTML. por último, convertimos elcontenido de una cadena larga a una *lista de palabras* que posteriormente podrán ser ordenadas, indexadas y contadas.
+En esta lección en dos partes partiremos de lo que has aprendido en [Descargar páginas web con Python], para aprender cómo remover las *etiquetas HTML* de la página web de la [transcripción del juicio criminal contra Benjamin Bowsey de 1780]. Lograremos esto utilizando una variedad de *operadores de cadenas*, *métodos de cadenas* y habilidades de lectura cercana. Vamos a presentar *bucles* (*looping*) y *condicionales* (*branching*), de manera que los programas puedan repetir tareas y pruebas para ciertas condiciones, haciendo posible separar el contenido de las etiquetas HTML. Por último, convertimos el contenido de una cadena larga a una *lista de palabras* que posteriormente podrán ser ordenadas, indexadas y contadas.
 
 ## El reto
 
@@ -29,7 +29,7 @@ Para tener una idea más clara de la tarea que tenemos por delante, abre el arch
 
 ## Idear un algoritmo
 
-Dado que el objetivo es deshacerse del HTML, el primer paso es crear un algoritmo que devuelva solamente el texto (menos las etiquetas HTML) del artículo.Un algoritmo es un procedimiento que se a especificado con suficiente detalle que puede ser implementado en una computadora. Ayuda mucho escribir primer tus algoritmos en español llano; es una idea excelente delinear exactamente qué es lo que quieres que haga antes de sumergirte en el código. para construir este algoritmo te vas a servir de tus habilidades de lectura cercana para encontrar la manera de capturar solamente el contenido textual de la biografía.
+Dado que el objetivo es deshacerse del HTML, el primer paso es crear un algoritmo que devuelva solamente el texto (menos las etiquetas HTML) del artículo.Un algoritmo es un procedimiento que se a especificado con suficiente detalle que puede ser implementado en una computadora. Ayuda mucho escribir primer tus algoritmos en español llano; es una idea excelente delinear exactamente qué es lo que quieres que haga antes de sumergirte en el código. Para construir este algoritmo te vas a servir de tus habilidades de lectura cercana para encontrar la manera de capturar solamente el contenido textual de la biografía.
 
 Al examinar el código fuente de *obo-t17800628-33.html* notarás que la transcripción real no se inicia de forma inmediata. Por el contrario, hay un número de etiquetas HTML y algo de información para citar. En este caso el contenido no comienza ¡sino hasta la linea 81!
 
@@ -54,7 +54,7 @@ Para aislar el contenido:
 - Busca el HTML y guarda la localización de la útlima etiqueta `<p>`
 - Guarda todo lo que aparezca después de la primera etiqueta `<p>` y antes de la etiqueta `<br/>` a una cadena de texto: *contenidoPagina*
 
-En este puento tenemos la trascripción del texto del juicio más el marcado de HTML. Después:
+En este punto tenemos la trascripción del texto del juicio más el marcado de HTML. Después:
 
 - Mira con atención cada carácter en la cadena de texto *contenido-de-pagina*, carácter por carácter
 - Si el carácter es un corchete angular izquierdo (\<) nos encontramos dentro de una etiqueta así que ignora cada uno de los caracteres siguientes

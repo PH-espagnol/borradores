@@ -46,7 +46,7 @@ print("Frecuencias\n" + str(frecuenciaPalab) + "\n")
 print("Pares\n" + str(zip(listaPalabras, frecuenciaPalab)))
 ```
 
-Aquí, comenzamos con una cadena de texto y la dividimos en una lista tal como hicimos antes. Entonces, creamos una lista (inicialmente vacía) llamada *wordfreq*, fuimos por cada una de las palabras en *wordlist* y contamos el número de veces que cada palabra aparece en toda la lista. Añadimos entonces el conteo de palabras a nuestra lista *wordfreq*. Utilizando la operación `zip`, somos capaces de hacer coincidir la primera palabra de nuestra lista de palabras con el primer número en la lista de frecuencias, la segunda palabra con la segunda frecuencia, y así el resto. Terminamos con una lista de palabras y frecuencias pareadas. La función `str` convierte cualquier objeto en una cadena así que puede ser impresa.
+Aquí, comenzamos con una cadena de texto y la dividimos en una lista tal como hicimos antes. Entonces, creamos una lista (inicialmente vacía) llamada *frecuenciaPalab*, fuimos por cada una de las palabras en *listaPalabras* y contamos el número de veces que cada palabra aparece en toda la lista. Añadimos entonces el conteo de palabras a nuestra lista *frecuenciaPalab*. Utilizando la operación `zip`, somos capaces de hacer coincidir la primera palabra de nuestra lista de palabras con el primer número en la lista de frecuencias, la segunda palabra con la segunda frecuencia, y así el resto. Terminamos con una lista de palabras y frecuencias pareadas. La función `str` convierte cualquier objeto en una cadena así que puede ser impresa.
 
 Debes obtener algo como esto:
 
