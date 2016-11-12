@@ -63,47 +63,47 @@ No es necesario, sin embargo, poner en marcha un control de versiones para todos
 
 La implementación del control de versiones que proponemos en esta lección está pensada para que los documentos sean públicos. No obostante, puedes utilizar un control de versión y mantener tus documentos ocultos de manera permanente o bien hasta que decidas publicarlos en línea. 
 
-## What are Git and GitHub? 
+## Diferencias entre Git y GitHub
 
-Though often used synonymously, Git and GitHub are two different things. Git is a particular implementation of version control originally designed by Linus Torvalds as a way of managing the Linux source code. [Other systems](https://en.wikipedia.org/wiki/Comparison_of_version_control_software) of version control exist though they are used less frequently. Git can be used to refer both to a particular approach taken to version control and the software underlying it. 
+Aunque a veces se utilizan como sinónimos, Git y GitHub no son lo mismo. Git es un sistema específico diseñado para controlar versiones en un entorno Linux; fue desarrollado por Linus Torvalds con el objetivo primordial de gestionar código fuente. Por supuesto, existen otros [controles de versiones] (https://en.wikipedia.org/wiki/Comparison_of_version_control_software) pero su uso no está tan difundido. Git puede referirse tanto a una forma de controlar versiones como al programa utilizado para llevar a cabo dicha tarea.
 
-GitHub is a company which hosts Git repositories (more on this below) and provides software for using Git. This includes 'GitHub Desktop' which will be covered in this tutorial. GitHub is currently the most popular host of open source projects by [number of projects and number of users](https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities#Popularity).
+En cambio, GitHub es una compañía que aloja repositorios Git (más detalles abajo) y que proporciona un programa específico para usar Git. Entre las modalidades de uso, destaca el programa 'GitHub Desktop', sobre el que trata este tutorial. Actualmente, si tenemos en cuenta el [número de proyectos y de usuarios] (https://en.wikipedia.org/wiki/Comparison_of_source_code_hosting_facilities#Popularity), es posible afirmar que GitHub es la plataforma más popular para alojar en abierto el código de proyectos digitales.
 
-Although GitHub's focus is primarily on source code, other projects, such as the Programming Historian, are increasingly making use of version control systems like GitHub to manage the work-flows of journal publishing, open textbooks and other humanities projects. Becoming familiar with GitHub will be useful not only for version controlling your own documents but will also make it easier to contribute and draw upon other projects which use GitHub. In this lesson the focus will be on gaining an understanding of the basic aims and principles of version control by uploading and version controlling a plain text document. This lesson will not cover everything but will provide a starting point to using version control.
+Pese a que GitHub está diseñado originalmente para publicar código fuente, algunos proyectos, como *Programming Historian en español*, lo utilizan para controlar las versiones y para gestionar el flujo de trabajo de sus publicaciones, libros de texto, etc. Así que familiarizarte con GitHub no solo te permitirá controlar las versiones de tu documento sino contribuir a los proyectos que utilizan GitHub. En esta lección nuestro objetivo es ofrecer una introducción al funcionamiento básico de los objetivos y principios del control de versiones de un archivo de texto plano. La lección no es exhaustiva pero proporciona un punto de partida para que puedas seguir aprendiendo por tu cuenta.
 
-### Why Not use Dropbox or Google Drive?
+### ¿Por qué no utilizar Dropbox o Google Drive?
 
-Dropbox, Google Drive and other services offer some form of version control in their systems. There are times when this may be sufficient for your needs. However there are a number of advantages to using a version control system like Git: 
+Dropbox, Google Drive y otros servicios ofrecen alguan forma de controlar las versiones en sus sistemas. A veces esto es suficiente para tus necesidades. Sin embargo, existen algunas ventajas por las que vale la pena utilizar un control de versiones como Git:
 
-* Language support: Git supports both text and programming languages. As research moves to include more digital techniques and tools it becomes increasingly important to have a way of managing and sharing both the 'traditional' outputs (journal articles, books, etc.) but also these newer outputs (code, datasets etc.)
-* More control: a proper version control systems gives you a much greater deal of control over how you manage changes in a document. 
-* Useful history: using version control systems like Git will allow you to produce a history of your document in which different stages of the documents can be navigated easily both by yourself and by others. 
+* Mayor cobertura de lenguaje: Git admite tanto texto como lenguajes de programación. A medida que la investigación incluye métodos informáticos y herramientas digitales, se vuelve necesario disponer de una plataforma que gestione publicaciones tradicionales (artículos, libros, etc.) pero también nuevos tipos de publicaciones como código, conjunto de datos, etc.
+* Más control: un sistema de control de versiones te dará mayor poder para gestionar los cambios de tus documentos.
+* Historial más útil: si utilizas un sistema de control como Git, podrás producir un historial de tu documento. A través de este historial tú y tus colaboradores podréis navegar fácilmente por las distintas etapas del documento. 
 
-### Academic Projects Using Version Control 
+### Algunos proyectos académicos que utilizan control de versiones
 
-Using version control has become pretty well established in some scientific disciplines, though its adoption is still far from universal. In the humanities and social sciences the use of version control systems like Git are much less common. The projects below show some possible ways of using Git in academic setting:
+Utilizar un control de versiones se ha consolidado en algunas disciplinas científicas, aunque su adopción está lejos de ser universal. En las Humanidades y en las Ciencias Sociales, el uso de Git es mucho menos frecuente. Los proyectos que listamos a continuación muestran algunas de las posibilidades del uso de Git en un entorno académico: 
 
-* [The Programming Historian](https://github.com/programminghistorian/jekyll) which uses GitHub in the work-flow of managing the [journal](https://github.com/programminghistorian/jekyll/issues), [lessons](http://programminghistorian.org/new-lesson-workflow) and [producing the site.](http://programminghistorian.org/posts/how-we-moved-to-github)
-* [Python Programming for the Humanities](https://github.com/fbkarsdorp/python-course) is a tutorial introducing the Python programming language. 
-* [ProfHacker](http://chronicle.com/blogs/profhacker/tag/github) has posts on various projects on using GitHub in an academic context. 
+*  [The Programming Historian en español](https://github.com/programminghistorian/jekyll) utiliza GitHub en su flujo de trabajo para gestionar la [revista] (https://github.com/programminghistorian/jekyll/issues), las [lecciones](http://programminghistorian.org/new-lesson-workflow) y para producir la [web](http://programminghistorian.org/posts/how-we-moved-to-github).
+* [Python Programming for the Humanities](https://github.com/fbkarsdorp/python-course) es un tutorial introductorio sobre el lenguaje de programación Python. 
+* [ProfHacker](http://chronicle.com/blogs/profhacker/tag/github) ha publicado varias entradas de blog sobre proyectos que usan GitHub en un contexto académico.
 
-New projects pop up regularly and many open source tools which you may use in for digital humanities will be hosted on GitHub, so understanding GitHub may also be useful for using these tools more easily. 
+Nuevos proyectos surgen de manera constante y muchas de las herramientas que utilizas en las Humanidades Digitales se hospedan en GitHub; por este motivo, GitHub puede ser útil para utilizar con mayor facilidad alguna de estas herramientas.
 
-## Getting Started
+## Cómo empezar
 
-GitHub Desktop will allow us to easily start using version control. GitHub Desktop offers a Graphical User Interface (GUI) to use Git. A GUI allows users to interact with a program using a visual interface rather than relying on text commands. Though there are some potential advantages to using the command line version of Git in the long run, using a GUI can reduce the learning curve of using version control and Git. If you decide you are interested in using the command line you can find more resources at the end of the lesson.
+GitHub Desktop, la aplicación de escritorio de GitHub, te permitirá empezar a utilizar un control de versiones sin problemas. GitHub Desktop es, de hecho, una Interfaz Gráfica de Usuario (GUI) diseñada para facilitar el uso de Git. Las interfaces gráficas de usuario permiten al usuario interactuar con el programa a través de un dispositivo visual que reemplaza la línea de comandos. Aunque utilizar la línea de comandos ofrece muchas ventajas a largo plazo, si utilizas GitHub Desktop reducirás la curva de aprendizaje; encontrarás más recursos sobre la línea de comando al final de la lección.
 
-### A Note on Terminology
+### Una breve nota sobre la terminología
 
-One of the trickiest aspects of using GitHub is the new terminology. Some of the commands are fairly self-explanatory, others less so. This tutorial will try and briefly summarise new terms. It may also be helpful to have a [glossary](https://help.github.com/articles/github-glossary/) on hand to refer to. But in general it can be best to pick up terminology through using GitHub rather than trying to understand all of the terms before you begin using it.
+Uno de los aspecots más complejos del uso de GitHub es la terminología. El nombre de algunos de los comandos se entienden fácilmente porque son evidentes, pero otros no tanto. En este tutorial intentaremos explicar brevemente los términos poco comunes. Si te pierdes, puedes consultar el [glosario](https://help.github.com/articles/github-glossary/) de GitHub. Sin embargo, creemos que es mejor ir aprendiendo los términos sobre la marcha, a medida que se utiliza el programa, en lugar de intentar comprender toda la terminología antes de empezar. 
 
-### Register for a GitHub Account
+### Regístrate con una cuenta en GitHub
 
-Since we are going to be using GitHub we will need to register for an account at [GitHub](GitHub.com) if we don't already have one. For [students](https://education.github.com/pack) and [researchers](https://github.com/blog/1840-improving-github-for-science) GitHub offers free private repositories. These are not necessary but might be appealing if you want to keep some work private. 
+Puesto que vamos a utilizar GitHub, necesitarás registrate con una cuenta en [GitHub](GitHub.com) si no lo has hecho ya. Para [estudiantes] (https://education.github.com/pack) e [investigadores] (https://github.com/blog/1840-improving-github-for-science), GitHub ofrece repositorios privados de manera gratuita. Este tipo de repositorios no son necesarios pero quizá esta opción te seduzca si quieres mantener tu trabajo en privado.
 
-### Install GitHub Desktop
+### Instala GitHub Desktop
 
-Once you have registered for an account the process for installing software will be slightly different depending on whether you are on Windows or Mac. Since the instructions may change it is best to follow the instructions at GitHub's [install page](https://desktop.github.com/). Once you have installed GitHub Desktop and followed the setup instructions we can start using the software with a text document. 
+Una vez te hayas registrado, el proceso de instalación variará dependiendo de si utilizas Windows o Mac. Las instrucciones pueden cambiar, por lo que te recomendamos que sigas el procedimiento explicado en la [página de instalación de GitHub] (https://desktop.github.com/). Tras descargar GitHub Desktop e instalarlo, ya podemos empezar a usar el programa con un archivo de texto plano.
 
 ## Version Controlling a Plain Text Document
 
