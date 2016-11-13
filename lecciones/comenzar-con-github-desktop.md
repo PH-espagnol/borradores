@@ -175,41 +175,36 @@ Si pensamos cómo se utiliza el control de versiones con código también puede 
 
 Aunque hay diferencias entre el control de versiones de códigot y de textos, las anotaciones deberían ser modulares. Por ejemplo, siempre es útil anotar cambios que afectan a la estructura del documento por una parte y anotar mejoras en el estilo o la ortografía por otra parte. Así, si más tarde decides cambiar la estructura, podrás conservar las otras correcciones.
 
-### Commit Messages
+### Describir anotaciones
 
-It is important that you use meaningful commit summaries and messages. Writing good commit messages requires some prior thought. Messages that make sense to you as an explanation of changes when you make a commit may no longer make sense to you in the future. If you are going to use version control in collaboration with other people it is especially important that other people can understand your commit messages. Version control as a system for managing changes to documents works best when active thought goes into using the software. It is therefore particularly important when collaborating with other that there is a shared understanding and approach to using version control. 
+Es importante que tus anotaciones y los mensajes asociados que las describen tengan sentido y sean específicos. Escribir buenas descripciones de las anotaciones requiere reflexión. A veces, los mensajes que para ti son claros en el momento de la anotación se vuelve difíciles de comprender en el futuro. Si vas a utilizar el control de versiones con otras personas es importante que tus colaboradores puedan entenderte. El control de versiones para gestionar cambios en documentos funciona mejor cuando nos esforzamos un poco en pensar cómo utilizamos el programa. Por tanto, cuando se lleva a cabo un trabajo colaborativo es importante aclarar estas cuestiones y compartir una misma visión para usar el control de cambios de manera efectiva.
 
-One way of addressing this is to try to follow a 'commit style'. One influential [suggestion](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) for a commit style has been made by Tim Pope. The style suggestions made by Tim Pope are partly ['built in'](https://github.com/blog/926-shiny-new-commit-styles) to the GitHub Desktop commit message interface but understanding the format will help ensure a consistent approach. The following commit message paraphrases Tim Pope's suggested format to focus on commits relating to text rather than code:
-
-```
-Capitalized, short (50 chars or less) summary
-
-More detailed explanatory text, if necessary. In some contexts, the first line is treated as the subject of an email and the rest of the text as the body.  
-
-Write your commit message in the present tense: "Fix typos" and not "Fixed
-typos."  This convention matches with other aspects Git commands.
-
-Further paragraphs come after blank lines.
-
-- Bullet points are okay, too
-
-- Typically a hyphen or asterisk is used for the bullet, preceded by a
-  single space, with blank lines in between, but conventions vary here
-```
-
-The GitHub Desktop interface takes care of some of these 'style' issues but it is good to be conscious about how you write commit messages. It will not always be necessary to write an extensive commit message but is important that the message is clear about the changes being made and that the commits and the commit message are useful 'atomically'. 
-
-An example of a short but clear commit message in the context of written work:
+Una manera de enfrentarse a este problema es intentar seguir un 'estilo de anotaciones'. Por ejemplo, te recomendamos seguir la influyente [sugerencia de Tim Pope] (http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) cuando realices anotaciones. La sugerencia de Tim Pope [tiene en cuenta] (https://github.com/blog/926-shiny-new-commit-styles), parcialmente, la interfaz de GitHub Desktop para anotar cambios y describirlos pero entender el formato te ayudará a poner en práctica su estrategia. El siguiente mensaje es una adaptación de la propuesta de Tim Pope, que se centra en la anotación de texto (en lugar de código): 
 
 ```
-Reorder document outline
+Breve resumen (50 o menos caracteres) con mayúscula inicial.
 
-Move the methods section below the sources section in the document outline. 
-Why? Some of the methods discussion doesn't make sense without a description 
-of the sources being used. 
+Texto más detallado, si es necesario. En algunos contextos, la primera frase puede tratarse como el asunto de un correo electrónico y el resto como el cuerpo del texto. 
+
+Escribe tu mensaje en presente ("Corrige errores" y no "Errores corregidos"). Esta convención sigue el aspecto de las instrucciones ejectuadas con Git. 
+
+Tras algunas líneas en blanco, pueden seguir algunos párrafos.
+
+- las listas son adecuadas.
+- por lo común, un guion o un asterisco simbolizan uno de los ítems de la lista, pero las convenciones pueden variar. 
 ```
 
-A potentially useful parallel to writing good commit messages is the messages included when you edit a Wikipedia or Wiki page. When writing these messages it is important to explain the changes you made to the page and the reasoning behind these changes so that other people who see the changes can understand your reasoning. Approaching commit messages as if they will be read not only by yourself but also by others will help you write clear and meaningful commit messages.  
+La interfaz de GitHub Desktop proporciona cierta ayuda para escribir mensajes de esta manera pero es importante que seas consciente del formato sugerido. No siempre será necesario escribir un resumen detallado pero sí es fundamental que tu descripción sea clara y que los cambios realizados, así como las anotaciones, sean modulares. 
+
+Para ejemplificar esto, a continuación, tienes una anotación descrita en el contexto de una obra escrita:
+
+```
+Reordena la estrucutra del documento
+
+Desplaza la sección sobre la metdología después de la sección sobre las fuentes.
+¿Por qué? Algunas ideas tratadas en la metodología no tienen sentido sin una descripción previa de las fuentes utilizadas.
+```
+Los mensajes descriptivos que acompañan la edición de una página de Wikipedia o una Wiki son un paralelo a las anotaciones y pueden servirte de modelo para que escribas mensajes fáciles de entender. Cuando escribas estos mensajes debes explicar los cambios que has hecho y por qué los has hecho a fin de que otras personas puedan comprender tu razonamiento. Si tienes en cuenta un destinatario externo (un colaborador y no solo tú), te será más fácil escribir anotaciones claras y con sentido. 
 
 ### Building a Good Repository
 
