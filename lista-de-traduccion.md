@@ -122,20 +122,20 @@ date: 2016-10-01
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| introduction-and-installation | introduccion-e-instalacion | ok | vgayolrs | |
-| mac-installation | instalacion-mac | ok | vgayolrs | |
-| linux-installation | instalacion-linux | ok | vgayolrs | |
-| windows-installation | instalacion-windows| ok | vgayolrs | |
+| introduction-and-installation | introduccion-e-instalacion | ok | vgayolrs | jairomelo |
+| mac-installation | instalacion-mac | ok | vgayolrs | jairomelo |
+| linux-installation | instalacion-linux | ok | vgayolrs | jairomelo |
+| windows-installation | instalacion-windows| ok | vgayolrs | jairomelo |
 | viewing-html-files | ver-archivos-html| ok | vgayolrs | jairomelo |
 | working-with-text-files | trabajar-con-archivos-de-texto | ok | vgayolrs | jairomelo |
-| code-reuse-and-modularity | reutilizacion-de-codigo-y-modularidad| ok | vgayolrs |  |
+| code-reuse-and-modularity | reutilizacion-de-codigo-y-modularidad| ok | vgayolrs | jairomelo  |
 | working-with-web-pages | trabajar-con-paginas-web | ok | vgayolrs | jairomelo |
-| manipulating-strings-in-python | manipular-cadenas-de-caracteres-en-python | ok | vgayolrs | |
-| from-html-to-list-of-words-1 | de-html-a-lista-de-palabras-1 | ok | vgayolrs | |
-| from-html-to-list-of-words-2 | de-html-a-lista-de-palabras-2 | ok | vgayolrs | |
-| normalizing-data | normalizar-datos | ok | vgayolrs | |
+| manipulating-strings-in-python | manipular-cadenas-de-caracteres-en-python | ok | vgayolrs | jairomelo |
+| from-html-to-list-of-words-1 | de-html-a-lista-de-palabras-1 | ok | vgayolrs | jairomelo |
+| from-html-to-list-of-words-2 | de-html-a-lista-de-palabras-2 | ok | vgayolrs | jairomelo |
+| normalizing-data | normalizar-datos | ok | vgayolrs | jairomelo |
 | counting-frequencies | contar-frecuencias | ok | vgayolrs | jairomelo |
-| creating-and-viewing-html-files-with-python | crear-y-ver-archivos-html-con-python | ok | vgayolrs | |
-| output-data-as-html-file | salida-de-datos-como-archivo-html | ok | vgayolrs | |
-| keywords-in-context-using-n-grams | palabras-clave-en-contexto-n-grams | ok | vgayolrs | |
-| output-keywords-in-context-in-html-file | salida-palabras-clave-contexto-ngrams | ok | vgayolrs | |
+| creating-and-viewing-html-files-with-python | crear-y-ver-archivos-html-con-python | ok | vgayolrs | jairomelo |
+| output-data-as-html-file | salida-de-datos-como-archivo-html | ok | vgayolrs | jairomelo |
+| keywords-in-context-using-n-grams | palabras-clave-en-contexto-n-grams | ok | vgayolrs | jairomelo |
+| output-keywords-in-context-in-html-file | salida-palabras-clave-contexto-ngrams | ok | vgayolrs | jairomelo |
