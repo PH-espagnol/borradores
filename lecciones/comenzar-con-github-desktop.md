@@ -143,42 +143,37 @@ Una vez hemos añadido nuestra carpeta podremos verla en la lista de repositorio
 
 {% include figure.html filename="getting-started-with-github-desktop-2.png" caption="Adding a folder to GitHub Desktop" %}
 
-Si clicamos sobre el repositorio que acabamos de añadir, podremos ver los archivos contenidos. En este menú, además, podremos elegir qué archivos queremos rastrear pues a veces trabajamos en proyectos con archivos que no lo requieren. Al lado, a la derecha, se visualizan los documentos. 
+Si clicamos sobre el repositorio que acabamos de añadir, podremos ver los archivos contenidos. En este menú, además, podremos elegir qué archivos queremos rastrear pues a veces trabajamos en proyectos con archivos que no lo requieren. Al lado, a la derecha, se visualizan los documentos.  
 
- 
-
-
-If we show hidden folders in the folder we have just added to GitHub you will see that the folder now contains an extra folder with the name '.git'. This folder is how GitHub desktop tracks changes we make within our version controlled folder whether these changes be adding new files or modifying existing ones. 
+Si seleccionamos mostrar las carpetas ocultas en el directorio que acabmos de añadir a GirHub, podremos ver que contiene una carpeta adicional llamada '.git'. En esta carpeta quedan registrados los cambios producidos en el control de versiones y también si los cambios son modificaciones efectuadas en archivos ya existentes o bien si hemos creado archivos nuevos.
 
 {% include figure.html filename="getting-started-with-github-desktop-18.png" caption="The folder being watched by GitHub desktop" %}
 
-
-Lets go back to the document in our text editor and add something new. 
+A continuación, volvamos a nuestro documentos y añadamos algo nuevo. 
 
 ```
-Hello world!
-a second line
+¡Hola mundo!
+Una línea más
 ```
+Guarda los cambios efectuados y vuelva a GitHub Desktop. Verás que que en el texto aparecen la nueva línea que has añadido; esto quiere decir que GitHub es capaz de percibir los cambios efectuados en el archivo pero aún no han sido registrados en una 'instantánea' en tu repositorio. 
 
-Save the changes to your file and go back to GitHub Desktop. You will see that these new lines of text appear. This lets us know that GitHub is able to see changes in your file but at the moment these changes haven't been recorded in an official 'snapshot' of your repository. 
+Para hacer esto debes *anotar* los cambios.
 
-To do this we need to **commit** our changes.
+### Anotar cambios  
 
-### Committing Changes  
-
-A **commit** tells Git that you made some changes which you want to record. Though a **commit** seems similar to saving a file, there are different aims behind 'committing' changes compared to saving changes. Though people sometimes save different versions of a document, often you are saving a document merely to record the version as it is when it is saved. Saving the document means you can close the file and return to it in the same state later on. **Commits**, however, take a snapshot of the file at that point and allow you to document information about the changes made to the document. 
+Al *anotar* un cambio, comunicas a Git que quieres registrar las modificacione realizadas. Aunque *anotar* puede parecer similar a guardar un archivo, el objetivo es distinto. A menudo guardamos diferentes versiones de un documento; ahora bien, guardar un documento, en realidad, significa que puedes cerrar el archivo y volver a él más tarde y que su estado será el mismo, es decir, no se habrán producido perdidas. *Anotar*, en cambio, implica tomar una instantánea de un archivo en un momento determinado y documentar información sobre los cambios realizados.
 
 {% include figure.html filename="getting-started-with-github-desktop-3.png" caption="Committing changes" %}
 
-To commit changes you must give a summary of the changes and include an optional message. It is important that you think carefully about when to make commits. The advantages of version control taking snapshots of your changes regularly relies on you making commits. It is often tempting to just commit changes when you have finished working on a document but this might not reflect when important changes occurred.
+Para anotar un cambio debes dar un resumen de los cambios y, de manera opcional, incluir un mensaje. Es importante que pienses con cuidado cuándo debes anotar los cambios. El control de versiones solo es útil si anotas los cambios de manera eficiente. A veces tendemos a anotar los cambios solo cuando hemos terminado de trabajar sobre un documento. Sin embargo, esto no refleja los cambios importantes realizados durante todo el proceso. 
 
-When you commit you will see 'commit to master'. This refers to the 'master branch'. Within a Git repository it is possible to have multiple 'branches.' These different branches are essentially different places in which to work. Often they are used to test new ideas or work on a particular feature. Initially it is not necessary to use the branches feature of GitHub, but you may want to learn to use it in the future, particularly if you want to use GitHub to collaborate on a repository with other people.  
+Cuando anotes el cambio verás que aparece el mensaje 'anotar al master'. Esto quiere decir que te refieres a la rama 'master'. En un repositorio Git es posible tener varias ramas. Estas ramas son, en esencia, lugares distitnos en los que puedes trabajar. A menudo se utilian para probar nuevas ideas o trabajar en un aspecto concreto. En principio, no es necesario utilizar crear ramas en GitHub pero quizás quieras aprender de cara al futuro, sobre todo si deseas colaborar con otras personas en un mismo proyecto.
 
-A useful way to think about commits is as the 'history' of your document. Each commit records a development or change made to the documents in your repository; the history of the document can be traced by looking at all of the commits. For this history to be useful later on, either for ourselves or for someone else, it is important that this history is recorded at relevant points. Trying to make commits 'atomic' is an important consideration. What this means is that each commit 'makes sense' on its own. The changes in the commit and the message are understandable without having to look at surrounding commits. 
+Una manera de entender las anotaciones es pensar en el 'historial' de tu documento. Cada anotación registra un desarrollo o cambio hecho en el documento alojada en el repositorio; el historial del documento, por tanto, puede ser recuperada consultando todas las anotaciones grabadas. Para que el historial sea útil más tarde, para ti o para un colaborador, es importante que los cambios queden registrados en momentos importantes del proceso. Merece la pena que las anotaciones sean modulares y que tengas sentido por sí mismas. En otras palabras, las anotaciones y los mensajes deberían entenderse sin tener que ver los cambios precedes o posteriores.
 
-Thinking about how version control is used for code can make this idea more clear. When a new feature, or a bug fix, is added to some software it is important that these features can be isolated. If a commit includes changes to different aspects of the code it makes it hard to isolate when problems were introduced. It is also makes it difficult to remove a single change that is causing problems if other changes are included in the commit. 
+Si pensamos cómo se utiliza el control de versiones con código también puede ser útil. Cuando una nueva función o cuando un error ha sido reparado, es importante estos cambios se hagan de manera aislada. Si una anotación incluye cambios que afectan a distintos aspectos del código, se hace más difícil asilar los problemas que aparezcan posteriormente. También se hace más difícil eliminar un cambio en particular que ha causado problemas si este ha sido anotado junto con otros.
 
-There are differences between using version control for code and text which will impact on how you make commits. However, the aim of making commits 'atomic' can still be used. For example, it would make sense to commit changes to the structure of a document separately to grammar and spelling fixes. If you later decided to change the structure you would likely still want to maintain your other fixes. 
+Aunque hay diferencias entre el control de versiones de códigot y de textos, las anotaciones deberían ser modulares. Por ejemplo, siempre es útil anotar cambios que afectan a la estructura del documento por una parte y anotar mejoras en el estilo o la ortografía por otra parte. Así, si más tarde decides cambiar la estructura, podrás conservar las otras correcciones.
 
 ### Commit Messages
 
