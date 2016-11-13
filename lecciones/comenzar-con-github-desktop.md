@@ -133,7 +133,7 @@ Añade este texto (o algo parecido) en documento de texto plano nuevo. ¿Listo? 
 
 Para utilizar de manera efectiva el control de versiones de Git, es importante organizar tu proyecto en directorios. Git rastrea el contenido de cada directorio creando un *repositorio* a partir de cada uno de ellos. Un repositorio se compone de todos los archivos que están siendo *controlados* por Git. Lo mejor es crear un directorio para cada proyecto en el que trabajas; por ejemplo, un repositorio para un artículo que estés escribiendo, otro para la composición de tu libro, uno más para el código en desarrollo, etc. Estos directorios son como las carpetas normales y corrientes que tienes en tu ordenador; la única particularidad es que los archivos deben ser añadidos de manera expresa al repositorio para que sean controlados mediante Git. 
 
-### Adding a Document
+### Añadir un documento
 
 There are a number of different ways to **add** files for GitHub Desktop to track. We can drag the folder containing the file onto GitHub Desktop. When you do this you will be asked whether you want to create a repository for this folder. Alternatively we can click on the 'plus' icon to open a finder window to choose folders we want to add. 
 
