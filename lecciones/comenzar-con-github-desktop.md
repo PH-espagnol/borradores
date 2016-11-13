@@ -135,16 +135,18 @@ Para utilizar de manera efectiva el control de versiones de Git, es importante o
 
 ### Añadir un documento
 
-There are a number of different ways to **add** files for GitHub Desktop to track. We can drag the folder containing the file onto GitHub Desktop. When you do this you will be asked whether you want to create a repository for this folder. Alternatively we can click on the 'plus' icon to open a finder window to choose folders we want to add. 
+Hay varias formas de *añadir* un archivo para que GitHub Desktop lo controle. Por ejemplo, podemos arrastrar un directorio con el archivo a GitHub Desktop. Si haces esto, el programa te preguntará si quieres crear un repositorio para este directorio. Otra manera consiste en cliclar sobre el icono 'más' para abrir el buscador y elegir la carpeta que queremos añadir.
 
 {% include figure.html filename="getting-started-with-github-desktop-1.png" caption="Adding a folder to GitHub Desktop" %}
 
-Once we have added our folder we will be able to see it in a list of repositories on the left column. 
+Una vez hemos añadido nuestra carpeta podremos verla en la lista de repositorios situada en la columna izquierda. 
 
 {% include figure.html filename="getting-started-with-github-desktop-2.png" caption="Adding a folder to GitHub Desktop" %}
 
+Si clicamos sobre el repositorio que acabamos de añadir, podremos ver los archivos contenidos. En este menú, además, podremos elegir qué archivos queremos rastrear pues a veces trabajamos en proyectos con archivos que no lo requieren. Al lado, a la derecha, se visualizan los documentos. 
 
-If we choose the repository we just added we will see the files contained in that repository. From this menu we can choose which files we want to version control. (There might be times when we are working on projects in which files are produced which we don't need or want to version control.) On the right we will see the current document. 
+ 
+
 
 If we show hidden folders in the folder we have just added to GitHub you will see that the folder now contains an extra folder with the name '.git'. This folder is how GitHub desktop tracks changes we make within our version controlled folder whether these changes be adding new files or modifying existing ones. 
 
