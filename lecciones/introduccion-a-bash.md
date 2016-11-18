@@ -180,9 +180,9 @@ Esto crea un directorio llamado, adivinaste, `ProgHist-Textos`. En general, es b
 
 Pero ¡espera! Hay un truco para hacer las cosas un poco más rápido. Ve arriba un directorio (`cd ..`, lo cual te llevará de regreso al escritorio). Para navegar al directorio `ProgHist-Textos` puedes escribir `cd ProgHist-Textos`. Alternativamente puede escribir `cd Prog` y luego oprimir la tecla de tabulador. Te darás cuenta de que la interfaz completa la línea como `cd ProgHist-Textos`. **Oprimir el tabulador en cualquier momento dentro del shell le pedirá que intente completar automáticamente la línea en función de los archivos o subdirectorios que estén en el directorio actual. Sin embargo, la función es sensible a mayúsculas (i.e. en el ejemplo anterior, `cd prog` no podrá autocompletarse como `cd ProgHist-Textos`). En donde haya dos archivos con los mismos caracteres, autocompletar solamente llenará la línea hasta el primer punto de diferencia. Sugerimos utilizar este método a lo largo de la leccion para ver cómo se comporta.**
 
-Ahora necesitas encontrar un archivo de texto básico para que nos ayude con el ejemplo. ¿Por qué no utilizar un libro que sabes que es largo, como la épica "Guerra y Paz" de Leon Tolstoi? El archivo de texto está disponible via [Project Gutenberg](http://www.gutenberg.org/cache/epub/2600/pg2600.txt). Si ya instalaste [wget](/lessons/applied-archival-downloading-with-wget), puedes escribir:
+Ahora necesitas encontrar un archivo de texto básico para que nos ayude con el ejemplo. ¿Por qué no utilizar un libro que sabes que es largo, como la épica "Guerra y Paz" de Leon Tolstoi? El archivo de texto está disponible via [Project Gutenberg](http://www.gutenberg.org/files/2600/2600-0.txt). Si ya instalaste [wget](/lessons/applied-archival-downloading-with-wget), puedes escribir:
 
-`wget  http://www.gutenberg.org/cache/epub/2600/pg2600.txt`
+`wget  http://www.gutenberg.org/files/2600/2600-0.txt`
 
 Si no lo has instalado, descarga el texto utilizando tu navegador. Ve al enlace anterior y, desde tu navegador, usa el comando 'Guardar como' del menú 'Archivo'. Guárdalo en tu nuevo directorio `ProgHist-Textos`. Ahora, cuando escribas 
 
@@ -190,39 +190,39 @@ Si no lo has instalado, descarga el texto utilizando tu navegador. Ve al enlace 
 
 verás:
 
->> -rw-r--r--+ 1 ianmilligan1  staff   3.1M  1 May 10:03 pg2600.txt
+>> -rw-r--r--+ 1 ianmilligan1  staff   3.1M  1 May 10:03 2600-0.txt
 
 Puedes leer el texto de este archivo de diferentes maneras. Primero, puedes decirle a la computadora que quieres leerlo utilizando el programa estándar que usas para abrir los archivos de texto. Por defecto, este debe ser TextEdit en OS X o Notepad en Windows. Para abrir un archivo solamente escribe:
 
-`open pg2600.txt`
+`open 2600-0.txt`
 
 en OS X, o
 
-`explorer pg2600.txt`
+`explorer 2600-0.txt`
 
 en Windows. Lo anterior selecciona el programa por defecto para abrir ese tipo de archivos y lo abre.
 
 Sin embargo, a veces querrás trabajar sin dejar la línea de comandos. También puedes leer archivos en este entorno. Para probar esto, escribe:
 
-`cat pg2600.txt`
+`cat 2600-0.txt`
 
 La ventana de Terminal entra en erupción y *Guerra y Paz* se despliega en cascada. Esto es magnífico, en teoría, pero realmente no puedes obtener sentido de esta cantidad de texto. En lugar de ello, puede ser que sólo quieras ver el primer o el último fragmento del archivo.
 
-`head pg2600.txt`
+`head 2600-0.txt`
 
 proporciona una visión de las primeras diez líneas, mientras que
 
-`tail pg2600.txt`
+`tail 2600-0.txt`
 
-ofrece una perspectiva de las últimas diez líneas. Ésta es una buena manera de determinar rápidamente el contenido del archivo. Puedes añadir un comando para cambiar la cantidad de líneas que se muestran: `head -20 pg2600.txt`, por ejemplo, mostrará las primeras veinte líneas.
+ofrece una perspectiva de las últimas diez líneas. Ésta es una buena manera de determinar rápidamente el contenido del archivo. Puedes añadir un comando para cambiar la cantidad de líneas que se muestran: `head -20 2600-0.txt`, por ejemplo, mostrará las primeras veinte líneas.
 
 También puedes cambiar el nombre del archivo a algo más descriptivo. Puedes asignarle un nuevo nombre escribiendo:
 
-`mv pg2600.txt tolstoy.txt`
+`mv 2600-0.txt tolstoy.txt`
 
 Después, cuando ejecutes el comando `ls`, verás que ahora se llama `tolstoy.txt`. Si hubieras querido duplicarlo podrías haber ejecutado el comando 'copiar' escribiendo:
 
-`cp pg2600.txt tolstoy.txt`
+`cp 2600-0.txt tolstoy.txt`
 
 Volveremos sobre este comando en breve.
 
