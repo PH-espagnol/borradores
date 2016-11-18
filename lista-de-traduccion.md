@@ -50,7 +50,7 @@ date: 2016-10-01
 | r-basics-with-tabular-data | | no | arojascastro | |
 | intro-to-bash | introduccion-a-bash | in process | vgayolrs | |
 | intro-to-powershell | introduccion-a-powershell | in process | vgayolrs | |
-| research-data-with-unix || no | no | |
+| research-data-with-unix | datos-de-investigacion-con-unix | no | no | |
 | cleaning-data-with-openrefine || no | arojascastro | |
 | understanding-regular-expressions || no | arojascastro | |
 | cleaning-ocrd-text-with-regular-expressions || no | arojascastro | |
