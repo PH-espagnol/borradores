@@ -25,7 +25,7 @@ date: 2016-10-01
 
 ### Lessons - Lecciones
 
-#### Application Programming Interfaces (APIs)
+#### Application Programming Interfaces (APIs) - Interfaces de programación de aplicaciones (APIs)
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
@@ -33,7 +33,7 @@ date: 2016-10-01
 | creating -new-items-in-zotero | crear-nuevos-objetos-en-zotero | no | no | |
 | counting-frequencies-from-zotero-items | contar-frecuencias- de-elementos-en-zotero | no | no | |
 
-#### Data Management
+#### Data Management - Gestión de datos
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
@@ -43,14 +43,14 @@ date: 2016-10-01
 | getting-started-with-github-desktop | introducción-control-versiones-github-desktop | ok | arojascastro | |
 | building-static-sites-with-jekyll-github-pages | construccion-de-sitios-estaticos-usando-jeyll-github-pages | no | arojascastro | |
 
-#### Data Manipulation
+#### Data Manipulation - Manipulación de datos
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
 | r-basics-with-tabular-data | | no | arojascastro | |
-| intro-to-bash | introduccion-a-bash | in process | vgayolrs | |
+| intro-to-bash | introduccion-a-bash | ok | vgayolrs | |
 | intro-to-powershell | introduccion-a-powershell | in process | vgayolrs | |
-| research-data-with-unix || no | no | |
+| research-data-with-unix | datos-de-investigacion-con-unix | no | no | |
 | cleaning-data-with-openrefine || no | arojascastro | |
 | understanding-regular-expressions || no | arojascastro | |
 | cleaning-ocrd-text-with-regular-expressions || no | arojascastro | |
@@ -61,7 +61,7 @@ date: 2016-10-01
 | json-and-jq || no | no | |
 | editing-audio-with-audacity || no | no | |
 
-#### Distant Reading
+#### Distant Reading - Lectura distante
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
@@ -70,19 +70,19 @@ date: 2016-10-01
 | topic-modeling-and-mallet | | no | no | |
 | sonification | | no | no |
 
-#### Gertting Ready to Program
+#### Getting Ready to Program - Preparándote para programar
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| installing-python-modules-pip | | in process | vgayolrs | |
+| installing-python-modules-pip | | ok | vgayolrs | |
 
-#### Linked Open Data
+#### Linked Open Data - Datos enlazados abiertos
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
 | graph-databases-and-SPARQL | | in process | Nuria Rodríguez Ortega | |
 
-#### Mapping and GIS
+#### Mapping and GIS - Cartografía y SIG
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
@@ -92,13 +92,13 @@ date: 2016-10-01
 | georeferencing-qgis | | no | no | |
 
 
-#### Network Analysis
+#### Network Analysis - Análisis de redes
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
 | creating-network-diagrams-from-historical-sources | | no | no | |
 
-#### Digital Exhibits and Augmented Reality
+#### Digital Exhibits and Augmented Reality - Exhibiciones digitales y realidad aumentada
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
@@ -108,7 +108,7 @@ date: 2016-10-01
 | intro-to-augmented-reality-with-unity | | no | no | |
 
 
-#### Web Scraping
+#### Web Scraping - *Web Scraping* (recopilación automática de información) 
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
@@ -118,7 +118,7 @@ date: 2016-10-01
 | intro-to-beautiful-soup | | no | no | |
 | downloading-multiple-records-using-query-strings | descarga-multiples-registros-usando-cadenas-de-consulta | no | vgayolrs | |
 
-#### Introduction to Python
+#### Introduction to Python - Introducción a Python 
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
