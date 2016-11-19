@@ -44,7 +44,7 @@ midocumento2016-01-08.txt
 ```
 Aunque este método sea un poco más fácil de entender, sigue habiendo problemas. En primer lugar, este método no registra o describe qué cambios se han producido entre uno y otro archivo guardado. Pueden ser pequeñas correcciones de erratas, o bien tratarse de la reescritura de pasajes enteros o incluso de una modificación mayor, por ejemplo, de la estructura del documento. Además si quieres revertir alguno de estos cambios, tendrás que averiguar cuándo se hizo el cambio y deshacerlo.
 
-Con un control de versiones se persigue solucionar este tipo de problemas mediante la puesta en marcha de un registro sistemático de cambios en los archivos. A grandes rasgos, puede afirmarse que el contro de versiones realiza instantáneas de los archivos a lo largo del tiempo. Estas instantáneas documentan el momento en que fueron tomadas pero también qué cambios tuvieron lugar entre cada una de ellas, lo cual permite recuperar una version más antigua de tu archivo. A partir de aquí se abren un sinfín de posibilidades gracias al control de versiones.
+Con un control de versiones se persigue solucionar este tipo de problemas mediante la puesta en marcha de un registro sistemático de cambios en los archivos. A grandes rasgos, puede afirmarse que el control de versiones realiza instantáneas de los archivos a lo largo del tiempo. Estas instantáneas documentan el momento en que fueron tomadas pero también qué cambios tuvieron lugar entre cada una de ellas, lo cual permite recuperar una version más antigua de tu archivo. A partir de aquí se abren un sinfín de posibilidades gracias al control de versiones.
 
 
 ### ¿Por qué un control de versiones para documentos?
