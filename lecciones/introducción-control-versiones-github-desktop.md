@@ -23,7 +23,7 @@ Con esta lección aprenderás el funcionamiento básico de los sistemas de contr
 
 ## *Software* necesario
 
-GitHub Desktop is currently only available for Windows and Mac. If you use Linux you will probably already be familiar with the command line and will be able to use the Command Line version of Git. 
+Actualmente, GitHub Desktop está disponible solamente para Windows y Mac. Si utilizas Linux probablemente estarás familiarizado con la línea de comandos y serás capaz de utilizar la versión de línea de comands de Git. 
 
 
 ## ¿Qué es un control de versiones y por qué debería utilizarlo? 
