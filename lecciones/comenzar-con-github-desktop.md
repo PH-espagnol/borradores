@@ -216,7 +216,6 @@ Existen algunas diferencias entre la administración de un repositorio que conti
 
 Hasta ahora solo hemos registrado nuestros cambios de manera local. Aunque podríamos estar satisfechos con guardarlos en nuestro ordenador (es importante conservar copias), seguramente querramos subir los archivos a nuestro repositorio de GitHub para hacerlos públicos o bien, simplemente, para tener una copia que no esté alojada en nuestro ordenador. El proceso con GitHub Desktop es muy sencillo y rápido. En GitHub Desktop 'publicas' repositorios; es decir, los **envías** ('push') desde tu ordenador a la web de GitHub. Durante este proceso también creas un repositorio **remoto**.
  
-
 {% include figure.html filename="getting-started-with-github-desktop-4.png" caption="Publishing a repository" %}
 
 Una vez hayas 'publicado' tu repositorio, será visible en tu perfil de GitHub. Es posible crear un repositorio privado en GitHub pero solo si te registras como [estudiante] (https://education.github.com/pack) o [investigador](https://github.com/blog/1840-improving-github-for-science), o bien pagando una [suscripción](https://github.com/pricing). Si no te has registrado como estudiane o investigador, solo podrás crear un repositorio privado cuando pagues por una suscripción. Por eso, a menos que quieras pagar, puedes ignorar la sección 'Información sobre la compra'. En esta sección, será suficiente con publicar un repositorio en abierto. Para acceder a tu repositorio en línea, en el menú puedes clicar sobre 'Repository' ('Repositorio') y luego elegir 'View on GitHub' (es decir, 'Ver en GitHub'). Al hacer esto, se abrirá una ventana en tu navegador con tu repositorio en línea.
@@ -261,37 +260,37 @@ Una vez hayas anotado los cambios, serán almacenados en tu repositorio remoto. 
 
 Verás que el texto  modificaso aparece marcado en verde y en rojo. El color rojo indica que se ha producido una eliminación mientras que el verde indica que se ha añadido algo. Esta forma de visualizar los cambios puede ser útil antes de anotar pues te permitirá localizarlos y asegurarte de que los quieres registrar. En la parte izquierda verás el historial de los cambios realizados. En este momento el historial es muy breve pero a medida que trabajes crecerá en tamaño. Ver los cambios realizados de esta manera, en cada una de las fases de tu proyecto, te será de gran utilidad.
 
-## Managing Conflicts
+## Gestionar conflictos
 
-A 'conflict' emerges when you try to merge or 'sync' two versions of a document with changes which conflict with each other. If you are careful about committing and syncing local changes (on your computer) then it is unlikely you will run into this issue, but if you do it can be resolved fairly easily.
+Los 'conflictos' emergen cuando intentas fusionar o sincronizar dos versiones de un documento con cambios que son incompatibles entre sí. Si tienes cuidado cuando anotas y sincronizas los cambios realizados en tu entorno local, en tu ordenador, entonces es bastante improbable de que te encuentres con este tipo de problemas; de todos modos, resolverlos es una tarea sencilla.
 
-The most likely way a conflict will emerge is if you make a change remotely (on the GitHub website), and then make a subsequent change on your local machine without first synching the changes from the website.  If you make changes in different parts of a document these changes can be 'merged' or synced together without any conflict. But these changes might conflict with one another (i.e. if you try and change the same line of the document in two different ways).
+Los conflictos surgen a menudo cuando realizas un cambio en remoto (en la web GitHub) y luego haces otro cambio en local sin haber sincronizado previamente. Si los cambios tienen lugar en distintas partes del documento, no pasa nada, se pueden integrar o fusionar ('merge'). Ahora bien, algunos cambios pueden entrar en conflicto cuando tienen lugar en la misma línea del documento.
 
-An example will help illustrate how conflicts can emerge and how to deal with them. Say we add a change to our remote repository (on the GitHub website).
+Por ejemplo, imaginemos que añadimos algo en nuestro repositorio remoto (en la web de GitHub).
 
 {% include figure.html filename="getting-started-with-github-desktop-13.png" caption="A remote change to our document" %}
 
-We commit this change on the website and subsequently make a change to the document on our local machine. 
+A continaución, anotas el cambio en la web y, acto seguido, hacemos otro cambio en local.
 
 {% include figure.html filename="getting-started-with-github-desktop-14.png" caption="A local change to our document" %}
 
-If we now commit our local changes and then sync our changes we get a message warning us about sync conflicts.
+Si anotamos el cambio en local y sincronizamos, recibiremos un mensaje de alerta señalando que se ha producido un conflicto.
 
 {% include figure.html filename="getting-started-with-github-desktop-15.png" caption="GitHub desktop warning of sync conflicts" %}
 
-This is not a big problem. What you will need to do is manage these conflicts. GitHub desktop offers you the option of opening the file with the sync conflicts. 
+No te preocupes, no es un problema gordo. Simplemente hay que gestionar el conflicto. GitHub Desktop te ofrece la posiblidad de abrir el archivo y acceder al lugar en donde se halla el problema.
 
 {% include figure.html filename="getting-started-with-github-desktop-16.png" caption="GitHub desktop options for opening file containing conflicts" %}
 
-If we choose to open file with an external editor the document will open with whichever text editor/application we have chosen as the default for opening markdown files. If you haven't set a default application you can choose to 'show in finder'. This will show the folder with your file. From here you can open it with your preferred editor. 
+Si elegimos abrir el archivo con un editor externo, el documento se visualizará el editor de texto que tengas por defecto para archivos escritos en Markdown. Si no tienes ninguno por defecto, puedes clicar en 'show in finder' ('mostrar en el buscador') para acceder a la carpeta que contiene el archivo. A partir de aquí puedes abrirlo con el editor que prefieras.
 
-If we take a look at the file we will see Git has highlighted the conflicting section. 
+Si miras el archivo con atención, verás que Git ha marcado dónde se encuentra el conflicto.
 
 {% include figure.html filename="getting-started-with-github-desktop-17.png" caption="Conflicts highlighted in our document" %}
 
-You will see that the conflicting section is marked with `<<<<<<<` and ends with `>>>>>>>`. These are known as the conflict markers. The two conflicting blocks are divided by a `=======` line. There are a number of approaches to dealing with a conflict. You could choose to go with either of the changes by deleting the version you no longer want and removing the conflict markers. You could also decide to change the section entirely and not choose either of the options. Once you have 'resolved' the conflict you can go onto commit and sync your changes as usual. When you go to commit your changes you see that GitHub desktop specifies that the commit is to merge a conflict. This is useful if you later want to go back and review how you managed any conflicts. 
+Verás que el conflicto está envuelto con las marcas `<<<<<<<` y `>>>>>>>`. Los dos bloques que están en conflicto se distinguen gracias a una línea como esta `=======` line. Hay distintas formas de gestionar este tipo de conflicto. Por ejemplo, podrías eliminar la versión que ya no quieres y deshacerte de las marcas; o bien podrías eliminar todo el bloque y descartar ambas versiones. Una vez hayas 'resuelto' el conflicto, debes anotar el cambio y sincronizar como de costumbre. Cuando vayas a anotar el cambio, verás que el GitHub Desktop especifica que la anotación consiste en una fusión de un conflicto. Así, en el futuro, podrás volver sobre ello y revisar cómo lo resolviste.
 
-This may seem like a convoluted approach to dealing with conflicts but it is very useful because of the control given to you in dealing with conflicts. If conflicts emerge on a system like Dropbox the result is two files being created. Although this is better than potentially loosing important changes, it also means you still have to look at these two documents and decide how you are going to merge them. If you are careful about always syncing changes you will be able to avoid having to deal with conflicts. When collaborating the likelihood for conflicts increases so it is useful to be aware of how to deal with conflicts before you begin to collaborate using GitHub.
+Esta forma de resolver conflictos puede parecer más compleja de lo que es, pero, sin duda, es muy útil porque te da mucho control. En una plataforma como Dropbox esto ocasionario la duplicación de un archivo. Pese a que esta solución sea mejor que perder los cambios, deberías ver qué archivo contiene la versión que quieres y decidir cómo resolver el conflicto. En cualquier caso, si tienes cuidado al sincronizar los cambios evitarás muchos conflictos. Si colaboras con otras personas, el riesgo de crear conflictos es mucho mayor; por eso, es importante saber cómo resolverlos antes de empezar a colaborar con GitHub.
 
 ## Version Control in a Plain Text Workflow  
 
