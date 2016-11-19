@@ -300,15 +300,15 @@ Asimismo, el flujo de trabajo presentado en esta lección también puede convert
 
 ## Más recursos
 
-GitHub Desktop offers an easy way of getting started with GitHub and version control. Depending on your use case GitHub desktop may be sufficient for your needs. If you are already familiar with using the Command Line then using Git on the Command Line may offer some advantages. Version control systems like Git have a lot of features available to use. Some of these will only be applicable in very specific contexts, others will be more commonly useful. Alongside the lesson suggested above the resources below will allow you to gain a deeper understanding of version control.
+GitHub Desktop es una forma sencilla de aprender a controlar versiones con GitHub. En función de tus necesidades, GitHub será suficiente. Ahora bien, si ya conoces el funcionamiento de la línea de comandos, utilizar Git puede tener más ventajas. Los controles de versiones como Git ofrecen muchas más opciones; algunos tienen un uso concreto mientras que otros se pueden utilizar de manera más generalizable. Como complemento a esta lección, te sugerimos una serie de recursos que pueden ayudarte a mejorar tu comprensión del control de versiones.
 
-* The [GitHub Desktop](https://desktop.github.com/) and the GitHub Desktop [documentation](https://help.github.com/desktop/) outlines more features included in GitHub Desktop. 
-* GitHub provides extensive support in the form of [guides](https://guides.github.com/) and [help](https://help.github.com/). 
-* [GitHub Glossary](https://help.github.com/articles/github-glossary/) outlines the most commonly used GitHub/Git terminology. 
-* [Atlassian](https://www.atlassian.com/git/tutorials): Some in-depth but clear tutorials on using git. There is a focus on explaining the differences between git and other version control systems which may not be relevant but will help you understand the inner workings of git in greater detail. 
-* [Pro Git](https://git-scm.com/book/en/v2): A book on Git. Begins with the basics and later covers more advanced usage of Git.
-* For [students](https://education.github.com/pack) and [researchers](https://github.com/blog/1840-improving-github-for-science) GitHub offers free private repositories. These repositories may be useful for early drafts of work or for managing notes which are never intended to becoming public. Note: it might not be a good idea to store things which are very sensitive on GitHub even in a private repository. 
-* [ProfHacker](http://chronicle.com/blogs/profhacker/tag/github) has posts on various projects on using GitHub in an academic context. 
-* [GitHub, Academia, and Collaborative Writing](https://www.hastac.org/blogs/harrisonm/2013/10/12/github-academia-and-collaborative-writing) discusses using GitHub for collaborative writing. 
-* [Introduction to the Bash Command Line](http://programminghistorian.org/lessons/intro-to-bash) introduces the command line which will be useful preparation for using GitHub on the command line.
 
+*  La web de [GitHub Desktop](https://desktop.github.com/) y su [documentación](https://help.github.com/desktop/) cubren un mayor número de funciones disponibles. 
+* GitHub ofrece ayuda a través de sus [guías](https://guides.github.com/) y [ayuda](https://help.github.com/). 
+* El [Glosario de GitHub](https://help.github.com/articles/github-glossary/) explica la termin¡ología más frecuente en Git. 
+* [Atlassian](https://www.atlassian.com/git/tutorials): contiene tutoriales más avanzados (pero fáciles de entender) de Git. Ponen el acento en las diferencias entre Git y otros controles de versiones; esto puede no ser relevante para ti pero te ayudará a comprender el funcionamiento de Git de manera más detallada.
+* [Pro Git](https://git-scm.com/book/en/v2): un libro exclusivamente sobre Git. Empipieza con el funcionamiento básico y luego pasa a tratar asuntos más avanzados de Git.
+* Para [estudiantes](https://education.github.com/pack) e [investigadores](https://github.com/blog/1840-improving-github-for-science) GitHub ofrece repositorios privados sin pagar por una suscripción. Estos repositorios pueden ser útiles para borradores o notas que no queremos publicar. Nota: no es muy aconsejable guardar contenido delicado incluso en un repositorio privado en GitHub.
+* [ProfHacker](http://chronicle.com/blogs/profhacker/tag/github) tiene varias entradas sobre proyectos que utilizan GitHub en el contexto académico.
+* [GitHub, Academia, and Collaborative Writing](https://www.hastac.org/blogs/harrisonm/2013/10/12/github-academia-and-collaborative-writing) reflexioina sobre el uso de GitHub para la escritura colaborativa.
+* La lección [Introducción a Bash](http://programminghistorian.org/lessons/intro-to-bash) te permitirá aprender más sobre la línea de comandos, muy útil para utilizar GitHub.
