@@ -23,7 +23,7 @@ Con esta lección aprenderás el funcionamiento básico de los sistemas de contr
 
 ## *Software* necesario
 
-GitHub Desktop is currently only available for Windows and Mac. If you use Linux you will probably already be familiar with the command line and will be able to use the Command Line version of Git. 
+Actualmente, GitHub Desktop está disponible solamente para Windows y Mac. Si utilizas Linux probablemente estarás familiarizado con la línea de comandos y serás capaz de utilizar la versión de línea de comands de Git. 
 
 
 ## ¿Qué es un control de versiones y por qué debería utilizarlo? 
@@ -44,12 +44,12 @@ midocumento2016-01-08.txt
 ```
 Aunque este método sea un poco más fácil de entender, sigue habiendo problemas. En primer lugar, este método no registra o describe qué cambios se han producido entre uno y otro archivo guardado. Pueden ser pequeñas correcciones de erratas, o bien tratarse de la reescritura de pasajes enteros o incluso de una modificación mayor, por ejemplo, de la estructura del documento. Además si quieres revertir alguno de estos cambios, tendrás que averiguar cuándo se hizo el cambio y deshacerlo.
 
-Con un control de versiones se persigue solucionar este tipo de problemas mediante la puesta en marcha de un registro sistemático de cambios en los archivos. A grandes rasgos, puede afirmarse que el contro de versiones realiza instantáneas de los archivos a lo largo del tiempo. Estas instantáneas documentan el momento en que fueron tomadas pero también qué cambios tuvieron lugar entre cada una de ellas, lo cual permite recuperar una version más antigua de tu archivo. A partir de aquí se abren un sinfín de posibilidades gracias al control de versiones.
+Con un control de versiones se persigue solucionar este tipo de problemas mediante la puesta en marcha de un registro sistemático de cambios en los archivos. A grandes rasgos, puede afirmarse que el control de versiones realiza instantáneas de los archivos a lo largo del tiempo. Estas instantáneas documentan el momento en que fueron tomadas pero también qué cambios tuvieron lugar entre cada una de ellas, lo cual permite recuperar una version más antigua de tu archivo. A partir de aquí se abre un sinfín de posibilidades gracias al control de versiones.
 
 
 ### ¿Por qué un control de versiones para documentos?
 
-A medida que para investigar utilizamos herramientas digitales y almacenamiento en formato digital, se vuelve relevantes reflexionar sobre cómo optimizar la gestión de nuestros datos. Más aún, el control de versiones puede ser indispensable si tenemos intención de colaborar con otros investigadores. Aunque el control de versiones fue diseñado en sus orígenes para tratar archivos de código, creemos que la gestión de documentos también se beneficiaría. La lección que proponemos no cubre todas las ventajas del control de versiones pero al finalizarla podrás llevar a cabo las siguientes tareas:
+A medida que para investigar utilizamos herramientas digitales y almacenamiento en formato digital, se vuelve relevante reflexionar sobre cómo optimizar la gestión de nuestros datos. Más aún, el control de versiones puede ser indispensable si tenemos intención de colaborar con otros investigadores. Aunque el control de versiones fue diseñado en sus orígenes para tratar archivos de código, creemos que la gestión de documentos también se beneficiaría. La lección que proponemos no cubre todas las ventajas del control de versiones pero al finalizarla podrás llevar a cabo las siguientes tareas:
 
 * rastrear el desarrollo y los cambios de tus documentos
 * registrar los cambios que has hecho de una manera que puedas entender posteriormente
@@ -95,7 +95,7 @@ GitHub Desktop, la aplicación de escritorio de GitHub, te permitirá empezar a 
 
 ### Una breve nota sobre la terminología
 
-Uno de los aspecots más complejos del uso de GitHub es la terminología. El nombre de algunos de los comandos se entienden fácilmente porque son evidentes, pero otros no tanto. En este tutorial intentaremos explicar brevemente los términos poco comunes. Si te pierdes, puedes consultar el [glosario](https://help.github.com/articles/github-glossary/) de GitHub. Sin embargo, creemos que es mejor ir aprendiendo los términos sobre la marcha, a medida que se utiliza el programa, en lugar de intentar comprender toda la terminología antes de empezar. 
+Uno de los aspectos más complejos del uso de GitHub es la terminología. El nombre de algunos de los comandos se entienden fácilmente porque son evidentes, pero otros no tanto. En este tutorial intentaremos explicar brevemente los términos poco comunes. Si te pierdes, puedes consultar el [glosario](https://help.github.com/articles/github-glossary/) de GitHub. Sin embargo, creemos que es mejor ir aprendiendo los términos sobre la marcha, a medida que se utiliza el programa, en lugar de intentar comprender toda la terminología antes de empezar. 
 
 ### Regístrate con una cuenta en GitHub
 
