@@ -1,5 +1,5 @@
 ---
-title: Escritura sustentable en texto plano usando Pandoc y Markdown
+title: Escritura sostenible en texto plano usando Pandoc y Markdown
 authors:
 - Dennis Tenen
 - Grant Wythoff
