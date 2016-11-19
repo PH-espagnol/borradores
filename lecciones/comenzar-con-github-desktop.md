@@ -206,13 +206,13 @@ Desplaza la sección sobre la metdología después de la sección sobre las fuen
 ```
 Los mensajes descriptivos que acompañan la edición de una página de Wikipedia o una Wiki son un paralelo a las anotaciones y pueden servirte de modelo para que escribas mensajes fáciles de entender. Cuando escribas estos mensajes debes explicar los cambios que has hecho y por qué los has hecho a fin de que otras personas puedan comprender tu razonamiento. Si tienes en cuenta un destinatario externo (un colaborador y no solo tú), te será más fácil escribir anotaciones claras y con sentido. 
 
-### Building a Good Repository
+### Cómo crear un buen repositorio
 
-The benefits of using version control rely to a large degree on using the system effectively. This means thinking about when to make commits and how to best convey the changes in that commit in a message. Focusing on making both your messages and your commits 'atomic' will make it easier to 'move' through different stages of your repositories history. A good repository will allow you to easily understand changes that were made at different stages, will be understood by other people and will help you reflect on the changes you make to a document. 
+Las ventajas de utilizar un control de versiones se fundamentan en gran medida en su uso efectivo. Es importante pensar cuándo se hacen las anotaciones y cómo identificar de manera correcta esos cambios cuando se describen con mensajes. Si te esfuerzas en hacer tus anotaciones y mensajes 'modulares', te será más fácil 'moverte' a través del historial de tu repositorio. Un buen repositorio debería permitir comprender los cambios realizados; no solo tú debería entenderlos sino también las personas con las que colabores. 
 
-There is some difference between how you would manage a repository primarily focused on code and one focused on text. Both, however, benefit from clear and logical organisation. This is something that is important to do with your research data regardless of whether you are version controlling it and/or making it public. For a useful introduction to managing research data see James Baker's lesson [Preserving Your Research Data](http://programminghistorian.org/lessons/preserving-your-research-data). 
+Existen algunas diferencias entre la administración de un repositorio que contiene principalmente código y otro que contiene texto. En ambos casos, sin embargo, una organización clara y lógica es imprescindible. Aunque no utilices un control de versiones o no pretendas hacer público tus datos, te recomendamos ser siempre organizado con los materiales de tu investigación. Para una introducción a la gestión de los datos de investigación, puedes consultar la lección [Preservar tus datos de investigación] (http://programminghistorian.org/lessons/preserving-your-research-data). 
 
-### Publishing Your Repository
+### Cómo publicar tu repositorio
 
 At the moment we are only recording our changes locally. We may be happy to only store our changes locally (it is still important to back our files up) but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer. The process of doing this through GitHub Desktop is straightforward. On GitHub desktop you 'publish' repositories. This will **push** your repository from your computer to the GitHub website and set up a **remote** repository in the process. 
 
