@@ -161,7 +161,7 @@ Para hacer esto debes *anotar* los cambios.
 
 ### Anotar cambios  
 
-Al *anotar* un cambio, comunicas a Git que quieres registrar las modificacione realizadas. Aunque *anotar* puede parecer similar a guardar un archivo, el objetivo es distinto. A menudo guardamos diferentes versiones de un documento; ahora bien, guardar un documento, en realidad, significa que puedes cerrar el archivo y volver a él más tarde y que su estado será el mismo, es decir, no se habrán producido perdidas. *Anotar*, en cambio, implica tomar una instantánea de un archivo en un momento determinado y documentar información sobre los cambios realizados.
+Al *anotar* ('commit') un cambio, comunicas a Git que quieres registrar las modificacione realizadas. Aunque *anotar* puede parecer similar a guardar un archivo, el objetivo es distinto. A menudo guardamos diferentes versiones de un documento; ahora bien, guardar un documento, en realidad, significa que puedes cerrar el archivo y volver a él más tarde y que su estado será el mismo, es decir, no se habrán producido perdidas. *Anotar*, en cambio, implica tomar una instantánea de un archivo en un momento determinado y documentar información sobre los cambios realizados.
 
 {% include figure.html filename="getting-started-with-github-desktop-3.png" caption="Committing changes" %}
 
@@ -214,52 +214,52 @@ Existen algunas diferencias entre la administración de un repositorio que conti
 
 ### Cómo publicar tu repositorio
 
-At the moment we are only recording our changes locally. We may be happy to only store our changes locally (it is still important to back our files up) but we may want to upload our repository onto GitHub to make it public or to have it stored outside of our computer. The process of doing this through GitHub Desktop is straightforward. On GitHub desktop you 'publish' repositories. This will **push** your repository from your computer to the GitHub website and set up a **remote** repository in the process. 
+Hasta ahora solo hemos registrado nuestros cambios de manera local. Aunque podríamos estar satisfechos con guardarlos en nuestro ordenador (es importante conservar copias), seguramente querramos subir los archivos a nuestro repositorio de GitHub para hacerlos públicos o bien, simplemente, para tener una copia que no esté alojada en nuestro ordenador. El proceso con GitHub Desktop es muy sencillo y rápido. En GitHub Desktop 'publicas' repositorios; es decir, los **envías** ('push') desde tu ordenador a la web de GitHub. Durante este proceso también creas un repositorio **remoto**.
+ 
 
 {% include figure.html filename="getting-started-with-github-desktop-4.png" caption="Publishing a repository" %}
 
-Once you have 'published' your repository it will be viewable on your profile at GitHub's website. It is possible to setup a private repository on GitHub but this requires you to have either signed up as a [student](https://education.github.com/pack) or [researcher](https://github.com/blog/1840-improving-github-for-science) or to pay for a [GitHub subscription](https://github.com/pricing). If you haven't signed up for one of these options you will not be able to create a private repository without first signing up for a subscription. Unless you need to start a subscription you can safely ignore the 'billing information' section. For this lesson it will be fine to publish a public repository. To quickly view your repository online you can use the repository menu and choose 'View on GitHub'. This will bring you to your repository online in your browser. 
+Una vez hayas 'publicado' tu repositorio, será visible en tu perfil de GitHub. Es posible crear un repositorio privado en GitHub pero solo si te registras como [estudiante] (https://education.github.com/pack) o [investigador](https://github.com/blog/1840-improving-github-for-science), o bien pagando una [suscripción](https://github.com/pricing). Si no te has registrado como estudiane o investigador, solo podrás crear un repositorio privado cuando pagues por una suscripción. Por eso, a menos que quieras pagar, puedes ignorar la sección 'Información sobre la compra'. En esta sección, será suficiente con publicar un repositorio en abierto. Para acceder a tu repositorio en línea, en el menú puedes clicar sobre 'Repository' ('Repositorio') y luego elegir 'View on GitHub' (es decir, 'Ver en GitHub'). Al hacer esto, se abrirá una ventana en tu navegador con tu repositorio en línea.
 
 {% include figure.html filename="getting-started-with-github-desktop-5.png" caption="Repository menu" %}
 
-You can now see your document in your online repository.
+A continuación, deberías ver tu documento en tu repositorio web.
 
 {% include figure.html filename="getting-started-with-github-desktop-6.png" caption="The online repository you have published" %}
 
-Once your document is online, you can continue to make local changes to your file. But you will have to **sync** your local changes to reflect these changes in the published GitHub repository. GitHub stores changes both locally (on your computer) and remotely (on their servers). It is important to keep these changes in sync. On GitHub Desktop this process is simplified by using a sync option rather than by using the **push** and **pull** commands used on the command line. You will see a 'sync' button on GitHub Desktop. This will ensure your local (computer) and remote (GitHub server) repositories are the same. If you want to work on your document before 'publishing it' you can choose to make commits without syncing. This will allow you to implement version control early on whilst keeping the changes local to your computer initially.  
+Una vez tu documento está en línea, puedes continuar realizando cambios en tu documento en local. Pero tendrás que **sincronizar** tus cambios locales para reflejarlos en el repositorio publicado en GitHub. Esta plataforma almacena los cambios en tu ordenador y en remoto (en sus servidores). Por eso es importante mantener ambos lugares sincronizados. Con GitHub Desktop este proceso se simplifica mientras que en en la línea de comandos deberíamos ejecutar **sync** ('sincronizar') y luego **pull** ('recibir'). Verás el botón 'sync' en el margen superior derecho de tu GitHub Desktop. Al pulsarlo, te aseguras de que tu entorno local (tu ordenador) y tu entorno remoto (el servidor de GitHub) contienen la misma información. Si quieres trabajar en tu documento antes de publicarlo, también puedes elegir anotar los cambios sin sincronizar. Esto te permitirá poner en marcha el control de versiones en local en una fase temprana.
 
-### Making Changes Remotely
+### Cómo hacer cambios en remoto
 
-It is also possible to make a change to your repository on the web interface. Clicking on the name of the file will take you to a new page showing your document. 
+También es posible realizar cambiso en tu repositorio a través de la  interfaz web de GitHub. Para ello, clica sobre el nombre del archivo y accederás a una nueva página que muestra tu documento.
 
 {% include figure.html filename="getting-started-with-github-desktop-7.png" caption="The view of your document online" %}
 
-(Note: At this point it might seem strange that all the text appears on one line, when your local file had two lines. This is because in Markdown, syntax paragraphs must be broken using a blank line; two consecutive lines are interpreted as a single paragraph. If we had used the file extension '.txt' we would have had a line break appear here, but using the extension '.md' told the GitHub web interface to preview the document using Markdown rules. This is another reason that using a text editor which includes facilities for rendering your Markdown file will be useful when you are first using the format.)  
+(Nota: puede parecer extraño que todo lo que has escrito aparezca en una línea, cuando tu archivo local tenía dos líneas. Esto se debe a que en Markdown, los párrafos deben marcarse dejando una línea en blanco; así pues, dos líneas consecutivas son interpretaas como un solo párrafo. Si hubiéramos utilizado la extensión '.txt', tendríamos un salto de línea aqu, pero con la extensión '.md' estamos indicando a GitHub que visualice el documento según las normas de Markdown. Esta es otra razón por la que utilizar un editor apto para Markdown puede serte útil para visualizar el formato). 
 
-From the web interface you have a variety of options available to you, including viewing the history of changes, viewing the file in GitHub Desktop, and deleting it. You can also see some other options next to 'code'. These options will not be so important to begin with but you may want to use them in the future. For now we will try editing a file in the web interface and syncing these changes to our local repository.
+La interfaz web ofrece otras opciones. Por ejemplo, puedes visualizar los cambios en el historial, puedes abrir el documento en GitHub Desktop, o bien puedes eliminarlo. Encontrarás más opciones junto a la opción 'code' ('código'). Estas opciones no son importantes ahora mismo, al principio, pero quizás la uses en el futuro. A continuación, intentaremos editar un documento en la interfaz web y sincronizar los cambios con nuestro repositorio local.
 
-Click on the edit option.
+Así, pues, clica sobre la opción 'editar' representada con un lápiz.
 
 {% include figure.html filename="getting-started-with-github-desktop-8.png" caption="The edit link" %}
 
-You will now be able to edit the file and add some new text. 
+Tras esto debería poder editar el archivo y añadir más texto.
 
 {% include figure.html filename="getting-started-with-github-desktop-9.png" caption="The editing view" %}
 
-Once you have made some changes to your file, you will again see the option to commit changes at the bottom of the text entry box. 
+Una vez hayas realizado cambios en tu archivo, verás que puedes anotar los cambios en la parte inferior de la ventana.
 
 {% include figure.html filename="getting-started-with-github-desktop-10.png" caption="The remote commit view" %}
 
-
-Once you have committed these changes they will be stored on the remote repository. To get them back onto our computer we need to sync our these changes. We will see the 'sync' button on GitHub Desktop. 
+Una vez hayas anotado los cambios, serán almacenados en tu repositorio remoto. Para recibirlos en tu ordenador deberás sincronizarlos. Para ello, clica en el botón 'sync' de tu GitHub Desktop.
 
 {% include figure.html filename="getting-started-with-github-desktop-11.png" caption="The sync button" %}
 
-We now have our remote changes synced back onto our computer.
+¡Ya tenemos nuestros cambios realizados en remoto en nuestro ordenador!
 
 {% include figure.html filename="getting-started-with-github-desktop-12.png" caption="Our document with remote changes synced" %}
 
-You can see from this view that we now have the text with changes highlighted in green and red. Red indicates where things have been removed while green indicates additions. This can be useful for viewing the edits you have made before making a commit and helps you spot whether all the changes are ones you want to commit. On the left you will see a history of the changes you have made. At the moment this is very brief but as you work on a project the history might become much longer. Being able to see the changes you have made at different stages can be very useful.
+Verás que el texto  modificaso aparece marcado en verde y en rojo. El color rojo indica que se ha producido una eliminación mientras que el verde indica que se ha añadido algo. Esta forma de visualizar los cambios puede ser útil antes de anotar pues te permitirá localizarlos y asegurarte de que los quieres registrar. En la parte izquierda verás el historial de los cambios realizados. En este momento el historial es muy breve pero a medida que trabajes crecerá en tamaño. Ver los cambios realizados de esta manera, en cada una de las fases de tu proyecto, te será de gran utilidad.
 
 ## Managing Conflicts
 
