@@ -95,7 +95,7 @@ GitHub Desktop, la aplicación de escritorio de GitHub, te permitirá empezar a 
 
 ### Una breve nota sobre la terminología
 
-Uno de los aspecots más complejos del uso de GitHub es la terminología. El nombre de algunos de los comandos se entienden fácilmente porque son evidentes, pero otros no tanto. En este tutorial intentaremos explicar brevemente los términos poco comunes. Si te pierdes, puedes consultar el [glosario](https://help.github.com/articles/github-glossary/) de GitHub. Sin embargo, creemos que es mejor ir aprendiendo los términos sobre la marcha, a medida que se utiliza el programa, en lugar de intentar comprender toda la terminología antes de empezar. 
+Uno de los aspectos más complejos del uso de GitHub es la terminología. El nombre de algunos de los comandos se entienden fácilmente porque son evidentes, pero otros no tanto. En este tutorial intentaremos explicar brevemente los términos poco comunes. Si te pierdes, puedes consultar el [glosario](https://help.github.com/articles/github-glossary/) de GitHub. Sin embargo, creemos que es mejor ir aprendiendo los términos sobre la marcha, a medida que se utiliza el programa, en lugar de intentar comprender toda la terminología antes de empezar. 
 
 ### Regístrate con una cuenta en GitHub
 
