@@ -32,7 +32,7 @@ Esta lección utiliza un **[shell de Unix](http://en.wikipedia.org/wiki/Unix_she
 
 ## Sólo para usuarios de Windows: instalar Git Bash
 
-Los usuarios de OS X y la mayoría de las distribuciones de Linux corren con suerte pues ya tienen un Bash shell instalado por defecto. Para ustedes que tienen Windows, necesitan cubrir un paso extra e instalar Git Bash descargando la versión más reciente en [esta página](https://git-for-windows.github.io/). Las instrucciones de instalación están disponibles en [Open Hatch](https://openhatch.org/missions/windows-setup/install-git-bash).
+Los usuarios de OS X y la mayoría de las distribuciones de Linux tienen suerte pues ya tienen un Bash *shell* instalado por defecto. Para los usuarios de Windows, es necesario cubrir un paso extra e instalar Git Bash descargando la versión más reciente en [esta página](https://git-for-windows.github.io/). Las instrucciones de instalación están disponibles en [Open Hatch](https://openhatch.org/missions/windows-setup/install-git-bash).
 
 ## Abrir el intérprete de línea de comandos
 
