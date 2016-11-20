@@ -248,7 +248,7 @@ y pulsas Intro, todos los archivos .txt que estén en el directorio de trabajo s
 
 ## Editar archivos de texto directamente en línea de comandos
 
-Si quieres leer un archivo completo sin salir de línea de comandos, puedes encender [Vim](https://es.wikipedia.org/wiki/Vim). Vim es un editor de texto muy poderoso que es perfecto para utilizarse con programas como [Pandoc](http://johnmacfarlane.net/pandoc/) para el procesamiento de textos, o editar tu código sin tener que cambiar a otro programa. Lo mejor de todo es que viene incluido con bash tanto en OS X como en Windows. Vim tiene una curva de aprendizaje bastante grande, por lo que vamos a tocar algunos puntos menores.
+Si quieres leer un archivo completo sin salir de línea de comandos, puedes abrir [Vim](https://es.wikipedia.org/wiki/Vim). Vim es un editor de texto muy poderoso que es perfecto para utilizarse con programas como [Pandoc](http://johnmacfarlane.net/pandoc/) para el procesamiento de textos, o editar tu código sin tener que cambiar a otro programa. Lo mejor de todo es que viene incluido con bash tanto en OS X como en Windows. Vim tiene una curva de aprendizaje bastante grande, por lo que vamos a tocar algunos puntos menores.
 
 Escribe:
 
@@ -258,7 +258,7 @@ Verás aparecer vim frente a ti, un editor de texto en línea de comandos.
 
 {% include figure.html filename="vim.png" caption="Vim" %}
 
-Si quieres aprender más de Vim, hay una [buena guía](http://vimdoc.sourceforge.net/htmldoc/quickref.html) disponible.
+Si quieres aprender más de Vim, aquí tienes una [buena guía](http://vimdoc.sourceforge.net/htmldoc/quickref.html) disponible.
 
 El uso de Vim para leer archivos es relativamente simple. Puedes usar las teclas de flechas para navegar alrededor y teóricamente leer *Guerra y Paz* a través de línea de comandos (sería un éxito hacerlo). En seguida hay algunos comandos de navegación básica:
 
@@ -266,9 +266,9 @@ El uso de Vim para leer archivos es relativamente simple. Puedes usar las teclas
 
 `Ctrl+B` te moverá una página arriba. (`Shift+FlechaAbajo` para usuarios de Windows). 
 
-Si te quieres desplazar rápidamente al final de una línea, puedes oprimir `$` y para moverte al inicio: `0`. También puedes moverte entre frases escribiendo `)` (hacia adelante) o `(` (atrás). Para párrafos, utiliza `}` y `{`. Dado que estás haciendo todo con el teclado, en vez de tener que mantener oprimida la tecla de flecha para moverte por el documento, esto te permite pasar volando hacia atrás y adelante.
+Si te quieres desplazar rápidamente al final de una línea, puedes oprimir `$` y para moverte al inicio: `0`. También puedes moverte entre frases escribiendo `)` (hacia adelante) o `(` (atrás). Para párrafos, utiliza `}` y `{`. Dado que estás haciendo todo con el teclado, en vez de tener que mantener pulsada la tecla de flecha para moverte por el documento, esto te permite pasar volando hacia atrás y adelante.
 
-Vamos a desplazarnos a la parte superior para hacer un pequeño cambio, como añadir un  campo de 'lector' en el encabezado. Sitúa el cursor entre **Author:** y **Translator:**, como esto:
+Vamos a desplazarnos a la parte superior para hacer un pequeño cambio, como añadir un campo de 'lector' en el encabezado. Sitúa el cursor entre **Author:** y **Translator:**, como esto:
 
 {% include figure.html filename="about-to-insert.png" caption="About to Insert a Field" %}
 
@@ -280,7 +280,7 @@ Al final de la pantalla verás:
 
 `-- INSERT --`
 
-Esto significa que estás en el modo 'insertar'. Ahora puedes escribir y editar como si estuvieras en un editor de texto estándar. Oprime `Enter` dos veces, luego `flecha arriba`, y escribe:
+Esto significa que estás en el modo 'insertar'. Ahora puedes escribir y editar como si estuvieras en un editor de texto estándar. Pulsa `Intro` dos veces, luego `flecha arriba`, y escribe:
 
 `Reader: un historiador programador`
 
@@ -292,9 +292,9 @@ Para abandonar Vim o hacer cambios, tienes que introducir una serie de comandos.
 
 {% include figure.html filename="after-writing.png" caption="After Writing the File, with Our Minor Change" %}
 
-Si deseas salir del programa, escribe de nuevo `:` y luego `q`. Esto te regresará a la línea de comandos. Al igual que con el resto de *bash*, también podrías haber combinado los dos comandos. Presionando `:` y luego poniendo `wq` habríamos escrito el archivo y luego habríamos salido del programa. O, si querías salir **sin** guardar, `q!`, habrías salido de Vim y cancelado la preferencia de sobreescribir, por defecto, para guardar tus cambios.
+Si deseas salir del programa, escribe de nuevo `:` y luego `q`. Esto te regresará a la línea de comandos. Al igual que con el resto de *bash*, también podrías haber combinado los dos comandos. Presionando `:` y luego poniendo `wq` habríamos guardado el archivo y luego habríamos salido del programa. O, si querías salir **sin** guardar, `q!`, habrías salido de Vim y cancelado la preferencia de sobreescribir, por defecto, para guardar tus cambios.
 
-Vim es diferente a los procesadores de texto a los que estás acostubrado y requerirá más trabajo y práctica para llegar a tener fluidez en su uso. Pero si estás ajustando cosas menores en archivos, es una buena manera de empezar. A medida que te sientas más cómodo podrías incluso escribir documentos con él, aprovechando el poder de [formatear y poner notas a pie de Pandoc y Markdown](/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown).
+Vim es diferente a los procesadores de texto a los que estás acostumbrado y requerirá más trabajo y práctica para llegar a tener fluidez en su uso. Pero si estás ajustando cosas menores en archivos, es una buena manera de empezar. A medida que te sientas más cómodo podrías incluso escribir documentos con él, aprovechando el poder de [formatear y poner notas a pie de Pandoc y Markdown](/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown).
 
 ## Mover, copiar y borrar archivos
 
