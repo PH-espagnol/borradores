@@ -58,7 +58,7 @@ Si cuando abres la ventana del intérprete no estás seguro del sitio en que est
 
 `pwd`
 
-y pula Intro. Si usas OS X o Linux, tu computadora probablemente mostrará `/usuarios/nombre-de-usuario` con tu propio nombre de usuario. Por ejemplo, la ruta de Ian en OS X es `/users/ianmilligan1/`. Aquí es donde te darás cuenta que aquellos que usan OS X/Linux y los que usan Windows tendrán experiencias ligeramente distintas. En Windows, James se localiza en:
+y pulsa Intro. Si usas OS X o Linux, tu computadora probablemente mostrará `/usuarios/nombre-de-usuario` con tu propio nombre de usuario. Por ejemplo, la ruta de Ian en OS X es `/users/ianmilligan1/`. Aquí es donde te darás cuenta que aquellos que usan OS X/Linux y los que usan Windows tendrán experiencias ligeramente distintas. En Windows, James se localiza en:
 
 `C:\users\jbaker`
 
@@ -168,19 +168,19 @@ en Windows. Este comando abrirá tu GUI en el directorio actual. Asegúrate de d
 
 ## Interactuar con archivos
 
-Además de navegar por directorios, puedes interactuar con archivos a traves de la línea de comandos: puedes leerlos, abrirlos, ejecutarlos e incluso editarlos sin tener que salir de la interfaz. Hay cierto debate del porqué hacer esto. La principal razón es obtener la experiencia perfecta de trabajar en la línea de comandos: nunca tienes que tocar el mouse o el track pad de la computadora y, aunque tiene una curva de aprendizaje pronunciada, eventualmente puede convertirse en el único entorno de escritura. Además, muchos programas requieren la utilización de la línea de comandos para operar con ellos. Puesto que vas a utilizar programas a través de la línea de comandos, a menudo puede ser más rápido crear pequeñas ediciones sin necesidar de cambiar a un programa separado. Para algunos de estos argumentos véase el texto de Jon Beltran de Heredia, ["Why, oh WHY, do those #?@! nutheads use vi?"](http://www.viemu.com/a-why-vi-vim.html).
+Además de navegar por directorios, puedes interactuar con archivos a través de la línea de comandos: puedes leerlos, abrirlos, ejecutarlos e incluso editarlos sin tener que salir de la interfaz. Hay cierto debate sobre por qué uno debería hacer todo esto; la principal razón es obtener la experiencia necesaria para trabajar en la línea de comandos: nunca tienes que tocar el mouse o el *track pad* de la computadora y, aunque tiene una curva de aprendizaje pronunciada, eventualmente puede convertirse en el único entorno de escritura. Además, muchos programas requieren la utilización de la línea de comandos para operar con ellos. Puesto que vas a utilizar programas a través de la línea de comandos, a menudo puede ser más rápido crear pequeñas ediciones sin necesidad de cambiar a un programa separado. Para algunos de estos argumentos véase el texto de Jon Beltran de Heredia, ["Why, oh WHY, do those #?@! nutheads use vi?"](http://www.viemu.com/a-why-vi-vim.html).
 
-Aquí hay unas formas básicas de interactuar con archivos.
+A continuación, presentaremos unas formas básicas de interactuar con archivos.
 
-Primero, puedes crear un nuevo directorio para que puedas interactuar con archivos de texto. Lo crearemos en tu escritorio, por conveniencia. Siempre se podrá mover más tarde. Navega hasta tu escritorio con el shell y escribe:
+Primero, puedes crear un nuevo directorio para que puedas interactuar con archivos de texto. Lo crearemos en tu escritorio, por conveniencia. Siempre se podrá mover más tarde. Navega hasta tu escritorio con el *shell* y escribe:
 
 `mkdir ProgHist-Textos`
 
 Esto crea un directorio llamado, adivinaste, `ProgHist-Textos`. En general, es bueno evitar poner espacios en tus nombres de archivos y directorios cuando se utiliza la línea de comandos (hay soluciones alternativas, pero este método es más simple). Puedes mirar en tu escritorio para verificar que funcionó. Ahora, muévete dentro de ese directorio (recuerda que será `cd ProgHist-Textos`).
 
-Pero ¡espera! Hay un truco para hacer las cosas un poco más rápido. Ve arriba un directorio (`cd ..`, lo cual te llevará de regreso al escritorio). Para navegar al directorio `ProgHist-Textos` puedes escribir `cd ProgHist-Textos`. Alternativamente puede escribir `cd Prog` y luego oprimir la tecla de tabulador. Te darás cuenta de que la interfaz completa la línea como `cd ProgHist-Textos`. **Oprimir el tabulador en cualquier momento dentro del shell le pedirá que intente completar automáticamente la línea en función de los archivos o subdirectorios que estén en el directorio actual. Sin embargo, la función es sensible a mayúsculas (i.e. en el ejemplo anterior, `cd prog` no podrá autocompletarse como `cd ProgHist-Textos`). En donde haya dos archivos con los mismos caracteres, autocompletar solamente llenará la línea hasta el primer punto de diferencia. Sugerimos utilizar este método a lo largo de la leccion para ver cómo se comporta.**
+Pero ¡espera! Hay un truco para hacer las cosas un poco más rápido. Ve arriba un directorio (`cd ..`, lo cual te llevará de regreso al escritorio). Para navegar al directorio `ProgHist-Textos` puedes escribir `cd ProgHist-Textos`. Alternativamente puede escribir `cd Prog` y luego pulsar la tecla de tabulador. Te darás cuenta de que la interfaz completa la línea como `cd ProgHist-Textos`. **Si pulsas el tabulador en cualquier momento dentro del *shell* le pedirás que intente completar automáticamente la línea en función de los archivos o subdirectorios que estén en el directorio actual. Sin embargo, la función es sensible a mayúsculas (así, en el ejemplo anterior, `cd prog` no podrá autocompletarse como `cd ProgHist-Textos`). En donde haya dos archivos con los mismos caracteres, autocompletar solamente llenará la línea hasta el primer punto de diferencia. Sugerimos utilizar este método a lo largo de la lección para ver cómo se comporta.**
 
-Ahora necesitas encontrar un archivo de texto básico para que nos ayude con el ejemplo. ¿Por qué no utilizar un libro que sabes que es largo, como la épica "Guerra y Paz" de Leon Tolstoi? El archivo de texto está disponible via [Project Gutenberg](http://www.gutenberg.org/files/2600/2600-0.txt). Si ya instalaste [wget](/lessons/applied-archival-downloading-with-wget), puedes escribir:
+Ahora necesitas encontrar un archivo de texto básico para que nos ayude con el ejemplo. ¿Por qué no utilizar un libro que sabes que es largo, como la épica "Guerra y Paz" de Leon Tolstói? El archivo de texto está disponible en [Project Gutenberg](http://www.gutenberg.org/files/2600/2600-0.txt). Si ya instalaste [wget](/lessons/applied-archival-downloading-with-wget), puedes escribir:
 
 `wget  http://www.gutenberg.org/files/2600/2600-0.txt`
 
@@ -188,7 +188,7 @@ Si no lo has instalado, descarga el texto utilizando tu navegador. Ve al enlace 
 
 `ls -lh`
 
-verás:
+verás algo así como:
 
 >> -rw-r--r--+ 1 ianmilligan1  staff   3.1M  1 May 10:03 2600-0.txt
 
@@ -218,11 +218,11 @@ ofrece una perspectiva de las últimas diez líneas. Ésta es una buena manera d
 
 También puedes cambiar el nombre del archivo a algo más descriptivo. Puedes asignarle un nuevo nombre escribiendo:
 
-`mv 2600-0.txt tolstoy.txt`
+`mv 2600-0.txt tolstoi.txt`
 
-Después, cuando ejecutes el comando `ls`, verás que ahora se llama `tolstoy.txt`. Si hubieras querido duplicarlo podrías haber ejecutado el comando 'copiar' escribiendo:
+Después, cuando ejecutes el comando `ls`, verás que ahora se llama `tolstoi.txt`. Si hubieras querido duplicarlo podrías haber ejecutado el comando 'copiar' escribiendo:
 
-`cp 2600-0.txt tolstoy.txt`
+`cp 2600-0.txt tolstoi.txt`
 
 Volveremos sobre este comando en breve.
 
@@ -232,19 +232,19 @@ Después de haber leído y renombrado varios archivos, es posible que quieras re
 
 Para combinar o concatenar dos o más archivos usa el comando `cat`. Escribe:
 
-`cat tolstoy.txt tolstoy2.txt`
+`cat tolstoi.txt tolstoi2.txt`
 
-y pulsa Enter. Esto imprime o muestra los archivos combinados en el shell. Sin ambargo, es demasiado largo para leer en esta ventana. Afortunadamente, utilizando el comando `>` puedes enviar la salida a un nuevo archivo en vea de a la ventana de la terminal. Escribe:
+y pulsa Enter. Esto imprime o muestra los archivos combinados en el shell. Sin ambargo, es demasiado largo para leer en esta ventana. Afortunadamente, utilizando el comando `>` puedes enviar la salida a un nuevo archivo en vez de a la ventana de la terminal. Escribe:
 
-`cat tolstoy.txt tolstoy2.txt > tolstoy-repetido.txt`
+`cat tolstoi.txt tolstoy2.txt > tolstoi-repetido.txt`
 
 Ahora, cuando escribas `ls` verás que `tolstoy-repetido.txt` aparece en tu directorio.
 
-Cuando combinas más de dos archivos, la utilización de un comodín puede ayudar a evitar escribir cada uno de los nombres de archivo de manera individual. Como has visto antes, `*`, es un marcador de posición que te permite incluir de cero a más caracteres o números. Así que, si escribes:
+Cuando combinas más de dos archivos, la utilización de un comodín puede ayudar a evitar escribir cada uno de los nombres de archivo de manera individual. Como has visto antes, `*` es un marcador de posición que te permite incluir de cero a más caracteres o números. Así que, si escribes:
 
 `cat *.txt > todo-junto.txt`
 
-y oprimes Enter, todos los archivos .txt que estén en el directorio de trabajo son combinados en orden alfabético dentro de `todo-junto.txt`. Esto puede ser muy útil cuando necesitas combinar una gran cantidad de pequeños archivos dentro de un directorio para poder trabajar con ellos en un programa de análisis de textos. Otro comodín que vale la pena recordar es un marcador de posición para un solo carácter o número.
+y pulsas Intro, todos los archivos .txt que estén en el directorio de trabajo son combinados en orden alfabético dentro de `todo-junto.txt`. Esto puede ser muy útil cuando necesitas combinar una gran cantidad de pequeños archivos dentro de un directorio para poder trabajar con ellos en un programa de análisis de textos. Otro comodín que vale la pena recordar es un marcador de posición para un solo carácter o número.
 
 ## Editar archivos de texto directamente en línea de comandos
 
