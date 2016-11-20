@@ -23,12 +23,12 @@ Con esta lección aprenderás el funcionamiento básico de los sistemas de contr
 
 ## *Software* necesario
 
-Actualmente, GitHub Desktop está disponible solamente para Windows y Mac. Si utilizas Linux probablemente estarás familiarizado con la línea de comandos y serás capaz de utilizar la versión de línea de comands de Git. 
+Actualmente, GitHub Desktop está disponible solamente para Windows y Mac. Si utilizas Linux probablemente estarás familiarizado con la línea de comandos y serás capaz de utilizar la versión de línea de comandos de Git. 
 
 
 ## ¿Qué es un control de versiones y por qué debería utilizarlo? 
 
-Antes de ponerse manos a la obra, conviene comprender qué es un control de versiones y por qué puede ser útil para tu investigación. En términos generales, un control de versiones consiste en tomar instantáneas de tus archivos a lo largo del proceso de creación. La mayoría de personas, de hecho, trabajan con algún sistema de control de versiones para gestionar sus archivos. A menudo, el control tiene lugar guardando distintas versiones de un mismo archivo. Por ejemplo, no es raro encontrarnos antes un directorio que contiene los siguientes archivos:
+Antes de ponerse manos a la obra, conviene comprender qué es un control de versiones y por qué puede ser útil para tu investigación. En términos generales, un control de versiones consiste en tomar instantáneas de tus archivos a lo largo del proceso de creación. La mayoría de personas, de hecho, trabajan con algún sistema de control de versiones para gestionar sus archivos. A menudo, el control tiene lugar guardando distintas versiones de un mismo archivo. Por ejemplo, no es raro encontrarnos ante un directorio que contiene los siguientes archivos:
 
 ```
 midocumento.txt
@@ -42,14 +42,14 @@ Esta forma de nombrar los archivos puede ser más o menos sistemática. Si añad
 midocumento2016-01-06.txt
 midocumento2016-01-08.txt
 ```
-Aunque este método sea un poco más fácil de entender, sigue habiendo problemas. En primer lugar, este método no registra o describe qué cambios se han producido entre uno y otro archivo guardado. Pueden ser pequeñas correcciones de erratas, o bien tratarse de la reescritura de pasajes enteros o incluso de una modificación mayor, por ejemplo, de la estructura del documento. Además si quieres revertir alguno de estos cambios, tendrás que averiguar cuándo se hizo el cambio y deshacerlo.
+Aunque este método sea un poco más claro, sigue habiendo problemas. En primer lugar, este método no registra o describe qué cambios se han producido entre uno y otro archivo guardado. Pueden ser pequeñas correcciones de erratas, o bien tratarse de la reescritura de pasajes enteros o incluso de una modificación mayor, por ejemplo, de la estructura del documento. Además si quieres revertir alguno de estos cambios, tendrás que averiguar cuándo se hizo el cambio y deshacerlo.
 
 Con un control de versiones se persigue solucionar este tipo de problemas mediante la puesta en marcha de un registro sistemático de cambios en los archivos. A grandes rasgos, puede afirmarse que el control de versiones realiza instantáneas de los archivos a lo largo del tiempo. Estas instantáneas documentan el momento en que fueron tomadas pero también qué cambios tuvieron lugar entre cada una de ellas, lo cual permite recuperar una version más antigua de tu archivo. A partir de aquí se abre un sinfín de posibilidades gracias al control de versiones.
 
 
 ### ¿Por qué un control de versiones para documentos?
 
-A medida que para investigar utilizamos herramientas digitales y almacenamiento en formato digital, se vuelve relevante reflexionar sobre cómo optimizar la gestión de nuestros datos. Más aún, el control de versiones puede ser indispensable si tenemos intención de colaborar con otros investigadores. Aunque el control de versiones fue diseñado en sus orígenes para tratar archivos de código, creemos que la gestión de documentos también se beneficiaría. La lección que proponemos no cubre todas las ventajas del control de versiones pero al finalizarla podrás llevar a cabo las siguientes tareas:
+A medida que en nuestras investigaciones utilizamos herramientas digitales y almacenamiento en formato digital, se vuelve relevante reflexionar sobre cómo optimizar la gestión de nuestros datos. Más aún, el control de versiones puede ser indispensable si tenemos intención de colaborar con otros investigadores. Aunque el control de versiones fue diseñado en sus orígenes para tratar archivos de código, creemos que la gestión de documentos también se beneficiaría. La lección que proponemos no cubre todas las ventajas del control de versiones pero al finalizarla podrás llevar a cabo las siguientes tareas:
 
 * rastrear el desarrollo y los cambios de tus documentos
 * registrar los cambios que has hecho de una manera que puedas entender posteriormente
@@ -57,11 +57,11 @@ A medida que para investigar utilizamos herramientas digitales y almacenamiento 
 * fusionar dos versiones de un documento y administrar los conflictos existentes entre distintas versiones
 * revertir cambios y volver atrás gracias al historial de versiones anteriores de tu documento
 
-En concreto, el control de versiones es útil para facilitar la colaboración. De hecho, una de las razones que explican el origen del control de cambios es que permitera a varias personas trabajar al mismo tiempo en un proyecto de considerables dimensiones y utilizar Git para administrar las fuentes del núcleo Linux. Utilizar un control de versiones favorece la colaboración debido a su flexibilidad. Por ejemplo, dos personas pueden trabajar en un mismo documento al mismo tiempo y fusionar los cambios. Si existe un 'conflicto' entre las dos versiones, el sistema de control permitiría al usuario ver el conflicto y decidir cómo 'fusionar' las dos versiones dando lugar a una 'tercera' version. De esta manera, conservarías la 'historia' del documento, es decir, las versiones anteriores y, en consecuencia, podrías revertir el proceso eligiendo una versión más antigua.
+En concreto, el control de versiones es útil para facilitar la colaboración. De hecho, una de las razones que explican el origen del control de cambios es que permitera a varias personas trabajar al mismo tiempo en un proyecto de considerables dimensiones y utilizar Git para administrar las fuentes del núcleo Linux. Utilizar un control de versiones favorece la colaboración debido a su flexibilidad. Por ejemplo, dos personas pueden trabajar en un mismo documento al mismo tiempo y 'fusionar' los cambios. Si existe un 'conflicto' entre las dos versiones, el sistema de control permitiría al usuario ver el conflicto y decidir cómo fusionar las dos versiones dando lugar a una 'tercera' versión. De esta manera, conservarías la 'historia' del documento, es decir, las versiones anteriores y, en consecuencia, podrías revertir el proceso eligiendo una versión más antigua.
  
 No es necesario, sin embargo, poner en marcha un control de versiones para todos tus documentos. En algunas ocasiones resulta muy útil; por ejemplo, para escribir artículos, libros o tesis doctorales.
 
-La implementación del control de versiones que proponemos en esta lección está pensada para que los documentos sean públicos. No obostante, puedes utilizar un control de versión y mantener tus documentos ocultos de manera permanente o bien hasta que decidas publicarlos en línea. 
+La implementación del control de versiones que proponemos en esta lección está pensada para que los documentos sean públicos. No obstante, puedes utilizar un control de versión y mantener tus documentos ocultos de manera permanente o bien hasta que decidas publicarlos en línea. 
 
 ## Diferencias entre Git y GitHub
 
@@ -105,7 +105,7 @@ Puesto que vamos a utilizar GitHub, necesitarás registrate con una cuenta en [G
 
 Una vez te hayas registrado, el proceso de instalación variará dependiendo de si utilizas Windows o Mac. Las instrucciones pueden cambiar, por lo que te recomendamos que sigas el procedimiento explicado en la [página de instalación de GitHub] (https://desktop.github.com/). Tras descargar GitHub Desktop e instalarlo, ya podemos empezar a usar el programa con un archivo de texto plano.
 
-## Version Controlling a Plain Text Document
+## Control de versiones y texto plano
 
 Los sistemas de control de versiones como Git funcionan mejor con archivos de texto plano. Este tipo de archivos contienen un marcado muy sencillo; por el contrario, los archivos Word (u otros generados con procesadores similares) producen código que no es legible para los humanos. Además, cualquier archivo guardado como '.txt' puede abrirse sin problemas con Word, LibreOffice o Notepad. La 'portabilidad' es la principal ventaja del texto plano pues estos archivos pueden abrirse y ejecutarse en la mayoría de ordenadores.
 
