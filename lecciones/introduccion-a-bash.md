@@ -344,29 +344,29 @@ Si quieres borrar un directorio completo, tienes dos opciones. Puedes utilizar `
 
 ## Conclusiones
 
-En este punto querrás tomar un descanso de la terminal. Para ello, escribe `exit` y eso cerrará tu sesión.
+Llegados hasta aquí, seguramente quieras descansar de la terminal. Para ello, escribe `exit` y eso cerrará tu sesión.
 
 Existen más comandos para probar a medida que te sientas más cómodo con la línea de comandos. Algunos de nuestros favoritos son `du`, que es una forma de averiguar cuánta memoria se está utilizando (`du -h` lo hace legible a humanos, como con otros comandos). Para aquellos usuarios de OS X, `top` proporciona una visión general de los procesos que se están ejecutando (`mem` en Windows), y `touch NOMBREDEARCHIVO` puede crear un archivo de texto básico en ambos sistemas.
 
-En este punto esperamos que tengas una buena comprensión básica de cómo moverte usando la línea de comandos, mover archivos básicos y realizar ediciones menores aquí y allá. Esta lección para principiantes está diseñada para darte cierta fluidez y confianza básicas, En el futuro, es posible que quieras involucrarte con los *scripts*.
+En este punto esperamos que tengas una buena comprensión básica de cómo desplazarte usando la línea de comandos, mover archivos básicos y realizar ediciones menores aquí y allá. Esta lección para principiantes está diseñada para darte cierta fluidez y confianza básicas. En el futuro, es posible que quieras involucrarte con los *scripts*.
 
 ¡Que te diviertas! Antes de que te des cuenta, te encontrarás a gusto con la conveniencia y la precisión del uso de la línea de comandos -para ciertas aplicaciones, por lo menos-, mucho más que con la voluminosa GUI que viene con tu sistema. Tu caja de herramientas acaba de hacerse más grande.
 
 ## Guía de referencia
 
-Para tu conveniencia, aquí están los comandos que acabas de aprender en esta lección:
+Para tu comodidad, aquí están los comandos que acabas de aprender en esta lección:
 
 | Comando | Qué hace |
 |---------|--------------|
 | `pwd` | imprime el 'directorio actual de trabajo', permitiéndote saber dónde estás. |
-| `ls` | Enlista los archivos en el directorio actual |
+| `ls` | Enlista los archivos en el directorio actual. |
 | `man *` | Enlista el manual del comando, sustituyendo el `*` por el nombre del comando.
-| `cd *` | Cambia el directorio actual a `*`
-| `mkdir *` | Crea un directorio llamado `*`
+| `cd *` | Cambia el directorio actual a `*`.
+| `mkdir *` | Crea un directorio llamado `*`.
 | `open` or `explorer` | En OS X, `open` seguido del nombre del archivo lo abre; en Windows, el comando `explorer` seguido por el nombre del archivo hace lo mismo.
-| `cat *` | `cat` es un comando versátil . Leerá un archivo poniendo el nombre en vez de `*`, pero también se utiliza para combinar archivos.
-| `head *` | Muestra las primeras diez líneas de `*`
-| `tail *` | Muestra las últimas diez líneas de `*`
+| `cat *` | `cat` es un comando versátil. Leerá un archivo poniendo el nombre en vez de `*`, pero también se utiliza para combinar archivos.
+| `head *` | Muestra las primeras diez líneas de `*`.
+| `tail *` | Muestra las últimas diez líneas de `*`.
 | `mv` | Mueve un archivo
 | `cp` | Copia un archivo
 | `rm` | Borra un archivo
