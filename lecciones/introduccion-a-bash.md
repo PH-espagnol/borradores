@@ -300,19 +300,19 @@ Vim es diferente a los procesadores de texto a los que estás acostumbrado y req
 
 Supongamos que has terminado de trabajar con este directorio y que ahora quieres mover el archivo `tolstoy.txt` a otro sitio. En primer lugar debes crear una copia de seguridad. El *shell* es bastante implacable con los errores y hacer copias de seguridad es aún más importante que con las GUI. Si borras algo aquí, no hay un basurero de reciclado para recobrarlo. Para crear una copia de seguridad puesdes escribir:
 
-`cp tolstoy.txt tolstoy-backup.txt`
+`cp tolstoi.txt tolstoi-backup.txt`
 
-Ahora, cuando ejecutes el comando `ls` verás cinco archivos, dos de los cuales son el mismo: `tolstoy.txt` y `tolstoy-backup.txt`.
+Ahora, cuando ejecutes el comando `ls` verás cinco archivos, dos de los cuales son el mismo: `tolstoi.txt` y `tolstoi-backup.txt`.
 
 Vamos a mover el primero de ellos a algún otro sitio. Por ejemplo, vamos a crear un segundo directorio en tu escritorio. Muévete al escritorio (`cd ..`) y crea (`mkdir`) otra carpeta. Vamos a llamarla `proghist-dest`.
 
-Para copiar `tolstoy.txt` tienes algunas cuantas opciones. Puedes ejecutar estos comandos desde cualquier sitio en el shell, o puedes hacerlo tanto desde el directorio de origen como el de destino. Para este ejemplo, vamos a ejecutarlos desde aquí. El formato básico del comando de copiado es `cp [origen] [destino]`. Esto es, escribes `cp` primero y luego incluyes el archivo o archivos que quieres copiar seguido de el lugar donde deben irse.
+Para copiar `tolstoy.txt` tienes algunas cuantas opciones. Puedes ejecutar estos comandos desde cualquier sitio en el *shell*, o puedes hacerlo tanto desde el directorio de origen como el de destino. Para este ejemplo, vamos a ejecutarlos desde aquí. El formato básico del comando de copiado es `cp [origen] [destino]`. Esto es, escribes `cp` primero y luego incluyes el archivo o archivos que quieres copiar seguido de el lugar donde deben irse.
 
 En este caso el comando:
 
 `cp /users/ianmilligan1/desktop/ProgHist-Textos/tolstoy.txt /users/ianmilligan1/desktop/proghist-dest/`
 
-copiará Tolstoy del primer directorio al segundo directorio. Tienes que insertar tu propio nombre de usuario en lugar de 'ianmilligan1'. Con esto ahora tendremos tres copias de la novela en nuestra computadora. La original, la copia de seguridad y la nueva copia en el segundo directorio. Si querías **mover** el archivo, es decir, sin dejar una copia detrás, podrías ejecutar el comando de nuevo cambiando `cp` por `mv`; pero no lo hagamos todavía.
+copiará Tolstoi del primer directorio al segundo directorio. Tienes que insertar tu propio nombre de usuario en lugar de 'ianmilligan1'. Con esto ahora tendremos tres copias de la novela en nuestra computadora. La original, la copia de seguridad y la nueva copia en el segundo directorio. Si querías **mover** el archivo, es decir, sin dejar una copia detrás, podrías ejecutar el comando de nuevo cambiando `cp` por `mv`; pero no lo hagamos todavía.
 
 Podrías también copiar múltiples archivos con un sólo comando. Si querías copiar ambos, el original y la copia de seguridad, debes utilizar el comando comodín.
 
