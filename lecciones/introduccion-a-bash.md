@@ -36,7 +36,7 @@ Los usuarios de OS X y la mayoría de las distribuciones de Linux tienen suerte 
 
 ## Abrir el intérprete de línea de comandos
 
-Vamos a iniciar el intérprete de línea de comandos (*shell*). En Windows, ejecuta Git Bash desde el directorio en el que lo instalaste. Lo tendrás que ejecutar como administrador. Para hacerlo, haz click con el botón derecho sobre el programa y selecciona "ejecutar como administrador" ('*Run as Administrator*'). En OS X, el shell se encuentra localizado por defecto en:
+Vamos a iniciar el intérprete de línea de comandos (*shell*). En Windows, ejecuta Git Bash desde el directorio en el que lo instalaste. Lo tendrás que ejecutar como administrador. Para hacerlo, haz click con el botón derecho sobre el programa y selecciona "ejecutar como administrador" (*Run as Administrator*). En OS X, el *shell* se encuentra localizado por defecto en:
 
 `Aplicaciones -> Utilidades -> Terminal`
 
@@ -46,23 +46,23 @@ Cuando lo ejecutes verás esto en la ventana:
 
 {% include figure.html filename="Blank-Terminal.png" caption="A blank terminal screen on our OS X workstation" %}
 
-Quizá quieras cambiar la apariencia por defecto de la terminal dado que tus ojos pueden esforzarse de más al mirar repetidamente texto negro sobre fondo blanco. En la aplicación por defecto de OS X puedes abrir el menú 'Perfiles' en 'Preferencias', bajo 'Terminal'. Haz click en la pestaña 'Perfiles' y cámbialo por un nuevo esquema de color. Personalmente preferimos algo con menor contraste entre el fondo y el primer plano, pues estarás viendo este durante mucho tiempo. 'Novel' es uno muy relajante ya que es la paleta de colores de la popular suite [Solarized](http://ethanschoonover.com/solarized). Los usuarios de Windows pueden obtener un efecto similar utilizando la pestaña 'Properties' de Git bash. Para llegar a ella, haz click con el botón derecho en cualquier lugar de la barra superior y seleciona 'Properties'.
+Quizá quieras cambiar la apariencia por defecto de la terminal para no esforzarte de más al mirar repetidamente texto negro sobre fondo blanco. En la aplicación por defecto de OS X puedes abrir el menú 'Perfiles' en 'Preferencias', bajo 'Terminal'. Haz clic en la pestaña 'Perfiles' y cámbialo por un nuevo esquema de color. Personalmente preferimos algo con menor contraste entre el fondo y el primer plano, pues estarás viendo este durante mucho tiempo. 'Novel' es uno muy relajante ya que es la paleta de colores de la popular *suite* [Solarized](http://ethanschoonover.com/solarized). Los usuarios de Windows pueden obtener un efecto similar utilizando la pestaña 'Properties' de Git bash. Para llegar a ella, haz click con el botón derecho en cualquier lugar de la barra superior y seleciona 'Properties'.
 
 {% include figure.html filename="Settings.png" caption="The Settings Screen on the OS X Terminal Shell Application" %}
  
-Una vez que estés satisfecho con la interfaz, comencemos.
+Una vez satisfecho con la interfaz, ya estás listo para comenzar.
 
 ## Moviéndote por el sistema de archivos de tu computadora
 
-Si cuando abres la ventana del intérprete no estás seguro de en qué sitio estás del sistema de archivos de tu computadora, el primer paso es descubrirlo. A diferencia de un sistema gráfico, cuando estás en un shell no puedes ubicarte en distintos directorios a la vez. Cuando abres el explorador de archivos en tu escritorio estás mostrando los archivos que están dentro de un directorio. Puedes saber en que directorio estás a través del comando `pwd`, que significa "imprime el directorio de trabajo" (*print working directory*). Trata de introducir:
+Si cuando abres la ventana del intérprete no estás seguro del sitio en que estás en el sistema de archivos de tu computadora, el primer paso es descubrirlo. A diferencia de un sistema gráfico, cuando estás en un *shell* no puedes ubicarte en distintos directorios a la vez. Cuando abres el explorador de archivos en tu escritorio estás mostrando los archivos que están dentro de un directorio. Puedes saber en qué directorio estás a través del comando `pwd`, que significa "imprime el directorio de trabajo" (*print working directory*). Así, pues, introduce:
 
 `pwd`
 
-y oprime Enter. Si usas OS X o Linux, tu computadora probablemente mostrará `/usuarios/nombre-de-usuario` con tu propio nombre de usuario. Por ejemplo, la ruta de Ian en OS X es `/users/ianmilligan1/`. Aquí es donde te darás cuenta que aquellos que usan OS X/Linux y los que usan Windows tendrán experiencias ligeramente distintas. En Windows, James se localiza en:
+y pula Intro. Si usas OS X o Linux, tu computadora probablemente mostrará `/usuarios/nombre-de-usuario` con tu propio nombre de usuario. Por ejemplo, la ruta de Ian en OS X es `/users/ianmilligan1/`. Aquí es donde te darás cuenta que aquellos que usan OS X/Linux y los que usan Windows tendrán experiencias ligeramente distintas. En Windows, James se localiza en:
 
 `C:\users\jbaker`
 
-Hay pequeñas diferencias, pero no te preocupes: una vez que mueves y manipulas archivos estas divergencias entre plataformas quedan en un segundo plano.
+Hay pequeñas diferencias, pero no te preocupes: una vez que aprendas a moverte y a manipular archivos estas divergencias entre plataformas quedarán en un segundo plano.
 
 Para orientarnos, obtengamos una lista de los archivos que están en ese directorio. Escribe:
 
@@ -84,7 +84,7 @@ Para abandonar la página del manual, escribe:
 
 y esto te llevará de regreso a la línea de comandos en la que estabas antes de entrar a la página del manual.
 
-Trata de jugar un poco con la página `man` de otra orden que ya aprendiste: `pwd`.
+Trata de jugar un poco con la página `man` para ver qué puedes hacer con otra orden que ya aprendiste: `pwd`.
 
 Los usuarios de Windows pueden utilizar el comando `help`, aunque esta orden tiene menos funciones que `man` de OS X/Linux. Escribe `help` para ver la ayuda disponible, y `help pwd` para ejemplos de la salida del comando.
 
@@ -122,7 +122,7 @@ Cuando quieres utilizar dos banderas puedes simplemente ejecutarlas juntas. Así
 
 obtendrás una salida en un formato legible para seres humanos; aprenderás que 6020 bits son también 5.9KB, que otro archivo tiene 1 megabite y así sucesivamente.
 
-Estas opciones son *muy* importantes. Lo verás en otras lecciones de *Programming Historian en español*. [Wget](/lessons/applied-archival-downloading-with-wget), [MALLET](/lessons/topic-modeling-and-mallet) y [Pandoc](/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) utilizan la misma sintaxis. Afortunadamente no necesitas memorizar la sintaxis; en lugar de ello, manten estas lecciones a la mano para que puedas echar un vistazo rápido si es necesario ajustar algo. Estas lecciones se pueden hacer en cualquier orden.
+Estas opciones son *muy* importantes. Lo verás en otras lecciones de *Programming Historian en español*. [Wget](/lessons/applied-archival-downloading-with-wget), [MALLET](/lessons/topic-modeling-and-mallet) y [Pandoc](/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) utilizan la misma sintaxis. Afortunadamente no necesitas memorizar la sintaxis; en lugar de ello, mantén estas lecciones a mano para que puedas echar un vistazo rápido si es necesario ajustar algo. Estas lecciones se pueden hacer en cualquier orden.
 
 Ya has estado mucho tiempo en tu directorio personal. Vamos a otro lugar; puedes hacerlo a través del comando `cd` que significa 'Cambiar de directorio'.
 
@@ -130,7 +130,7 @@ Si escribes:
 
 `cd desktop`
 
-al oprimir Enter estarás en tu escritorio. Esto es similar a cuando haces doble click en el folder de 'Escritorio' en el explorador de archivos. Para confirmarlo, escribe `pwd` y debes ver entonces algo como esto:
+al pulsar Intro estarás en tu escritorio. Esto es similar a cuando haces doble click en el folder de 'Escritorio' en el explorador de archivos. Para confirmarlo, escribe `pwd` y debes ver entonces algo como esto:
 
 `/Users/ianmilligan1/desktop`
 
@@ -146,7 +146,7 @@ te llevará de regreso al directorio principal, exactamente donde empezaste.
 
 Intenta explorar: visita tus directorios de documentos, imágenes, carpetas que posiblemente tengas en el escritorio. Acostúmbrate a moverte adentro y afuera de los directorios. Imagina que estás navegando por una [estructura de árbol](https://es.wikipedia.org/wiki/Topolog%C3%ADa_arb%C3%B3rea). Si estás en el Escritorio no podrás hacer `cd documents` para cambiar a la carpeta documentos ya que es dependiente de tu directorio principal, mientras que la carpeta de escritorio y de la documentos son 'hermanas'. Para llegar a una carpeta hermana debes regresar al directorio matriz de ambas. Para hacerlo, tienes que volver al directorio principal (`cd ..`) y luego seguir adelante de nuevo a `cd documents`.
 
-Es muy importante ser capaz de navegar por el sistema de archivos utilizando el emulador de línea de comandos (*shell*) para muchas de las lecciones de *Programming Historian en español*. A medida que te sientas más cómodo pronto te encontrarás saltando al directorio que deseas. En nuestro caso, desde cualquier lugar de nuestro sistema, se puede escribir:
+Es muy importante que seas capaz de navegar por el sistema de archivos utilizando el emulador de línea de comandos (*shell*) para muchas de las lecciones de *Programming Historian en español*. A medida que te sientas más cómodo pronto te encontrarás saltando al directorio que deseas. En nuestro caso, desde cualquier lugar de nuestro sistema, se puede escribir:
 
 `cd /users/ianmilligan1/mallet-2.0.7`
 
@@ -154,7 +154,7 @@ O en Windows algo como:
 
 `cd c:\mallet-2.0.7\`
 
-y ser llevado a nuestro directorio MALLET para [modelado tópico](/lessons/topic-modeling-and-mallet).
+y ser llevado a nuestro directorio MALLET para [modelado de tópicos](/lessons/topic-modeling-and-mallet).
 
 Finalmente, prueba:
 
