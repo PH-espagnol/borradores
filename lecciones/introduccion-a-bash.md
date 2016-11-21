@@ -298,7 +298,7 @@ Vim es diferente a los procesadores de texto a los que estás acostumbrado y req
 
 ## Mover, copiar y borrar archivos
 
-Supongamos que has terminado de trabajar con este directorio y que ahora quieres mover el archivo `tolstoy.txt` a otro sitio. En primer lugar debes crear una copia de seguridad. El *shell* es bastante implacable con los errores y hacer copias de seguridad es aún más importante que con las GUI. Si borras algo aquí, no hay un basurero de reciclado para recobrarlo. Para crear una copia de seguridad puesdes escribir:
+Supongamos que has terminado de trabajar con este directorio y que ahora quieres mover el archivo `tolstoy.txt` a otro sitio. En primer lugar debes crear una copia de seguridad. El *shell* es bastante implacable con los errores y hacer copias de seguridad es aún más importante que con las GUI. Si borras algo aquí, no hay papelara de reciclaje para recobrarlo. Para crear una copia de seguridad puesdes escribir:
 
 `cp tolstoi.txt tolstoi-backup.txt`
 
@@ -330,7 +330,7 @@ Alternativamente, si estuvieras en el directorio `proghist-dest`, este comando d
 
 El comando `./` hace referencia al directorio **actual**, en el que estás. **Verdaderamente, éste es un comando valioso.**
 
-Finalmente, si quieres borrar un archivo, por cualquier razón, el comando es `rm`, o 'retira' (*remove*). **Ten cuidado con el comando `rm`**, dado que no querrás borrar archivos sin querer. Al contrario de borrar desde la GUI, **NO** hay bandeja de reciclaje ni opciones de deshacer. Por esta razón, si tienes una duda, querrás ser cauteloso o mantener un copiado de seguridad de tus datos regularmente.
+Finalmente, si quieres borrar un archivo, por cualquier razón, el comando es `rm`, o 'retira' (*remove*). **Ten cuidado con el comando `rm`**, dado que no querrás borrar archivos sin querer. Al contrario de borrar desde la GUI, **NO** hay papelera de reciclaje ni opciones de deshacer. Por esta razón, si tienes una duda, querrás ser cauteloso o mantener un copiado de seguridad de tus datos regularmente.
 
 Ve a `ProgHist-Textos` y borra el archivo original escribiendo:
 
