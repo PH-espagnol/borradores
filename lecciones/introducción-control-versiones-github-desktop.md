@@ -1,6 +1,5 @@
 ---
-title: Introducción al control de 
-es con GitHub Desktop
+title: Introducción al control de versiones con GitHub Desktop
 authors: 
 - Daniel van Strien
 date: 2016-06-17
