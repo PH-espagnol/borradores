@@ -41,7 +41,7 @@ date: 2016-10-01
 | getting-started-with-markdown | introduccion-a-markdown | ok | vgayolrs | |
 | sustainable-authorship-in-plain-text-using-pandoc-and-markdown | escritura-sustentable-usando-pandoc-y-markdown | ok | vgayolrs | |
 | getting-started-with-github-desktop | introducción-control-versiones-github-desktop | ok | arojascastro | |
-| building-static-sites-with-jekyll-github-pages | construccion-de-sitios-estaticos-usando-jeyll-github-pages | no | arojascastro | |
+| building-static-sites-with-jekyll-github-pages | construccion-de-sitios-estaticos-usando-jeyll-github-pages | en proceso | arojascastro | |
 
 #### Data Manipulation - Manipulación de datos
 

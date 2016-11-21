@@ -303,7 +303,7 @@ Asimismo, el flujo de trabajo presentado en esta lección también puede convert
 GitHub Desktop es una forma sencilla de aprender a controlar versiones con GitHub. En función de tus necesidades, GitHub será suficiente. Ahora bien, si ya conoces el funcionamiento de la línea de comandos, utilizar Git puede tener más ventajas. Los controles de versiones como Git ofrecen muchas más opciones; algunos tienen un uso concreto mientras que otros se pueden utilizar de manera más generalizable. Como complemento a esta lección, te sugerimos una serie de recursos que pueden ayudarte a mejorar tu comprensión del control de versiones.
 
 
-*  La web de [GitHub Desktop](https://desktop.github.com/) y su [documentación](https://help.github.com/desktop/) cubren un mayor número de funciones disponibles. 
+* La web de [GitHub Desktop](https://desktop.github.com/) y su [documentación](https://help.github.com/desktop/) cubren un mayor número de funciones disponibles. 
 * GitHub ofrece ayuda a través de sus [guías](https://guides.github.com/) y [ayuda](https://help.github.com/). 
 * El [Glosario de GitHub](https://help.github.com/articles/github-glossary/) explica la terminología más frecuente en Git. 
 * [Atlassian](https://www.atlassian.com/git/tutorials): contiene tutoriales más avanzados (pero fáciles de entender) de Git. Ponen el acento en las diferencias entre Git y otros controles de versiones; esto puede no ser relevante para ti pero te ayudará a comprender el funcionamiento de Git de manera más detallada.
