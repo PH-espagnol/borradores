@@ -40,7 +40,7 @@ date: 2016-10-01
 | preserving-your-research-data | preservar-datos-de-investigacion | ok | vgayolrs | |
 | getting-started-with-markdown | introduccion-a-markdown | ok | vgayolrs | |
 | sustainable-authorship-in-plain-text-using-pandoc-and-markdown | escritura-sustentable-usando-pandoc-y-markdown | ok | vgayolrs | |
-| getting-started-with-github-desktop | introducción-control-versiones-github-desktop | ok | arojascastro | |
+| getting-started-with-github-desktop | introducción-control-versiones-github-desktop | ok | arojascastro | OK |
 | building-static-sites-with-jekyll-github-pages | construccion-de-sitios-estaticos-usando-jeyll-github-pages | no | arojascastro | |
 
 #### Data Manipulation - Manipulación de datos
@@ -50,7 +50,7 @@ date: 2016-10-01
 | r-basics-with-tabular-data | | no | arojascastro | |
 | intro-to-bash | introduccion-a-bash | ok | vgayolrs | |
 | intro-to-powershell | introduccion-a-powershell | in process | vgayolrs | |
-| research-data-with-unix | datos-de-investigacion-con-unix | no | no | |
+| research-data-with-unix | datos-de-investigacion-con-unix | in process | vgayolrs | |
 | cleaning-data-with-openrefine || no | arojascastro | |
 | understanding-regular-expressions || no | arojascastro | |
 | cleaning-ocrd-text-with-regular-expressions || no | arojascastro | |
