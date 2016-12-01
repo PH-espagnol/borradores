@@ -10,6 +10,8 @@ reviewers:
 - Francesca Benatti
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 next: contar-frecuencias
 previous: de-html-a-lista-de-palabras-2
