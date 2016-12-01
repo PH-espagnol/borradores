@@ -9,6 +9,8 @@ reviewers:
 - Jim Clifford
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 next: palabras-clave-en-contexto-n-grams
 previous: crear-y-ver-archivos-html-con-python
