@@ -96,7 +96,7 @@ date: 2016-10-01
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| creating-network-diagrams-from-historical-sources | | in process | mariajoafana |  |
+| creating-network-diagrams-from-historical-sources | | ok | mariajoafana |  |
 
 #### Digital Exhibits and Augmented Reality - Exhibiciones digitales y realidad aumentada
 
