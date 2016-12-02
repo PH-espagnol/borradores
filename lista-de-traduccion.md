@@ -75,7 +75,7 @@ date: 2016-10-01
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| installing-python-modules-pip | | ok | vgayolrs | |
+| installing-python-modules-pip | instalar-modulos-python-pip | ok | vgayolrs | |
 
 #### Linked Open Data - Datos enlazados abiertos
 
