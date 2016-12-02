@@ -68,7 +68,8 @@ date: 2016-10-01
 | corpus-analysis-with-antconc | | no | arojascastro | |
 | naive-bayesian | | no | no | |
 | topic-modeling-and-mallet | | no | no | |
-| sonification | | no | no |
+| sonification | | no | no | |
+| text-mining-with-extracted-features | | no | no | |
 
 #### Getting Ready to Program - Preparándote para programar
 
