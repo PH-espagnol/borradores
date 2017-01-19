@@ -103,9 +103,9 @@ date: 2016-10-01
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| up-and-running-with-omeka | | no | mariajoafana | |
-| creating-an-omeka-exhibit |  | no | mariajoafana |  |
-| installing-omeka |  | no | mariajoafana | |
+| up-and-running-with-omeka | | in process | mariajoafana | |
+| creating-an-omeka-exhibit |  | in process | mariajoafana |  |
+| installing-omeka |  | in process | mariajoafana | |
 | intro-to-augmented-reality-with-unity | | no | no | |
 
 
