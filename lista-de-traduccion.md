@@ -29,7 +29,7 @@ date: 2016-10-01
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| intro-to-the-zotero-api | introduccion-a-zotero | in process | Vanesa Rebeca García Corzo | |
+| intro-to-the-zotero-api | introduccion-a-zotero | no | vgayolrs | |
 | creating -new-items-in-zotero | crear-nuevos-objetos-en-zotero | no | no | |
 | counting-frequencies-from-zotero-items | contar-frecuencias- de-elementos-en-zotero | no | no | |
 
