@@ -9,6 +9,8 @@ reviewers:
 - Jim Clifford
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 next: reutilizacion-de-codigo-y-modularidad
 previous: ver-archivos-html

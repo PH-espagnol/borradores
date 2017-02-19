@@ -9,6 +9,8 @@ reviewers:
 - Jim Clifford
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 next: salida-palabras-clave-contexto-ngrams
 previous: salida-de-data-como-archivo-html

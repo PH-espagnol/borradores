@@ -29,7 +29,7 @@ date: 2016-10-01
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| intro-to-the-zotero-api | introduccion-a-zotero | in process | Vanesa Rebeca García Corzo | |
+| intro-to-the-zotero-api | introduccion-a-zotero | no | vgayolrs | |
 | creating -new-items-in-zotero | crear-nuevos-objetos-en-zotero | no | no | |
 | counting-frequencies-from-zotero-items | contar-frecuencias- de-elementos-en-zotero | no | no | |
 
@@ -40,8 +40,13 @@ date: 2016-10-01
 | preserving-your-research-data | preservar-datos-de-investigacion | ok | vgayolrs | |
 | getting-started-with-markdown | introduccion-a-markdown | ok | vgayolrs | |
 | sustainable-authorship-in-plain-text-using-pandoc-and-markdown | escritura-sustentable-usando-pandoc-y-markdown | ok | vgayolrs | |
+<<<<<<< HEAD
 | getting-started-with-github-desktop | introducción-control-versiones-github-desktop | ok | arojascastro | |
 | building-static-sites-with-jekyll-github-pages | construccion-de-sitios-estaticos-usando-jeyll-github-pages | en proceso | arojascastro | |
+=======
+| getting-started-with-github-desktop | introducción-control-versiones-github-desktop | ok | arojascastro | OK |
+| building-static-sites-with-jekyll-github-pages | construccion-de-sitios-estaticos-usando-jeyll-github-pages | no | arojascastro | |
+>>>>>>> PH-espagnol/master
 
 #### Data Manipulation - Manipulación de datos
 
@@ -50,7 +55,7 @@ date: 2016-10-01
 | r-basics-with-tabular-data | | no | arojascastro | |
 | intro-to-bash | introduccion-a-bash | ok | vgayolrs | |
 | intro-to-powershell | introduccion-a-powershell | in process | vgayolrs | |
-| research-data-with-unix | datos-de-investigacion-con-unix | no | no | |
+| research-data-with-unix | datos-de-investigacion-con-unix | in process | vgayolrs | |
 | cleaning-data-with-openrefine || no | arojascastro | |
 | understanding-regular-expressions || no | arojascastro | |
 | cleaning-ocrd-text-with-regular-expressions || no | arojascastro | |
@@ -68,13 +73,14 @@ date: 2016-10-01
 | corpus-analysis-with-antconc | | no | arojascastro | |
 | naive-bayesian | | no | no | |
 | topic-modeling-and-mallet | | no | no | |
-| sonification | | no | no |
+| sonification | | no | no | |
+| text-mining-with-extracted-features | | no | no | |
 
 #### Getting Ready to Program - Preparándote para programar
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| installing-python-modules-pip | | ok | vgayolrs | |
+| installing-python-modules-pip | instalar-modulos-python-pip | ok | vgayolrs | |
 
 #### Linked Open Data - Datos enlazados abiertos
 
@@ -96,15 +102,15 @@ date: 2016-10-01
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| creating-network-diagrams-from-historical-sources | | no | no | |
+| creating-network-diagrams-from-historical-sources | | ok | mariajoafana |  |
 
 #### Digital Exhibits and Augmented Reality - Exhibiciones digitales y realidad aumentada
 
 | English | Español | translated | Commissioned | review |
 |  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| up-and-running-with-omeka | | no | mariajoafana | |
-| creating-an-omeka-exhibit |  | no | mariajoafana |  |
-| installing-omeka |  | no | mariajoafana | |
+| up-and-running-with-omeka | | in process | mariajoafana | |
+| creating-an-omeka-exhibit |  | in process | mariajoafana |  |
+| installing-omeka |  | in process | mariajoafana | |
 | intro-to-augmented-reality-with-unity | | no | no | |
 
 

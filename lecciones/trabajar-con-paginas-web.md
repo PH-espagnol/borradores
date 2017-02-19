@@ -9,6 +9,8 @@ reviewers:
 - Jim Clifford
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 categories: [lessons, python, original-ph]
 next: manipulacion-de-cadenas-de-texto-en-python

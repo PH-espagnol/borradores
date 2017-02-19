@@ -8,8 +8,10 @@ reviewers:
 - Miriam Posner
 - Jim Clifford
 - Amanda Morton
--translator:
+translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 ---
 

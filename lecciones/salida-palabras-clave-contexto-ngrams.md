@@ -9,6 +9,8 @@ reviewers:
 - Jim Clifford
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 next: descarga-multiples-registros-usando-cadenas-de-consulta
 previous: palabras-clave-en-contexto-n-grams

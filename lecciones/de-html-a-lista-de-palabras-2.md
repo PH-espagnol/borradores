@@ -9,6 +9,8 @@ reviewers:
 - Jim Clifford
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 next: normalizar-datos
 previous: de-html-a-lista-de-palabras-1

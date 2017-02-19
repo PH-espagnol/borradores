@@ -9,6 +9,8 @@ reviewers:
 - Jim Clifford
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 next: de-html-a-lista-de-palabras-2
 previous: manipulacion-de-cadenas-de-texto-en-python

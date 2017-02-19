@@ -10,6 +10,8 @@ reviewers:
 - Amanda Morton
 translator:
 - Víctor Gayol
+reviewer:
+- Jairo A. Melo
 layout: default
 ---
 
