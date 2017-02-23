@@ -8,6 +8,8 @@ reviewers:
 - Lisa Spiro
 translator:
 - Antonio Rojas Castro
+translation reviewer:
+- María José Afanador-Llach
 layout: default
 difficulty: 1
 ---
