@@ -8,6 +8,8 @@ reviewers:
 - Lisa Spiro
 translator:
 - Antonio Rojas Castro
+translation reviewer:
+- María José Afanador-Llach
 layout: default
 difficulty: 1
 ---
@@ -137,17 +139,15 @@ Para utilizar de manera efectiva el control de versiones de Git, es importante o
 
 Hay varias formas de *añadir* un archivo para que GitHub Desktop lo controle. Por ejemplo, podemos arrastrar un directorio con el archivo a GitHub Desktop. Si haces esto, el programa te preguntará si quieres crear un repositorio para este directorio. Otra manera consiste en cliclar sobre el icono 'más' para abrir el buscador y elegir la carpeta que queremos añadir.
 
-{% include figure.html filename="getting-started-with-github-desktop-1.png" caption="Adding a folder to GitHub Desktop" %}
+{% include figure.html filename="intro-github-1.png" caption="Añade un repositorio" %}
 
 Una vez hemos añadido nuestra carpeta podremos verla en la lista de repositorios situada en la columna izquierda. 
 
-{% include figure.html filename="getting-started-with-github-desktop-2.png" caption="Adding a folder to GitHub Desktop" %}
+{% include figure.html filename="intro-github-2.png" caption="Añade un repositorio" %}
 
 Si clicamos sobre el repositorio que acabamos de añadir, podremos ver los archivos contenidos. En este menú, además, podremos elegir qué archivos queremos rastrear pues a veces trabajamos en proyectos con archivos que no lo requieren. Al lado, a la derecha, se visualizan los documentos.  
 
 Si seleccionamos mostrar las carpetas ocultas en el directorio que acabamos de añadir a GirHub, podremos ver que contiene una carpeta adicional llamada '.git'. En esta carpeta quedan registrados los cambios producidos en el control de versiones y también si los cambios son modificaciones efectuadas en archivos ya existentes o bien si hemos creado archivos nuevos.
-
-{% include figure.html filename="getting-started-with-github-desktop-18.png" caption="The folder being watched by GitHub desktop" %}
 
 A continuación, volvamos a nuestros documentos y añadamos algo nuevo. 
 
@@ -163,7 +163,7 @@ Para hacer esto debes *anotar* los cambios.
 
 Al *anotar* ('commit') un cambio, comunicas a Git que quieres registrar las modificacione realizadas. Aunque *anotar* puede parecer similar a guardar un archivo, el objetivo es distinto. A menudo guardamos diferentes versiones de un documento; ahora bien, guardar un documento, en realidad, significa que puedes cerrar el archivo y volver a él más tarde y que su estado será el mismo, es decir, no se habrán producido perdidas. *Anotar*, en cambio, implica tomar una instantánea de un archivo en un momento determinado y documentar información sobre los cambios realizados.
 
-{% include figure.html filename="getting-started-with-github-desktop-3.png" caption="Committing changes" %}
+{% include figure.html filename="intro-github-3.png" caption="Primera anotación" %}
 
 Para anotar un cambio debes dar un resumen de los cambios y, de manera opcional, incluir un mensaje. Es importante que pienses con cuidado cuándo debes anotar los cambios. El control de versiones solo es útil si anotas los cambios de manera eficiente. A veces tendemos a anotar los cambios solo cuando hemos terminado de trabajar sobre un documento. Sin embargo, esto no refleja los cambios importantes realizados durante todo el proceso. 
 
@@ -216,15 +216,15 @@ Existen algunas diferencias entre la administración de un repositorio que conti
 
 Hasta ahora solo hemos registrado nuestros cambios de manera local. Aunque podríamos estar satisfechos con guardarlos en nuestro ordenador (es importante conservar copias), seguramente queremos subir los archivos a nuestro repositorio de GitHub para hacerlos públicos o bien, simplemente, para tener una copia que no esté alojada en nuestro ordenador. El proceso con GitHub Desktop es muy sencillo y rápido. En GitHub Desktop 'publicas' repositorios; es decir, los **envías** ('push') desde tu ordenador a la web de GitHub. Durante este proceso también creas un repositorio **remoto**.
  
-{% include figure.html filename="getting-started-with-github-desktop-4.png" caption="Publishing a repository" %}
+{% include figure.html filename="intro-github-4.png" caption="Cómo publicar el repositorio" %}
 
 Una vez hayas 'publicado' tu repositorio, será visible en tu perfil de GitHub. Es posible crear un repositorio privado en GitHub pero solo si te registras como [estudiante] (https://education.github.com/pack) o [investigador](https://github.com/blog/1840-improving-github-for-science), o bien pagando una [suscripción](https://github.com/pricing). Si no te has registrado como estudiante o investigador, solo podrás crear un repositorio privado cuando pagues por una suscripción. Por eso, a menos que quieras pagar, puedes ignorar la sección 'Información sobre la compra'. En esta sección, será suficiente con publicar un repositorio en abierto. Para acceder a tu repositorio en línea, en el menú puedes clicar sobre 'Repository' ('Repositorio') y luego elegir 'View on GitHub' (es decir, 'Ver en GitHub'). Al hacer esto, se abrirá una ventana en tu navegador con tu repositorio en línea.
 
-{% include figure.html filename="getting-started-with-github-desktop-5.png" caption="Repository menu" %}
+{% include figure.html filename="intro-github-5.png" caption="Vista del menú" %}
 
 A continuación, deberías ver tu documento en tu repositorio web.
 
-{% include figure.html filename="getting-started-with-github-desktop-6.png" caption="The online repository you have published" %}
+{% include figure.html filename="intro-github-6.png" caption="La versión en línea de tu repositorio" %}
 
 Una vez tu documento está en línea, puedes continuar realizando cambios en tu documento en local. Pero tendrás que **sincronizar** tus cambios locales para reflejarlos en el repositorio publicado en GitHub. Esta plataforma almacena los cambios en tu ordenador y en remoto (en sus servidores). Por eso es importante mantener ambos lugares sincronizados. Con GitHub Desktop este proceso se simplifica mientras que en la línea de comandos deberíamos ejecutar **sync** ('sincronizar') y luego **pull** ('recibir'). Verás el botón 'sync' en el margen superior derecho de tu GitHub Desktop. Al pulsarlo, te aseguras de que tu entorno local (tu ordenador) y tu entorno remoto (el servidor de GitHub) contienen la misma información. Si quieres trabajar en tu documento antes de publicarlo, también puedes elegir anotar los cambios sin sincronizar. Esto te permitirá poner en marcha el control de versiones en local en una fase temprana.
 
@@ -232,7 +232,7 @@ Una vez tu documento está en línea, puedes continuar realizando cambios en tu 
 
 También es posible realizar cambios en tu repositorio a través de la  interfaz web de GitHub. Para ello, clica sobre el nombre del archivo y accederás a una nueva página que muestra tu documento.
 
-{% include figure.html filename="getting-started-with-github-desktop-7.png" caption="The view of your document online" %}
+{% include figure.html filename="intro-github-7.png" caption="Vista de tu documento en línea" %}
 
 (Nota: puede parecer extraño que todo lo que has escrito aparezca en una línea, cuando tu archivo local tenía dos líneas. Esto se debe a que en Markdown, los párrafos deben marcarse dejando una línea en blanco; así pues, dos líneas consecutivas son interpretadas como un solo párrafo. Si hubiéramos utilizado la extensión '.txt', tendríamos un salto de línea aquí, pero con la extensión '.md' estamos indicando a GitHub que visualice el documento según las normas de Markdown. Esta es otra razón por la que utilizar un editor apto para Markdown puede serte útil para visualizar el formato). 
 
@@ -240,23 +240,23 @@ La interfaz web ofrece otras opciones. Por ejemplo, puedes visualizar los cambio
 
 Así, pues, clica sobre la opción 'editar' representada con un lápiz.
 
-{% include figure.html filename="getting-started-with-github-desktop-8.png" caption="The edit link" %}
+{% include figure.html filename="intro-github-8.png" caption="El botón 'Editar'" %}
 
 Tras esto debería poder editar el archivo y añadir más texto.
 
-{% include figure.html filename="getting-started-with-github-desktop-9.png" caption="The editing view" %}
+{% include figure.html filename="intro-github-9.png" caption="El modo edición" %}
 
 Una vez hayas realizado cambios en tu archivo, verás que puedes anotar los cambios en la parte inferior de la ventana.
 
-{% include figure.html filename="getting-started-with-github-desktop-10.png" caption="The remote commit view" %}
+{% include figure.html filename="intro-github-10.png" caption="Cómo anotar un cambio en línea" %}
 
 Una vez hayas anotado los cambios, serán almacenados en tu repositorio remoto. Para recibirlos en tu ordenador deberás sincronizarlos. Para ello, clica en el botón 'sync' de tu GitHub Desktop.
 
-{% include figure.html filename="getting-started-with-github-desktop-11.png" caption="The sync button" %}
+{% include figure.html filename="intro-github-11.png" caption="El botón de sincronización" %}
 
 ¡Ya tenemos nuestros cambios realizados en remoto en nuestro ordenador!
 
-{% include figure.html filename="getting-started-with-github-desktop-12.png" caption="Our document with remote changes synced" %}
+{% include figure.html filename="intro-github-12.png" caption="El documento con los cambios remotos" %}
 
 Verás que el texto modificado aparece marcado en verde y en rojo. El color rojo indica que se ha producido una eliminación mientras que el verde indica que se ha añadido algo. Esta forma de visualizar los cambios puede ser útil antes de anotar pues te permitirá localizarlos y asegurarte de que los quieres registrar. En la parte izquierda verás el historial de los cambios realizados. En este momento el historial es muy breve pero a medida que trabajes crecerá en tamaño. Ver los cambios realizados de esta manera, en cada una de las fases de tu proyecto, te será de gran utilidad.
 
@@ -268,25 +268,25 @@ A menudo, los conflictos surgen cuando realizas un cambio en remoto (en la web G
 
 Por ejemplo, imaginemos que añadimos algo en nuestro repositorio remoto (en la web de GitHub).
 
-{% include figure.html filename="getting-started-with-github-desktop-13.png" caption="A remote change to our document" %}
+{% include figure.html filename="intro-github-13.png" caption="Un cambio remoto en el documento" %}
 
 A continaución, anotas el cambio en la web y, acto seguido, hacemos otro cambio en local.
 
-{% include figure.html filename="getting-started-with-github-desktop-14.png" caption="A local change to our document" %}
+{% include figure.html filename="intro-github-14.png" caption="Un cambio local en el documento" %}
 
 Si anotamos el cambio en local y sincronizamos, recibiremos un mensaje de alerta señalando que se ha producido un conflicto.
 
-{% include figure.html filename="getting-started-with-github-desktop-15.png" caption="GitHub desktop warning of sync conflicts" %}
+{% include figure.html filename="intro-github-15.png" caption="GitHub nos alerta de un conflicto de sincronización" %}
 
 No te preocupes, no es un problema gordo. Simplemente hay que gestionar el conflicto. GitHub Desktop te ofrece la posibilidad de abrir el archivo y acceder al lugar en donde se halla el problema.
 
-{% include figure.html filename="getting-started-with-github-desktop-16.png" caption="GitHub desktop options for opening file containing conflicts" %}
+{% include figure.html filename="intro-github-16.png" caption="Las opciones que nos da GitHub para abrir el documento" %}
 
 Si elegimos abrir el archivo con un editor externo, el documento se visualizará el editor de texto que tengas por defecto para archivos escritos en Markdown. Si no tienes ninguno por defecto, puedes clicar en 'show in finder' ('mostrar en el buscador') para acceder a la carpeta que contiene el archivo. A partir de aquí puedes abrirlo con el editor que prefieras.
 
 Si miras el archivo con atención, verás que Git ha marcado dónde se encuentra el conflicto.
 
-{% include figure.html filename="getting-started-with-github-desktop-17.png" caption="Conflicts highlighted in our document" %}
+{% include figure.html filename="intro-github-17.png" caption="Marcas usadas para señalar los conflictos" %}
 
 Verás que el conflicto está envuelto con las marcas `<<<<<<<` y `>>>>>>>`. Los dos bloques que están en conflicto se distinguen gracias a una línea como esta `=======` line. Hay distintas formas de gestionar este tipo de conflicto. Por ejemplo, podrías eliminar la versión que ya no quieres y deshacerte de las marcas; o bien podrías eliminar todo el bloque y descartar ambas versiones. Una vez hayas 'resuelto' el conflicto, debes anotar el cambio y sincronizar como de costumbre. Cuando vayas a anotar el cambio, verás que el GitHub Desktop especifica que la anotación consiste en una fusión de un conflicto. Así, en el futuro, podrás volver sobre ello y revisar cómo lo resolviste.
 
@@ -303,7 +303,7 @@ Asimismo, el flujo de trabajo presentado en esta lección también puede convert
 GitHub Desktop es una forma sencilla de aprender a controlar versiones con GitHub. En función de tus necesidades, GitHub será suficiente. Ahora bien, si ya conoces el funcionamiento de la línea de comandos, utilizar Git puede tener más ventajas. Los controles de versiones como Git ofrecen muchas más opciones; algunos tienen un uso concreto mientras que otros se pueden utilizar de manera más generalizable. Como complemento a esta lección, te sugerimos una serie de recursos que pueden ayudarte a mejorar tu comprensión del control de versiones.
 
 
-*  La web de [GitHub Desktop](https://desktop.github.com/) y su [documentación](https://help.github.com/desktop/) cubren un mayor número de funciones disponibles. 
+* La web de [GitHub Desktop](https://desktop.github.com/) y su [documentación](https://help.github.com/desktop/) cubren un mayor número de funciones disponibles. 
 * GitHub ofrece ayuda a través de sus [guías](https://guides.github.com/) y [ayuda](https://help.github.com/). 
 * El [Glosario de GitHub](https://help.github.com/articles/github-glossary/) explica la terminología más frecuente en Git. 
 * [Atlassian](https://www.atlassian.com/git/tutorials): contiene tutoriales más avanzados (pero fáciles de entender) de Git. Ponen el acento en las diferencias entre Git y otros controles de versiones; esto puede no ser relevante para ti pero te ayudará a comprender el funcionamiento de Git de manera más detallada.
