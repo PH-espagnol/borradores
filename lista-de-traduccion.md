@@ -22,6 +22,8 @@ date: 2016-10-01
 | new-lessons-workflow | flujo-de-trabajo-nuevas-lecciones | ok | arojascastro | |
 | reviewer-guidelines | guia-para-revisores | ok | arojascastro | |
 | research | investigacion | ok | vgayolrs | |
+| editor-guidelines | guia-para-editores | in process | arojascastro | |
+
 
 ### Lessons - Lecciones
 
