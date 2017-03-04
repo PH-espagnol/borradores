@@ -8,8 +8,11 @@ reviewers:
 - Fred Gibbs
 translator:
 - Víctor Gayol
+translation-reviewer:
+- Antonio Rojas Castro
 layout: default
 difficulty: 2
+redirect_from: /es/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown
 ---
 
 {% include figure.html filename="lexoriter.jpg" caption="" %}
