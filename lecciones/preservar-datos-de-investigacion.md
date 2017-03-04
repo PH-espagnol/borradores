@@ -10,8 +10,11 @@ reviewers:
 - Adam Crymble
 translator:
 - Víctor gayol
+translator-reviewer:
+- Antonio Rojas Castro
 layout: default
 difficulty: 1
+redirect-from: /es/lessons/preserving-your-research-data
 ---
 
 #### La cuestión de fondo
