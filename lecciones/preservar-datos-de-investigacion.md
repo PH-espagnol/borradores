@@ -9,7 +9,7 @@ reviewers:
 - William J. Turkel
 - Adam Crymble
 translator:
-- Víctor gayol
+- Víctor Gayol
 translator-reviewer:
 - Antonio Rojas Castro
 layout: default
