@@ -9,7 +9,10 @@ reviewers:
 - Nancy Lemay
 translator:
 - Víctor Gayol
+translation-reviewer:
+- Antonio Rojas Castro
 Layout: default
+redirect_from: /es/lessons/getting-started-with-markdown
 ---
 
 Introducción a Markdown
