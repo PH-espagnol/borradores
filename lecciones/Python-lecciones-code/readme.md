@@ -1,1 +1,0 @@
-Esta carpeta contiene carpetas con los programas (archivos `.py`) y otros (`.html`, `.txt`) correspondientes a las lecciones de Introducción a Python y que tienen que incluirse como `.zip` en algunas de ellas.
