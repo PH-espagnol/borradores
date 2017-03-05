@@ -9,9 +9,12 @@ reviewers:
 - William J. Turkel
 - Adam Crymble
 translator:
-- Víctor gayol
+- Víctor Gayol
+translator-reviewer:
+- Antonio Rojas Castro
 layout: default
 difficulty: 1
+redirect-from: /es/lessons/preserving-your-research-data
 ---
 
 #### La cuestión de fondo

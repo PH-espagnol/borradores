@@ -97,9 +97,9 @@ date: 2016-10-01
 
 #### Network Analysis - Análisis de redes
 
-| English | Español | translated | Commissioned | review |
-|  ------------- |  ------------- |  ------------- |  ------------- | ------------- |
-| creating-network-diagrams-from-historical-sources | | ok | mariajoafana |  |
+| English | Español | translated | Commissioned | proofreading | translation reviewer |
+|  ------------- |  ------------- |  ------------- |  ------------- | ------------- | ------------- |
+| creating-network-diagrams-from-historical-sources | creando-diagramas-de-redes-desde-fuentes-historicas.md | ok | mariajoafana | vgayolrs | |
 
 #### Digital Exhibits and Augmented Reality - Exhibiciones digitales y realidad aumentada
 
