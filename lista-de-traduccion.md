@@ -15,11 +15,11 @@ date: 2016-10-01
 | footer | footer | ok | vgayolrs | |
 | index	| acerca-de | ok| vgayolrs | |
 | lessons | indice-de-lecciones | ok | vgayolrs | |
-| contribute | contribuciones | ok | arojascastro | |
+| contribute | contribuciones | ok | arojascastro | vgayolrs |
 | project-team| equipo-de-proyecto | ok | vgayolrs | |
 | blog | bitacora | no | no | |
 | feedback | retroalimentacion | in process | vgayolrs | |
-| new-lessons-workflow | flujo-de-trabajo-nuevas-lecciones | ok | arojascastro | |
+| new-lessons-workflow | flujo-de-trabajo-nuevas-lecciones | ok | arojascastro | vgayolrs |
 | reviewer-guidelines | guia-para-revisores | ok | arojascastro | |
 | research | investigacion | ok | vgayolrs | |
 | editor-guidelines | guia-para-editores | ok | arojascastro | |
