@@ -10,6 +10,7 @@ translator:
 - Antonio Rojas Castro
 translation reviewer:
 - María José Afanador-Llach
+- Víctor Gayol
 layout: default
 difficulty: 1
 ---
@@ -85,7 +86,7 @@ Dropbox, Google Drive y otros servicios ofrecen alguna forma de controlar las ve
 
 Utilizar un control de versiones se ha consolidado en algunas disciplinas científicas, aunque su adopción está lejos de ser universal. En las Humanidades y en las Ciencias Sociales, el uso de Git es mucho menos frecuente. Los proyectos que listamos a continuación muestran algunas de las posibilidades del uso de Git en un entorno académico: 
 
-*  [The Programming Historian en español](https://github.com/programminghistorian/jekyll) utiliza GitHub en su flujo de trabajo para gestionar la [revista] (https://github.com/programminghistorian/jekyll/issues), las [lecciones](http://programminghistorian.org/new-lesson-workflow) y para producir la [web](http://programminghistorian.org/posts/how-we-moved-to-github).
+* [The Programming Historian en español](https://github.com/programminghistorian/jekyll) utiliza GitHub en su flujo de trabajo para gestionar la [revista] (https://github.com/programminghistorian/jekyll/issues), las [lecciones](http://programminghistorian.org/es/flujo-de-trabajo-nuevas-lecciones) y para producir la [web](http://programminghistorian.org/posts/how-we-moved-to-github).
 * [Python Programming for the Humanities](https://github.com/fbkarsdorp/python-course) es un tutorial introductorio sobre el lenguaje de programación Python. 
 * [ProfHacker](http://chronicle.com/blogs/profhacker/tag/github) ha publicado varias entradas de blog sobre proyectos que usan GitHub en un contexto académico.
 
@@ -115,7 +116,7 @@ Pese a las ventajas evidentes de escribir nuestros documentos en texto plano, ta
 
 Con Markdown podremos, pues, dar formato aj nuestro texto plano. Seguramente hayas utilizado HTML o LaTex en el pasado. Estos lenguajes de marcado también expresan información sobre el estilo y la estructura del documento. No obstante, el propósito de Markdown es minimizar el marcado, lo cual significa que es más fácil centrarse en el contenido, en la escritura, sin preocuparse en cómo marcar el texto -de ahí el nombre de 'markdown'-. 
 
-Esta lección no cubre la sintaxis Markdown por razones de espacio pero es útil explorar su funcionamiento una vez te sientas cómodo con el control de versiones. Conviene señalar, por otra parte, que GitHub integra una versión propia de la sintaxis Markdown. Si añades la sintaxis Markdown a tus docuemntos, tu control de versiones gestionado con GitHub Desktop visualizará de manera correcta tu documento en la web. La mejor manera de aprender Markdown es con un poco de práctica. Puedes empezar con nuestra [Introducción a Markdown](http://programminghistorian.org/lessons/getting-started-with-markdown) escrita por Sarah Simpkin, o bien con la lección  [Escritura sostenible con Pandoc y Markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) escrita por Dennis Tenen y Grant Wythoff. 
+Esta lección no cubre la sintaxis Markdown por razones de espacio pero es útil explorar su funcionamiento una vez te sientas cómodo con el control de versiones. Conviene señalar, por otra parte, que GitHub integra una versión propia de la sintaxis Markdown. Si añades la sintaxis Markdown a tus docuemntos, tu control de versiones gestionado con GitHub Desktop visualizará de manera correcta tu documento en la web. La mejor manera de aprender Markdown es con un poco de práctica. Puedes empezar con nuestra [Introducción a Markdown](http://programminghistorian.org/es/lecciones/) escrita por Sarah Simpkin, o bien con la lección  [Escritura sostenible con Pandoc y Markdown](http://programminghistorian.org/es/lecciones/) escrita por Dennis Tenen y Grant Wythoff. 
 
 ### Editores de texto
 
@@ -210,7 +211,7 @@ Los mensajes descriptivos que acompañan la edición de una página de Wikipedia
 
 Las ventajas de utilizar un control de versiones se fundamentan en gran medida en su uso efectivo. Es importante pensar cuándo se hacen las anotaciones y cómo identificar de manera correcta esos cambios cuando se describen con mensajes. Si te esfuerzas en hacer tus anotaciones y mensajes 'modulares', te será más fácil 'moverte' a través del historial de tu repositorio. Un buen repositorio debería permitir comprender los cambios realizados; no solo tú debería entenderlos sino también las personas con las que colabores. 
 
-Existen algunas diferencias entre la administración de un repositorio que contiene principalmente código y otro que contiene texto. En ambos casos, sin embargo, una organización clara y lógica es imprescindible. Aunque no utilices un control de versiones o no pretendas hacer público tus datos, te recomendamos ser siempre organizado con los materiales de tu investigación. Para una introducción a la gestión de los datos de investigación, puedes consultar la lección [Preservar tus datos de investigación] (http://programminghistorian.org/lessons/preserving-your-research-data). 
+Existen algunas diferencias entre la administración de un repositorio que contiene principalmente código y otro que contiene texto. En ambos casos, sin embargo, una organización clara y lógica es imprescindible. Aunque no utilices un control de versiones o no pretendas hacer público tus datos, te recomendamos ser siempre organizado con los materiales de tu investigación. Para una introducción a la gestión de los datos de investigación, puedes consultar la lección [Preservar tus datos de investigación] (http://programminghistorian.org/es/lecciones/). 
 
 ### Cómo publicar tu repositorio
 
@@ -294,9 +295,9 @@ Esta forma de resolver conflictos puede parecer más compleja de lo que es, pero
 
 ## Control de versiones y flujo de trabajo con texto plano
 
-Hasta el momento hemos puesto en marcha un control de versiones son un documento muy básico. Si aprendes más acerca de Markdown y la escritura en texto plano, podrás usar el control de versiones de muchas maneras y te será muy útil para llevar a cabo tu investigación. Controlar las versiones de un documento Markdown te permitirá profundizar en esta sintaxis; para ello, te recomendamos consultar la lección [Escritura sostenible en texto plano usando Pandoc y Markdown] (http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown) escrita por Dennis Tenen y Grant Wythoff will; esta lección te ayudará a entender cómo puedes usar el texto plano para escribir con Pandoc y Markdown. Pandoc es muy útil para convertir tus archivos de texto plano escritos en Markdown a otros formatos como HTML, PDF o Word. Si combinas Markdown, Pandoc y el control de versiones, podrás implementar un sistema muy potente y sostenible para escribir tus artículos y trabajos académicos.
+Hasta el momento hemos puesto en marcha un control de versiones son un documento muy básico. Si aprendes más acerca de Markdown y la escritura en texto plano, podrás usar el control de versiones de muchas maneras y te será muy útil para llevar a cabo tu investigación. Controlar las versiones de un documento Markdown te permitirá profundizar en esta sintaxis; para ello, te recomendamos consultar la lección [Escritura sostenible en texto plano usando Pandoc y Markdown] (http://programminghistorian.org/es/lecciones/) escrita por Dennis Tenen y Grant Wythoff will; esta lección te ayudará a entender cómo puedes usar el texto plano para escribir con Pandoc y Markdown. Pandoc es muy útil para convertir tus archivos de texto plano escritos en Markdown a otros formatos como HTML, PDF o Word. Si combinas Markdown, Pandoc y el control de versiones, podrás implementar un sistema muy potente y sostenible para escribir tus artículos y trabajos académicos.
 
-Asimismo, el flujo de trabajo presentado en esta lección también puede convertirse en el fundamento para crear webs estáticas alojadas en GitHub. Una vez te sientas cómodo usando GitHub Desktop, puedes seguir con la lección escrita por Amanda Visconti, [Construcción de sitios estáticos usando Jekyll GitHub Pages](../lessons/building-static-sites-with-jekyll-github-pages).
+Asimismo, el flujo de trabajo presentado en esta lección también puede convertirse en el fundamento para crear webs estáticas alojadas en GitHub. Una vez te sientas cómodo usando GitHub Desktop, puedes seguir con la lección escrita por Amanda Visconti, [Construcción de sitios estáticos usando Jekyll GitHub Pages](http://programminghistorian.org/es/lecciones/).
 
 ## Más recursos
 
