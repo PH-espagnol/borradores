@@ -89,7 +89,7 @@ El objetivo de 'The Programming Historian en español' es ofrecer un entorno abi
 
 Como editor, todos los participantes del proceso estarán pendientes de tus intervenciones. Para la mayoría de autores y revisores será su primera experiencia en un sistema de revisión en abierto como el nuestro. Dado que las publicaciones se realizan en el repositorio de GitHub, es posible que los autores vean los comentarios por parte de los revisores antes que el editor. Por este motivo, hay que dejar claro cómo funciona el proceso y cuándo los participantes deben intervenir o esperar nuevas instrucciones.
 
-Siempre que sea posible se recomienda publicar algún mensaje con el que se haga explícita la recepción de los cometnarios. Por ejemplo, tras recibir la primera revisión, publica una respuesta para agradecer al primer revisor y recuerda al autor que una segunda revisión (en el caso de las lecciones nuevas) se encuentra en camino. Por este motivo, sugiere al autor que espere hasta recibir los comentarios pendientes. De esta manera todo el mundo sabe qué pasos hay que seguir.
+Siempre que sea posible se recomienda publicar algún mensaje con el que se haga explícita la recepción de los comentarios. Por ejemplo, tras recibir la primera revisión, publica una respuesta para agradecer al primer revisor y recuerda al autor que una segunda revisión (en el caso de las lecciones nuevas) se encuentra en camino. Por este motivo, sugiere al autor que espere hasta recibir los comentarios pendientes. De esta manera todo el mundo sabe qué pasos hay que seguir.
 
 Si estás muy atareado, simplemente publica una nota en el foro para decir que has visto los nuevos comentario y que necesitarás más tiempo para responder en detalle. Gestionar las expectativas de todas las partes es la mejor manera de asegurarte que el proceso de revisión tenga un final feliz.
 
@@ -113,18 +113,18 @@ El **editor** debe sugerir un nombre para el archivo de la traducción o lecció
 
 - El nombre debe ser corto pero descriptivo pues se convertirá en el *slug* de la lección cuando se publique (es decir, la terminación de la URL).
 - Una buena URL debería encajar en una diapositiva, debería ser fácil de recordar y debería describir el contenido de la lección. Nuestras URLS tienen el siguiente formato: http://programminghistorian.org/es/lecciones/NOMBRE-DEL-ARCHIVO-AQUÍ
-- No introduzcas espacios en el nombre del arlchivo; en su lugar utiliza guiones. 
+- No introduzcas espacios en el nombre del archivo; en su lugar utiliza guiones. 
 - La extensión del arhivo debe ser `.md` con el objetivo de que GitHub genere una visualización provisional de la lección.
 
-Un avez hayas escogido el nombre del archivo, utiliza el mismo nombre para crear un directorio nuevo en [imágenes](https://github.com/PH-espagnol/borradores/tree/master/lecciones/imagenes); esta nueva carpeta contendrá las imágenes de la lección. Si la lección contiene archivos con datos, haz lo mismo pero en la carpeta [assets] (https://github.com/PH-espagnol/borradores/tree/master/assets) del repositio GitHub de *The Programming Historian en español*.
+Una vez hayas escogido el nombre del archivo, utiliza el mismo nombre para crear un directorio nuevo en [imágenes](https://github.com/PH-espagnol/borradores/tree/master/lecciones/imagenes); esta nueva carpeta contendrá las imágenes de la lección. Si la lección contiene archivos con datos, haz lo mismo pero en la carpeta [assets] (https://github.com/PH-espagnol/borradores/tree/master/assets) del repositio GitHub de *The Programming Historian en español*.
 
 ### B) Revisar el etiquetado Markdown
 
-Los autores deben asegurarse de que utilizan Markdown de manera aprpopiada para dar formato y estructurar el texto. Si han seguido la sintaxis, no debería haber problema. Ahora bien, si puedes ver algún símbolo Markdown en el archivo, quiere decir que algo ha salido mal. Las instrucciones sobre cómo utilizar Markdown se encuentran en nuestra [guía para autores y traductores] (http://programminghistorian.org/es/flujo-de-trabajo-nuevas-lecciones).
+Los autores deben asegurarse de que utilizan Markdown de manera apropiada para dar formato y estructurar el texto. Si han seguido la sintaxis, no debería haber problema. Ahora bien, si puedes ver algún símbolo Markdown en el archivo, quiere decir que algo ha salido mal. Las instrucciones sobre cómo utilizar Markdown se encuentran en nuestra [guía para autores y traductores] (http://programminghistorian.org/es/flujo-de-trabajo-nuevas-lecciones).
 
 Puedes comprobar con facilidad si todo es correcto accediendo a la visualización generada en GitHub: https://github.com/PH-espagnol/borradores/tree/master/lecciones/NOMBRE-DEL-ARCHIVO-AQUÍ (nota: sin extensión .md).
 
-Si la visualización no funciona, comprueba si hay algún problema en la **pestaña [the settings tab](https://github.com/programminghistorian/ph-submissions/blob/gh-pages/ISSUE_TEMPLATE.md) on the repo page, and looking under GitHub Pages. If there's a problem, then instead of saying the site is published in green, it will contain a notice that the site is having trouble building. If that happens, let Caleb McDaniel know, and he will try to diagnose it.**
+Si la visualización no funciona, comprueba si hay algún problema en la **pestaña [settings](https://github.com/programminghistorian/ph-submissions/blob/gh-pages/ISSUE_TEMPLATE.md) de la página del repositorio y buscar en GitHub Pages. Si hay un problema entonces, en vez de indicar en verde que el sitio está publicado, habrá una noticia de que el sitio tiene un problema de construcción. Si eso sucede, hazlo saber a Vctor Gayo (en español), quien trabajará con Caleb McDaniel para diagnosticarlo. Si lo haces en inglés, dirígete directamente con Caleb McDaniel.**
 
 ### C) Comprobar que las imágenes sean correctas
 
@@ -181,9 +181,9 @@ En el caso de las lecciones nuevas, si el tutorial ha sido escrito por un autor 
 
 ### 3) Añade traductor, revisores y editores al archivo YAML
 
-Es muy importante acreaditar el trabajo de nuestros traductorees, revisores y editores. Así, pues, localiza el  bloque YAML que se encuentra al inicio del tutorial, y añade el nombre del traductor, de los revisores y de todos los miembros de nuestra comunidad que han contribuido durante el proceso de revisión. Además, crea un campo `editor` y añade tu nombre y de cuantos otros editores hayan contribuido en la publicación. Las instrucciones para dar formato al bloque de YAML se encuentran en la [guía para autores y traductores](http://programminghistorian.org/es/flujo-de-trabajo-nuevas-lecciones).
+Es muy importante acreditar el trabajo de nuestros traductores, revisores y editores. Así, pues, localiza el  bloque YAML que se encuentra al inicio del tutorial, y añade el nombre del traductor, de los revisores y de todos los miembros de nuestra comunidad que han contribuido durante el proceso de revisión. Además, crea un campo `editor` y añade tu nombre y de cuantos otros editores hayan contribuido en la publicación. Las instrucciones para dar formato al bloque de YAML se encuentran en la [guía para autores y traductores](http://programminghistorian.org/es/flujo-de-trabajo-nuevas-lecciones).
 
-Los revisores que no hayan trabajado con nostros en el pasado también deben añadirse en el archivo [reviewers.yml](https://github.com/programminghistorian/jekyll/blob/gh-pages/_data/reviewers.yml); de esta manera, el nombre de los revisores aparecerá como parte de nuestro equipo. Por favor, no te olvides de este paso. Si se trata de una traducción, hay que añadir el campo `translation reviewer`.
+Los revisores que no hayan trabajado con nostros en el pasado también deben añadirse en el archivo [reviewers.yml](https://github.com/programminghistorian/jekyll/blob/gh-pages/_data/reviewers.yml); de esta manera, el nombre de los revisores aparecerá como parte de nuestro equipo. Por favor, no te olvides de este paso. Si se trata de una traducción, hay que añadir el campo `translation-reviewer`.
 
 ### 4) Añade un nivel de dificultad el archivo YAML
 
