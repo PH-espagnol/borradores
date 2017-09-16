@@ -1,4 +1,8 @@
-# Borradores / Drafts
+# Nota: Este repositorio no se actualizará más.
+
+Por favor: tome en cuenta que este repoitorio dejó de estar activo desde principios del año 2017 dado que integramos su contenido y los procesos al repositorio de [The Programming Historian](https://github.com/programminghistorian)
+
+## Borradores / Drafts
 
 Borradores de traducciones PH-es para editar / PH translation drafts before submit to programminghistorian/ph-submissions
 
